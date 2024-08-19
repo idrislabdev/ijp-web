@@ -1,0 +1,100 @@
+@tailwind components;
+.main-header {
+    @apply absolute top-0 w-full;
+    .main-header-top {
+        @apply px-[100px] flex justify-between items-center bg-primary text-white;
+        .header-company-motto {
+            p {
+                @apply text-xs;
+            }
+        }
+        .header-company-contact {
+            @apply flex items-center gap-[20px];
+            .company-social-media {
+                ul {
+                    @apply flex gap-[10px];
+                    li {
+                        svg {
+                            @apply w-[20px] h-[20px];
+                        }
+                    }
+                }
+            }
+            .company-phone-number {
+                @apply bg-white py-[10px] px-[20px];
+                p {
+                    @apply flex gap-[4px] text-sm text-primary font-semibold items-center;
+                    span {
+                        svg {
+                            @apply w-[20px] h-[20px];
+                            path {
+                                @apply fill-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-header-bottom {
+        @apply py-[10px] px-[100px] flex justify-between items-center border-b border-b-neutral-200;
+        img {
+            @apply w-[128px] h-[36px];
+        }
+        .main-header-menu {
+            @apply relative flex items-center;
+            ul {
+                @apply flex items-center text-sm font-semibold gap-[30px];
+                li {
+                    @apply text-neutral-900;
+                    &.active {
+                        @apply text-primary;
+                    }
+                    &:hover {
+                        @apply text-primary;
+                    }
+                }
+            }
+            .flags-menu {
+                @apply relative flex;
+                &::before {
+                    content: "";
+                    @apply mx-[20px] border-l border-l-neutral-300;
+                }
+                a {
+                    &.flag-button {
+                        @apply flex items-center gap-[4px] cursor-pointer;
+                        img {
+                            @apply w-[28px] h-[20px];
+                        }
+                        svg {
+                            @apply w-[13px] h-[13px];
+                            path {
+                                @apply fill-neutral-500
+                            }
+                        }
+                    }
+                }
+                ul {
+                    &.list-flags {
+                        @apply absolute top-[27px] ml-[41px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;
+                        &.show {
+                            transform: translateX(0%);
+                        }
+                        li {
+                            a {
+                                @apply select-none cursor-pointer;
+                                img {
+                                    @apply w-[28px] h-[20px];
+                                }
+                            }
+                            &::before {
+                                @apply !content-none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
