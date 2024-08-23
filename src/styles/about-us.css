@@ -257,6 +257,7 @@
         @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
         background: url("/images/backgrounds/parallax-indonesian-map.jpg") no-repeat;
         background-position: center;
+        background-size: cover;
         &::before {
             content: '';
             @apply absolute bg-neutral-50 opacity-75 w-full h-full z-[2];
