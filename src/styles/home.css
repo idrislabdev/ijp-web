@@ -13,13 +13,13 @@
             .banner-desc-subcontainer {
                 @apply w-1/2 flex flex-col justify-center gap-[20px];
                 h1 {
-                    @apply text-base;
+                    @apply text-base text-neutral-800;
                 }
                 h2 {
-                    @apply text-[48px]/[52px] font-bold;
+                    @apply text-[48px]/[52px] font-bold text-neutral-800;
                 }
                 h5 {
-                    @apply text-xl;
+                    @apply text-xl text-neutral-800;
                 }
                 a {
                     @apply bg-primary text-white py-[10px] w-[200px] flex justify-center items-center rounded cursor-pointer hover:bg-blue-600;
@@ -42,7 +42,7 @@
             .our-products-title {
                 @apply flex flex-col justify-center items-center text-center gap-[10px];
                 h1 {
-                    @apply text-3xl font-bold;
+                    @apply text-3xl font-bold text-neutral-800;
                 }
                 p {
                     @apply text-sm;
@@ -123,10 +123,10 @@
         .about-description-container {
             @apply flex flex-1 flex-col justify-center items-start gap-[20px];
             h1 {
-                @apply text-3xl text-neutral-950 font-bold;
+                @apply text-3xl text-neutral-800 font-bold;
             }
             h5 {
-                @apply text-base text-neutral-950 font-medium;
+                @apply text-base text-neutral-800 font-medium;
             }
             p {
                 @apply text-sm text-neutral-800;
@@ -149,7 +149,7 @@
                 .news-title {
                     @apply flex flex-col gap-[10px];
                     h1 {
-                        @apply text-3xl font-bold text-black;
+                        @apply text-3xl font-bold text-neutral-800;
                     }
                     p {
                         @apply text-sm text-neutral-600;

@@ -16,7 +16,7 @@ const HomeBusinessUnitSection = (props: {objLang:any}) => {
                     <div className='business-unit'>
                         <label>IJP</label>
                         <div className='business-unit-desc'>
-                            <h5>Indo Jaya Putra</h5>
+                            <h5>INDO JAYA PUTRA</h5>
                             <p>
                                 IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak 
                                 di bidang perdagangan bahan kimia, berdiri pada tahun 2001.
