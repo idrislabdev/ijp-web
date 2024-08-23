@@ -41,8 +41,8 @@ const MainHeader = (props: {lang:string}) => {
                     <Image src='/images/logoes/logo-unicorp-big.png' alt='logo unicorp' width={128} height={36}/>
                     <div className='main-header-menu'>
                         <ul>
-                            <li><Link href={`/${lang}/home`}>Home</Link></li>
-                            <li><Link href={`/${lang}/tentang-kami`}>Tentang Kami</Link></li>
+                            <li><Link href={`/${lang}`}>Home</Link></li>
+                            <li><Link href={`/${lang}/about-us`}>Tentang Kami</Link></li>
                             <li><Link href={`/${lang}/unit-bisnis`}>Unit Bisnis</Link></li>
                             <li><Link href={`/${lang}/news`}>News</Link></li>
                             <li><Link href={`/${lang}/karir`}>Karir</Link></li>
