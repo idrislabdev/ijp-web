@@ -2,8 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import '@/styles/components/cards.css'
 
-const HomeNewsSection = (props: {lang:any}) => {
-    const { lang } = props
+const HomeNewsSection = (props: {objLang:any}) => {
+    const { objLang } = props
     return (
         <section className='home-news-section'>
             <div className='home-news-container'>

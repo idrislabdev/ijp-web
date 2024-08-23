@@ -44,7 +44,7 @@ const MainHeader = (props: {lang:string}) => {
                             <li><Link href={`/${lang}/home`}>Home</Link></li>
                             <li><Link href={`/${lang}/tentang-kami`}>Tentang Kami</Link></li>
                             <li><Link href={`/${lang}/unit-bisnis`}>Unit Bisnis</Link></li>
-                            <li><Link href={`/${lang}/blog`}>Blog</Link></li>
+                            <li><Link href={`/${lang}/news`}>News</Link></li>
                             <li><Link href={`/${lang}/karir`}>Karir</Link></li>
                             <li><Link href={`/${lang}/kontak-kami`}>Kontak Kami</Link></li>
                         </ul>
