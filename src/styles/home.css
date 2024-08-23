@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .home-page {
-    @apply py-[97px];
+    @apply pt-[97px];
     .home-banner-section {
         @apply py-[80px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
         background: radial-gradient(#f8fafc, #f1f5f9);
@@ -101,7 +101,7 @@
             .business-unit-subcontainer {
                 @apply flex justify-center gap-[80px];
                 .business-unit {
-                    @apply w-[450px] flex flex-col justify-center items-center text-center gap-[20px];
+                    @apply w-[450px] flex flex-col justify-start items-center text-center gap-[20px];
                     label {
                         @apply h-[80px] w-[80px] rounded-[50%] border-[3px] border-white flex flex-col justify-center text-lg font-bold;
                     }
@@ -137,6 +137,33 @@
             box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
             img {
                 @apply w-[455px] rounded-lg;
+            }
+        }
+    }
+    .home-news-section {
+        @apply flex py-[40px] px-[100px] gap-[80px] justify-center items-center bg-slate-50;
+        .home-news-container {
+            @apply flex flex-col gap-[40px];
+            .news-header {
+                @apply flex gap-[40px] flex-1 items-center justify-center;
+                .news-title {
+                    @apply flex flex-col gap-[10px];
+                    h1 {
+                        @apply text-3xl font-bold text-black;
+                    }
+                    p {
+                        @apply text-sm text-neutral-600;
+                    }
+                }
+                a {
+                    @apply bg-primary text-white w-[250px] rounded-md py-[10px] px-[20px] text-center;
+                }
+            }
+            .news-subcontainer {
+                @apply flex gap-[20px];
+                .card-news {
+                    @apply w-1/4;
+                }
             }
         }
     }
