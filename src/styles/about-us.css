@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.home-page {
+.about-us-page {
     @apply pt-[97px];
     .about-us-hero-section {
         @apply py-[175px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;

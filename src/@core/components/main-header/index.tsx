@@ -46,7 +46,7 @@ const MainHeader = (props: {lang:string}) => {
                             <li><Link href={`/${lang}/unit-bisnis`}>Unit Bisnis</Link></li>
                             <li><Link href={`/${lang}/news`}>News</Link></li>
                             <li><Link href={`/${lang}/karir`}>Karir</Link></li>
-                            <li><Link href={`/${lang}/kontak-kami`}>Kontak Kami</Link></li>
+                            <li><Link href={`/${lang}/contact-us`}>Kontak Kami</Link></li>
                         </ul>
                         <div className='flags-menu'>
                             <a className='flag-button' onClick={_ => setShowFlags(!showFlags)}>

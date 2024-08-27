@@ -9,7 +9,7 @@ import AboutUsAreaSection from '@/@core/page/about-us/area-section'
 
 export default async function  MainPage({ params }: any) {
   return (
-    <main className='home-page sm:mobile-responsive'>
+    <main className='about-us-page sm:mobile-responsive'>
       <AboutUsHeroSection />
       <AboutUsProfileSection />
       <AboutUsOurMission />

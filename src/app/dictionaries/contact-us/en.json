@@ -1,0 +1,24 @@
+{
+    "header_section": {
+        "title": "Kontak Kami",
+        "description": "Untuk informasi lebih lanjut tentang perusahaan dan produk kami silahkan datang ke kantor kami atau hubungi nomor kontak kami yang ada di bawah ini.",
+        "to" : "ke"
+    },
+    "info_section": {
+        "enquire" : {
+            "title": "Alamat Email",
+            "content" : "Tim kostumer servis kami akan menjawab pertanyaan anda dengan segera, dengan mengirim email ke info_unicorp@yahoo.com",
+            "link" : "Kirim email"
+        },
+        "live_chat" : {
+            "title": "Nomor Telepon",
+            "content" : "Untuk mendapatkan jawaban dengan nomor telepon, anda dapat menghubungi nomor telepon kami di nomor+62 31 599 7100",
+            "link" : "Hubungi Kami"
+        },
+        "by_post" : {
+            "title": "Alamat Kantor Pusat",
+            "content" : "Alamat: Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia, Kode Pos 60111. No. Telpon:  +62 31 599 7100",
+            "link" : "Hubungi Kontak"
+        }
+    }
+}
