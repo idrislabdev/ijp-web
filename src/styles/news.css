@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.news-page {
+    @apply pt-[97px] bg-slate-50;
+    .news-hero-section {
+        @apply py-[100px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+        background: url("/images/backgrounds/parallax-4.jpg") no-repeat;
+        background-position: center;
+        &::before {
+            content: '';
+            @apply absolute bg-neutral-900 opacity-80 w-full h-full z-[2];
+        }
+        .hero-container {
+            @apply z-10 text-center flex flex-col gap-[10px];
+            .text-welcome {
+                h2 {
+                    @apply text-4xl text-white font-bold
+                }
+            }
+            .text-title {
+                @apply bg-primary py-[20px] px-[50px];
+                h1 {
+                    @apply text-5xl text-white font-medium;
+                }
+            }
+        }
+    }
+    .news-main-section {
+        @apply flex flex-col py-[30px] px-[100px] gap-[20px] justify-center;
+        .main-container {
+            @apply flex text-left;
+            h2 {
+                @apply text-xl text-neutral-800;
+            }
+        }
+    }
+    .news-latest-section {
+        @apply flex flex-col py-[30px] px-[100px] gap-[20px] justify-center;
+        .title-container {
+            @apply flex text-left;
+            h2 {
+                @apply text-2xl font-semibold text-neutral-800;
+            }
+        }
+        .latest-container {
+            @apply flex flex-wrap;
+            .card-subcontainer {
+                @apply w-1/4 pb-[20px] pr-[20px];
+                .card-news {
+                    /* @apply p-[10px]; */
+                }
+            }
+        }
+    }
+
+}
