@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.careers-page {
+    @apply pt-[97px] bg-slate-50;
+    .careers-hero-section {
+        @apply py-[100px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+        background: url("/images/backgrounds/parallax-office.jpg") no-repeat;
+        background-position: center;
+        &::before {
+            content: '';
+            @apply absolute bg-neutral-900 opacity-60 w-full h-full z-[2];
+        }
+        .hero-container {
+            @apply z-10 text-center flex flex-col gap-[10px];
+            .text-welcome {
+                h2 {
+                    @apply text-4xl text-white font-bold
+                }
+            }
+            .text-title {
+                @apply bg-primary py-[20px] px-[50px];
+                h1 {
+                    @apply text-5xl text-white font-medium;
+                }
+            }
+        }
+    }
+    .careers-area-section {
+        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+        background: url("/images/backgrounds/parallax-indonesian-map.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        &::before {
+            content: '';
+            @apply absolute bg-neutral-50 opacity-75 w-full h-full z-[2];
+        }
+        .area-container {
+            @apply flex flex-col gap-[80px] items-center justify-center text-center z-[3];
+            .title-subcontainer {
+                @apply flex flex-col gap-[10px] items-center justify-center text-center;
+                h1 {
+                    @apply text-3xl font-medium;
+                  
+                }
+                h2 {
+                    @apply text-7xl text-primary font-bold;
+                }
+                p {
+                    @apply text-base text-neutral-600;
+                }
+            }
+            .area-subcontainer {
+                @apply flex gap-[30px] w-[70%] justify-center text-center items-center;
+                .detail-subcontainer {
+                    @apply flex flex-col;
+                    h5 {
+                        @apply text-4xl font-bold text-primary;
+                    }
+                    p {
+                        @apply text-sm font-medium text-neutral-600;
+                    }
+                }
+            }
+        }
+    }
+    .careers-jobs-section {
+        @apply  flex flex-col justify-center items-center relative text-neutral-800 ;
+        .background-container {
+            @apply flex flex-col justify-center items-center bg-primary h-[150px] w-full relative;
+            h5 {
+                @apply text-4xl text-white font-medium;
+            }
+        }
+        .select-container {
+            @apply flex flex-col justify-center items-center absolute top-[110px];
+            .card-select {
+                @apply flex justify-center items-center gap-[10px] bg-white p-[20px] rounded-lg w-full h-[70px];
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+        }
+        .jobs-container {
+            @apply flex flex-wrap px-[100px] py-[100px];
+            .card-jobs {
+                @apply p-[10px] w-1/4;
+               .card-body {
+                    @apply flex flex-col justify-center items-center gap-[10px] bg-white p-[10px] rounded-lg h-[150px];
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    h5 {
+                        @apply text-xl font-bold text-primary;
+                    }
+                    p {
+                        @apply text-base font-normal text-neutral-500;
+                    }
+               }
+            }
+        }
+    }
+}
