@@ -1,7 +1,8 @@
+import Link from 'next/link'
 import React from 'react'
 
-const CareersJobsSection = (props: {objLang: any}) => {
-    const { objLang } = props
+const CareersJobsSection = (props: {lang:string, objLang: any}) => {
+    const { lang, objLang } = props
     const jobs = [
         { id: 1, name: 'Staff Accounting', place: 'Kantor Pusat' },
         { id: 2, name: 'Staff Accounting', place: 'Kantor Cabang Semarang' },
@@ -30,12 +31,12 @@ const CareersJobsSection = (props: {objLang: any}) => {
             </div>
             <div className='jobs-container'>
                 {jobs.map((item:{id:number, name: string, place:string}, index:number) => (
-                    <div className='card-jobs' key={index}>
+                    <Link className='card-jobs' key={index} href={`/${lang}/careers/detail-job`}>
                         <div className='card-body'>
                             <h5>{item.name}</h5>
                             <p>{item.place}</p>
                         </div>
-                    </div>
+                    </Link>
                 ))
 
                 }
