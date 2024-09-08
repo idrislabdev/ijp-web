@@ -16,7 +16,7 @@ export default async function  MainPage({ params }: any) {
       <AboutUsOurMission />
       <AboutUsHistorySection />
       <AboutUsStrategySection />
-      <AboutUsAreaSection objLang={null} />
+      <AboutUsAreaSection />
     </main>
   )
 }
