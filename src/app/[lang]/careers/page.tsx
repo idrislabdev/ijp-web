@@ -4,7 +4,7 @@ import React from 'react'
 import { getDictionariesContactUs } from '@/app/dictionaries';
 import CareersHeroSection from '@/@core/page/careers/hero-section';
 import CareersJobsSection from '@/@core/page/careers/jobs-section';
-import CareersAreaSection from '@/@core/page/about-us/area-section';
+import CareersAreaSection from '@/@core/page/careers/area-section';
 import '@/styles/careers.css'
 
 export default async function  ContactUsPage({ params }: any) {

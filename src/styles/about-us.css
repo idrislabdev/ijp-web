@@ -127,6 +127,13 @@
                           }
                         }
                     }
+                    &.fill-bulp {
+                        svg {
+                          path {
+                            @apply fill-white;
+                          }
+                        }
+                    }
                     &.fill-stroke {
                         svg {
                             path {

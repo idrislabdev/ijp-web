@@ -26,3 +26,37 @@ select {
 button {
     @apply !bg-primary !text-white !text-[14px]/[21px] !h-[41px] !rounded-[4px];
 }
+
+.group-input {
+    @apply relative;
+    input {
+        @apply w-full;
+        &::placeholder {
+            @apply font-normal text-neutral-400;
+        }
+    }
+    span {
+        @apply absolute text-[14px]/[21px] text-neutral-500 top-[9px];
+        &.prepend {
+            @apply right-[10px];
+        }
+        &.append {
+            @apply left-[10px];
+        }
+    }
+    &.prepend-append {
+        input {
+            @apply !px-[35px];
+        }
+    }
+    &.prepend{
+        input {
+            @apply !pr-[35px];
+        }
+    }
+    &.append{
+        input {
+            @apply !pl-[35px];
+        }
+    }
+}

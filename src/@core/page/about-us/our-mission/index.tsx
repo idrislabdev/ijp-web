@@ -1,4 +1,4 @@
-import { EyeIcon, HandShakeIcon, TargetIcon } from '@/@core/my-icons'
+import { BulpIcon, EyeIcon, HandShakeIcon, TargetIcon } from '@/@core/my-icons'
 import React from 'react'
 
 const AboutUsOurMission = () => {
@@ -17,8 +17,8 @@ const AboutUsOurMission = () => {
                 </div>
             </div>
             <div className='detail-subcontainer w-1/2'>
-                <div className='icon-detail fill-stroke'>
-                    <EyeIcon />
+                <div className='icon-detail fill-bulp'>
+                    <BulpIcon />
                 </div>
                 <div className='desc-detail'>
                     <h5>Our Vission</h5>
