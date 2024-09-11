@@ -22,6 +22,7 @@ const MainSidebar = () => {
                     <li><Link href='/xadmin/home'><HomeOutlineIcon />Home</Link></li>
                     <li><Link href='/xadmin/about-us'><AboutOutlineIcon />Tentang Kami</Link></li>
                     <li><Link href='/xadmin/business-unit'><BuildingOutlineIcon />Unit Bisnis (IJP)</Link></li>
+                    <li><Link href='/xadmin/business-unit'><BuildingOutlineIcon />Produk (IJP)</Link></li>
                     <li><Link href='/xadmin/business-unit'><BuildingOutlineIcon />Unit Bisnis (IJSA)</Link></li>
                     <li><Link href='/xadmin/news'><NewsOutlineIcon />News</Link></li>
                     <li><Link href='/xadmin/career'><ArchieveOutlineIcon />Karir</Link></li>
