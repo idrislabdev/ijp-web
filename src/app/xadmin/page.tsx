@@ -1,8 +1,13 @@
 import React from 'react'
+import MainSidebar from '@/@core/components/main-sidebar'
+import '@/styles/xadmin.css'
+import '@/styles/components/main-sidebar.css'
 
-export default async function  XadminPage({ params }: any) {
+export default async function  XadminPage() {
   return (
-    <div><h1>Admin</h1></div>
+    <main className='xadmin-page'>
+      <MainSidebar />
+    </main>
   )
 }
 
