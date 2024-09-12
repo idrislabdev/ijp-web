@@ -46,12 +46,58 @@
             ul {
                 @apply flex items-center text-sm font-semibold gap-[30px];
                 li {
-                    @apply text-neutral-900;
+                    @apply relative  font-medium cursor-pointer text-neutral-900;
+                    a {
+                        @apply block py-[10px];
+                    }
                     &.active {
                         @apply text-primary;
                     }
                     &:hover {
                         @apply text-primary;
+                    }
+                    &.has-sub {
+                        a {
+                            @apply flex gap-[4px] items-center;
+                            svg {
+                                path {
+                                    @apply fill-neutral-900;
+                                }
+                            }
+                        }
+                        .submenu {
+                            @apply absolute left-0 m-0 list-none w-[150px] hidden bg-white  duration-300 transition-all z-10;
+                            box-shadow: 0px 4px 16px 0px #0000001A;
+    
+                            .submenu {
+                                position: absolute;
+                                left: 150px;
+                                top: 0px;
+                            }
+                            li {
+                                @apply text-black;
+                                a {
+                                    @apply flex justify-between px-[10px] py-[5px] items-center;
+                                    svg {
+                                        @apply -rotate-90
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            @apply text-primary;
+                            > .submenu {
+                                @apply block;
+                                li {
+                                    &:hover {
+                                        @apply text-primary;
+                                        > .submenu {
+                                            @apply block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

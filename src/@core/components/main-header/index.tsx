@@ -43,7 +43,13 @@ const MainHeader = (props: {lang:string}) => {
                         <ul>
                             <li><Link href={`/${lang}`}>Home</Link></li>
                             <li><Link href={`/${lang}/about-us`}>Tentang Kami</Link></li>
-                            <li><Link href={`/${lang}/unit-bisnis`}>Unit Bisnis</Link></li>
+                            <li className='has-sub'>
+                                <a>Unit Bisnis <ChevronDownIcon /></a>
+                                <ul className='submenu'>
+                                    <li><Link href={`/${lang}/business-units/ijp`}>IJP</Link></li>
+                                    <li><Link href={`/${lang}/business-units/ijsa`}>IJSA</Link></li>
+                                </ul>
+                            </li>
                             <li><Link href={`/${lang}/news`}>News</Link></li>
                             <li><Link href={`/${lang}/careers`}>Karir</Link></li>
                             <li><Link href={`/${lang}/contact-us`}>Kontak Kami</Link></li>
