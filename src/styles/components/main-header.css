@@ -123,13 +123,14 @@
                 }
                 ul {
                     &.list-flags {
-                        @apply absolute top-[27px] ml-[41px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;
+                        @apply absolute top-[27px] ml-[41px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top z-10 ;
                         &.show {
                             transform: translateX(0%);
                         }
                         li {
+                            @apply p-0;
                             a {
-                                @apply select-none cursor-pointer;
+                                @apply select-none cursor-pointer p-0;
                                 img {
                                     @apply w-[28px] h-[20px];
                                 }
