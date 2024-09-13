@@ -10,7 +10,7 @@ import '@/styles/home.css'
 export default async function  MainPage({ params }: any) {
   return (
     <main className='home-page sm:mobile-responsive'>
-      <HomeBannerSection />
+      <HomeBannerSection lang={params.lang} />
       <HomeAboutSection objLang={null} />
       <HomeBusinessUnitSection objLang={null}/>
       <HomeOurProductsSection />

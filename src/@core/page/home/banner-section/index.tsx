@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const HomeBannerSection = () => {
+const HomeBannerSection = (props:{lang:string}) => {
+  const { lang } = props
   return (
     <section className='home-banner-section'>
       <div className='home-banner-container'>
@@ -11,7 +13,7 @@ const HomeBannerSection = () => {
             Merupakan Grup perusahaan yang bergerak di berbagai bidang industri
           </h2>
           <h5>diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya</h5>
-          <a>Baca Selengkapnya</a>
+          <Link href={`/${lang}/about-us`}>Baca Selengkapnya</Link>
         </div>
         <div className='banner-img-subcontainer'>
           <Image src='/images/others/product.png' className='product-img' alt='product ijp' width={500} height={500}/>

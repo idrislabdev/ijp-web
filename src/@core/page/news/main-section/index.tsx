@@ -2,9 +2,10 @@ import { ArrowRightIcon, BuildingIcon, FaqIcon, MessageSquareIcon, PhoneIcon } f
 import Image from 'next/image'
 import React from 'react'
 import '@/styles/components/cards.css'
+import Link from 'next/link'
 
-const NewsMainSection = (props: { objLang: any}) => {
-    const { objLang } = props
+const NewsMainSection = (props: { lang:string, objLang: any}) => {
+    const { lang, objLang } = props
     return (
         <section className='news-main-section'>
             <div className='main-container'>
@@ -29,7 +30,7 @@ const NewsMainSection = (props: { objLang: any}) => {
                             </p>
                         </div>
                         <div className='text-readmore'>
-                            <a>Lebih Lengkap</a>
+                            <Link href={`/${lang}/news/news-slug`}>Lebih Lengkap</Link>
                         </div>
                     </div>
                 </div>

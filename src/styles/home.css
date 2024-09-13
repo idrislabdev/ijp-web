@@ -47,7 +47,11 @@
                 p {
                     @apply text-sm;
                 }
+                a {
+                    @apply text-primary underline font-semibold cursor-pointer;
+                }
             }
+            
             .our-products-subcontainer {
                 @apply flex flex-wrap justify-center;
                 .our-product-wrapper {

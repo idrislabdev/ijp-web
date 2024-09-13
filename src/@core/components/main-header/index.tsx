@@ -4,7 +4,7 @@ import { ChevronDownIcon, FacebookIcon, InstagramIcon, PhoneIcon, TwitterIcon } 
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation';
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 const MainHeader = (props: {lang:string}) => {
     const { lang } = props
@@ -17,6 +17,27 @@ const MainHeader = (props: {lang:string}) => {
         router.push(paths.join("/"))
 
     }
+
+    const onScroll = useCallback(() => {
+        const { scrollY } = window;
+        if ( scrollY >= 60) {
+            document.getElementsByClassName("main-header-bottom")[0].classList.add('fixed', 'top-0');
+        } else {
+            if (document.getElementsByClassName("main-header-bottom")[0]) {
+                document.getElementsByClassName("main-header-bottom")[0].classList.remove('fixed', 'top-0');
+            }
+
+        }
+
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => {
+           window.removeEventListener("scroll", onScroll);
+        }
+    });
+
     return (
         <>
             <header className='main-header'>

@@ -1,7 +1,20 @@
+"use client"
+
+import axiosInstance from '@/@core/utils/axios';
 import Image from 'next/image'
 import React from 'react'
 
 const HomeOurProductsSection = () => {
+    const downloadCatalog = async () => {
+        const resp = await axiosInstance.get(`/catalogs/sample-catalog.pdf`);
+
+        const url = window.URL.createObjectURL(new Blob([resp.data]));
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", `katalog.pdf`);
+        document.body.appendChild(link);
+        link.click();
+    }
   return (
     <section className='home-our-products-section'>
         <div className='our-products-container'>
@@ -11,6 +24,7 @@ const HomeOurProductsSection = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, 
                     sed porta est consectetur. Sed imperdiet libero id nisi euismod
                 </p>
+                <a onClick={downloadCatalog}>Download Product</a>
             </div>
             <div className='our-products-subcontainer'>
                 <div className='our-product-wrapper'>

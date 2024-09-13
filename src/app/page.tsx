@@ -14,7 +14,7 @@ export default async function  MainPage({ params }: any) {
   return (
     <main className='home-page sm:mobile-responsive'>
       <MainHeader lang={'id'}/>
-      <HomeBannerSection />
+      <HomeBannerSection lang={'id'} />
       <HomeAboutSection objLang={null} />
       <HomeBusinessUnitSection objLang={null}/>
       <HomeOurProductsSection />

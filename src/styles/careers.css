@@ -81,9 +81,9 @@
             }
         }
         .jobs-container {
-            @apply flex flex-wrap px-[100px] py-[100px];
+            @apply flex flex-wrap px-[100px] py-[100px] justify-center;
             .card-jobs {
-                @apply p-[10px] w-1/4;
+                @apply p-[10px] w-[280px];
                .card-body {
                     @apply flex flex-col justify-center items-center gap-[10px] bg-white p-[10px] rounded-lg h-[150px];
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

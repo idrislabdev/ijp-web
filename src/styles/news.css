@@ -36,6 +36,28 @@
             }
         }
     }
+    .news-detail-section {
+        @apply flex flex-col py-[30px] px-[100px] gap-[20px] justify-center;
+        .main-container {
+            @apply flex;
+
+            .card-main-news {
+                @apply flex flex-col p-[20px] gap-[30px];
+                .text-title {
+                    @apply flex flex-col;
+                    h2 {
+                        @apply text-3xl text-neutral-800 font-medium;
+                    }
+                    .text-date {
+                        @apply flex items-center gap-[8px];
+                        p, label {
+                            @apply text-[12px]/[18px] text-neutral-600;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .news-latest-section {
         @apply flex flex-col py-[30px] px-[100px] gap-[20px] justify-center;
         .title-container {

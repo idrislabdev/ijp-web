@@ -37,7 +37,7 @@
         }
     }
     .main-header-bottom {
-        @apply py-[10px] px-[100px] flex justify-between items-center border-b border-b-neutral-200;
+        @apply py-[10px] px-[100px] flex justify-between items-center border-b border-b-neutral-200 z-[10] w-full bg-white;
         img {
             @apply w-[128px] h-[36px];
         }
