@@ -1,6 +1,6 @@
 import React from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
-import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
+import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, PhoneOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 
 export default async function  XadminPage() {
@@ -25,11 +25,11 @@ export default async function  XadminPage() {
           <div className='container-body'>
             <div className='title-body'>
               <div className='logo-area'>
-                <HomeOutlineIcon />
+                <PhoneOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Home</h5>
-                <p>Pengaturan Halaman Home</p>
+                <h5>Halaman Kontak Kami</h5>
+                <p>Pengaturan Halaman Kontak Kami</p>
               </div>
             </div>
             <div className='main-body'>
@@ -46,8 +46,8 @@ export default async function  XadminPage() {
                 <tbody>
                   <tr>
                     <td>01</td>
-                    <td>Header / Hero</td>
-                    <td>Pengaturan text dan gambar pada area header</td>
+                    <td>Setting Map</td>
+                    <td>Pengaturan Info Map Lokasi Perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>
@@ -55,8 +55,8 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>02</td>
-                    <td>Tentang Perusahaan</td>
-                    <td>Pengaturan info perusahan unicorp </td>
+                    <td>Setting Text</td>
+                    <td>Pengaturan welcome text pada halaman kontak kami</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>
@@ -64,8 +64,8 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>03</td>
-                    <td>Unit Bisnis</td>
-                    <td>Pengaturan text pada section unit bisnis</td>
+                    <td>Alamat Email</td>
+                    <td>Pengaturan Alamat Email Utama</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>
@@ -73,8 +73,8 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>04</td>
-                    <td>Product</td>
-                    <td>Pengaturan info dan produk yang ingin ditampilkan</td>
+                    <td>Nomor Telepon</td>
+                    <td>Pengaturan nomor telepon utama perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>
@@ -82,8 +82,17 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>05</td>
-                    <td>Berita Terkini</td>
-                    <td>Pengaturan judul dan text pada section berita</td>
+                    <td>Alamat Perusahaan</td>
+                    <td>Pengaturan alamat utama perusahaan</td>
+                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
+                    <td className='text-center'>
+                      <a className='btn-action'><PencilOutlineIcon /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>Jam Kerja</td>
+                    <td>Pengaturan informasi jam kerja kantor / perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>

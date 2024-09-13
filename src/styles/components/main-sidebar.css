@@ -1,6 +1,6 @@
 .main-sidebar {
-    @apply bg-white w-[200px] h-full flex flex-col;
-    box-shadow: 0 2px 4px rgba(15,34,58,.12);
+    @apply bg-neutral-50 w-[200px] h-full flex flex-col;
+    /* box-shadow: 0 2px 4px rgba(15,34,58,.12); */
     .header-area {
         @apply h-[70px] border-b border-b-neutral-200 p-[10px] flex flex-col justify-center;
         .header-info {
@@ -21,7 +21,7 @@
 
     }
     .menu-area {
-        @apply flex flex-col py-[20px] gap-[10px] border-b border-b-neutral-200 flex-1;
+        @apply flex flex-col py-[20px] gap-[10px] border-b border-b-neutral-200 flex-1 ;
         span {
             @apply px-[10px];
             &.label {

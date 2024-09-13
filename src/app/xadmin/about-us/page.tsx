@@ -1,6 +1,6 @@
 import React from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
-import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
+import { AboutOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 
 export default async function  XadminPage() {
@@ -17,19 +17,18 @@ export default async function  XadminPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Home</li>
-                <li><FolderOpenIcon /> Setting Header</li>
+                <li><FolderIcon /> About Us</li>
               </ul>
             </div>
           </div>
           <div className='container-body'>
             <div className='title-body'>
               <div className='logo-area'>
-                <HomeOutlineIcon />
+                <AboutOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Home</h5>
-                <p>Pengaturan Halaman Home</p>
+                <h5>Halaman Tentang Kami</h5>
+                <p>Pengaturan Halaman Tentang Kami</p>
               </div>
             </div>
             <div className='main-body'>
@@ -55,8 +54,8 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>02</td>
-                    <td>Tentang Perusahaan</td>
-                    <td>Pengaturan info perusahan unicorp </td>
+                    <td>Profil Perusahaan</td>
+                    <td>Pengaturan profil perusahan unicorp </td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>
@@ -64,8 +63,8 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>03</td>
-                    <td>Unit Bisnis</td>
-                    <td>Pengaturan text pada section unit bisnis</td>
+                    <td>Visi dan Misi</td>
+                    <td>Pengaturan visi dan misi perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>
@@ -73,8 +72,8 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>04</td>
-                    <td>Product</td>
-                    <td>Pengaturan info dan produk yang ingin ditampilkan</td>
+                    <td>Sejarah Unicorp</td>
+                    <td>Pengaturan info tentang sejarah perusahaan unicorp</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>
@@ -82,8 +81,17 @@ export default async function  XadminPage() {
                   </tr>
                   <tr>
                     <td>05</td>
-                    <td>Berita Terkini</td>
-                    <td>Pengaturan judul dan text pada section berita</td>
+                    <td>Our Strategy</td>
+                    <td>Detail strategi perusahaan</td>
+                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
+                    <td className='text-center'>
+                      <a className='btn-action'><PencilOutlineIcon /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>Area Perdagangan</td>
+                    <td>Cakupan area perdagangan unicorp</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
                       <a className='btn-action'><PencilOutlineIcon /></a>

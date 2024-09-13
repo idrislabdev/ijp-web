@@ -5,9 +5,63 @@
 .xadmin-page {
     @apply flex h-[100vh];
     .xadmin-section {
-        @apply h-full flex-1 p-[10px];
+        @apply h-full flex-1 p-[10px] bg-neutral-50;
         .main-container {
-            @apply border border-neutral-200 w-full h-full;
+            @apply rounded-[8px] w-full h-full bg-white;
+            /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+            box-shadow: rgb(161 161 170 / 0.3) 3px 3px 6px 0px inset, rgb(115 115 115 / 0.3) -3px -3px 6px 1px inset;
+
+            .container-header {
+                @apply flex justify-between items-center p-[10px];
+                .breadcrumb-info {
+                    ul {
+                        @apply flex items-center;
+                        li {
+                            @apply text-neutral-700 flex items-center text-sm gap-[5px];
+                            svg {
+                                @apply w-[15px] h-[15px];
+                                path {
+                                    @apply fill-lime-500;
+                                }
+                            }
+                            &:not(:last-child,:first-child) {
+                                &::after {
+                                    content: "";
+                                    @apply border-l border-l-neutral-500 border-b border-b-neutral-700 inline-block w-[7px] h-[7px] mr-[10px];
+                                    transform: rotate(225deg); /* Point in the direction you want */
+                                }
+                            }
+                            &:first-child {
+                                @apply pr-[10px] mr-[10px] border-r border-r-neutral-400;
+                            }
+                        }
+                    }
+                }
+            }
+            .container-body {
+                @apply p-[40px] flex flex-col gap-[40px];
+                .title-body {
+                    @apply flex items-center gap-[12px];
+                    .logo-area {
+                        @apply flex flex-col border border-neutral-300 rounded-[8px] bg-neutral-100;
+                        svg {
+                            @apply w-[75px] h-[75px];
+                        }
+                    }
+                    .text-area {
+                        @apply flex flex-col;
+                        h5 {
+                            @apply text-[34px]/[24px] text-neutral-800 font-semibold;
+                        }
+                        p {
+                            @apply text-[18px]/[25px] text-neutral-400;
+                        }
+                    }
+                }
+                .main-body {
+
+                }
+            }
         }
     }
 }
