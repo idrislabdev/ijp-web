@@ -27,6 +27,9 @@
             }
             .banner-img-subcontainer {
                 @apply relative w-1/2 flex flex-col justify-center;
+                img {
+                    @apply w-[500px] h-[500px];
+                }
                 /* img {
                     &.inaglove-img {
                         @apply absolute top-0 right-0;
@@ -167,6 +170,101 @@
                 @apply flex gap-[20px];
                 .card-news {
                     @apply w-1/4;
+                }
+            }
+        }
+    }
+
+    
+    @layer components {
+        &.mobile-responsive {
+            @apply pt-[50px];
+            .home-banner-section {
+                @apply px-[20px];
+                .home-banner-container {
+                    @apply flex-col-reverse justify-center items-center;
+                    .banner-desc-subcontainer {
+                        @apply w-full justify-center items-center text-center gap-[8px];
+                        h1 {
+
+                        }
+                        h2 {
+                            @apply text-[24px]/[32px];
+                        }
+                        h5 {
+                            @apply text-[18px]/[24px];
+                        }
+                    }
+                    .banner-img-subcontainer {
+                        img {
+                            @apply w-[200px] h-[200px];
+                        }
+                    }
+                }
+            }
+            .home-about-section{
+                @apply flex-col px-[20px] gap-[20px];
+                .about-description-container {
+                    @apply w-full justify-center items-center text-center;  
+                }
+                .about-image-container {
+                    @apply w-full;
+                }
+            }
+            .home-business-unit-section {
+                @apply px-[20px];
+                .business-unit-container {
+                    @apply w-full;
+                    .title-subcontainer {
+                        h1 {
+                            @apply text-2xl;
+                        }
+                        p {
+                            @apply text-xs;
+                        }
+                    }
+                    .business-unit-subcontainer {
+                        @apply flex-col gap-[20px] w-full;
+                        .business-unit {
+                            @apply px-[20px] w-full;
+                            label {
+                                @apply h-[60px] w-[60px] text-base;
+                            }
+                            .business-unit-desc {
+                                h5 {
+                                    @apply text-xl;
+                                }
+                                p {
+                                    @apply text-xs;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .home-our-products-section {
+                @apply px-[20px];
+                .our-products-container{
+                    .our-products-subcontainer {
+                        .our-product-wrapper {
+                            @apply w-[150px]
+                        }
+                    }
+                }
+            }
+            .home-news-section {
+                @apply px-[20px];
+                .home-news-container  {
+                    @apply px-[20px];
+                    .news-header {
+                        @apply flex-col justify-center items-center text-center;
+                    }
+                    .news-subcontainer{
+                        @apply flex-col w-full;
+                        .card-news {
+                            @apply w-full;
+                        }
+                    }
                 }
             }
         }

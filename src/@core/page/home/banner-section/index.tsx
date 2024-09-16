@@ -16,7 +16,7 @@ const HomeBannerSection = (props:{lang:string}) => {
           <Link href={`/${lang}/about-us`}>Baca Selengkapnya</Link>
         </div>
         <div className='banner-img-subcontainer'>
-          <Image src='/images/others/product.png' className='product-img' alt='product ijp' width={500} height={500}/>
+          <Image src='/images/others/product.png' className='product-img' alt='product ijp' width={0} height={0} sizes='100%'/>
           {/* <Image src='/images/others/inaglove.png' className='inaglove-img' alt='inaglove' width={250} height={250}/> */}
         </div>
       </div>

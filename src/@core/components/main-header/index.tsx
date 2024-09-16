@@ -1,14 +1,16 @@
 "use client"
 
-import { ChevronDownIcon, FacebookIcon, InstagramIcon, PhoneIcon, TwitterIcon } from '@/@core/my-icons'
+import { BurgerIcon, ChevronDownIcon, FacebookIcon, InstagramIcon, PhoneIcon, TwitterIcon } from '@/@core/my-icons'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation';
 import React, { useCallback, useEffect, useState } from 'react'
+import MainSidebarMenu from './main-sidebar-menu';
 
 const MainHeader = (props: {lang:string}) => {
     const { lang } = props
     const [showFlags, setShowFlags] = useState(false);
+    const [showSidebar, setShowSidebar] = useState(false);
     const pathname = usePathname()
     const router = useRouter();
     const switchLang = (langText:string) => {
@@ -31,6 +33,11 @@ const MainHeader = (props: {lang:string}) => {
 
     }, []);
 
+    const showMobileSidebar = () => {
+        setShowSidebar(true)
+        document.body.classList.add('overflow-hidden')
+    }
+
     useEffect(() => {
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => {
@@ -40,7 +47,7 @@ const MainHeader = (props: {lang:string}) => {
 
     return (
         <>
-            <header className='main-header'>
+            <header className='main-header sm:mobile-responsive'>
                 <div className='main-header-top'>
                     <div className='header-company-motto'>
                         <p>UNICORP | Grow Through Innovation</p>
@@ -60,6 +67,7 @@ const MainHeader = (props: {lang:string}) => {
                 </div>
                 <div className='main-header-bottom'>
                     <Image src='/images/logoes/logo-unicorp-big.png' alt='logo unicorp' width={128} height={36}/>
+                    <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={'#000'} /></a>
                     <div className='main-header-menu'>
                         <ul>
                             <li><Link href={`/${lang}`}>Home</Link></li>
@@ -97,6 +105,8 @@ const MainHeader = (props: {lang:string}) => {
                     </div>
                 </div>
             </header>
+            <MainSidebarMenu lang={lang} show={showSidebar} setShow={setShowSidebar}/>
+
         </>
     )
 }

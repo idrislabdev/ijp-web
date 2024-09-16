@@ -3,7 +3,7 @@ import '@/styles/components/footer.css'
 import Image from 'next/image'
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer sm:mobile-responsive'>
         <div className='footer-primary'>
             <div className='footer-main-info'>
                 <div className='image-logo-container'>

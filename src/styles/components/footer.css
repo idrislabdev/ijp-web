@@ -62,4 +62,29 @@
             @apply text-xs text-white font-medium;
         }
     }
+
+    @layer components {
+        &.mobile-responsive {
+            .footer-primary {
+                @apply flex-col px-[20px];
+                .footer-main-info {
+                    @apply w-full justify-center items-center text-center;
+                    .main-address-container {
+                        @apply justify-center text-center;
+                    }
+                    .registered-by-container {
+                        .certifieds-subcontainer {
+                            @apply justify-center;
+                        }
+                    }
+                }
+                .footer-address {
+                    @apply flex-col w-full justify-center items-center text-center;
+                    .address-container {
+                        @apply w-full;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -436,6 +436,28 @@ const ArrowLeftIcon = () => {
     )
 }
 
+const BurgerIcon = (props :{ color: any }) => {
+    const { color } = props
+    let currentColor = color
+    return (
+    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 2.57979V0.773438H18V2.57979H0Z" fill={currentColor}/>
+        <path d="M0 7.09566H18V5.28931H0V7.09566Z" fill={currentColor}/>
+        <path d="M0 11.6115H18V9.80518H0V11.6115Z" fill={currentColor}/>
+    </svg>
+
+    )
+} 
+
+const TimesIcon = (props :{ color: any }) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill={currentColor}/>
+        </svg>
+    )
+} 
 
 
 
@@ -479,5 +501,7 @@ export {
     FolderIcon,
     FolderOpenIcon,
     PencilOutlineIcon,
-    ArrowLeftIcon
+    ArrowLeftIcon,
+    BurgerIcon,
+    TimesIcon
 }

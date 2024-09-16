@@ -1,6 +1,6 @@
 @tailwind components;
 .main-header {
-    @apply absolute top-0 w-full;
+    @apply absolute top-0 w-full flex flex-col;
     .main-header-top {
         @apply px-[100px] flex justify-between items-center bg-primary text-white;
         .header-company-motto {
@@ -40,6 +40,9 @@
         @apply py-[10px] px-[100px] flex justify-between items-center border-b border-b-neutral-200 z-[10] w-full bg-white;
         img {
             @apply w-[128px] h-[36px];
+        }
+        .burger-menu {
+            @apply hidden;
         }
         .main-header-menu {
             @apply relative flex items-center;
@@ -137,6 +140,70 @@
                             }
                             &::before {
                                 @apply !content-none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @layer components {
+        &.mobile-responsive {
+            @apply p-0  h-[70px];
+            .ijp-logo-header {
+                a {
+                    svg {
+                        @apply !w-[71px] !h-[20.11px];
+                    }
+                }
+            }
+            .main-header-menu,.main-header-top {
+                @apply hidden;
+            }
+            .main-header-bottom {
+                @apply px-[20px] h-[70px]; 
+                .burger-menu {
+                    @apply block;
+                }
+            }
+        }
+    }
+}
+
+.main-sidebar-overlay {
+    @apply bg-black opacity-50 h-full w-full fixed z-10;
+}
+
+.main-sidebar-menu {
+    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[10] justify-between transition-all duration-500 ;
+    &.show {
+        @apply mr-[0px];
+    }
+    .sidebar-menu-top {
+        @apply flex flex-col gap-[46px];
+        .sidebar-header {
+            @apply flex justify-between items-center;
+            .sidebar-header-logo {
+                svg {
+                    @apply w-[71px] h-[20.11px];
+                }
+            }
+            .sidebar-header-action {
+                @apply flex gap-[8px] items-center;
+            }
+        }
+        .sidebar-list {
+            @apply overflow-y-auto;
+            ul {
+                @apply text-black flex flex-col gap-[30px];
+                li {
+                    @apply text-[14px]/[21px] font-medium;
+                    ul {
+                        &.sidebar-submenu {
+                            @apply p-[5px] gap-[0px] transition-all duration-500;
+                            li {
+                                @apply text-[12px]/[18px] font-normal;
+
                             }
                         }
                     }

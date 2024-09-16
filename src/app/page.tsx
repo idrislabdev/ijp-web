@@ -12,15 +12,17 @@ import '@/styles/home.css'
 
 export default async function  MainPage({ params }: any) {
   return (
-    <main className='home-page sm:mobile-responsive'>
+    <>
       <MainHeader lang={'id'}/>
-      <HomeBannerSection lang={'id'} />
-      <HomeAboutSection objLang={null} />
-      <HomeBusinessUnitSection objLang={null}/>
-      <HomeOurProductsSection />
-      <HomeNewsSection objLang={null}/>
-      <Footer />
-    </main>
+      <main className='home-page sm:mobile-responsive'>
+        <HomeBannerSection lang={'id'} />
+        <HomeAboutSection objLang={null} />
+        <HomeBusinessUnitSection objLang={null}/>
+        <HomeOurProductsSection />
+        <HomeNewsSection objLang={null}/>
+      </main>
+      <Footer /> 
+    </>
   )
 }
 
