@@ -73,7 +73,6 @@
                 }
                 .desc-content {
                     @apply flex flex-col gap-[10px];
-                    h2
                     p {
                         @apply text-sm text-neutral-600;
                     }
@@ -89,7 +88,6 @@
                             @apply h-[50px] w-[50px] object-contain;
                         }
                         .text-founder {
-                            h2 
                             p {
                                 @apply text-base font-bold;
                             }
@@ -298,5 +296,199 @@
             }
         }
     }
-    
+    @layer components {
+        &.mobile-responsive {
+            @apply pt-[50px];
+            .about-us-hero-section {
+                @apply h-[200px] p-[20px];
+                background-size: 100% 200px ;
+                .hero-container {
+                    .text-welcome {
+                        h2 {
+                            @apply text-xl;
+                        }
+                    }
+                    .text-title {
+                        @apply p-0;
+                        h1 {
+                            @apply text-2xl;
+                        }
+                    }
+                }
+            }
+            .about-us-profile-section {
+                @apply p-[20px];
+                .profile-container {
+                    @apply flex-col;
+                    .image-subcontainer {
+                        @apply w-full;
+                        .top-subcontainer {
+                            img {
+                                @apply h-[200px];
+                            }
+                        }
+                        .middle-subcontainer {
+                            @apply left-[38%] top-[40%];
+                            .experience-subcontainer {
+                                @apply  w-[100px] h-[100px];
+                                label {
+                                    @apply text-4xl;
+                                }
+                                span {
+                                    @apply text-xs;
+                                }
+                            }
+                        }
+                        .bottom-subcontainer {
+                            img {
+                                @apply h-[180px];
+                            }
+                        }
+                    }
+                    .desc-subcontainer {
+                        @apply w-full;
+                        .desc-title {
+                            h1 {
+                                @apply text-xl;
+                            }
+                            h2 {
+                                @apply text-2xl;
+                            }
+                        }
+                        .desc-content {
+                            p {
+                                @apply text-sm;
+                            }
+                        }
+                        .desc-quote {
+                            h2 {
+                                @apply text-sm;
+                            }
+                        }
+                        .desc-founder {
+                            .text-founder {
+                                p,label {
+                                    @apply text-sm;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about-us-our-mission-section {
+                @apply p-[20px];
+                .our-mission-container {
+                    @apply flex-col gap-[20px];
+                    .detail-subcontainer {
+                        @apply w-full;
+                        .icon-detail {
+                            svg {
+                                @apply w-[50px] h-[50px];
+                            }
+                        }
+                        .desc-detail {
+                            h5 {
+                                @apply text-xl;
+                            }
+                            p {
+                                @apply text-sm;
+                            }
+                            .desc-growup {
+                                @apply flex-col;
+                                .detail-growup {
+                                    @apply text-center justify-center items-center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about-us-history-section {
+                @apply p-[20px];
+                .history-container {
+                    .title-container {
+                        h1 {
+                            @apply text-2xl;
+                        }
+                        p {
+                            @apply text-sm;
+                        }
+                    }
+                    ul {
+                        @apply w-full;
+                        li {
+                            .icon-step{
+                                svg {
+                                    @apply w-[35px] h-[35px];
+                                }
+                            }
+                            .desc-step {
+                                h5 {
+                                    @apply text-sm;
+                                }
+                                p {
+                                    @apply text-xs;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about-us-strategy-section {
+                @apply p-[20px];
+                .strategy-container {
+                    @apply flex-col-reverse gap-0;
+                    .image-subcontainer {
+                        img {
+                            @apply h-[300px];
+                        }
+                    }
+                    .desc-subcontainer {
+                        @apply w-full;
+                        h1 {
+                            @apply text-2xl;
+                           
+                        }
+                        ul {
+                            li {
+                                @apply text-sm gap-[10px];
+                                span {
+                                    svg {
+                                        @apply w-[20px] h-[20px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about-us-area-section {
+                @apply p-[20px];
+                .area-container {
+                    @apply gap-[20px];
+                    h1 {
+                        @apply text-2xl;
+                    }
+                    h2 {
+                        @apply text-5xl;
+                    }
+                    p {
+                        @apply text-sm;
+                    }
+                }
+                .area-subcontainer {
+                    @apply flex-col;    
+                    .detail-subcontainer {
+                        @apply w-full;
+                        h5 {
+                            @apply text-2xl; 
+                        }
+                        p {
+                            @apply text-xs;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,6 @@
 @tailwind components;
 .main-header {
-    @apply absolute top-0 w-full flex flex-col;
+    @apply absolute top-0 w-full flex flex-col z-[20];
     .main-header-top {
         @apply px-[100px] flex justify-between items-center bg-primary text-white;
         .header-company-motto {
@@ -161,7 +161,7 @@
                 @apply hidden;
             }
             .main-header-bottom {
-                @apply px-[20px] h-[70px]; 
+                @apply px-[20px] h-[70px] bg-white; 
                 .burger-menu {
                     @apply block;
                 }
