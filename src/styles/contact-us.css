@@ -99,4 +99,56 @@
             }
         }
     }
+
+    @layer components {
+        &.mobile-responsive {
+            @apply pt-[70px];
+            .contact-us-header-section {
+                @apply p-[20px];
+                .header-container {
+                    @apply gap-[10px] w-full;
+                    h2 {
+                        @apply text-3xl;
+                    }
+                    .header-subcontainer {
+                        p {
+                            @apply text-base;
+                        }
+                    }
+                }
+            }
+            .contact-us-info-section {
+                @apply p-[20px];
+                .info-container {
+                    @apply flex-col w-full;
+                    .info-card {
+                        @apply w-full;
+                    }
+                }
+                .business-hours-container {
+                    @apply w-full;
+                    .title-subcontainer {
+                        h5 {
+                            @apply text-xl;
+                        }
+                        p {
+                            @apply text-sm;
+                        }
+                    }
+                    .cards-subcontainer {
+                        @apply w-full;
+                        .business-hour-card {
+                            @apply w-full;
+                            label {
+                                @apply text-base;
+                            }
+                            span {
+                                @apply text-sm;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

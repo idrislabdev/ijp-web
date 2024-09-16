@@ -156,4 +156,132 @@
             }
         }
     }
+    @layer components {
+        &.mobile-responsive {
+            @apply pt-[50px];
+            .careers-hero-section {
+                @apply h-[200px] p-[20px];
+                background-size: 100% 200px ;
+                .hero-container {
+                    .text-welcome {
+                        h2 {
+                            @apply text-xl;
+                        }
+                    }
+                    .text-title {
+                        @apply p-0;
+                        h1 {
+                            @apply text-2xl;
+                        }
+                    }
+                }
+            }
+            .careers-area-section {
+                @apply p-[20px];
+                .area-container {
+                    @apply gap-[20px];
+                    h1 {
+                        @apply text-2xl;
+                    }
+                    h2 {
+                        @apply text-5xl;
+                    }
+                    p {
+                        @apply text-sm;
+                    }
+                }
+                .area-subcontainer {
+                    @apply flex-col;    
+                    .detail-subcontainer {
+                        @apply w-full;
+                        h5 {
+                            @apply text-2xl; 
+                        }
+                        p {
+                            @apply text-xs;
+                        }
+                    }
+                }
+            }
+            .careers-jobs-section {
+                .select-container {
+                    @apply static px-[30px] pt-[20px];
+                    .card-select {
+                        @apply rounded-[4px];
+                        label {
+                            @apply text-sm;
+                        }
+                        select {
+                            @apply text-xs;
+                        }
+                    }
+                }
+                .jobs-container {
+                    @apply p-[20px];
+                    a {
+                        @apply w-1/2 justify-center items-center text-center;
+                        .card-body {
+                            @apply rounded-[4px];
+                            h5 {
+                                @apply text-base;
+                            }
+                            p {
+                                @apply text-sm;
+                            }
+                        }
+                    }
+                }
+            }
+            .careers-detail-section {
+                @apply p-[20px];
+                .detail-container {
+                    @apply flex-col;
+                    .summary-card {
+                        @apply w-full;
+                        .content-prolog {
+                            h5 {
+                                @apply text-base;
+                            }
+                            p {
+                                @apply text-[12px]/[18px];
+                            }
+                        }
+                        .content-responsibility {
+                            h5 {
+                                @apply text-base;
+                            }
+                            ul {
+                                @apply text-[12px]/[18px];
+                            }
+                        }
+                        .content-qualification {
+                            h5 {
+                                @apply text-base;
+                            }
+                            ul {
+                                @apply text-[12px]/[18px];
+                            }
+                        }
+                    }
+                    .form-card {
+                        @apply w-full;
+                        h5 {
+                            @apply text-base;
+                        }
+                        .form-area {
+                            label {
+                                @apply text-xs;
+                            }
+                            input {
+                                @apply h-[35px] rounded-[2px] text-[14px]/[21px];
+                            }
+                            textarea {
+                                @apply text-[14px]/[21px] rounded-[2px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

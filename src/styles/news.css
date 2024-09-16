@@ -76,5 +76,88 @@
             }
         }
     }
-
+    @layer components {
+        &.mobile-responsive {
+            @apply pt-[50px];
+            .news-hero-section {
+                @apply h-[200px] p-[20px];
+                background-size: 100% 200px ;
+                .hero-container {
+                    .text-welcome {
+                        h2 {
+                            @apply text-xl;
+                        }
+                    }
+                    .text-title {
+                        @apply p-0;
+                        h1 {
+                            @apply text-2xl;
+                        }
+                    }
+                }
+            }
+            .news-main-section {
+                @apply p-[20px];
+                .main-container {
+                    .card-main-news {
+                        @apply flex-col;
+                        img {
+                            @apply w-full;
+                        }
+                        .card-body {
+                            @apply w-full;
+                            .text-title {
+                                h5 {
+                                    @apply text-xl;
+                                }
+                            }
+                            .text-content {
+                                p {
+                                    @apply text-sm;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .news-latest-section {
+                @apply p-[20px];
+                .latest-container {
+                    @apply flex-col gap-[10px];
+                    .card-subcontainer {
+                        @apply w-full p-0;
+                    }
+                }
+            }
+            .news-detail-section {
+                @apply p-[20px];
+                .main-container {
+                    .card-main-news {
+                        @apply gap-[10px];
+                        .text-title {
+                            h2 {
+                                @apply text-xl;
+                            }
+                        }
+                        img {
+                            @apply w-full;
+                        }
+                        .card-body {
+                            @apply w-full;
+                            .text-title {
+                                h5 {
+                                    @apply text-xl;
+                                }
+                            }
+                            .text-content {
+                                p {
+                                    @apply text-sm;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

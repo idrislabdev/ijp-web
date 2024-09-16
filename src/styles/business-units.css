@@ -539,4 +539,275 @@
             }
         }
     }
+    @layer components {
+        &.mobile-responsive {
+            @apply pt-[50px];
+            .business-units-hero-section {
+                @apply h-[200px] p-[20px];
+                background-size: 100% 200px ;
+                .hero-container {
+                    .text-welcome {
+                        h2 {
+                            @apply text-xl;
+                        }
+                    }
+                    .text-title {
+                        @apply p-0;
+                        h1 {
+                            @apply text-2xl;
+                        }
+                    }
+                }
+            }
+            .business-units-profile-section{
+                @apply p-[20px];
+                .profile-container {
+                    @apply flex-col;
+                    .image-subcontainer {
+                        @apply w-full;
+                        .top-subcontainer {
+                            img {
+                                @apply h-[200px];
+                            }
+                        }
+                        .middle-subcontainer {
+                            @apply left-[38%] top-[40%];
+                            .experience-subcontainer {
+                                @apply  w-[100px] h-[100px];
+                                label {
+                                    @apply text-4xl;
+                                }
+                                span {
+                                    @apply text-xs;
+                                }
+                            }
+                        }
+                        .bottom-subcontainer {
+                            img {
+                                @apply h-[180px];
+                            }
+                        }
+                    }
+                    .desc-subcontainer {
+                        @apply w-full;
+                        .desc-title {
+                            h1 {
+                                @apply text-xl;
+                            }
+                            h2 {
+                                @apply text-2xl;
+                            }
+                        }
+                        .desc-content {
+                            p {
+                                @apply text-sm;
+                            }
+                        }
+                        .desc-quote {
+                            h2 {
+                                @apply text-sm;
+                            }
+                        }
+                        .desc-founder {
+                            .text-founder {
+                                p,label {
+                                    @apply text-sm;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .business-units-profile-ijsa-section {
+                @apply p-[20px];
+                .profile-container {
+                    @apply flex-col;
+                    .image-subcontainer {
+                        @apply w-full;
+                        .top-subcontainer {
+                            img {
+                                @apply h-[200px];
+                            }
+                        }
+                        .middle-subcontainer {
+                            @apply left-[38%] top-[40%];
+                            .experience-subcontainer {
+                                @apply  w-[100px] h-[100px];
+                                label {
+                                    @apply text-4xl;
+                                }
+                                span {
+                                    @apply text-xs;
+                                }
+                            }
+                        }
+                        .bottom-subcontainer {
+                            img {
+                                @apply h-[180px];
+                            }
+                        }
+                    }
+                    .desc-subcontainer {
+                        @apply w-full;
+                        .desc-title {
+                            h1 {
+                                @apply text-xl;
+                            }
+                            h2 {
+                                @apply text-2xl;
+                            }
+                        }
+                        .desc-content {
+                            p {
+                                @apply text-sm;
+                            }
+                        }
+                    }
+                }
+            }
+            .business-units-our-mission-ijsa-section {
+                @apply p-[20px];
+                .our-mission-container {
+                    @apply flex-col gap-[20px];
+                    .detail-subcontainer{
+                        @apply w-full;
+                        .icon-detail {
+                            svg {
+                                @apply w-[50px] h-[50px];
+                            }
+                        }
+                        .desc-detail {
+                            h5 {
+                                @apply text-xl;
+                            }
+                            p {
+                                @apply text-sm;
+                            }
+                            .desc-growup {
+                                @apply flex-col;
+                                .detail-growup {
+                                    @apply text-center justify-center items-center;
+                                }
+                            }
+                        }
+                    }
+                    .detail-subcontainer-2 {
+                        @apply flex-col gap-[20px];
+                    }
+                }
+            }
+            .business-units-our-mission-section {
+                @apply p-[20px];
+                .our-mission-container {
+                    @apply flex-col gap-[20px];
+                    .detail-subcontainer {
+                        @apply w-full;
+                        .icon-detail {
+                            svg {
+                                @apply w-[50px] h-[50px];
+                            }
+                        }
+                        .desc-detail {
+                            h5 {
+                                @apply text-xl;
+                            }
+                            p {
+                                @apply text-sm;
+                            }
+                            .desc-growup {
+                                @apply flex-col;
+                                .detail-growup {
+                                    @apply text-center justify-center items-center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .business-units-products-section {
+                @apply p-[20px];  
+                .products-container {
+                    @apply flex-col w-full;
+                    .products-title{
+                        @apply w-full;
+                        h1 {
+                            @apply text-xl;
+                        }
+                        p {
+                            @apply text-xs;
+                        }
+                    }
+                    .products-subcontainer{
+                        @apply w-full;
+                        .our-product-wrapper{
+                            @apply w-[170px];
+                        }
+                    }
+                }
+            }
+            .business-units-products-section {
+                @apply p-[20px];
+                .products-ijsa-container{
+                    .products-title {
+                        h1 {
+                            @apply text-xl;
+                        }
+                        p {
+                            @apply text-xs;
+                        }
+                    }
+                    .products-subcontainer{
+                        @apply flex-col justify-center items-center;
+                        .our-product-wrapper {
+                            @apply w-full;
+                        }
+                    }
+                }
+            }
+            .business-units-contact-us-section {
+                @apply p-[20px];
+                .contact-us-container {
+                    .title-subcontainer{
+                        h1 {
+                            @apply text-xl;
+                        }
+                    }
+                    .detail-subcontainer{
+                        @apply flex-col gap-[10px];
+                        .sub-detail {
+                            @apply gap-[5px];
+                            svg {
+                                @apply w-[30px] h-[30px];
+                            }
+                            h5 {
+                                @apply text-base;
+                            }
+                            p {
+                                @apply text-sm;
+                            }
+                            span {
+                                @apply text-xs;
+                            }
+                        }
+                    }
+                }
+            }
+            .business-units-area-section {
+                @apply p-[20px];
+                .area-container {
+                    .title-subcontainer {
+                        h1{
+                            @apply text-xl;
+                        }
+                        h2 {
+                            @apply text-5xl;
+                        }
+                        p {
+                            @apply text-sm;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
