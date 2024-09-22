@@ -4,16 +4,8 @@ const fs = require('fs').promises
 // let users = require('src/app/data/users.json');
 // let  users = fs.readFile('src/app/data/users.json')
 
-export const usersRepo = {
-    // getAll: () => users,
-    getById: (id:any) => users.find((x:any) => x.id.toString() === id.toString()),
-    // find: (x:any) => users.find(x),
-    create,
-    update,
-    delete: _delete
-};
 
-async function create(user:any) {
+const create = async(user:any) => {
     let file = await fs.readFile('src/app/data/users.json');
     const users = JSON.parse(file)
 
@@ -25,36 +17,45 @@ async function create(user:any) {
     user.dateUpdated = new Date().toISOString();
 
     // add and save user
-    users.push(user);
-    saveData();
+    // users.push(user);
+    saveData(user);
 }
 
-async function update(id:any, params:any) {
-    let file_data = await fs.readFile('src/app/data/users.json');
-    const users = JSON.parse(file_data)
-    const user = users.find((x:any) => x.id.toString() === id.toString());
+// async function update(id:any, params:any) {
+//     let file_data = await fs.readFile('src/app/data/users.json');
+//     const users = JSON.parse(file_data)
+//     const user = users.find((x:any) => x.id.toString() === id.toString());
 
-    // set date updated
-    user.dateUpdated = new Date().toISOString();
+//     // set date updated
+//     user.dateUpdated = new Date().toISOString();
 
-    // update and save
-    Object.assign(user, params);
-    saveData();
-}
+//     // update and save
+//     Object.assign(user, params);
+//     saveData();
+// }
 
 // prefixed with underscore '_' because 'delete' is a reserved word in javascript
-async function _delete(id:any) {
+// async function _delete(id:any) {
+//     let file_data = await fs.readFile('src/app/data/users.json');
+//     let users = JSON.parse(file_data)
+//     // filter out deleted user and save
+//     users = users.filter((x:any) => x   .id.toString() !== id.toString());
+//     saveData();
+    
+// }
+
+const saveData = async(user:any) => {
     let file_data = await fs.readFile('src/app/data/users.json');
     let users = JSON.parse(file_data)
-    // filter out deleted user and save
-    users = users.filter((x:any) => x   .id.toString() !== id.toString());
-    saveData();
-    
-}
-
-async function saveData() {
-    let file_data = await fs.readFile('src/app/data/users.json');
-    const users = JSON.parse(file_data)
-    console.log(users)
+     users.push(user)
     await fs.writeFile('src/app/data/users.json', JSON.stringify(users, null, 4));
 }
+
+export const usersRepo = {
+    // getAll: () => users,
+    // getById: (id:any) => users.find((x:any) => x.id.toString() === id.toString()),
+    // find: (x:any) => users.find(x),
+    create,
+    // update,
+    // delete: _delete
+};

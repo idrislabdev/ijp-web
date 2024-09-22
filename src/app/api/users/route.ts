@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     
         user.hash = bcrypt.hashSync(user.password, 10);    
         usersRepo.create(user);
-        fs.writeFile('src/app/data/users.json', JSON.stringify([user], null, 4));
+        // fs.writeFile('src/app/data/users.json', JSON.stringify([user], null, 4));
 
         return NextResponse.json({ status: "success", user:user});
     } catch (e) {
