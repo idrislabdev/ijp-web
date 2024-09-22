@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import {  usersRepo } from '@/@core/helpers/users-repo';
-const fs = require('fs').promises
+import { promises as fs } from 'fs';
 
 
 // export async function POST(req: NextRequest) {
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
 
 export async function GET() {
     try {
-        let file_data = await fs.readFile('src/app/data/users.json');
+        let file_data = await fs.readFile(process.cwd() + '/src/app/data/users.json', 'utf8');
         let users = JSON.parse(file_data)
 
         return NextResponse.json({ status: "success", user:users});
