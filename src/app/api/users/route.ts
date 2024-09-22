@@ -42,3 +42,15 @@ export async function POST(req: Request) {
       return NextResponse.json({ status: "fail", error: e });
     }
 }
+
+export async function GET() {
+    try {
+        let file_data = await fs.readFile('src/app/data/users.json');
+        let users = JSON.parse(file_data)
+
+        return NextResponse.json({ status: "success", user:users});
+    } catch (e) {
+      console.error(e);
+      return NextResponse.json({ status: "fail", error: e });
+    }
+}

@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "username": "rifai",
+        "password": "12345",
+        "hash": "$2a$10$jxRJhMJ2Rjg1bWIr8O8fvOaQr0CQdsMlzt2GVswwRuxup2h.INYBK",
+        "id": 1,
+        "dateCreated": "2024-09-22T13:34:28.600Z",
+        "dateUpdated": "2024-09-22T13:34:28.600Z"
+    }
+]
