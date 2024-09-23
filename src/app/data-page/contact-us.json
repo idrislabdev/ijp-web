@@ -1,0 +1,124 @@
+{
+    "header" : {
+        "id" : {
+            "title" : "",
+            "description" : ""
+        },
+        "en" : {
+            "title" : "",
+            "description" : ""
+        }
+    },
+    "info": {
+        "id" : {
+            "email" : {
+                "title" : "",
+                "description" : "",
+                "value" : "",
+                "link_text" : ""
+            },
+            "phone" : {
+                "title" : "",
+                "description" : "",
+                "value" : "",
+                "link_text" : ""
+            },
+            "office" : {
+                "title" : "",
+                "description" : "",
+                "value" : "",
+                "link_text" : ""
+            }
+        },
+        "en" : {
+            "email" : {
+                "title" : "",
+                "description" : "",
+                "value" : "",
+                "link_text" : ""
+            },
+            "phone" : {
+                "title" : "",
+                "description" : "",
+                "value" : "",
+                "link_text" : ""
+            },
+            "office" : {
+                "title" : "",
+                "description" : "",
+                "value" : "",
+                "link_text" : ""
+            }
+        }
+    },
+    "office_hour" : {
+        "id" : {
+            "title": "",
+            "description": "",
+            "hours": {
+                "sunday_holiday" : {
+                    "text" : "",
+                    "value" : ""
+                },
+                "monday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "tuesday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "wednesday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "thursday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "friday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "saturday" :{
+                    "text" : "",
+                    "value" : ""
+                }
+            }
+        },
+        "en" : {
+            "title": "",
+            "description": "",
+            "hours": {
+                "sunday_holiday" : {
+                    "text" : "",
+                    "value" : ""
+                },
+                "monday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "tuesday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "wednesday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "thursday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "friday" :{
+                    "text" : "",
+                    "value" : ""
+                },
+                "saturday" :{
+                    "text" : "",
+                    "value" : ""
+                }
+            }
+        }
+    }
+}

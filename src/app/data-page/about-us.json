@@ -1,0 +1,100 @@
+{
+    "header" : {
+        "id": {
+            "title" : "",
+            "subtitle" : ""
+        },
+        "en": {
+            "title" : "",
+            "subtitle" : ""
+        },
+        "image_url" : null
+    },
+    "profile" : {
+        "id": {
+            "title" : "",
+            "subtitle" : "",
+            "description_1": "",
+            "description_2": "",
+            "quote" : ""
+        },
+        "en": {
+            "title" : "",
+            "subtitle" : "",
+            "description_1": "",
+            "description_2": "",
+            "quote" : ""
+        },
+        "image_1_url" : null,
+        "image_2_url" : null,
+        "image_3_url" : null
+    },
+    "vission_mission" : {
+        "id" : {
+            "our_missions" : {
+                "title" : "",
+                "contents" : []
+            },
+            "our_vissions" : {
+                "title" : "",
+                "contents" : []
+            },
+            "our_values" : {
+                "title" : "",
+                "contents" : []
+            }
+        },
+        "en" : {
+            "our_missions" : {
+                "title" : "",
+                "contents" : []
+            },
+            "our_vissions" : {
+                "title" : "",
+                "contents" : []
+            },
+            "our_values" : {
+                "title" : "",
+                "contents" : []
+            }
+        }
+    },
+    "histories" : {
+        "id" : {
+            "title" : "",
+            "subtitle" : "",
+            "contents" : []
+        },
+        "en" : {
+            "title" : "",
+            "subtitle" : "",
+            "contents" : []
+        }
+    },
+    "strategies" : {
+        "id" : {
+            "title" : "",
+            "subtitle" : "",
+            "contents" : []
+        },
+        "en" : {
+            "title" : "",
+            "subtitle" : "",
+            "contents" : []
+        }
+    },
+    "market_area" : {
+        "id" : {
+            "title" : "",
+            "subtitle_1" : "",
+            "subtitle_2" : "",
+            "contents" : []
+        },
+        "en" : {
+            "title" : "",
+            "subtitle_1" : "",
+            "subtitle_2" : "",
+            "contents" : []
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "header" : {
+        "id" : {
+            "title" : "",
+            "description" : ""
+        },
+        "en" : {
+            "title" : "",
+            "description" : ""
+        }
+    },
+    "office_location" : {
+        "id" : {
+            "title" : "",
+            "subtitle" : "",
+            "description": "",
+            "offices" : []
+        },
+        "en" : {
+            "title" : "",
+            "subtitle" : "",
+            "description": "",
+            "offices" : []
+        }
+    },
+    "jobs_area" : {
+        "id" : {
+            "title": "",
+            "label" : ""
+        },
+        "en" : {
+            "title": "",
+            "label" : ""
+        }
+    }
+}

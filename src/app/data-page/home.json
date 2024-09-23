@@ -1,0 +1,65 @@
+{
+    "header" : {
+        "id": {
+            "title" : "",
+            "subtitle_1" : "",
+            "subtitle_2" : "",
+            "button_text" : ""
+        },
+        "en": {
+            "title" : "",
+            "subtitle_1" : "",
+            "subtitle_2" : "",
+            "button_text" : ""
+        },
+        "image_url" : null
+    },
+    "about" : {
+        "id" : {
+            "title" : "",
+            "subtitle": "",
+            "description" : ""
+        },
+        "en" : {
+            "title" : "",
+            "subtitle": "",
+            "description" : ""
+        },
+        "image_url" : null
+    },
+    "business_units" : {
+        "id" : {
+            "title" : "", 
+            "subtitle" : ""
+        },
+        "en" : {
+            "title" : "", 
+            "subtitle" : ""
+        },
+        "image_url" : null
+    },
+    "our_products" : {
+        "id" : {
+            "title" : "",
+            "subtitle" : "",
+            "button_text" : ""
+        },
+        "en" : {
+            "title" : "",
+            "subtitle" : "",
+            "button_text" : ""
+        }
+    },
+    "news" : {
+        "id" : {
+            "title" : "",
+            "subtitle" : "",
+            "button_text" : ""
+        },
+        "en" : {
+            "title" : "",
+            "subtitle" : "",
+            "button_text" : ""
+        }
+    }
+}
