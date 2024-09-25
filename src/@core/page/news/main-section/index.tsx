@@ -30,7 +30,7 @@ const NewsMainSection = (props: { lang:string, objLang: any}) => {
                             </p>
                         </div>
                         <div className='text-readmore'>
-                            <Link href={`/${lang}/news/news-slug`}>Lebih Lengkap</Link>
+                            <Link href={`/${lang}/news/news-slug`}>{objLang[lang].link_text}</Link>
                         </div>
                     </div>
                 </div>

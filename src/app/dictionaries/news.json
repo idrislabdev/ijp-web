@@ -7,14 +7,17 @@
         "en" : {
             "title" : "Selamat Datang",
             "description" : "BERITA UNICORP (UNI CORPORATION)"
-        },
+        }
     },
-    "detail" : {
+    "other" : {
         "id" : {
-            "title": "Berita Terkini"
+            "latest_text": "Berita Terkini",
+            "link_text" : "Lebih Lengkap"
+
         },
         "en" : {
-            "title": "Berita Terkini"
+            "latest_text": "Berita Terkini",
+            "link_text" : "Read More"
         }
     }
 }

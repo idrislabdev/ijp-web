@@ -1,16 +1,19 @@
 import React from 'react'
 
-import '@/styles/news.css'
-import NewsLatestSection from '@/@core/page/news/latest-section'
-import NewsMainSection from '@/@core/page/news/main-section'
 import NewsHeroSection from '@/@core/page/news/hero-section'
 import NewsDetailSection from '@/@core/page/news/detail-section'
-export default async function  NewsBlogPage({ params }: any) {
+import { getDictionariesNews } from '@/app/dictionaries'
 
+import '@/styles/news.css'
+export default async function  NewsBlogPage({ params }: any) {
+    const { 
+        header, 
+        other
+    } = await getDictionariesNews();
     return (
         <main className='news-page sm:mobile-responsive'>
-            <NewsHeroSection objLang={null} />
-            <NewsDetailSection lang={params.lang} objLang={null} />
+            <NewsHeroSection objLang={header} lang={params.lang} />
+            <NewsDetailSection objLang={other} lang={params.lang} />
         </main>
     )
   }

@@ -50,6 +50,11 @@
                                 }
                             }
                         }
+                        &.mail {
+                            svg {
+                                @apply w-[25px] h-[25px];
+                            }
+                        }
                     }
                 }
                 .card-content {

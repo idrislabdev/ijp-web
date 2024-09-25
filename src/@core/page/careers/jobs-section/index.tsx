@@ -26,11 +26,11 @@ const CareersJobsSection = (props: {lang:string, objLang: any}) => {
     return (
         <section className='careers-jobs-section'>
             <div className='background-container'>
-                <h5>Available Jobs</h5>
+                <h5>{objLang[lang].title}</h5>
             </div>
             <div className='select-container'>
                 <div className='card-select'>
-                    <label>Lokasi Pekerjaan</label>
+                    <label>{objLang[lang].label}</label>
                     <select onChange={handleChange}>
                         <option value="Semua">Semua</option>
                         <option value="Kantor Pusat">Kantor Pusat</option>

@@ -1,28 +1,22 @@
 import React from 'react'
 
-const CareersAreaSection = (props: {objLang:any}) => {
-    const { objLang } = props
+const CareersAreaSection = (props: {objLang:any, lang:string}) => {
+    const { objLang, lang } = props
     return (
         <section className='careers-area-section'>
             <div className='area-container'>
                 <div className='title-subcontainer'>
-                    <h1>Lokasi Kantor</h1>
-                    <h2>UNICORP</h2>
-                    <p>UNICORP mempunyai beberapa lokasi kantor di seluruh Indonesia</p>
+                    <h1>{objLang[lang].title}</h1>
+                    <h2>{objLang[lang].subtitle}</h2>
+                    <p>{objLang[lang].description}</p>
                 </div>
                 <div className='area-subcontainer'>
-                    <div className='detail-subcontainer'>
-                        <h5>SURABAYA</h5>
-                        <p>Menghandle pemasaran untuk Indonesia bagian Timur</p>
-                    </div>
-                    <div className='detail-subcontainer'>
-                        <h5>SEMARANG</h5>
-                        <p>Menghandle pemasaran untuk Indonesia bagian Tengah</p>
-                    </div>
-                    <div className='detail-subcontainer'>
-                        <h5>JAKARTA</h5>
-                        <p>Menghandle pemasaran untuk Indonesia bagian Barat</p>
-                    </div>
+                    {objLang[lang].offices.map((item:any, index:number)=> (
+                        <div className='detail-subcontainer' key={index}>
+                            <h5>{item.title}</h5>
+                            <p>{item.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

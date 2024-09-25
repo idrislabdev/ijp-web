@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContactUsMapSection = (props: {objLang:any}) => {
+const ContactUsMapSection = (props: {objLang:any, lang:string}) => {
     return (
     <section className='contact-us-map-section'>
         <div className='map-container'>

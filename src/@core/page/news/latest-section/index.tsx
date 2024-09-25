@@ -10,7 +10,7 @@ const NewsLatestSection = (props: { lang:string, objLang: any}) => {
     return (
         <section className='news-latest-section'>
             <div className='title-container'>
-                <h2>Berita Terkini</h2>
+                <h2>{objLang[lang].latest_text}</h2>
             </div>
             <div className='latest-container'>
                 {
@@ -32,7 +32,7 @@ const NewsLatestSection = (props: { lang:string, objLang: any}) => {
                                         </p>
                                     </div>
                                     <div className='text-readmore'>
-                                        <Link href={`/${lang}/news/news-slug`}>Lebih Lengkap</Link>
+                                        <Link href={`/${lang}/news/news-slug`}>{objLang[lang].link_text}</Link>
                                     </div>
                                 </div>
                             </div>
