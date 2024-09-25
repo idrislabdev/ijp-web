@@ -9,8 +9,7 @@ import '@/styles/contact-us.css'
 export default async function  ContactUsPage({ params }: any) {
   const { 
     header, 
-    info,
-    office_hour
+    info
   } = await getDictionariesContactUs();
     return (
       <main className='contact-us-page sm:mobile-responsive'>
