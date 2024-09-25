@@ -5,18 +5,27 @@ import AboutUsOurMission from '@/@core/page/about-us/our-mission'
 import AboutUsStrategySection from '@/@core/page/about-us/strategy-section'
 import AboutUsHistorySection from '@/@core/page/about-us/history-section'
 import AboutUsAreaSection from '@/@core/page/about-us/area-section'
+import { getDictionariesAbout } from '@/app/dictionaries'
 
 import '@/styles/about-us.css'
 
 export default async function  MainPage({ params }: any) {
+  const { 
+    header, 
+    profile,
+    histories,
+    market_area,
+    strategies,
+    vission_mission
+   } = await getDictionariesAbout();
   return (
     <main className='about-us-page sm:mobile-responsive'>
-      <AboutUsHeroSection />
-      <AboutUsProfileSection />
-      <AboutUsOurMission />
-      <AboutUsHistorySection />
-      <AboutUsStrategySection />
-      <AboutUsAreaSection />
+      <AboutUsHeroSection objLang={header} lang={params.lang} />
+      <AboutUsProfileSection objLang={profile} lang={params.lang} />
+      <AboutUsOurMission objLang={vission_mission} lang={params.lang}/>
+      <AboutUsHistorySection objLang={histories} lang={params.lang}/>
+      <AboutUsStrategySection objLang={strategies} lang={params.lang}/>
+      <AboutUsAreaSection objLang={market_area} lang={params.lang}/>
     </main>
   )
 }

@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const HomeBannerSection = (props:{lang:string}) => {
-  const { lang } = props
+const HomeBannerSection = (props:{objLang:any, lang:string}) => {
+  const { objLang, lang } = props
   return (
     <section className='home-banner-section'>
       <div className='home-banner-container'>

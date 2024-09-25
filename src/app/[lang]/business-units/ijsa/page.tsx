@@ -8,14 +8,9 @@ import BusinessUnitsProfileIjsaSection from '@/@core/page/business-units/profile
 import BusinessUnitsContactUsSection from '@/@core/page/business-units/contact-us-section';
 import BusinessUnitsAreaSection from '@/@core/page/business-units/area-section';
 
-import { getDictionariesContactUs } from '@/app/dictionaries';
 import '@/styles/business-units.css'
 
 export default async function  IjsaPage({ params }: any) {
-    const {
-        header_section, 
-        info_section,
-    } = await getDictionariesContactUs(params.lang);
 
     return (
       <main className='business-units-page sm:mobile-responsive'>

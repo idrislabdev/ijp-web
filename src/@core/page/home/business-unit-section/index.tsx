@@ -1,7 +1,7 @@
 import React from 'react'
 
-const HomeBusinessUnitSection = (props: {objLang:any}) => {
-    const { objLang } = props
+const HomeBusinessUnitSection = (props: {objLang:any, lang:string}) => {
+    const { objLang, lang } = props
     return (
         <section className='home-business-unit-section'>
             <div className='business-unit-container'>

@@ -1,0 +1,172 @@
+{
+    "header" : {
+        "id": {
+            "title" : "TENTANG KAMI",
+            "subtitle" : "UNICORP (UNI CORPORATION)"
+        },
+        "en": {
+            "title" : "ABOUT US",
+            "subtitle" : "UNICORP (UNI CORPORATION)"
+        },
+        "image_url" : null
+    },
+    "profile" : {
+        "id": {
+            "title" : "Profil Perusahaan",
+            "subtitle" : "Unicorp adalah grup perusahaan yang bergerak di berbagai bidang industri",
+            "description_1": "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat.",
+            "description_2": "Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik.",
+            "quote" : "Odio eu feugiat pretium nibh ipsum. Pellentesque habitant morbi tristique senectus et netus et. Cursus sit amet dictum sit amet justo donec enim. Massa sapien faucibus et molestie ac feugiat."
+        },
+        "en": {
+            "title" : "Profil Perusahaan",
+            "subtitle" : "Unicorp adalah grup perusahaan yang bergerak di berbagai bidang industri",
+            "description_1": "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat.",
+            "description_2": "Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik.",
+            "quote" : "Odio eu feugiat pretium nibh ipsum. Pellentesque habitant morbi tristique senectus et netus et. Cursus sit amet dictum sit amet justo donec enim. Massa sapien faucibus et molestie ac feugiat."
+        },
+        "image_1_url" : "/images/galleries/gallery-1.jpg",
+        "image_2_url" : "/images/galleries/gallery-2.jpeg",
+        "image_3_url" : "/images/galleries/gallery-6.jpg"
+    },
+    "vission_mission" : {
+        "id" : {
+            "our_vissions" : {
+                "title" : "Visi Kami",
+                "contents" : [
+                    "Terus berinovasi menciptakan produk-produk baru yang berkualitas & bersaing yang didukung pengembangan sumber daya manusia serta pengembangan perusahaan berkesinambungan.",
+                    "Fokus pada kepuasan pelanggan dengan memberikan produk terbaik dengan kualitas dan layanan terbaik.",
+                    "Memberikan kesempatan sumber daya manusia era milenial untuk berkarya, berkontribusi dengan didukung proses pengembangan kemampuannya sehingga UNICORP akan berkembang lebih cepat untuk rencana jangka panjang."
+                ]
+            },
+            "our_missions" : {
+                "title" : "Misi Kami",
+                "contents" : ["Menjadi leader di industri makanan, retail, pertanian & industri lainnya di Indonesia."]
+            },
+            "our_values" : {
+                "title" : "Nilai Kami",
+                "subtitle" : "GROW UP",
+                "contents" : [
+                    {"title" : "GROW ORIENTATION", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "RELIGIOUS", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "OUTSTANDING (EXCELLENT)", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "WINNING TEAM", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "UNIQUE", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "PROFESSIONAL", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+                ]
+            }
+        },
+        "en" : {
+            "our_vissions" : {
+                "title" : "Visi Kami",
+                "contents" : [
+                    "Terus berinovasi menciptakan produk-produk baru yang berkualitas & bersaing yang didukung pengembangan sumber daya manusia serta pengembangan perusahaan berkesinambungan.",
+                    "Fokus pada kepuasan pelanggan dengan memberikan produk terbaik dengan kualitas dan layanan terbaik.",
+                    "Memberikan kesempatan sumber daya manusia era milenial untuk berkarya, berkontribusi dengan didukung proses pengembangan kemampuannya sehingga UNICORP akan berkembang lebih cepat untuk rencana jangka panjang."
+                ]
+            },
+            "our_missions" : {
+                "title" : "Misi Kami",
+                "contents" : ["Menjadi leader di industri makanan, retail, pertanian & industri lainnya di Indonesia."]
+            },
+            "our_values" : {
+                "title" : "Nilai Kami",
+                "subtitle" : "GROW UP",
+                "contents" : [
+                    {"title" : "GROW ORIENTATION", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "RELIGIOUS", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "OUTSTANDING (EXCELLENT)", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "WINNING TEAM", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "UNIQUE", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+                    {"title" : "PROFESSIONAL", "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+                ]
+            }
+        }
+    },
+    "histories" : {
+        "id" : {
+            "title" : "Sejarah UNICORP",
+            "subtitle" : "UNICORP dimulai dengan CV. INDO JAYA PUTRA (perdagangan bahan kimia makanan) yang didirikan pada tahun 2001, kemudian diikuti oleh CV. INDO JAYA SUKSES ABADI (pembuatan sarung tangan plastik) pada tahun 2018.",
+            "contents" : [
+                {
+                    "title" : "Tahun 2001", 
+                    "subtitle" : "IJP (INDO JAYA PUTRA) Didirikan", 
+                    "description" : "Awal mula perusahaan pertama adalah CV. INDO JAYA PUTRA (importir, distributor, produsen bahan kimia khususnya di industri makanan) yang berdiri pada tahun 2001."
+                },
+                {
+                    "title" : "Tahun 2018", 
+                    "subtitle" : "IJSA (INDO JAYA SUKSES ABADI) Didirikan", 
+                    "description" : "Kemudian disusul CV. Indo Jaya Sukes Abadi (produsen sarung tangan plastik) yang berdiri pada tahun 2018."
+                },
+                {
+                    "title" : "Tahun 2020", 
+                    "subtitle" : "UNICORP Didirikan", 
+                    "description" : "Dengan inovasi terbaru, Unicorp didirikan untuk membentuk grup bisnis yang terintegrasi dan mendukung semua perusahan cabang untuk berkembang lebih cepat."
+                }
+            ]
+        },
+        "en" : {
+            "title" : "Sejarah UNICORP",
+            "subtitle" : "UNICORP dimulai dengan CV. INDO JAYA PUTRA (perdagangan bahan kimia makanan) yang didirikan pada tahun 2001, kemudian diikuti oleh CV. INDO JAYA SUKSES ABADI (pembuatan sarung tangan plastik) pada tahun 2018.",
+            "contents" : [
+                {
+                    "title" : "Tahun 2001", 
+                    "subtitle" : "IJP (INDO JAYA PUTRA) Didirikan", 
+                    "description" : "Awal mula perusahaan pertama adalah CV. INDO JAYA PUTRA (importir, distributor, produsen bahan kimia khususnya di industri makanan) yang berdiri pada tahun 2001."
+                },
+                {
+                    "title" : "Tahun 2018", 
+                    "subtitle" : "IJSA (INDO JAYA SUKSES ABADI) Didirikan", 
+                    "description" : "Kemudian disusul CV. Indo Jaya Sukes Abadi (produsen sarung tangan plastik) yang berdiri pada tahun 2018."
+                },
+                {
+                    "title" : "Tahun 2020", 
+                    "subtitle" : "UNICORP Didirikan", 
+                    "description" : "Dengan inovasi terbaru, Unicorp didirikan untuk membentuk grup bisnis yang terintegrasi dan mendukung semua perusahan cabang untuk berkembang lebih cepat."
+                }
+            ]
+        }
+    },
+    "strategies" : {
+        "id" : {
+            "title" : "Our Strategy",
+            "subtitle" : "",
+            "contents" : [
+                "Mengembangkan sumber daya manusia untuk berinovasi dan menciptakan produk - produk baru.",
+                "Berkolaborasi dengan ahli untuk menciptakan pasar baru dan membuat segmentasi sehingga perusahaan dapat berkembang dengan cepat.",
+                "Berkolaborasi dengan ahli untuk menciptakan pasar baru dan membuat segmentasi sehingga perusahaan dapat berkembang dengan cepat."
+            ]
+        },
+        "en" : {
+            "title" : "Our Strategy",
+            "subtitle" : "",
+            "contents" : [
+                "Mengembangkan sumber daya manusia untuk berinovasi dan menciptakan produk - produk baru.",
+                "Berkolaborasi dengan ahli untuk menciptakan pasar baru dan membuat segmentasi sehingga perusahaan dapat berkembang dengan cepat.",
+                "Berkolaborasi dengan ahli untuk menciptakan pasar baru dan membuat segmentasi sehingga perusahaan dapat berkembang dengan cepat."
+            ]
+        }
+    },
+    "market_area" : {
+        "id" : {
+            "title" : "Area Perdagangan",
+            "subtitle_1" : "UNICORP",
+            "subtitle_2" : "UNICORP mempunyai area perdangangan di seluruh Indonesia",
+            "contents" : [
+                {"title": "SURABAYA","description": "Menghandle pemasaran untuk Indonesia bagian Timur"},
+                {"title": "SEMARANG","description": "Menghandle pemasaran untuk Indonesia bagian Tengah"},
+                {"title": "JAKARTA","description": "Menghandle pemasaran untuk Indonesia bagian Barat"}
+            ]
+        },
+        "en" : {
+            "title" : "Area Perdagangan",
+            "subtitle_1" : "UNICORP",
+            "subtitle_2" : "UNICORP mempunyai area perdangangan di seluruh Indonesia",
+            "contents" : [
+                {"title": "SURABAYA","description": "Menghandle pemasaran untuk Indonesia bagian Timur"},
+                {"title": "SEMARANG","description": "Menghandle pemasaran untuk Indonesia bagian Tengah"},
+                {"title": "JAKARTA","description": "Menghandle pemasaran untuk Indonesia bagian Barat"}
+            ]
+        }
+    }
+}

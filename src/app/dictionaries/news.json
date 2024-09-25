@@ -1,0 +1,20 @@
+{
+    "header" : {
+        "id" : {
+            "title" : "Selamat Datang",
+            "description" : "BERITA UNICORP (UNI CORPORATION)"
+        },
+        "en" : {
+            "title" : "Selamat Datang",
+            "description" : "BERITA UNICORP (UNI CORPORATION)"
+        },
+    },
+    "detail" : {
+        "id" : {
+            "title": "Berita Terkini"
+        },
+        "en" : {
+            "title": "Berita Terkini"
+        }
+    }
+}

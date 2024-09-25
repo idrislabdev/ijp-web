@@ -4,7 +4,8 @@ import axiosInstance from '@/@core/utils/axios';
 import Image from 'next/image'
 import React from 'react'
 
-const HomeOurProductsSection = () => {
+const HomeOurProductsSection = (props: {objLang:any, lang:string}) => {
+    const { objLang, lang } = props
     const downloadCatalog = async () => {
         const resp = await axiosInstance.get(`/catalogs/sample-catalog.pdf`);
 

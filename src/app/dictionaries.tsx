@@ -1,6 +1,5 @@
-const dictionariesContactUs: any = {
-  id: () => import("./dictionaries/contact-us/id.json").then((module) => module.default),
-  en: () => import("./dictionaries/contact-us/en.json").then((module) => module.default),
-};
+const dictionariesHome = import("./dictionaries/home.json").then((module) => module.default)
+const dictionariesAbout = import("./dictionaries/about-us.json").then((module) => module.default)
 
-export const getDictionariesContactUs = async (locale: any) => dictionariesContactUs[locale]();
+export const getDictionariesHome = async () => dictionariesHome;
+export const getDictionariesAbout = async () => dictionariesAbout;

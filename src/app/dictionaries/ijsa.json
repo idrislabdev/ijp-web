@@ -1,0 +1,175 @@
+{
+    "header" : {
+        "id": {
+            "title" : "Unit Bisnis",
+            "subtitle" : "IJSA (Indo Jaya Sukses Abadi)"
+        },
+        "en": {
+            "title" : "Business Units",
+            "subtitle" : "IJSA (Indo Jaya Sukses Abadi)"
+        },
+        "image_url" : null
+    },
+    "profile" : {
+        "id" : {
+                "title" : "Profil Unit Bisnis (IJSA)",
+                "description_1" : "CV. INDO JAYA SUKSES ABADI adalah perusahaan yang bergerak di bidang sarung tangan plastik (HDPE), yang beralamat di Pergudangan Mutiara Tambak Langon B14 Surabaya – Jawa Timur, didirikan pada bulan September 2018. Perusahaan ini untuk melengkapi dan mensupport CV. INDO JAYA PUTRA yang merupakan perusahaan pertama dari induk UNICORP yang merupakan importir, produsen, distribusi untuk bahan kimia, khususnya di industri makanan retail dan pertanian.",
+                "description_2" : "Pada awalnya, CV. INDO JAYA SUKSES ABADI hanya memproduksi sarung tangan plastik sesuai dengan kebutuhan pelanggan dengan merk INAGLOVE. Dengan semakin bervariasinya permintaan pelanggan, maka kami berexpansi untuk membuat beberapa merk baru dengan spesifikasi yang berbeda. Produk sarung tangan plastik ini bersertifikasi (Sertifikat Halal, Food Grade dan MSDS), ramah lingkungan dan bisa dipakai untuk berbagai bidang pekerjaan (Salon, Melukis, Memasak,dll.).",
+                "description_3" : "Bahan baku produk sarung tangan kami adalah HDPE (High-density Polyethylene). Dengan menggunakan mesin canggih dan mutakhir yang memiliki kecepatan dan kualitas seal yang bagus, kami memproduksi 2 tipe sarung tangan plastik, yaitu sarung tangan pendek (27-29 cm) dan sarung tangan panjang (47 cm), dengan macam ketebalan: 8 micron, 10 micron, dan 25 micron, ataupun permukaan bisa polos dan emboss (tampak ada bintik-bintik), juga untuk warna bisa natural (bening), biru dan warna lainnya. Jadi kami bisa memenuhi spesifikasi untuk ukuran, tebal dan warna sesuai kebutuhan pelanggan."
+        },
+        "en" : {
+                "title" : "Profil Unit Bisnis (IJSA)",
+                "description_1" : "CV. INDO JAYA SUKSES ABADI adalah perusahaan yang bergerak di bidang sarung tangan plastik (HDPE), yang beralamat di Pergudangan Mutiara Tambak Langon B14 Surabaya – Jawa Timur, didirikan pada bulan September 2018. Perusahaan ini untuk melengkapi dan mensupport CV. INDO JAYA PUTRA yang merupakan perusahaan pertama dari induk UNICORP yang merupakan importir, produsen, distribusi untuk bahan kimia, khususnya di industri makanan retail dan pertanian.",
+                "description_2" : "Pada awalnya, CV. INDO JAYA SUKSES ABADI hanya memproduksi sarung tangan plastik sesuai dengan kebutuhan pelanggan dengan merk INAGLOVE. Dengan semakin bervariasinya permintaan pelanggan, maka kami berexpansi untuk membuat beberapa merk baru dengan spesifikasi yang berbeda. Produk sarung tangan plastik ini bersertifikasi (Sertifikat Halal, Food Grade dan MSDS), ramah lingkungan dan bisa dipakai untuk berbagai bidang pekerjaan (Salon, Melukis, Memasak,dll.).",
+                "description_3" : "Bahan baku produk sarung tangan kami adalah HDPE (High-density Polyethylene). Dengan menggunakan mesin canggih dan mutakhir yang memiliki kecepatan dan kualitas seal yang bagus, kami memproduksi 2 tipe sarung tangan plastik, yaitu sarung tangan pendek (27-29 cm) dan sarung tangan panjang (47 cm), dengan macam ketebalan: 8 micron, 10 micron, dan 25 micron, ataupun permukaan bisa polos dan emboss (tampak ada bintik-bintik), juga untuk warna bisa natural (bening), biru dan warna lainnya. Jadi kami bisa memenuhi spesifikasi untuk ukuran, tebal dan warna sesuai kebutuhan pelanggan."
+        } 
+    },
+    "vission_mission" : {
+        "id" : {
+            "our_missions" : {
+                "title" : "Our Mission",
+                "contents" : [
+                    "Mengembangkan sumber daya manusia untuk berinovasi dan bekerja secara efektif dan efisien.",
+                    "Memprioritaskan kepuasan pelanggan dengan memberikan produk yang berkualitas."
+                ]
+            },
+            "our_vissions" : {
+                "title" : "Our Vission",
+                "contents" : ["Menjadi pemimpin pasar untuk sarung tangan plastik."]
+            },
+            "our_strategy" : {
+                "title" : "Our Starategy",
+                "contents": [
+                    "Meningkatkan kualitas dan kapasitas produksi untuk memenuhi kebutuhan pelanggan.",
+                    "Menciptakan lebih banyak produk dan menumbuhkan pasar dengan menggandeng lebih banyak distributor.",
+                    "Mendapatkan bahan baku yang kompetitif yang dapat membuat produksi lebih efisien."
+                ]
+            }
+        },
+        "en" : {
+            "our_missions" : {
+                "title" : "Our Mission",
+                "contents" : [
+                    "Mengembangkan sumber daya manusia untuk berinovasi dan bekerja secara efektif dan efisien.",
+                    "Memprioritaskan kepuasan pelanggan dengan memberikan produk yang berkualitas."
+                ]
+            },
+            "our_vissions" : {
+                "title" : "Our Vission",
+                "contents" : ["Menjadi pemimpin pasar untuk sarung tangan plastik."]
+            },
+            "our_strategy" : {
+                "title" : "Our Starategy",
+                "contents": [
+                    "Meningkatkan kualitas dan kapasitas produksi untuk memenuhi kebutuhan pelanggan.",
+                    "Menciptakan lebih banyak produk dan menumbuhkan pasar dengan menggandeng lebih banyak distributor.",
+                    "Mendapatkan bahan baku yang kompetitif yang dapat membuat produksi lebih efisien."
+                ]
+            }
+        }
+    },
+    "our_products" : {
+        "id" : {
+            "title" : "Our product (INA GLOVE)",
+            "description_1" : "merupakan sarung tangan berbahan dasar plastik HDPE (High-density Polyethylene), maupun Biodegradable. Kami memiliki dua jenis sarung tangan yaitu sarung tangan dengan permukaan polos dan emboss (tampak ada bintik – bintik).",
+            "description_2" : "Produk kami terdiri dari beberapa pilihan warna seperti natural (bening), biru, dan warna lainnya sesuai permintaan. Kami melayani berbagai kebutuhan ukuran, tebal, dan warna sesuai permintaan pelanggan.",
+            "material_text" : "Bahan",
+            "long_text" : "Panjang",
+            "thick_text" : "Tebal",
+            "color_text" : "Warna"
+        },
+        "en" : {
+            "title" : "Our product (INA GLOVE)",
+            "description_1" : "merupakan sarung tangan berbahan dasar plastik HDPE (High-density Polyethylene), maupun Biodegradable. Kami memiliki dua jenis sarung tangan yaitu sarung tangan dengan permukaan polos dan emboss (tampak ada bintik – bintik).",
+            "description_2" : "Produk kami terdiri dari beberapa pilihan warna seperti natural (bening), biru, dan warna lainnya sesuai permintaan. Kami melayani berbagai kebutuhan ukuran, tebal, dan warna sesuai permintaan pelanggan.",
+            "material_text" : "Bahan",
+            "long_text" : "Panjang",
+            "thick_text" : "Tebal",
+            "color_text" : "Warna"
+        },
+        "products": [
+            {
+                "name" : "Jenis Polos", 
+                "bahan" : "HDPE atau Biodegradable",
+                "panjang" : "47(cm)",
+                "tebal" : "8, 10, 25 (mikron)",
+                "warna" : "Natural, Biru, Custom",
+                "image_url" : "/images/our-products/unicol.jpg"
+            },
+            {
+                "name" : "Jenis Emboss", 
+                "bahan" : "HDPE atau Biodegradable",
+                "panjang" : "47(cm)",
+                "tebal" : "8, 10, 25 (mikron)",
+                "warna" : "Natural, Biru, Custom",
+                "image_url" : "/images/our-products/unicol.jpg"
+            },
+            {
+                "name" : "Jenis Polos", 
+                "bahan" : "HDPE atau Biodegradable",
+                "panjang" : "47(cm)",
+                "tebal" : "8, 10, 25 (mikron)",
+                "warna" : "Natural, Biru, Custom",
+                "image_url" : "/images/our-products/unicol.jpg"
+            },
+            {
+                "name" : "Jenis Emboss", 
+                "bahan" : "HDPE atau Biodegradable",
+                "panjang" : "47(cm)",
+                "tebal" : "8, 10, 25 (mikron)",
+                "warna" : "Natural, Biru, Custom",
+                "image_url" : "/images/our-products/unicol.jpg"
+            }
+        ]
+    },
+    "market_area" : {
+        "id" : {
+            "title" : "Area Pemasaran IJSA / INAGLOVE",
+            "subtitle_1" : "SELURUH INDONESIA",
+            "subtitle_2" : "Area pemasaran ijsa / product inaglove meliputi seluruh Indonesia"
+        },
+        "en" : {
+            "title" : "Area Pemasaran IJSA / INAGLOVE",
+            "subtitle_1" : "SELURUH INDONESIA",
+            "subtitle_2" : "Area pemasaran ijsa / product inaglove meliputi seluruh Indonesia"
+        }
+    },
+    "contact" : {
+       "id" : {
+            "title": "Kontak Kami",
+            "address" : {
+                "title" : "Visit Us",
+                "description" :  "Lorem Ipsum is simply dummy text of the printing",
+                "value" : "Lorem Ipsum is simply"
+            },
+            "phone" : {
+                "title" : "Call Us",
+                "description" :  "Lorem Ipsum is simply dummy text of the printing",
+                "value" : "+62 31 9934 2408"
+            },
+            "email" : {
+                "title" : "Contact Us",
+                "description" :  "Lorem Ipsum is simply dummy text of the printing",
+                "value" : "ijsa.marketing@gmail.com"
+            }
+        },
+        "en" : {
+            "title": "Kontak Kami",
+            "address" : {
+                "title" : "Visit Us",
+                "description" :  "Lorem Ipsum is simply dummy text of the printing",
+                "value" : "Lorem Ipsum is simply"
+            },
+            "phone" : {
+                "title" : "Call Us",
+                "description" :  "Lorem Ipsum is simply dummy text of the printing",
+                "value" : "+62 31 9934 2408"
+            },
+            "email" : {
+                "title" : "Contact Us",
+                "description" :  "Lorem Ipsum is simply dummy text of the printing",
+                "value" : "ijsa.marketing@gmail.com"
+            }
+        }
+    }
+}

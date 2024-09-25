@@ -1,0 +1,62 @@
+{
+    "header" : {
+        "id" : {
+            "title" : "Bergabung Dengan Tim Kami",
+            "description" : "UNICORP (UNI CORPORATION)"
+        },
+        "en" : {
+            "title" : "Bergabung Dengan Tim Kami",
+            "description" : "UNICORP (UNI CORPORATION)"
+        }
+    },
+    "office_location" : {
+        "id" : {
+            "title" : "Lokasi Kantor",
+            "subtitle" : "UNICORP",
+            "description": "UNICORP mempunyai beberapa lokasi kantor di seluruh Indonesia",
+            "offices" : [
+                {
+                    "title" : "SURABAYA",
+                    "description" : "Menghandle pemasaran untuk Indonesia bagian Timur"
+                },
+                {
+                    "title" : "SEMARANG",
+                    "description" : "Menghandle pemasaran untuk Indonesia bagian Tengah"
+                },
+                {
+                    "title" : "JAKARTA",
+                    "description" : "Menghandle pemasaran untuk Indonesia bagian Barat"
+                }
+            ]
+        },
+        "en" : {
+            "title" : "Lokasi Kantor",
+            "subtitle" : "UNICORP",
+            "description": "UNICORP mempunyai beberapa lokasi kantor di seluruh Indonesia",
+            "offices" : [
+                {
+                    "title" : "SURABAYA",
+                    "description" : "Menghandle pemasaran untuk Indonesia bagian Timur"
+                },
+                {
+                    "title" : "SEMARANG",
+                    "description" : "Menghandle pemasaran untuk Indonesia bagian Tengah"
+                },
+                {
+                    "title" : "JAKARTA",
+                    "description" : "Menghandle pemasaran untuk Indonesia bagian Barat"
+                }
+            ]
+        }
+    },
+    "jobs_area" : {
+        "id" : {
+            "title": "Available Jobs",
+            "label" : "Lokasi Pekerjaan"
+        },
+        "en" : {
+            "title": "Available Jobs",
+            "label" : "Lokasi Pekerjaan"
+        }
+    }
+}
