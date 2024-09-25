@@ -1,67 +1,67 @@
 {
-    "header" : {
+    "header": {
         "id": {
-            "title" : "",
-            "subtitle_1" : "",
-            "subtitle_2" : "",
-            "button_text" : ""
+            "title": "",
+            "subtitle_1": "",
+            "subtitle_2": "",
+            "button_text": ""
         },
         "en": {
-            "title" : "",
-            "subtitle_1" : "",
-            "subtitle_2" : "",
-            "button_text" : ""
+            "title": "",
+            "subtitle_1": "",
+            "subtitle_2": "",
+            "button_text": ""
         },
-        "image_url" : null
+        "image_url": null
     },
-    "about" : {
-        "id" : {
-            "title" : "Tentang UNICORP",
+    "about": {
+        "id": {
+            "title": "Tentang UNICORP",
             "subtitle": "Unicorp adalah Grup perusahaan yang bergerak di berbagai bidang industri, diantaranya: Makanan, Pertanian, Retail serta Industri lainnya.",
-            "description" : "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat. Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik.",
-            "button_text" : "Baca Selengkapnya"
+            "description": "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat. Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik.",
+            "button_text": "Baca Selengkapnya"
         },
-        "en" : {
-            "title" : "About UNICORP",
+        "en": {
+            "title": "About UNICORP",
             "subtitle": "Unicorp is a group of companies worked in various industries, including: food, agricultural, retail and other industries.",
-            "description" : "Unicorp is started with CV. INDO JAYA PUTRA which is established in 2001 at Surabaya to cover East of Indonesia. To bear the vision to be a regional leader in trading chemical, we have build 2 branches: Branch Semarang to cover Central of Indonesia and Branch Jakarta to cover West of Indonesia. As an importer, manufacture and distributor, our branches were equipped with effective warehouse design and own delivery fleets to ensure that every customer get the best service.",
-            "button_text" : "Read More"
+            "description": "Unicorp is started with CV. INDO JAYA PUTRA which is established in 2001 at Surabaya to cover East of Indonesia. To bear the vision to be a regional leader in trading chemical, we have build 2 branches: Branch Semarang to cover Central of Indonesia and Branch Jakarta to cover West of Indonesia. As an importer, manufacture and distributor, our branches were equipped with effective warehouse design and own delivery fleets to ensure that every customer get the best service.",
+            "button_text": "Read More"
         },
-        "image_url" : "/images/galleries/gallery-2.jpeg"
+        "image_url": "/images/home/home-about.jpeg"
     },
-    "business_units" : {
-        "id" : {
-            "title" : "Unit Bisnis UNICORP", 
-            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
+    "business_units": {
+        "id": {
+            "title": "Unit Bisnis UNICORP",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
         },
-        "en" : {
-            "title" : "Business Units UNICORP", 
-            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
+        "en": {
+            "title": "Business Units UNICORP",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
         },
-        "image_url" : null
+        "image_url": null
     },
-    "our_products" : {
-        "id" : {
-            "title" : "Produk Kami",
-            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
-            "button_text" : "Unduh Produk"
+    "our_products": {
+        "id": {
+            "title": "Produk Kami",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
+            "button_text": "Unduh Produk"
         },
-        "en" : {
-            "title" : "Our Products",
-            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
-            "button_text" : "Download Product"
+        "en": {
+            "title": "Our Products",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
+            "button_text": "Download Product"
         }
     },
-    "news" : {
-        "id" : {
-            "title" : "Berita Terkini",
-            "subtitle" : "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
-            "button_text" : "Berita Lainnya"
+    "news": {
+        "id": {
+            "title": "Berita Terkini",
+            "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
+            "button_text": "Berita Lainnya"
         },
-        "en" : {
-            "title" : "Latest News",
-            "subtitle" : "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
-            "button_text" : "Other News"
+        "en": {
+            "title": "Latest News",
+            "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
+            "button_text": "Other News"
         }
     }
 }
