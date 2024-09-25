@@ -37,7 +37,7 @@
                 "title" : "Our Vission",
                 "contents" : ["Menjadi pemimpin pasar untuk sarung tangan plastik."]
             },
-            "our_strategy" : {
+            "our_strategies" : {
                 "title" : "Our Starategy",
                 "contents": [
                     "Meningkatkan kualitas dan kapasitas produksi untuk memenuhi kebutuhan pelanggan.",
@@ -58,7 +58,7 @@
                 "title" : "Our Vission",
                 "contents" : ["Menjadi pemimpin pasar untuk sarung tangan plastik."]
             },
-            "our_strategy" : {
+            "our_strategies" : {
                 "title" : "Our Starategy",
                 "contents": [
                     "Meningkatkan kualitas dan kapasitas produksi untuk memenuhi kebutuhan pelanggan.",
@@ -90,34 +90,34 @@
         "products": [
             {
                 "name" : "Jenis Polos", 
-                "bahan" : "HDPE atau Biodegradable",
-                "panjang" : "47(cm)",
-                "tebal" : "8, 10, 25 (mikron)",
-                "warna" : "Natural, Biru, Custom",
+                "material" : "HDPE atau Biodegradable",
+                "long" : "47(cm)",
+                "thick" : "8, 10, 25 (mikron)",
+                "color" : "Natural, Biru, Custom",
                 "image_url" : "/images/our-products/unicol.jpg"
             },
             {
                 "name" : "Jenis Emboss", 
-                "bahan" : "HDPE atau Biodegradable",
-                "panjang" : "47(cm)",
-                "tebal" : "8, 10, 25 (mikron)",
-                "warna" : "Natural, Biru, Custom",
+                "material" : "HDPE atau Biodegradable",
+                "long" : "47(cm)",
+                "thick" : "8, 10, 25 (mikron)",
+                "color" : "Natural, Biru, Custom",
                 "image_url" : "/images/our-products/unicol.jpg"
             },
             {
                 "name" : "Jenis Polos", 
-                "bahan" : "HDPE atau Biodegradable",
-                "panjang" : "47(cm)",
-                "tebal" : "8, 10, 25 (mikron)",
-                "warna" : "Natural, Biru, Custom",
+                "material" : "HDPE atau Biodegradable",
+                "long" : "47(cm)",
+                "thick" : "8, 10, 25 (mikron)",
+                "color" : "Natural, Biru, Custom",
                 "image_url" : "/images/our-products/unicol.jpg"
             },
             {
                 "name" : "Jenis Emboss", 
-                "bahan" : "HDPE atau Biodegradable",
-                "panjang" : "47(cm)",
-                "tebal" : "8, 10, 25 (mikron)",
-                "warna" : "Natural, Biru, Custom",
+                "material" : "HDPE atau Biodegradable",
+                "long" : "47(cm)",
+                "thick" : "8, 10, 25 (mikron)",
+                "color" : "Natural, Biru, Custom",
                 "image_url" : "/images/our-products/unicol.jpg"
             }
         ]

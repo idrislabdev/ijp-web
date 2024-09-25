@@ -1,14 +1,14 @@
 import React from 'react'
 
-const BusinessUnitsAreaSection = (props: {objLang:any}) => {
-    const { objLang } = props
+const BusinessUnitsAreaSection = (props: {objLang:any, lang:string}) => {
+    const { objLang, lang} = props
     return (
         <section className='business-units-area-section'>
             <div className='area-container'>
                 <div className='title-subcontainer'>
-                    <h1>Area Pemasaran IJSA / INAGLOVE</h1>
-                    <h2>SELURUH INDONESIA</h2>
-                    <p>Area pemasaran ijsa / product inaglove meliputi seluruh Indonesia</p>
+                    <h1>{objLang[lang].title}</h1>
+                    <h2>{objLang[lang].subtitle_1}</h2>
+                    <p>{objLang[lang].subtitle_2}</p>
                 </div>
             </div>
         </section>
