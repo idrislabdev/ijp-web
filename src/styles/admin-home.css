@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.home-about-section {
+.admin-home-about-section {
     @apply flex py-[40px] gap-[80px] justify-center items-center;
     .about-description-container {
         @apply flex flex-1 flex-col justify-center items-start gap-[20px];
@@ -31,6 +31,54 @@
             background: rgba(0, 0, 0, .7);
             label {
                 @apply w-[150px] h-[40px] bg-primary text-white flex flex-col justify-center cursor-pointer items-center rounded-sm;
+            }
+        }
+    }
+}
+
+.admin-home-business-unit-section {
+    @apply text-white py-[40px] px-[100px] flex flex-col justify-center items-center relative;
+    background: url("/images/backgrounds/background-1.png") no-repeat;
+    &::before {
+        content: '';
+        @apply absolute bg-primary opacity-85 w-full h-full z-[2];
+    }
+    .business-unit-container {
+        @apply flex flex-col gap-[20px] justify-center items-center text-center z-[2];
+        .title-subcontainer {
+            @apply flex flex-col gap-[10px];
+        }
+        .business-unit-subcontainer {
+            @apply flex justify-center gap-[80px];
+            .business-unit {
+                @apply w-[450px] flex flex-col justify-start items-center text-center gap-[20px];
+                label {
+                    @apply h-[80px] w-[80px] rounded-[50%] border-[3px] border-white flex flex-col justify-center text-lg font-bold;
+                }
+                .business-unit-desc {
+                    @apply flex flex-col gap-[10px];
+                }
+            }
+        }
+    }
+}
+
+.admin-home-news-section {
+    @apply flex p-[40px] gap-[80px] justify-center items-center bg-slate-50 w-full;
+    .home-news-container {
+        @apply flex flex-col gap-[40px]  w-full;
+        .news-header {
+            @apply flex gap-[40px] flex-1 items-center justify-center  w-full;
+            .news-title {
+                @apply flex flex-col gap-[10px] w-[80%];
+                
+            }
+           
+        }
+        .news-subcontainer {
+            @apply flex gap-[20px];
+            .card-news {
+                @apply w-1/4;
             }
         }
     }

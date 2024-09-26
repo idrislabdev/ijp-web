@@ -32,11 +32,35 @@
     "business_units": {
         "id": {
             "title": "Unit Bisnis UNICORP",
-            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
+            "units": [
+                {
+                    "name": "IJP",
+                    "title": "INDO JAYA PUTRA",
+                    "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
+                },
+                {
+                    "name": "IJSAP",
+                    "title": "INDO JAYA SUKSES ABADI",
+                    "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
+                }
+            ]
         },
         "en": {
             "title": "Business Units UNICORP",
-            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
+            "units": [
+                {
+                    "name": "IJP",
+                    "title": "INDO JAYA PUTRA",
+                    "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
+                },
+                {
+                    "name": "IJSAP",
+                    "title": "INDO JAYA SUKSES ABADI",
+                    "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
+                }
+            ]
         },
         "image_url": null
     },

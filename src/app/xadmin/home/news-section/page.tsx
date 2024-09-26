@@ -4,15 +4,16 @@ import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 import { getDictionariesHome } from '@/app/dictionaries';
-import XadminHomeAboutSection from '@/@core/page/xadmin/home/about-section';
+import XadminBusinessUnitsSection from '@/@core/page/xadmin/home/business-units-section';
 import '@/styles/admin-home.css'
+import XadminNewsSection from '@/@core/page/xadmin/home/berita-terkini-section';
 
 export default async function  XadminPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  const { about } = await getDictionariesHome();
+  const { news } = await getDictionariesHome();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -23,7 +24,7 @@ export default async function  XadminPage() {
               <ul>
                 <li><ArrowLeftIcon /></li>
                 <li><FolderIcon /> Home</li>
-                <li><FolderOpenIcon /> About Section</li>
+                <li><FolderOpenIcon /> Berita Section</li>
               </ul>
             </div>
           </div>
@@ -34,11 +35,11 @@ export default async function  XadminPage() {
               </div>
               <div className='text-area'>
                 <h5>Halaman Home</h5>
-                <p>Pengaturan Section About</p>
+                <p>Berita Section</p>
               </div>
             </div>
             <div className='main-body'>
-                <XadminHomeAboutSection objData={about}/>
+                <XadminNewsSection objData={news}/>
             </div>
           </div>
         </div>

@@ -50,14 +50,14 @@ const XadminHomeAboutSection = (props: {objData:any}) => {
     }, [objData, lang])
 
     return (
-        <div>
+        <div className='flex flex-col gap-[10px]'>
             <div className='tab-default'>
                 <ul>
                     <li className={`${lang === "id" ? 'active' : ''}`}><a onClick={_ => setLang('id')}>Indonesia</a></li>
                     <li className={`${lang === "en" ? 'active' : ''}`}><a onClick={_ => setLang('en')}>Inggris</a></li>
                 </ul>
             </div>
-            <div className='home-about-section'>
+            <div className='admin-home-about-section'>
                 <div className='about-description-container'>
                     <input value={title} onChange={e => setTitle(e.target.value)}/>
                     <textarea value={subtitle} className='min-h-[100px] max-h-[100px]' onChange={e => setSubTitle(e.target.value)}/>
