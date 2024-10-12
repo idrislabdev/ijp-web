@@ -7,7 +7,7 @@ import { getDictionariesHome } from '@/app/dictionaries';
 import XadminBusinessUnitsSection from '@/@core/page/xadmin/home/business-units-section';
 import '@/styles/admin-home.css'
 
-export default async function  XadminPage() {
+export default async function  XadminHomeBusinessUnitsPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');

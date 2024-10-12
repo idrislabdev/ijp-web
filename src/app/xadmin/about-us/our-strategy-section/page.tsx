@@ -3,16 +3,17 @@ import React, { useState } from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
-import { getDictionariesHome } from '@/app/dictionaries';
-import XadminHomeAboutSection from '@/@core/page/xadmin/home/about-section';
-import '@/styles/admin-home.css'
+import XadminOurStrategySection from '@/@core/page/xadmin/about-us/our-strategy-section';
+import { getDictionariesAbout, getDictionariesHome } from '@/app/dictionaries';
 
-export default async function  XadminHomeAboutPage() {
+import '@/styles/admin-about-us.css'
+
+export default async function  XadminHomeProductPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  const { about } = await getDictionariesHome();
+  const { strategies } = await getDictionariesAbout();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -22,8 +23,8 @@ export default async function  XadminHomeAboutPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Home</li>
-                <li><FolderOpenIcon /> About Section</li>
+                <li><FolderIcon /> Tentang Kami</li>
+                <li><FolderOpenIcon /> Our Stategy Section</li>
               </ul>
             </div>
           </div>
@@ -33,12 +34,12 @@ export default async function  XadminHomeAboutPage() {
                 <HomeOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Home</h5>
-                <p>Pengaturan Section About</p>
+                <h5>Halaman Tentang Kami</h5>
+                <p>Our Strategy Section</p>
               </div>
             </div>
             <div className='main-body'>
-                <XadminHomeAboutSection objData={about}/>
+                <XadminOurStrategySection objData={strategies}/>
             </div>
           </div>
         </div>

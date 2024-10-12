@@ -25,6 +25,15 @@ select {
 
 button {
     @apply !bg-primary !text-white !text-[14px]/[21px] !h-[41px] !rounded-[4px];
+    &.btn-sm {
+        @apply !h-[30px];
+    }
+    svg {
+        @apply h-[20px] w-[20px]; 
+        path {
+            @apply fill-white;
+        }
+    }
 }
 
 .group-input {

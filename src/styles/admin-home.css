@@ -83,3 +83,26 @@
         }
     }
 }
+
+.admin-home-products-section {
+    @apply flex p-[40px] gap-[80px] justify-center items-center bg-slate-50 w-full;
+    .home-products-container {
+        @apply flex flex-col gap-[40px]  w-full;
+        .products-header {
+            @apply flex flex-col gap-[40px] items-center justify-center  w-full;
+            .products-title {
+                @apply flex flex-col gap-[10px] w-[100%];
+                input,textarea{
+                    @apply text-center;
+                }
+            }
+           
+        }
+        .products-subcontainer {
+            @apply flex gap-[20px];
+            .card-products {
+                @apply w-1/4;
+            }
+        }
+    }
+}

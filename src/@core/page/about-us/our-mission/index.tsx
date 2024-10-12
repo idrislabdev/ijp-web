@@ -44,7 +44,7 @@ const AboutUsOurMission = (props: {objLang:any, lang:string}) => {
                             <div className='details-growup'>
                                 {objLang[lang].our_values.contents.map((item:any, index:number)=>(
                                     <div className='detail-growup' key={index}>
-                                        <h5><span>G</span>{item.title.slice(1)}</h5>
+                                        <h5><span>{item.title.charAt(0)}</span>{item.title.slice(1)}</h5>
                                         <p>{item.description} </p>
                                     </div>
                                 ))}

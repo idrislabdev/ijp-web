@@ -4,11 +4,10 @@ import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 import { getDictionariesHome } from '@/app/dictionaries';
-import XadminBusinessUnitsSection from '@/@core/page/xadmin/home/business-units-section';
+import XadminNewsSection from '@/@core/page/xadmin/home/news-section';
 import '@/styles/admin-home.css'
-import XadminNewsSection from '@/@core/page/xadmin/home/berita-terkini-section';
 
-export default async function  XadminPage() {
+export default async function  XadminHomeNewsPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');

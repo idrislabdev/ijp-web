@@ -59,7 +59,7 @@
                     }
                 }
                 .main-body {
-
+                    @apply overflow-y-auto max-h-[550px];
                 }
             }
         }
