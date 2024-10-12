@@ -59,7 +59,6 @@ const XadminAboutOurStrategySection = (props: {objData:any}) => {
         setContents(temp)
     }
 
-
     useEffect(() => {
         setTitle(objData[lang].title)
         setContents(objData[lang].contents)
@@ -85,7 +84,7 @@ const XadminAboutOurStrategySection = (props: {objData:any}) => {
                                     <a className='btn-remove' onClick={_ => deleteContents(index)}><TrashOutlineIcon /></a>
                                 </li>
                             ))}
-                            <button className='flex items-center justify-center btn-sm' onClick={iterateContents}><AddOutlineIcon /></button>
+                            <button className='flex items-center justify-center btn-sm btn-outline' onClick={iterateContents}><AddOutlineIcon /></button>
                         </ul>
                     </div>
                     <div className='image-subcontainer'>

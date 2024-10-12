@@ -25,8 +25,25 @@ select {
 
 button {
     @apply !bg-primary !text-white !text-[14px]/[21px] !h-[41px] !rounded-[4px];
+    &:hover {
+        @apply !bg-blue-800;
+    }
     &.btn-sm {
         @apply !h-[30px];
+    }
+    &.btn-outline {
+        @apply !bg-white border border-primary !text-primary;
+        &:hover {
+            @apply !bg-primary !text-white;
+            path {
+                @apply fill-white;
+            }
+        }
+        svg {
+            path {
+                @apply fill-primary;
+            }
+        }
     }
     svg {
         @apply h-[20px] w-[20px]; 
