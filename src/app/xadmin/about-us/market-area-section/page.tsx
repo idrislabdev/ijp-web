@@ -3,17 +3,16 @@ import React, { useState } from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
-import XadminAboutOurStrategySection from '@/@core/page/xadmin/about-us/our-strategy-section';
 import { getDictionariesAbout, getDictionariesHome } from '@/app/dictionaries';
-
+import XadminAboutMarketAreaSection from '@/@core/page/xadmin/about-us/market-area-section';
 import '@/styles/admin-about-us.css'
 
-export default async function  XadminAboutOurStrategyPage() {
+export default async function  XadminAboutMarketAreaPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  const { strategies } = await getDictionariesAbout();
+  const { market_area } = await getDictionariesAbout();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -24,7 +23,7 @@ export default async function  XadminAboutOurStrategyPage() {
               <ul>
                 <li><ArrowLeftIcon /></li>
                 <li><FolderIcon /> Tentang Kami</li>
-                <li><FolderOpenIcon /> Our Strategy Section</li>
+                <li><FolderOpenIcon /> Market Area Section</li>
               </ul>
             </div>
           </div>
@@ -35,11 +34,11 @@ export default async function  XadminAboutOurStrategyPage() {
               </div>
               <div className='text-area'>
                 <h5>Halaman Tentang Kami</h5>
-                <p>Our Strategy Section</p>
+                <p>Market Area Section</p>
               </div>
             </div>
             <div className='main-body'>
-                <XadminAboutOurStrategySection objData={strategies}/>
+                <XadminAboutMarketAreaSection objData={market_area}/>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
 
-const XadminOurStrategySection = (props: {objData:any}) => {
+const XadminAboutOurStrategySection = (props: {objData:any}) => {
     const {objData} = props;
     const [lang, setLang] = useState('id');
     const [title, setTitle] = useState(objData[lang].title)
@@ -102,4 +102,4 @@ const XadminOurStrategySection = (props: {objData:any}) => {
     )
 }
 
-export default XadminOurStrategySection
+export default XadminAboutOurStrategySection
