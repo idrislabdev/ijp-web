@@ -172,3 +172,98 @@
         }
     }
 }
+.admin-about-us-our-mission-section {
+    @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-2.png") no-repeat;
+    background-position: center;
+    &::before {
+        content: '';
+        @apply absolute bg-slate-900 opacity-85 w-full h-full z-[2];
+    }
+    .our-mission-container {
+        @apply flex items-start w-full justify-center;
+        .detail-subcontainer {
+            @apply flex flex-col justify-center items-center text-center z-10 px-[20px];
+            .icon-detail {
+                svg {
+                    @apply w-[100px] h-[100px];
+                   
+                }
+                &.fill {
+                    svg {
+                      path {
+                        @apply fill-white;
+                      }
+                    }
+                }
+                &.fill-bulp {
+                    svg {
+                      path {
+                        @apply fill-white;
+                      }
+                    }
+                }
+                &.fill-stroke {
+                    svg {
+                        path {
+                            @apply stroke-white;
+                        }
+                    }
+                }
+                &.stroke {
+                    svg {
+                        @apply stroke-white;
+                    }
+                }
+            }
+            .desc-detail {
+                @apply flex flex-col gap-[10px] w-full;
+                input {
+                    @apply text-center text-3xl font-bold uppercase;
+                }
+                p {
+                    @apply text-[13px]/[17px] text-slate-300;
+                }
+                ul {
+                    @apply text-[13px]/[17px] flex flex-col gap-[5px];
+                    li {
+                        @apply flex items-center gap-[5px];
+                        input {
+                            @apply text-center !text-[12px]/[15px] w-full !h-[13px];
+                        }
+
+                        a {
+                            &.btn-remove {
+                                @apply h-[20px] w-[20px] bg-red-500 flex flex-col justify-center items-center cursor-pointer;
+                                svg {
+                                    @apply h-[15px] w-[15px];
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+                .desc-growup {
+                    @apply flex gap-[30px];
+                    .details-growup {
+                        @apply flex text-left flex-wrap;
+                        .detail-growup {
+                            @apply w-1/2 mb-[10px] px-[2px];
+                            input {
+                                &.title {
+                                    @apply !text-base !font-medium !text-left !h-[30px];
+                                }
+                                &.description {
+                                    @apply text-center !text-[12px]/[15px] w-full !h-[13px];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
