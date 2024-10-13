@@ -12,8 +12,8 @@ const AboutUsProfileSection = (props: {objLang:any, lang:string}) => {
                 </div>
                 <div className='middle-subcontainer'>
                     <div className='experience-subcontainer'>
-                        <label>20+</label>
-                        <span>Tahun Pengalaman</span>
+                        <label>{objLang[lang].experience_1}</label>
+                        <span>{objLang[lang].experience_2}</span>
                     </div>
                 </div>
                 <div className='bottom-subcontainer'>

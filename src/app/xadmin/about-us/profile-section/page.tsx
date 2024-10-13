@@ -3,17 +3,17 @@ import React, { useState } from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
-import XadminAboutOurMissionSection from '@/@core/page/xadmin/about-us/our-mission-section';
+import XadminAboutProfileSection from '@/@core/page/xadmin/about-us/profile-section';
 import { getDictionariesAbout } from '@/app/dictionaries';
 
 import '@/styles/admin-about-us.css'
 
-export default async function  XadminAboutOurMissionPage() {
+export default async function  XadminAboutProfilePage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  const { vission_mission } = await getDictionariesAbout();
+  const { profile } = await getDictionariesAbout();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -24,7 +24,7 @@ export default async function  XadminAboutOurMissionPage() {
               <ul>
                 <li><ArrowLeftIcon /></li>
                 <li><FolderIcon /> Tentang Kami</li>
-                <li><FolderOpenIcon /> Our Mission Section</li>
+                <li><FolderOpenIcon /> Profile Section</li>
               </ul>
             </div>
           </div>
@@ -35,11 +35,11 @@ export default async function  XadminAboutOurMissionPage() {
               </div>
               <div className='text-area'>
                 <h5>Halaman Tentang Kami</h5>
-                <p>Our Mission Section</p>
+                <p>Profile Section</p>
               </div>
             </div>
             <div className='main-body'>
-                <XadminAboutOurMissionSection objData={vission_mission}/>
+                <XadminAboutProfileSection objData={profile}/>
             </div>
           </div>
         </div>

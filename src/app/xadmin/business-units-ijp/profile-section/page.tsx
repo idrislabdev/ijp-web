@@ -3,17 +3,16 @@ import React, { useState } from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
-import XadminAboutOurMissionSection from '@/@core/page/xadmin/about-us/our-mission-section';
-import { getDictionariesAbout } from '@/app/dictionaries';
+import XadminIJPProfileSection from '@/@core/page/xadmin/ijp/profile-section';
+import { getDictionariesIjp } from '@/app/dictionaries';
+import '@/styles/admin-ijp.css'
 
-import '@/styles/admin-about-us.css'
-
-export default async function  XadminAboutOurMissionPage() {
+export default async function  XadminIJPProfilePage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  const { vission_mission } = await getDictionariesAbout();
+  const { profile } = await getDictionariesIjp();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -23,8 +22,8 @@ export default async function  XadminAboutOurMissionPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Tentang Kami</li>
-                <li><FolderOpenIcon /> Our Mission Section</li>
+                <li><FolderIcon /> Business Units (IJP)</li>
+                <li><FolderOpenIcon /> Profile Section</li>
               </ul>
             </div>
           </div>
@@ -34,12 +33,12 @@ export default async function  XadminAboutOurMissionPage() {
                 <HomeOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Tentang Kami</h5>
-                <p>Our Mission Section</p>
+                <h5>Halaman Business Units (IJP)</h5>
+                <p>Profile Section</p>
               </div>
             </div>
             <div className='main-body'>
-                <XadminAboutOurMissionSection objData={vission_mission}/>
+                <XadminIJPProfileSection objData={profile}/>
             </div>
           </div>
         </div>

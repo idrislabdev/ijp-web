@@ -16,18 +16,22 @@
             "subtitle": "Unicorp adalah grup perusahaan yang bergerak di berbagai bidang industri",
             "description_1": "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat.",
             "description_2": "Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik.",
-            "quote": "Odio eu feugiat pretium nibh ipsum. Pellentesque habitant morbi tristique senectus et netus et. Cursus sit amet dictum sit amet justo donec enim. Massa sapien faucibus et molestie ac feugiat."
+            "quote": "Odio eu feugiat pretium nibh ipsum. Pellentesque habitant morbi tristique senectus et netus et. Cursus sit amet dictum sit amet justo donec enim. Massa sapien faucibus et molestie ac feugiat.",
+            "experience_1": "20+",
+            "experience_2": "Tahun Pengalaman"
         },
         "en": {
             "title": "Profil Perusahaan",
             "subtitle": "Unicorp adalah grup perusahaan yang bergerak di berbagai bidang industri",
             "description_1": "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat.",
             "description_2": "Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik.",
-            "quote": "Odio eu feugiat pretium nibh ipsum. Pellentesque habitant morbi tristique senectus et netus et. Cursus sit amet dictum sit amet justo donec enim. Massa sapien faucibus et molestie ac feugiat."
+            "quote": "Odio eu feugiat pretium nibh ipsum. Pellentesque habitant morbi tristique senectus et netus et. Cursus sit amet dictum sit amet justo donec enim. Massa sapien faucibus et molestie ac feugiat.",
+            "experience_1": "20+",
+            "experience_2": "Years Of Experience"
         },
-        "image_1_url": "/images/galleries/gallery-1.jpg",
-        "image_2_url": "/images/galleries/gallery-2.jpeg",
-        "image_3_url": "/images/galleries/gallery-6.jpg"
+        "image_1_url": "/images/about-us/profile-1.jpeg",
+        "image_2_url": "/images/about-us/profile-2.jpeg",
+        "image_3_url": "/images/about-us/profile-3.jpeg"
     },
     "vission_mission": {
         "id": {
@@ -125,8 +129,8 @@
     },
     "histories": {
         "id": {
-            "title": "Sejarah UNICORP",
-            "subtitle": "UNICORP dimulai dengan CV. INDO JAYA PUTRA (perdagangan bahan kimia makanan) yang didirikan pada tahun 2001, kemudian diikuti oleh CV. INDO JAYA SUKSES ABADI (pembuatan sarung tangan plastik) pada tahun 2018.",
+            "title": "Profil Perusahaan",
+            "subtitle": "Unicorp adalah grup perusahaan yang bergerak di berbagai bidang industri",
             "contents": [
                 {
                     "title": "Tahun 2001",
@@ -148,7 +152,9 @@
                     "subtitle": "test",
                     "description": "test"
                 }
-            ]
+            ],
+            "description_1": "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat.",
+            "description_2": "Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik."
         },
         "en": {
             "title": "Sejarah UNICORP",

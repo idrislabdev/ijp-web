@@ -1,0 +1,311 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.admin-ijp-profile-section {
+    @apply p-[20px] flex flex-col justify-center items-center relative text-neutral-800 ;
+    .profile-container {
+        @apply flex gap-[30px] items-center w-full;
+        .image-subcontainer {
+            @apply w-1/2 flex flex-col gap-[10px] relative;
+            .top-subcontainer {
+                @apply w-full relative;
+                img {
+                    @apply w-full h-[300px] object-cover;
+                }
+                &:hover {
+                    .img-overlay {
+                        @apply opacity-100 visible;
+                        visibility: visible;
+                    }
+                }
+                .img-overlay {
+                    @apply  bg-black rounded-lg opacity-0 h-full w-full absolute z-[2] top-0 left-0 invisible flex flex-col justify-center items-center; 
+                    transition: .3s linear;
+                    background: rgba(0, 0, 0, .7);
+                    label {
+                        @apply w-[150px] h-[40px] bg-primary text-white flex flex-col justify-center cursor-pointer items-center rounded-sm;
+                    }
+                }
+            }
+            .middle-subcontainer {
+                @apply absolute top-[43%] left-[38%] z-10;
+                .experience-subcontainer {
+                    @apply relative bg-white border-2 border-primary text-primary flex flex-col items-center text-center justify-center w-[150px] h-[150px];
+                    input {
+                        &.experience-number {
+                            @apply !text-6xl !font-bold w-full h-[50px];
+                        }
+                        &.experience-text {
+                            @apply !text-sm w-full;
+                        }
+                    }
+                }
+            }
+            .bottom-subcontainer {
+                @apply w-full flex gap-[10px];
+                .bottom-sub-image {
+                    @apply w-1/2 relative;
+                    img {
+                        @apply w-full h-[230px] object-cover;
+                    }
+                    &:hover {
+                        .img-overlay {
+                            @apply opacity-100 visible;
+                            visibility: visible;
+                        }
+                    }
+                    .img-overlay {
+                        @apply  bg-black rounded-lg opacity-0 h-full w-full absolute z-[2] top-0 left-0 invisible flex flex-col justify-center items-center; 
+                        transition: .3s linear;
+                        background: rgba(0, 0, 0, .7);
+                        label {
+                            @apply w-[150px] h-[40px] bg-primary text-white flex flex-col justify-center cursor-pointer items-center rounded-sm;
+                        }
+                    }
+                }
+            }
+        }
+        .desc-subcontainer {
+            @apply w-1/2 flex flex-col gap-[20px];
+            .desc-title {
+                @apply flex flex-col gap-[10px] w-full;   
+                h1 {
+                    @apply text-lg ;
+                }
+                input {
+                    &.title {
+                        @apply !text-lg w-full;
+                    }
+                }
+                textarea {
+                    &.subtitle {
+                        @apply !text-3xl !font-medium h-[100px] max-h-[100px] w-full;
+                    }
+                }
+            }
+            .desc-content {
+                @apply flex flex-col gap-[10px] w-full;
+                textarea {
+                    &.description {
+                        @apply !text-sm !text-neutral-600 h-[130px] max-h-[130px] w-full;
+                    }
+                }
+            }
+            .desc-quote {
+                @apply flex flex-col gap-[10px] w-full;
+                textarea {
+                    &.quote {
+                        @apply underline italic border-l-2 border-l-primary pl-[10px] w-full;
+                    }
+                }
+                .desc-founder {
+                    @apply flex gap-[10px] items-center;
+                    img {
+                        @apply h-[50px] w-[50px] object-contain;
+                    }
+                    .text-founder {
+                        p {
+                            @apply text-base font-bold;
+                        }
+                        label {
+                            @apply text-primary font-medium
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+.admin-ijp-our-mission-section {
+    @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-2.png") no-repeat;
+    background-position: center;
+    &::before {
+        content: '';
+        @apply absolute bg-blue-900 opacity-85 w-full h-full z-[2];
+    }
+    .our-mission-container {
+        @apply flex flex-col items-start w-full justify-center gap-[40px];
+        .detail-subcontainer {
+            @apply flex flex-col justify-center items-center text-center z-10 px-[20px] w-full;
+            .icon-detail {
+                svg {
+                    @apply w-[100px] h-[100px];
+                   
+                }
+                &.smaller {
+                    svg {
+                        @apply w-[50px] h-[50px];
+                    }
+                }
+                &.fill {
+                    svg {
+                      path {
+                        @apply fill-white;
+                      }
+                    }
+                }
+                &.fill-stroke {
+                    svg {
+                        path {
+                            @apply stroke-white;
+                        }
+                    }
+                }
+                &.stroke {
+                    svg {
+                        @apply stroke-white;
+                    }
+                }
+            }
+            .desc-detail {
+                @apply flex flex-col gap-[10px] w-full;
+                input {
+                    @apply text-center text-3xl font-bold uppercase;
+                }
+                p {
+                    @apply text-[13px]/[17px] text-slate-300;
+                }
+                ul {
+                    @apply text-[13px]/[17px] flex flex-col gap-[5px];
+                    li {
+                        @apply px-[10px] text-slate-300 flex items-center gap-[5px];
+                        input {
+                            @apply text-center !text-[12px]/[15px] w-full !h-[13px];
+                        }
+
+                        a {
+                            &.btn-remove {
+                                @apply h-[20px] w-[20px] bg-red-500 flex flex-col justify-center items-center cursor-pointer;
+                                svg {
+                                    @apply h-[15px] w-[15px];
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+                .desc-growup {
+                    @apply flex gap-[30px];
+                    .details-growup {
+                        @apply flex flex-col gap-[10px] text-left;
+                        .detail-growup {
+                            h5 {
+                                @apply text-base font-medium;
+                                span {
+                                    @apply font-bold text-white;
+                                }
+                            }
+                            p {
+                                @apply text-[13px]/[17px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.admin-ijp-contact-us-section {
+    @apply p-[20px] flex flex-col justify-center items-center relative text-neutral-800 bg-neutral-100;
+    .contact-us-container {
+        @apply flex flex-col gap-[20px];
+        .title-subcontainer {
+            @apply flex flex-col justify-center items-center;
+            h1 {
+                @apply text-3xl font-bold text-neutral-800;
+            }
+        }
+        .detail-subcontainer {
+            @apply flex gap-[20px];
+            .sub-detail {
+                @apply flex flex-col justify-center items-center text-center gap-[10px];
+                svg {
+                    @apply w-[50px] h-[50px];
+                    path {
+                        @apply fill-slate-950;
+                    }
+                }
+                input {
+                    @apply text-center w-full;
+                    &.title {
+                        @apply !font-bold !text-xl !text-neutral-800;
+                    }
+                    &.value {
+                        @apply !font-semibold !text-slate-800;
+                    }
+                }
+                textarea {
+                    @apply text-center w-full;
+                    &.description {
+                        @apply !text-base !text-slate-700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.admin-ijp-products-section {
+    @apply flex flex-col justify-center items-center p-[20px] w-full;
+    .products-container {
+        @apply flex justify-center text-neutral-950 gap-[20px] bg-white p-[20px];
+        box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
+        .products-title {
+            @apply flex flex-col justify-center items-center text-center gap-[10px] w-[550px];
+            input {
+                @apply w-full text-center;
+                &.title {
+                    @apply !text-3xl !font-bold !text-neutral-800;
+                }
+            }
+            textarea {
+                @apply w-full text-center h-[150px] max-h-[150px];
+                &.description {
+                    @apply !text-sm;
+                }
+            }
+        }
+        .products-subcontainer {
+            @apply flex flex-wrap justify-center flex-1;
+            .our-product-wrapper {
+                @apply w-[175px] p-[10px];
+                .our-product-card {
+                    @apply rounded cursor-pointer relative;
+                    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                    img {
+                        @apply w-full rounded object-cover;
+                    }
+                    .card-overlay {
+                        @apply visible bg-black rounded-lg opacity-100 h-full w-full absolute z-[2] top-0 left-0 flex flex-col justify-center items-center; 
+                        transition: .3s linear;
+                        background: rgba(0, 0, 0, .4);
+                        input {
+                            @apply w-full text-center !h-[20px] !rounded-none;
+                            &.name {
+                                @apply text-[12px]/[14px] !font-bold uppercase;
+                            }
+                            &.description {
+                                @apply !rounded-none;
+                                @apply text-[12px]/[14px] !font-bold uppercase;
+                            }
+                        }
+                        .change-picture {
+                            @apply pt-[20px];
+                            label {
+                                @apply bg-primary text-white px-[10px] text-sm cursor-pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
