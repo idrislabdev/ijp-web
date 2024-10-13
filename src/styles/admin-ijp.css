@@ -309,3 +309,27 @@
         }
     }
 }
+
+.admin-ijp-hero-section {
+    @apply py-[100px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+    background: url("/images/backgrounds/parallax-office-3.jpg") no-repeat;
+    background-position: center;
+    &::before {
+        content: '';
+        @apply absolute bg-neutral-900 opacity-60 w-full h-full z-[2];
+    }
+    .hero-container {
+        @apply z-10 text-center flex flex-col gap-[10px] w-full;
+        .text-welcome {
+            input {
+                @apply !text-4xl !text-white !font-bold bg-transparent text-center;
+            }
+        }
+        .text-title {
+            @apply bg-primary py-[20px] px-[50px];
+            input {
+                @apply !text-5xl !text-white !font-medium bg-transparent text-center;
+            }
+        }
+    }
+}

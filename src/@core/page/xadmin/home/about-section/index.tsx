@@ -17,7 +17,7 @@ const XadminHomeAboutSection = (props: {objData:any}) => {
 
     const message = (
         <Message showIcon type={'info'}>
-          Data About Berhasil Diupdate
+          Data Section Berhasil Diupdate
         </Message>
       );
 
