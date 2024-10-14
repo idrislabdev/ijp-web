@@ -6,11 +6,11 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
 
-const XadminIJPHeaderSection = (props: {objData:any}) => {
+const XadminContactUsHeaderSection = (props: {objData:any}) => {
     const {objData} = props;
     const [lang, setLang] = useState('id');
     const [title, setTitle] = useState(objData[lang].title)
-    const [subtitle, setSubtitle] = useState(objData[lang].subtitle)
+    const [description, setDescription] = useState(objData[lang].description)
 
     const toaster = useToaster();
 
@@ -24,15 +24,15 @@ const XadminIJPHeaderSection = (props: {objData:any}) => {
         let payload = new FormData();
         payload.append("lang", lang);
         payload.append("title", title);
-        payload.append("subtitle", subtitle);
+        payload.append("description", description);
 
-        const response = await axiosInstance.post("/api/business-units-ijp/header", payload);
+        const response = await axiosInstance.post("/api/contact-us/header", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
 
     useEffect(() => {
         setTitle(objData[lang].title)
-        setSubtitle(objData[lang].subtitle)
+        setDescription(objData[lang].description)
     }, [objData, lang])
 
     return (
@@ -43,13 +43,11 @@ const XadminIJPHeaderSection = (props: {objData:any}) => {
                     <li className={`${lang === "en" ? 'active' : ''}`}><a onClick={_ => setLang('en')}>Inggris</a></li>
                 </ul>
             </div>
-            <div className='admin-ijp-hero-section'>
-                <div className='hero-container'>
-                    <div className='text-welcome'>
-                        <input value={title} onChange={e => setTitle(e.target.value)} className='title'/>
-                    </div>
-                    <div className='text-title'>
-                        <input value={subtitle} onChange={e => setSubtitle(e.target.value)} className='title'/>
+            <div className='admin-contact-us-header-section'>
+                <div className='header-container'>
+                    <input value={title} onChange={e => setTitle(e.target.value)} className='title'/>
+                    <div className='header-subcontainer'>
+                        <textarea value={description} onChange={e => setDescription(e.target.value)} className='description'/>
                     </div>
                 </div>
             </div>
@@ -58,4 +56,4 @@ const XadminIJPHeaderSection = (props: {objData:any}) => {
     )
 }
 
-export default XadminIJPHeaderSection
+export default XadminContactUsHeaderSection
