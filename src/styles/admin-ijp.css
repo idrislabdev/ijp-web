@@ -219,8 +219,8 @@
         @apply flex flex-col gap-[20px];
         .title-subcontainer {
             @apply flex flex-col justify-center items-center;
-            h1 {
-                @apply text-3xl font-bold text-neutral-800;
+            input {
+                @apply !text-3xl !font-bold !text-neutral-800 text-center w-full;
             }
         }
         .detail-subcontainer {
@@ -322,13 +322,13 @@
         @apply z-10 text-center flex flex-col gap-[10px] w-full;
         .text-welcome {
             input {
-                @apply !text-4xl !text-white !font-bold bg-transparent text-center;
+                @apply !text-4xl !text-white !font-bold bg-transparent text-center w-full;
             }
         }
         .text-title {
             @apply bg-primary py-[20px] px-[50px];
             input {
-                @apply !text-5xl !text-white !font-medium bg-transparent text-center;
+                @apply !text-5xl !text-white !font-medium bg-transparent text-center w-full;
             }
         }
     }

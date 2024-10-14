@@ -6,7 +6,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
 
-const XadminIJPContactUsSection = (props: {objData:any}) => {
+const XadminIJSAContactUsSection = (props: {objData:any}) => {
     const {objData} = props;
     const [lang, setLang] = useState('id');
     const [title, setTitle] = useState(objData[lang].title)
@@ -30,7 +30,7 @@ const XadminIJPContactUsSection = (props: {objData:any}) => {
         payload.append("phone", JSON.stringify(phone))
         payload.append("email", JSON.stringify(email))
 
-        const response = await axiosInstance.post("/api/business-units-ijp/contact", payload);
+        const response = await axiosInstance.post("/api/business-units-ijsa/contact", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
 
@@ -50,7 +50,7 @@ const XadminIJPContactUsSection = (props: {objData:any}) => {
                     <li className={`${lang === "en" ? 'active' : ''}`}><a onClick={_ => setLang('en')}>Inggris</a></li>
                 </ul>
             </div>
-            <div className='admin-ijp-contact-us-section'>
+            <div className='admin-ijsa-contact-us-section'>
                 <div className='contact-us-container'>
                     <div className='title-subcontainer'>
                         <input value={title} className='title' onChange={e => setTitle(e.target.value)}/>       
@@ -82,4 +82,4 @@ const XadminIJPContactUsSection = (props: {objData:any}) => {
     )
 }
 
-export default XadminIJPContactUsSection
+export default XadminIJSAContactUsSection

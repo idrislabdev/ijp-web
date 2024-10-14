@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.admin-ijsa-contact-us-section {
+    @apply p-[20px] flex flex-col justify-center items-center relative text-neutral-800 bg-neutral-100;
+    .contact-us-container {
+        @apply flex flex-col gap-[20px];
+        .title-subcontainer {
+            @apply flex flex-col justify-center items-center;
+            input {
+                @apply !text-3xl !font-bold !text-neutral-800 text-center w-full;
+            }
+        }
+        .detail-subcontainer {
+            @apply flex gap-[20px];
+            .sub-detail {
+                @apply flex flex-col justify-center items-center text-center gap-[10px];
+                svg {
+                    @apply w-[50px] h-[50px];
+                    path {
+                        @apply fill-slate-950;
+                    }
+                }
+                input {
+                    @apply text-center w-full;
+                    &.title {
+                        @apply !font-bold !text-xl !text-neutral-800;
+                    }
+                    &.value {
+                        @apply !font-semibold !text-slate-800;
+                    }
+                }
+                textarea {
+                    @apply text-center w-full;
+                    &.description {
+                        @apply !text-base !text-slate-700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.admin-ijsa-hero-section {
+    @apply py-[100px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+    background: url("/images/backgrounds/parallax-office-3.jpg") no-repeat;
+    background-position: center;
+    &::before {
+        content: '';
+        @apply absolute bg-neutral-900 opacity-60 w-full h-full z-[2];
+    }
+    .hero-container {
+        @apply z-10 text-center flex flex-col gap-[10px] w-full;
+        .text-welcome {
+            input {
+                @apply !text-4xl !text-white !font-bold bg-transparent text-center w-full;
+            }
+        }
+        .text-title {
+            @apply bg-primary py-[20px] px-[50px];
+            input {
+                @apply !text-5xl !text-white !font-medium bg-transparent text-center w-full;
+            }
+        }
+    }
+}
+
+.admin-ijsa-our-mission-section {
+    @apply p-[20px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-2.png") no-repeat;
+    background-position: center;
+    &::before {
+        content: '';
+        @apply absolute bg-blue-900 opacity-85 w-full h-full z-[2];
+    }
+    .our-mission-container {
+        @apply flex flex-col items-start w-full justify-center gap-[40px];
+        .detail-subcontainer {
+            @apply flex flex-col justify-center items-center text-center z-10 px-[20px] w-full;
+            .icon-detail {
+                svg {
+                    @apply w-[100px] h-[100px];
+                   
+                }
+                &.smaller {
+                    svg {
+                        @apply w-[50px] h-[50px];
+                    }
+                }
+                &.fill {
+                    svg {
+                      path {
+                        @apply fill-white;
+                      }
+                    }
+                }
+                &.fill-stroke {
+                    svg {
+                        path {
+                            @apply stroke-white;
+                        }
+                    }
+                }
+                &.stroke {
+                    svg {
+                        @apply stroke-white;
+                    }
+                }
+            }
+            .desc-detail {
+                @apply flex flex-col gap-[10px] w-full;
+                input {
+                    @apply text-center text-3xl font-bold uppercase;
+                }
+                p {
+                    @apply text-[13px]/[17px] text-slate-300;
+                }
+                ul {
+                    @apply text-[13px]/[17px] flex flex-col gap-[5px];
+                    li {
+                        @apply px-[10px] text-slate-300 flex items-center gap-[5px];
+                        input {
+                            @apply text-center !text-[12px]/[15px] w-full !h-[13px];
+                        }
+
+                        a {
+                            &.btn-remove {
+                                @apply h-[20px] w-[20px] bg-red-500 flex flex-col justify-center items-center cursor-pointer;
+                                svg {
+                                    @apply h-[15px] w-[15px];
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+                .desc-growup {
+                    @apply flex gap-[30px];
+                    .details-growup {
+                        @apply flex flex-col gap-[10px] text-left;
+                        .detail-growup {
+                            h5 {
+                                @apply text-base font-medium;
+                                span {
+                                    @apply font-bold text-white;
+                                }
+                            }
+                            p {
+                                @apply text-[13px]/[17px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .detail-subcontainer-2 {
+            @apply flex justify-center items-start text-center z-10 px-[20px] w-full;
+            .icon-detail {
+                svg {
+                    @apply w-[100px] h-[100px];
+                   
+                }
+                &.smaller {
+                    svg {
+                        @apply w-[50px] h-[50px];
+                    }
+                }
+                &.fill {
+                    svg {
+                      path {
+                        @apply fill-white;
+                      }
+                    }
+                }
+                &.fill-stroke {
+                    svg {
+                        path {
+                            @apply stroke-white;
+                        }
+                    }
+                }
+                &.stroke {
+                    svg {
+                        @apply stroke-white;
+                    }
+                }
+            }
+            .desc-detail {
+                @apply flex flex-col gap-[10px];
+                h5 {
+                    @apply text-3xl font-bold text-white uppercase;
+                    span {
+                        @apply text-slate-300;
+                    }
+                }
+                p {
+                    @apply text-[13px]/[17px] text-slate-300;
+                }
+                ul {
+                    @apply text-[13px]/[17px] flex flex-col gap-[5px];
+                    li {
+                        @apply px-[10px] text-slate-300;
+                        span {
+                            @apply font-bold text-slate-300;
+                        }
+                    }
+    
+                }
+                .desc-growup {
+                    @apply flex gap-[30px];
+                    .details-growup {
+                        @apply flex flex-col gap-[10px] text-left;
+                        .detail-growup {
+                            h5 {
+                                @apply text-base font-medium;
+                                span {
+                                    @apply font-bold text-white;
+                                }
+                            }
+                            p {
+                                @apply text-[13px]/[17px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

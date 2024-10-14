@@ -32,17 +32,16 @@
     "vission_mission": {
         "id": {
             "our_missions": {
-                "title": "Our Mission",
+                "title": "Our Missions",
                 "contents": [
-                    "IJP sebagai perusahaan yang berorientasi pada pelanggan akan berusaha memenuhi segala kebutuhan pelanggan.",
-                    "Membuat sistem dan kerjasama tim untuk meningkatkan kepuasan pelanggan dan suplai yang berkelanjutan.",
-                    "Selalu membuat inovasi dan terus meningkatkan kualitas untuk kepuasan pelanggan."
+                    "Mengembangkan sumber daya manusia untuk berinovasi dan bekerja secara efektif dan efisien.",
+                    "Memprioritaskan kepuasan pelanggan dengan memberikan produk yang berkualitas."
                 ]
             },
             "our_vissions": {
-                "title": "Our Vission",
+                "title": "Our Vissions",
                 "contents": [
-                    "Menjadi pemimpin perusahaan perdagangan bahan kimia di Indonesia."
+                    "Menjadi pemimpin pasar untuk sarung tangan plastik."
                 ]
             }
         },
