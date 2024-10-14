@@ -35,8 +35,8 @@ const MainSidebar = () => {
                 <ul>
                     <li><Link href='/xadmin/home'><UserListOutlineIcon />Daftar User Admin</Link></li>
                     <li><Link href='/xadmin/home'><OfficeOutlineIcon />Kantor Cabang</Link></li>
-                    <li><Link href='/xadmin/home'><SettingOutlineIcon />General</Link></li>
-                    <li><Link href='/xadmin/home'><UserOutlineIcon />My User</Link></li>
+                    {/* <li><Link href='/xadmin/home'><SettingOutlineIcon />General</Link></li> */}
+                    {/* <li><Link href='/xadmin/home'><UserOutlineIcon />My User</Link></li> */}
                     <li><a href='#'><LogoutOutlineIcon />Logout</a></li>
                 </ul>
             </div>
