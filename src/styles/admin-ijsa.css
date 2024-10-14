@@ -233,3 +233,30 @@
 
 
 }
+
+.admin-ijsa-section {
+    @apply p-[20px] flex flex-col justify-center items-center relative text-neutral-800 ;
+    .profile-container {
+        @apply flex flex-col gap-[30px] justify-center items-center w-full ;
+        .desc-subcontainer {
+            @apply w-full flex flex-col justify-center items-center text-center gap-[20px];
+            .desc-title {
+                @apply flex flex-col gap-[10px] w-full;   
+                input {
+                    &.title {
+                        @apply !text-lg w-full text-center;
+                    }
+                }
+            }
+            .desc-content {
+                @apply flex flex-col gap-[10px] w-full;
+                textarea {
+                    &.description {
+                        @apply !text-sm !text-neutral-600 h-[130px] max-h-[130px] w-full text-center;
+                    }
+                }
+            }
+        }
+    }
+   
+}
