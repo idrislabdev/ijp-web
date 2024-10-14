@@ -307,3 +307,71 @@
         }
     }
 }
+
+.admin-ijsa-products-section {
+    @apply flex flex-col justify-center items-center p-[20px] w-full;
+    
+    .products-ijsa-container {
+        @apply flex flex-col items-center justify-center text-neutral-950 gap-[20px] bg-white p-[20px] w-full;
+        box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
+        .products-title {
+            @apply flex flex-col justify-center items-center text-center gap-[10px] w-full;
+            input {
+                &.title {
+                    @apply !text-3xl text-center w-full;
+                }
+            }
+            textarea {
+                &.description {
+                    @apply !text-sm text-center w-full;
+                }
+            }
+        }
+        .products-subcontainer {
+            @apply flex justify-center w-full;
+            .our-product-wrapper {
+                @apply w-[275px] p-[10px];
+                .our-product-card {
+                    @apply rounded cursor-pointer relative gap-[10px] flex flex-col;
+                    .card-image {
+                        @apply w-full relative;
+                        img {
+                            @apply w-full rounded object-cover;
+                        }
+                        &:hover {
+                            .img-overlay {
+                                @apply opacity-100 visible;
+                                visibility: visible;
+                            }
+                        }
+                        .img-overlay {
+                            @apply  bg-black rounded-lg opacity-0 h-full w-full absolute z-[2] top-0 left-0 invisible flex flex-col justify-center items-center; 
+                            transition: .3s linear;
+                            background: rgba(0, 0, 0, .7);
+                            label {
+                                @apply w-[150px] h-[40px] bg-primary text-white flex flex-col justify-center cursor-pointer items-center rounded-sm;
+                            }
+                        }
+                    }
+                    .card-description {
+                        @apply flex flex-col gap-[5px];
+                        p {
+                            @apply text-sm text-neutral-600 flex items-center gap-[5px];
+                            input {
+                                &.value {
+                                    @apply !text-sm h-[20px] w-full;
+                                }
+                            }
+                        }
+                        input {
+                            &.name {
+                                @apply !text-base h-[30px];
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

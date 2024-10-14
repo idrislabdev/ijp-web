@@ -6,11 +6,16 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
 
-const XadminIJPProductsSection = (props: {objData:any}) => {
+const XadminIJSAProductsSection = (props: {objData:any}) => {
     const {objData} = props;
     const [lang, setLang] = useState('id');
     const [title, setTitle] = useState(objData[lang].title)
-    const [description, setDescription] = useState(objData[lang].description)
+    const [description1, setDescription1] = useState(objData[lang].description_1)
+    const [description2, setDescription2] = useState(objData[lang].description_2)
+    const [materialText, setMaterialText] = useState(objData[lang].material_text)
+    const [longText, setLongText] = useState(objData[lang].long_text)
+    const [thickText, setThickText] = useState(objData[lang].thick_text)
+    const [colorText, setColorText] = useState(objData[lang].color_text)
     const [products, setProducts] = useState(objData.products)
 
     const [fileData1, setFileData1] = useState(null)
@@ -29,7 +34,8 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         let payload = new FormData();
         payload.append("lang", lang);
         payload.append("title", title);
-        payload.append("description", description);
+        payload.append("description_1", description1);
+        payload.append("description_2", description2);
         payload.append("products", JSON.stringify(products));
         
         if (fileData1 !== null)
@@ -44,7 +50,7 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         if (fileData4 !== null)
             payload.append("file_4", fileData4);
 
-        const response = await axiosInstance.post("/api/business-units-ijp/our-products", payload);
+        const response = await axiosInstance.post("/api/business-units-ijsa/our-products", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
 
@@ -75,17 +81,34 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         setProducts(temp)
     }
 
-    const setProductsDescription = (val:any, index:number) => {
+    const setProductsMaterial = (val:any, index:number) => {
         const temp = [...products]
-        temp[index].description = val
+        temp[index].material = val
         setProducts(temp)
     }
 
+    const setProductLong = (val:any, index:number) => {
+        const temp = [...products]
+        temp[index].long = val
+        setProducts(temp)
+    }
 
+    const setProductsThick = (val:any, index:number) => {
+        const temp = [...products]
+        temp[index].thick = val
+        setProducts(temp)
+    }
+
+    const setProductsColor = (val:any, index:number) => {
+        const temp = [...products]
+        temp[index].color = val
+        setProducts(temp)
+    }
 
     useEffect(() => {
         setTitle(objData[lang].title)
-        setDescription(objData[lang].description)
+        setDescription1(objData[lang].description_1)
+        setDescription2(objData[lang].description_2)
         setProducts(objData.products)
     }, [objData, lang])
 
@@ -97,29 +120,34 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                     <li className={`${lang === "en" ? 'active' : ''}`}><a onClick={_ => setLang('en')}>Inggris</a></li>
                 </ul>
             </div>
-            <div className='admin-ijp-products-section'>
-                <div className='products-container'>
+            <div className='admin-ijsa-products-section'>
+                <div className='products-ijsa-container'>
                     <div className='products-title'>
                         <input value={title} onChange={e => setTitle(e.target.value)} className='title'/>
-                        <textarea value={description} onChange={e => setDescription(e.target.value)} className='description'/>
+                        <textarea value={description1} onChange={e => setDescription1(e.target.value)} className='description'/>
+                        <textarea value={description2} onChange={e => setDescription2(e.target.value)} className='description'/>
                     </div>
                     <div className='products-subcontainer'>
                         {products.map((item:any, index:number) => (
                             <div className='our-product-wrapper' key={index}>
                                 <div className='our-product-card'>
-                                    <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
-                                    <div className='card-overlay'>
-                                        <input value={item.name} onChange={e => setProductsName(e.target.value, index)} className='name'/>
-                                        <input value={item.description} onChange={e => setProductsDescription(e.target.value, index)} className='description'/>
-                                        <div className='change-picture'>
+                                    <div className='card-image'>
+                                        <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
+                                        <div className='img-overlay'>
                                             <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
                                             <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
                                         </div>
                                     </div>
-                                   
+                                    <div className='card-description'>
+                                        <input value={item.name} onChange={e => setProductsName(e.target.value, index)} className='name'/>
+                                        <p>{materialText}:<input value={item.material} onChange={e => setProductsMaterial(e.target.value, index)} className='value'/></p>
+                                        <p>{longText}: <input value={item.long} onChange={e => setProductLong(e.target.value, index)} className='value'/></p>
+                                        <p>{thickText}: <input value={item.thick} onChange={e => setProductsThick(e.target.value, index)} className='value'/></p>
+                                        <p>{colorText}: <input value={item.color} onChange={e => setProductsColor(e.target.value, index)} className='value'/></p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            </div>  
+                        ))} 
                     </div>
                 </div>
             </div>
@@ -128,4 +156,4 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
     )
 }
 
-export default XadminIJPProductsSection
+export default XadminIJSAProductsSection
