@@ -24,6 +24,16 @@ const JobsPageForm = () => {
         Data Section Berhasil Diupdate
       </Message>
   );
+  
+  const clearForm = () => {
+    setName("");
+    setPosition("");
+    setLocation("");
+    setDescription("");
+    setJobdescs([]);
+    setQualifications([]);
+    setStatus('Open');
+  }
 
   const save = async () => {
     let body = {
@@ -38,7 +48,7 @@ const JobsPageForm = () => {
 
     const response = await axiosInstance.post("/api/jobs", body);
     toaster.push(message, { placement:'bottomEnd', duration: 5000 })
-
+    clearForm();
   }
 
   return (
