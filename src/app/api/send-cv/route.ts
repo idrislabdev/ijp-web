@@ -32,8 +32,8 @@ export async function POST(req: Request) {
       address   : payload.get("address"),
       city      : payload.get("city"),
       province  : payload.get("province"),
-      created_at: new Date().toISOString();
-      updated_at: new Date().toISOString();
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
     }
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
