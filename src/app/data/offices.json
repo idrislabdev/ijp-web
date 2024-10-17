@@ -1,0 +1,6 @@
+[
+    { "id"    : 1, "name"  : "Kantor Pusat", "email"   : "ijpweb@gmail.com" },
+    { "id"    : 2, "name"  : "Kantor Cabang (Semarang)", "email"   : "ijpweb@gmail.com" },
+    { "id"    : 3, "name"  : "Kantor Cabang (Jakarta)", "email"   : "ijpweb@gmail.com" },
+    { "id"    : 4, "name"  : "Pabrik dan Gudang", "email"   : "ijpweb@gmail.com" }
+]

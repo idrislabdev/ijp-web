@@ -85,7 +85,7 @@
             .card-jobs {
                 @apply p-[10px] w-[280px];
                .card-body {
-                    @apply flex flex-col justify-center items-center gap-[10px] bg-white p-[10px] rounded-lg h-[150px];
+                    @apply flex flex-col justify-center items-center gap-[10px] bg-white p-[10px] rounded-lg h-[150px] text-center;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     h5 {
                         @apply text-xl font-bold text-primary;
@@ -221,7 +221,7 @@
                     a {
                         @apply w-1/2 justify-center items-center text-center;
                         .card-body {
-                            @apply rounded-[4px];
+                            @apply rounded-[4px] text-center;
                             h5 {
                                 @apply text-base;
                             }

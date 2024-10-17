@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import "@/styles/components/forms.css";
+import 'rsuite/Message/styles/index.css';
+import 'rsuite/useToaster/styles/index.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

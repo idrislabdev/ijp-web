@@ -1,0 +1,9 @@
+[
+    {"id" : 1, "name" : "Manager Area"},
+    {"id" : 2, "name" : "Manager Keuangan"},
+    {"id" : 3, "name" : "Admin Gudang"},
+    {"id" : 4, "name" : "Admin Sales"},
+    {"id" : 5, "name" : "Staff Administrasi"},
+    {"id" : 6, "name" : "Staff Accounting"},
+    {"id" : 7, "name" : "Staff IT"}
+]

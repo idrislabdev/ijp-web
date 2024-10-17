@@ -11,7 +11,7 @@ export default async function  ContactUsDetailPage({ params }: any) {
     return (
       <main className='careers-page sm:mobile-responsive'>
         <CareersHeroDetailSection objLang={null} />
-        <CareersDetailSection objLang={null} />
+        <CareersDetailSection objLang={null} params={params} />
       </main>
     )
   }

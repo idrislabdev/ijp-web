@@ -2,25 +2,20 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react'
+import initiateJob from "@/app/data/jobs.json"
+import offices from "@/app/data/offices.json"
 
 const CareersJobsSection = (props: {lang:string, objLang: any}) => {
     const { lang, objLang } = props
-    const jobs = [
-        { id: 1, name: 'Staff Accounting', place: 'Kantor Pusat' },
-        { id: 2, name: 'Staff Accounting', place: 'Kantor Cabang (Semarang)' },
-        { id: 3, name: 'Manager Area', place: 'Kantor Cabang (Semarang)' },
-        { id: 4, name: 'Staf Administrasi', place: 'Kantor Cabang (Jakarta)' },
-        { id: 5, name: 'Admin Gudang', place: 'Pabrik dan Gudang' },
-        { id: 6, name: 'Admin Sales', place: 'Kantor Pusat' },
-        { id: 7, name: 'Staff IT', place: 'Kantor Pusat' },
-        { id: 8, name: 'Manager Keuangan', place: 'Kantor Pusat' },
-    ]
+    const jobs = initiateJob.filter((x:any) => x.status === 'Open');
     const [dataJobs, setDataJobs] = useState(jobs)
+    const [selectPosition, setSelectPosition] = useState('Semua')
     const handleChange = (e: React.MouseEvent<HTMLDivElement, MouseEvent> | any) => {
+        setSelectPosition(e.target.value)
         if (e.target.value === 'Semua') {
             setDataJobs(jobs)
         } else {
-            setDataJobs(jobs.filter((x) => x.place === e.target.value))
+            setDataJobs(jobs.filter((x:any) => x.location === e.target.value))
         }
     }
     return (
@@ -31,21 +26,20 @@ const CareersJobsSection = (props: {lang:string, objLang: any}) => {
             <div className='select-container'>
                 <div className='card-select'>
                     <label>{objLang[lang].label}</label>
-                    <select onChange={handleChange}>
-                        <option value="Semua">Semua</option>
-                        <option value="Kantor Pusat">Kantor Pusat</option>
-                        <option value="Kantor Cabang (Semarang)">Kantor Cabang (Semarang)</option>
-                        <option value="Kantor Cabang (Jakarta)">Kantor Cabang (Jakarta)</option>
-                        <option value="Pabrik dan Gudang">Pabrik dan Gudang</option>
+                    <select onChange={handleChange} value={selectPosition}>
+                        <option value={'Semua'}>Semua</option>
+                        {offices.map((item:any, index:number) => (
+                            <option value={item.name} key={index}>{item.name}</option>
+                        ))}
                     </select>
                 </div>
             </div>
             <div className='jobs-container'>
-                {dataJobs.map((item:{id:number, name: string, place:string}, index:number) => (
-                    <Link className='card-jobs' key={index} href={`/${lang}/careers/detail-job`}>
+                {dataJobs.map((item:any, index:number) => (
+                    <Link className='card-jobs' key={index} href={`/${lang}/careers/${item.id}`}>
                         <div className='card-body'>
                             <h5>{item.name}</h5>
-                            <p>{item.place}</p>
+                            <p>{item.location}</p>
                         </div>
                     </Link>
                 ))

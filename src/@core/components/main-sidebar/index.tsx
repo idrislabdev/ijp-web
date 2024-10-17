@@ -27,16 +27,25 @@ const MainSidebar = () => {
                     <li><Link href='/xadmin/news'><NewsOutlineIcon />News</Link></li>
                     <li><Link href='/xadmin/career'><ArchieveOutlineIcon />Karir</Link></li>
                     <li><Link href='/xadmin/contact-us'><PhoneOutlineIcon />Kontak Kami</Link></li>
+                    <li><Link href='/xadmin/contact-us'><AboutOutlineIcon />Footer</Link></li>
+                </ul>
+            </div>
+            <hr />
+            <span className='label'>data</span>
+            <div className='list-menu'>
+                <ul>
+                    <li><Link href='/xadmin/home'><UserListOutlineIcon />User Admin</Link></li>
+                    <li><Link href='/xadmin/home'><UserListOutlineIcon />Jobs</Link></li>
+                    <li><Link href='/xadmin/home'><UserListOutlineIcon />Lowongan Masuk</Link></li>
+                    <li><Link href='/xadmin/home'><OfficeOutlineIcon />Berita</Link></li>
                 </ul>
             </div>
             <hr />
             <span className='label'>setting</span>
             <div className='list-menu'>
                 <ul>
-                    <li><Link href='/xadmin/home'><UserListOutlineIcon />Daftar User Admin</Link></li>
-                    <li><Link href='/xadmin/home'><OfficeOutlineIcon />Kantor Cabang</Link></li>
-                    {/* <li><Link href='/xadmin/home'><SettingOutlineIcon />General</Link></li> */}
-                    {/* <li><Link href='/xadmin/home'><UserOutlineIcon />My User</Link></li> */}
+                    <li><Link href='/xadmin/home'><SettingOutlineIcon />General</Link></li>
+                    <li><Link href='/xadmin/home'><UserOutlineIcon />My User</Link></li>
                     <li><a href='#'><LogoutOutlineIcon />Logout</a></li>
                 </ul>
             </div>
