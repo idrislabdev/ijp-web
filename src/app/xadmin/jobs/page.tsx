@@ -57,7 +57,7 @@ export default async function  XadminJobsPage() {
                       <td>{moment(item.created_at).format('DD MMMM YYYY')}</td>
                       <td>{item.status}</td>
                       <td className='text-center'>
-                        <a className='btn-action'><PencilOutlineIcon /></a>
+                        <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                       </td>
                     </tr>
                   ))}

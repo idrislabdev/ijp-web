@@ -63,7 +63,7 @@
                 .button-flex {
                     @apply flex flex-col gap-[10px];
                     button {
-                        @apply bg-primary text-white rounded-[14px] h-[54px] text-[18px]/[27px] w-full font-bold;
+                        @apply bg-primary text-white rounded-[8px] h-[54px] text-[18px]/[27px] w-full font-bold;
                     }
                     a {
                         @apply text-primary text-right text-[20px]/[30px] font-medium;

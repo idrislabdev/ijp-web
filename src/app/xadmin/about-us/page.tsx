@@ -49,7 +49,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan text dan gambar pada area header</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -58,7 +58,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan profil perusahan unicorp </td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -67,7 +67,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan visi dan misi perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -76,7 +76,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan info tentang sejarah perusahaan unicorp</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -85,7 +85,7 @@ export default async function  XadminPage() {
                     <td>Detail strategi perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -94,7 +94,7 @@ export default async function  XadminPage() {
                     <td>Cakupan area perdagangan unicorp</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                 </tbody>

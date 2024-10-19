@@ -50,7 +50,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan text dan gambar pada area header</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -59,7 +59,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan info perusahan unicorp </td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -68,7 +68,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan text pada section unit bisnis</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -77,7 +77,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan info dan produk yang ingin ditampilkan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -86,7 +86,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan judul dan text pada section berita</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                 </tbody>

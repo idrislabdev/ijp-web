@@ -46,7 +46,7 @@ const MainSidebar = () => {
                 <ul>
                     <li><Link href='/xadmin/home'><SettingOutlineIcon />General</Link></li>
                     <li><Link href='/xadmin/home'><UserOutlineIcon />My User</Link></li>
-                    <li><a href='#'><LogoutOutlineIcon />Logout</a></li>
+                    <li><Link href='/xadmin/logout'><LogoutOutlineIcon />Logout</Link></li>
                 </ul>
             </div>
         </div>

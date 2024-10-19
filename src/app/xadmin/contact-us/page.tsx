@@ -50,7 +50,7 @@ export default async function  XadminContactPage() {
                     <td>Pengaturan Info Map Lokasi Perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -59,7 +59,7 @@ export default async function  XadminContactPage() {
                     <td>Pengaturan welcome text pada halaman kontak kami</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -68,7 +68,7 @@ export default async function  XadminContactPage() {
                     <td>Pengaturan Alamat Email Utama</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -77,7 +77,7 @@ export default async function  XadminContactPage() {
                     <td>Pengaturan nomor telepon utama perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -86,7 +86,7 @@ export default async function  XadminContactPage() {
                     <td>Pengaturan alamat utama perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -95,7 +95,7 @@ export default async function  XadminContactPage() {
                     <td>Pengaturan informasi jam kerja kantor / perusahaan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                 </tbody>

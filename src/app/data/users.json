@@ -1,18 +1,9 @@
 [
     {
-        "username": "rifai",
-        "password": "12345",
-        "hash": "$2a$10$jxRJhMJ2Rjg1bWIr8O8fvOaQr0CQdsMlzt2GVswwRuxup2h.INYBK",
+        "username": "admin",
+        "password": "$2a$10$o5hvaa0zPxXykDW0.4GqZunudchw2yrXm6bZh5YE1mBtP3UtNCYA2",
         "id": 1,
-        "dateCreated": "2024-09-22T13:34:28.600Z",
-        "dateUpdated": "2024-09-22T13:34:28.600Z"
-    },
-    {
-        "username": "rifai",
-        "password": "12345",
-        "hash": "$2a$10$yUaKca04LNZ6TaDeBZmX7.RL4TOkLrt.mwjviVUCiknTCewL5ZXJ.",
-        "id": 2,
-        "dateCreated": "2024-09-23T02:53:19.617Z",
-        "dateUpdated": "2024-09-23T02:53:19.617Z"
+        "dateCreated": "2024-10-19T10:58:04.718Z",
+        "dateUpdated": "2024-10-19T10:58:04.718Z"
     }
 ]

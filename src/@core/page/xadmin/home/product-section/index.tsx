@@ -53,7 +53,7 @@ const XadminProductSection = (props: {objData:any}) => {
                             <input value={title} onChange={e => setTitle(e.target.value)} className='w-full'/>
                             <textarea value={subtitle} onChange={e => setSubTitle(e.target.value)} className='w-full min-h-[100px] max-h-[100px]'/>
                         </div>
-                        <input value={buttonText} onChange={e => setButtonText(e.target.value)} className='text-primary !bg-white text-center'/>
+                        <input value={buttonText} onChange={e => setButtonText(e.target.value)} className='text-primary !bg-white text-center h-[44px]'/>
 
                     </div>
                 </div>

@@ -54,7 +54,7 @@ export default async function  XadminPage() {
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td>Buka</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -65,7 +65,7 @@ export default async function  XadminPage() {
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td>Buka</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -76,7 +76,7 @@ export default async function  XadminPage() {
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td>Buka</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -87,7 +87,7 @@ export default async function  XadminPage() {
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td>Buka</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
@@ -98,7 +98,7 @@ export default async function  XadminPage() {
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td>Buka</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                 </tbody>

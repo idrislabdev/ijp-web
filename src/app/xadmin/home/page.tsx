@@ -2,6 +2,7 @@ import React from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
+import Link from 'next/link';
 
 export default async function  XadminPage() {
   const formatDate = (val:string) => {
@@ -50,7 +51,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan text dan gambar pada area header</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <Link href='/xadmin/home/hero-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
@@ -59,7 +60,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan info perusahan unicorp </td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <Link href='/xadmin/home/about-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
@@ -68,7 +69,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan text pada section unit bisnis</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <Link href='/xadmin/home/business-units-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
@@ -77,7 +78,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan info dan produk yang ingin ditampilkan</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <Link href='/xadmin/home/products-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
@@ -86,7 +87,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan judul dan text pada section berita</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <a className='btn-action'><PencilOutlineIcon /></a>
+                      <Link href='/xadmin/home/news-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                 </tbody>
