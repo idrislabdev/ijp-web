@@ -1,17 +1,16 @@
 "use client";
 
-import { AddOutlineIcon, CheckSquareIcon, EnvelopIcon, HomeIcon, PhoneIcon, TrashOutlineIcon } from '@/@core/my-icons';
+import { AddOutlineIcon, CheckSquareIcon, TrashOutlineIcon } from '@/@core/my-icons';
 import axiosInstance from '@/@core/utils/axios';
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
 
-const XadminContactUsHeaderSection = (props: {objData:any}) => {
+const XadminCareersAvailableSection = (props: {objData:any}) => {
     const {objData} = props;
     const [lang, setLang] = useState('id');
     const [title, setTitle] = useState(objData[lang].title)
-    const [description, setDescription] = useState(objData[lang].description)
-
+    const [label, setLabel] = useState(objData[lang].label)
     const toaster = useToaster();
 
     const message = (
@@ -24,15 +23,16 @@ const XadminContactUsHeaderSection = (props: {objData:any}) => {
         let payload = new FormData();
         payload.append("lang", lang);
         payload.append("title", title);
-        payload.append("description", description);
+        payload.append("label", label);
 
-        const response = await axiosInstance.post("/api/contact-us/header", payload);
+        const response = await axiosInstance.post("/api/careers/available", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
 
+
     useEffect(() => {
         setTitle(objData[lang].title)
-        setDescription(objData[lang].description)
+        setLabel(objData[lang].label)
     }, [objData, lang])
 
     return (
@@ -43,17 +43,19 @@ const XadminContactUsHeaderSection = (props: {objData:any}) => {
                     <li className={`${lang === "en" ? 'active' : ''}`}><a onClick={_ => setLang('en')}>Inggris</a></li>
                 </ul>
             </div>
-            <div className='admin-contact-us-header-section'>
-                <div className='header-container'>
+            <div className='admin-careers-jobs-section mb-[40px]'>
+                <div className='background-container'>
                     <input value={title} onChange={e => setTitle(e.target.value)} className='title'/>
-                    <div className='header-subcontainer'>
-                        <textarea value={description} onChange={e => setDescription(e.target.value)} className='description'/>
+                </div>
+                <div className='select-container'>
+                    <div className='card-select'>
+                        <input value={label} onChange={e => setLabel(e.target.value)} className='title'/>
                     </div>
                 </div>
             </div>
-            <button className='w-full btn btn-primary' onClick={saveUpdate}>Simpan Perubahan</button>
+            <button className='btn btn-primary w-full' onClick={saveUpdate}>Simpan Perubahan</button>
         </div>
     )
 }
 
-export default XadminContactUsHeaderSection
+export default XadminCareersAvailableSection

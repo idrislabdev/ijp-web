@@ -13,7 +13,7 @@ export async function POST(req: Request) {
         if (dataUsers.find((x:any) => x.username === user.username))
             throw `User with the username "${user.username}" already exists`;
     
-        user.password = bcrypt.hashSync(user.password, 10);    
+        user.password = bcrypt.hashSync('12345', 10);    
         usersRepo.create(user);
 
         return NextResponse.json({ status: "success", user:user});

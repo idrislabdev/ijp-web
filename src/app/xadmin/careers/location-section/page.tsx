@@ -3,17 +3,17 @@ import React, { useState } from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
 import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
-import { getDictionariesContactUs, getDictionariesIjp } from '@/app/dictionaries';
-import XadminContactUsHeaderSection from '@/@core/page/xadmin/contact-us/header-section';
-import '@/styles/admin-contact-us.css'
+import { getDictionariesCarrers } from '@/app/dictionaries';
+import XadminCareersLocationSection from '@/@core/page/xadmin/careers/location-section';
 import Link from 'next/link';
+import '@/styles/admin-careers.css'
 
-export default async function  XadminContactHeaderPage() {
+export default async function  XadminCareersLocationPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  const { header } = await getDictionariesContactUs();
+  const { office_location } = await getDictionariesCarrers();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -23,8 +23,8 @@ export default async function  XadminContactHeaderPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><Link href={`/xadmin/contact-us`}><FolderIcon /> Contact Us</Link></li>
-                <li><FolderOpenIcon /> Header Section</li>
+                <li><Link href={`/xadmin/careers`}><FolderIcon /> Karir</Link></li>
+                <li><FolderOpenIcon /> Lokasi Section</li>
               </ul>
             </div>
           </div>
@@ -34,12 +34,12 @@ export default async function  XadminContactHeaderPage() {
                 <HomeOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Contact Us</h5>
-                <p>Header Section</p>
+                <h5>Halaman Karir</h5>
+                <p>Lokasi Section</p>
               </div>
             </div>
             <div className='main-body'>
-                <XadminContactUsHeaderSection objData={header} />
+                <XadminCareersLocationSection objData={office_location}/>
             </div>
           </div>
         </div>

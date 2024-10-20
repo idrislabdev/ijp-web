@@ -6,6 +6,7 @@ import moment from 'moment';
 import { getDictionariesContactUs } from '@/app/dictionaries';
 import XadminContactUsInfoSection from '@/@core/page/xadmin/contact-us/info-section';
 import '@/styles/admin-contact-us.css'
+import Link from 'next/link';
 
 export default async function  XadminContactInfoPage() {
   const formatDate = (val:string) => {
@@ -22,7 +23,7 @@ export default async function  XadminContactInfoPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Contact Us</li>
+                <li><Link href={`/xadmin/contact-us`}><FolderIcon /> Contact Us</Link></li>
                 <li><FolderOpenIcon /> Info Section</li>
               </ul>
             </div>

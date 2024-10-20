@@ -3,7 +3,7 @@ const dictionariesAbout = import("./dictionaries/about-us.json").then((module) =
 const dictionariesIjp = import("./dictionaries/ijp.json").then((module) => module.default)
 const dictionariesIjsa = import("./dictionaries/ijsa.json").then((module) => module.default)
 const dictionariesNews= import("./dictionaries/news.json").then((module) => module.default)
-const dictionariesCarrers = import("./dictionaries/carrers.json").then((module) => module.default)
+const dictionariesCarrers = import("./dictionaries/careers.json").then((module) => module.default)
 const dictionariesContactUs = import("./dictionaries/contact-us.json").then((module) => module.default)
 
 export const getDictionariesHome = async () => dictionariesHome;

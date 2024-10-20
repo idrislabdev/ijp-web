@@ -29,7 +29,7 @@ const MainSidebar = () => {
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'business-units-ijp'  ? 'active' : ''}`}><Link href='/xadmin/business-units-ijp'><BuildingOutlineIcon />Unit Bisnis (IJP)</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'business-units-ijsa'  ? 'active' : ''}`}><Link href='/xadmin/business-units-ijsa'><BuildingOutlineIcon />Unit Bisnis (IJSA)</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'news'  ? 'active' : ''}`}><Link href='/xadmin/news'><NewsOutlineIcon />News</Link></li>
-                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'career'  ? 'active' : ''}`}><Link href='/xadmin/career'><ArchieveOutlineIcon />Karir</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'careers'  ? 'active' : ''}`}><Link href='/xadmin/careers'><ArchieveOutlineIcon />Karir</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'contact-us'  ? 'active' : ''}`}><Link href='/xadmin/contact-us'><PhoneOutlineIcon />Kontak Kami</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'footer'  ? 'active' : ''}`}><Link href='/xadmin/footer'><AboutOutlineIcon />Footer</Link></li>
                 </ul>

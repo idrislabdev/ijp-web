@@ -6,7 +6,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
 
-const XadminContactUsHeaderSection = (props: {objData:any}) => {
+const XadminCareersHeaderSection = (props: {objData:any}) => {
     const {objData} = props;
     const [lang, setLang] = useState('id');
     const [title, setTitle] = useState(objData[lang].title)
@@ -26,7 +26,7 @@ const XadminContactUsHeaderSection = (props: {objData:any}) => {
         payload.append("title", title);
         payload.append("description", description);
 
-        const response = await axiosInstance.post("/api/contact-us/header", payload);
+        const response = await axiosInstance.post("/api/careers/header", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
 
@@ -43,17 +43,19 @@ const XadminContactUsHeaderSection = (props: {objData:any}) => {
                     <li className={`${lang === "en" ? 'active' : ''}`}><a onClick={_ => setLang('en')}>Inggris</a></li>
                 </ul>
             </div>
-            <div className='admin-contact-us-header-section'>
-                <div className='header-container'>
-                    <input value={title} onChange={e => setTitle(e.target.value)} className='title'/>
-                    <div className='header-subcontainer'>
-                        <textarea value={description} onChange={e => setDescription(e.target.value)} className='description'/>
+            <div className='admin-careers-hero-section'>
+                <div className='hero-container'>
+                    <div className='text-welcome'>
+                        <input value={title} onChange={e => setTitle(e.target.value)} className='title'/>
+                    </div>
+                    <div className='text-title'>
+                        <input value={description} onChange={e => setDescription(e.target.value)} className='title'/>
                     </div>
                 </div>
             </div>
-            <button className='w-full btn btn-primary' onClick={saveUpdate}>Simpan Perubahan</button>
+            <button className='btn btn-primary w-full' onClick={saveUpdate}>Simpan Perubahan</button>
         </div>
     )
 }
 
-export default XadminContactUsHeaderSection
+export default XadminCareersHeaderSection

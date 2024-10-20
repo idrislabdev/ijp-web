@@ -3,10 +3,10 @@ import MainSidebar from '@/@core/components/main-sidebar'
 import { ArchieveOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, PhoneOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 
-import dataTable from "@/app/data/jobs.json"
+import dataTable from "@/app/data/users.json"
 import Link from 'next/link';
 
-export default async function  XadminJobsPage() {
+export default async function  XadminUsersPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
@@ -20,7 +20,7 @@ export default async function  XadminJobsPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Data Jobs</li>
+                <li><FolderIcon /> Data Users</li>
               </ul>
             </div>
           </div>
@@ -30,23 +30,21 @@ export default async function  XadminJobsPage() {
                 <ArchieveOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Jobs</h5>
-                <p>Manajemen Lowongan Kerja</p>
+                <h5>Halaman Data User</h5>
+                <p>Manajemen Data User</p>
               </div>
             </div>
             <div className='main-body flex flex-col gap-[10px]'>
               <div className='flex justify-end'>
-                <Link href={`/xadmin/jobs/form`} className='btn btn-primary'>Tambah Data</Link>
+                <Link href={`/xadmin/users/form`} className='btn btn-primary'>Tambah Data</Link>
               </div>
               <table>
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama Lowongan</th>
-                    <th>Posisi</th>
-                    <th>Lokasi</th>
-                    <th>Tanggal Posting</th>
-                    <th>Status</th>
+                    <th>Nama User</th>
+                    <th>Username</th>
+                    <th>Email</th>
                     <th className='text-center'>Aksi</th>
                   </tr>
                 </thead>
@@ -55,10 +53,8 @@ export default async function  XadminJobsPage() {
                     <tr key={index}>
                       <td>{index+1}</td>
                       <td>{item.name}</td>
-                      <td>{item.position}</td>
-                      <td>{item.location}</td>
-                      <td>{moment(item.created_at).format('DD MMMM YYYY')}</td>
-                      <td>{item.status}</td>
+                      <td>{item.username}</td>
+                      <td>{item.email}</td>
                       <td className='text-center'>
                         <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                       </td>

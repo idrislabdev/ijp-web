@@ -1,10 +1,10 @@
 import React from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
-import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, PhoneOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
+import { AboutOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 import Link from 'next/link';
 
-export default async function  XadminContactPage() {
+export default async function  XadminCareersPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
@@ -18,18 +18,18 @@ export default async function  XadminContactPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Contact Us</li>
+                <li><FolderIcon /> Karir</li>
               </ul>
             </div>
           </div>
           <div className='container-body'>
             <div className='title-body'>
               <div className='logo-area'>
-                <PhoneOutlineIcon />
+                <AboutOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Kontak Kami</h5>
-                <p>Pengaturan Halaman Kontak Kami</p>
+                <h5>Halaman Karir</h5>
+                <p>Pengaturan Halaman Karir</p>
               </div>
             </div>
             <div className='main-body'>
@@ -45,18 +45,26 @@ export default async function  XadminContactPage() {
                 <tbody>
                   <tr>
                     <td>01</td>
-                    <td>Header Section</td>
-                    <td>Pengaturan Header</td>
+                    <td>Header / Hero</td>
+                    <td>Pengaturan text dan gambar pada area header</td>
                     <td className='text-center'>
-                      <Link href='/xadmin/contact-us/header-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/careers/header-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
                     <td>02</td>
-                    <td>Info Section</td>
-                    <td>Pengaturan Info</td>
+                    <td>Lokasi Kantor</td>
+                    <td>Pengaturan Lokasi Kantor </td>
                     <td className='text-center'>
-                      <Link href='/xadmin/contact-us/info-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/careers/location-section' className='btn-action'><PencilOutlineIcon /></Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>Available Jobs</td>
+                    <td>Pengaturan Available Jobs </td>
+                    <td className='text-center'>
+                      <Link href='/xadmin/careers/available-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                 </tbody>

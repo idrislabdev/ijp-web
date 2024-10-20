@@ -1,9 +1,11 @@
 [
     {
+        "name": "Admin",
         "username": "admin",
-        "password": "$2a$10$o5hvaa0zPxXykDW0.4GqZunudchw2yrXm6bZh5YE1mBtP3UtNCYA2",
+        "email": "ijpweb@gmail.com",
+        "password": "$2a$10$DA5MWKUe7t2wdQ0ds8OgAOiaV4UfBSObEEPOVkdV0z.FkdfV8c0o6",
         "id": 1,
-        "dateCreated": "2024-10-19T10:58:04.718Z",
-        "dateUpdated": "2024-10-19T10:58:04.718Z"
+        "dateCreated": "2024-10-20T08:43:52.005Z",
+        "dateUpdated": "2024-10-20T08:43:52.005Z"
     }
 ]
