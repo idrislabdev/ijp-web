@@ -7,6 +7,7 @@ import XadminAboutOurMissionSection from '@/@core/page/xadmin/about-us/our-missi
 import { getDictionariesAbout } from '@/app/dictionaries';
 
 import '@/styles/admin-about-us.css'
+import Link from 'next/link';
 
 export default async function  XadminAboutOurMissionPage() {
   const formatDate = (val:string) => {
@@ -23,7 +24,7 @@ export default async function  XadminAboutOurMissionPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Tentang Kami</li>
+                <li><Link href={`/xadmin/about-us`}><FolderIcon /> About Us</Link></li>
                 <li><FolderOpenIcon /> Our Mission Section</li>
               </ul>
             </div>

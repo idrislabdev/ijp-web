@@ -6,6 +6,7 @@ import moment from 'moment';
 import XadminIJSAOurMissionSection from '@/@core/page/xadmin/ijsa/our-mission-section';
 import { getDictionariesIjsa } from '@/app/dictionaries';
 import '@/styles/admin-ijsa.css'
+import Link from 'next/link';
 
 export default async function  XadminIJSAOurMissionPage() {
   const formatDate = (val:string) => {
@@ -22,7 +23,7 @@ export default async function  XadminIJSAOurMissionPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Business Units (IJSA)</li>
+                <li><Link href={`/xadmin/business-units-ijsa`}><FolderIcon /> Business Units (IJSA)</Link></li>
                 <li><FolderOpenIcon /> Our Mission Section</li>
               </ul>
             </div>

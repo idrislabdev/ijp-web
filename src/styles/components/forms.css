@@ -2,7 +2,7 @@ label {
     @apply text-[13px]/[18px];
 }
 input {
-    @apply border border-neutral-200 rounded-[4px] !text-neutral-700 text-[13px]/[18px];
+    @apply border border-neutral-200 rounded-[4px] !text-neutral-700 text-[13px]/[18px] outline-none;
     &.base {
         @apply text-[13px]/[18px] h-[35px] !px-[10px] !py-[10px] outline-none text-neutral-700;
     }
@@ -44,7 +44,7 @@ button {
             svg {
                 @apply h-[18px] w-[18px];
                 path {
-                    @apply stroke-white;
+                    @apply fill-white;
                 }
             }
         }

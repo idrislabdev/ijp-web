@@ -17,7 +17,6 @@ export default function TestUpload() {
       body: formData,
     });
     const result = await response.json();
-    console.log(result);
   }
 
   return (

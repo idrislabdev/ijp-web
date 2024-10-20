@@ -18,6 +18,9 @@
                         @apply flex items-center;
                         li {
                             @apply text-neutral-700 flex items-center text-sm gap-[5px];
+                            a {
+                                @apply flex items-center gap-[5px];
+                            }
                             svg {
                                 @apply w-[15px] h-[15px];
                                 path {

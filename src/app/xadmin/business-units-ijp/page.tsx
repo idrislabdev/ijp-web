@@ -4,7 +4,7 @@ import { AboutOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlin
 import moment from 'moment';
 import Link from 'next/link';
 
-export default async function  XadminPage() {
+export default async function  XadminIJPPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
@@ -18,7 +18,7 @@ export default async function  XadminPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> About Us</li>
+                <li><FolderIcon /> Business Units (IJP)</li>
               </ul>
             </div>
           </div>
@@ -28,8 +28,8 @@ export default async function  XadminPage() {
                 <AboutOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Tentang Kami</h5>
-                <p>Pengaturan Halaman Tentang Kami</p>
+                <h5>Halaman Business Units (IJP)</h5>
+                <p>Pengaturan Halaman Business Units (IJP)</p>
               </div>
             </div>
             <div className='main-body'>
@@ -48,47 +48,39 @@ export default async function  XadminPage() {
                     <td>Header / Hero</td>
                     <td>Pengaturan text dan gambar pada area header</td>
                     <td className='text-center'>
-                      <Link href='/xadmin/about-us/hero-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/business-units-ijp/header-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
                     <td>02</td>
                     <td>Profil Perusahaan</td>
-                    <td>Pengaturan profil perusahan unicorp </td>
+                    <td>Pengaturan profil unit bisnis IJP </td>
                     <td className='text-center'>
-                      <Link href='/xadmin/about-us/profile-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/business-units-ijp/profile-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
                     <td>03</td>
                     <td>Visi dan Misi</td>
-                    <td>Pengaturan visi dan misi perusahaan</td>
+                    <td>Pengaturan visi dan misi IJP</td>
                     <td className='text-center'>
-                      <Link href='/xadmin/about-us/our-mission-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/business-units-ijp/our-mission-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
                     <td>04</td>
-                    <td>Sejarah Unicorp</td>
-                    <td>Pengaturan info tentang sejarah perusahaan unicorp</td>
+                    <td>Products</td>
+                    <td>Section Produk</td>
                     <td className='text-center'>
-                      <Link href='/xadmin/about-us/history-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/business-units-ijp/products-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
                     <td>05</td>
-                    <td>Our Strategy</td>
-                    <td>Detail strategi perusahaan</td>
+                    <td>Contact Us</td>
+                    <td>Detail Kontak IJP</td>
                     <td className='text-center'>
-                      <Link href='/xadmin/about-us/our-strategy-section' className='btn-action'><PencilOutlineIcon /></Link>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>06</td>
-                    <td>Area Perdagangan</td>
-                    <td>Cakupan area perdagangan unicorp</td>
-                    <td className='text-center'>
-                      <Link href='/xadmin/about-us/market-area-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/business-units-ijp/contact-us-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                 </tbody>

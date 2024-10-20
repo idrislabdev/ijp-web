@@ -6,6 +6,7 @@ import moment from 'moment';
 import XadminIJPProfileSection from '@/@core/page/xadmin/ijp/profile-section';
 import { getDictionariesIjp } from '@/app/dictionaries';
 import '@/styles/admin-ijp.css'
+import Link from 'next/link';
 
 export default async function  XadminIJPProfilePage() {
   const formatDate = (val:string) => {
@@ -22,7 +23,7 @@ export default async function  XadminIJPProfilePage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Business Units (IJP)</li>
+                <li><Link href={`/xadmin/business-units-ijp`}><FolderIcon /> Business Units (IJP)</Link></li>
                 <li><FolderOpenIcon /> Profile Section</li>
               </ul>
             </div>

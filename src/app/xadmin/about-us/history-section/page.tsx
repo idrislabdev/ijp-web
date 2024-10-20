@@ -7,6 +7,7 @@ import XadminAboutHistorySection from '@/@core/page/xadmin/about-us/history-sect
 import { getDictionariesAbout, getDictionariesHome } from '@/app/dictionaries';
 
 import '@/styles/admin-about-us.css'
+import Link from 'next/link';
 
 export default async function  XadminAboutHistoryPage() {
   const formatDate = (val:string) => {
@@ -23,7 +24,7 @@ export default async function  XadminAboutHistoryPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Tentang Kami</li>
+                <li><Link href={`/xadmin/about-us`}><FolderIcon /> About Us</Link></li>
                 <li><FolderOpenIcon /> History Section</li>
               </ul>
             </div>

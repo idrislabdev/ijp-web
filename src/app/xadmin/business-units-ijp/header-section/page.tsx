@@ -7,6 +7,7 @@ import XadminIJPProfileSection from '@/@core/page/xadmin/ijp/profile-section';
 import { getDictionariesIjp } from '@/app/dictionaries';
 import '@/styles/admin-ijp.css'
 import XadminIJPHeaderSection from '@/@core/page/xadmin/ijp/header-section';
+import Link from 'next/link';
 
 export default async function  XadminIJPHeaderPage() {
   const formatDate = (val:string) => {
@@ -23,7 +24,7 @@ export default async function  XadminIJPHeaderPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Business Units (IJP)</li>
+                <li><Link href={`/xadmin/business-units-ijp`}><FolderIcon /> Business Units (IJP)</Link></li>
                 <li><FolderOpenIcon /> Header Section</li>
               </ul>
             </div>

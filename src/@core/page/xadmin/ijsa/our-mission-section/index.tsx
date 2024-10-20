@@ -116,7 +116,7 @@ const XadminIJSAOurMissionSection = (props: {objData:any}) => {
                                         <a className='btn-remove' onClick={_ => deleteVissions(index)}><TrashOutlineIcon /></a>
                                     </li>
                                 ))}
-                                <button className='flex items-center justify-center btn-sm ' onClick={iterateVissions}><AddOutlineIcon /></button>
+                                <button className='flex items-center justify-center btn btn-primary ' onClick={iterateVissions}><AddOutlineIcon /></button>
 
                             </ul>
                         </div>
@@ -137,7 +137,7 @@ const XadminIJSAOurMissionSection = (props: {objData:any}) => {
                                             <a className='btn-remove' onClick={_ => deleteMissions(index)}><TrashOutlineIcon /></a>
                                         </li>
                                     ))}
-                                    <button className='flex items-center justify-center btn-sm ' onClick={iterateMissions}><AddOutlineIcon /></button>
+                                    <button className='flex items-center justify-center btn btn-primary ' onClick={iterateMissions}><AddOutlineIcon /></button>
                                 </ul>
                             </div>
                         </div>
@@ -156,14 +156,14 @@ const XadminIJSAOurMissionSection = (props: {objData:any}) => {
                                             <a className='btn-remove' onClick={_ => deleteStrategies(index)}><TrashOutlineIcon /></a>
                                         </li>
                                     ))}
-                                    <button className='flex items-center justify-center btn-sm ' onClick={iterateStrategies}><AddOutlineIcon /></button>
+                                    <button className='flex items-center justify-center btn btn-primary ' onClick={iterateStrategies}><AddOutlineIcon /></button>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button className='w-full' onClick={saveUpdate}>Simpan Perubahan</button>
+            <button className='btn btn-primary w-full' onClick={saveUpdate}>Simpan Perubahan</button>
         </div>
     )
 }

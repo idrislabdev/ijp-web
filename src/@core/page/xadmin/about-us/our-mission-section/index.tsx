@@ -105,11 +105,11 @@ const XadminAboutOurMissionSection = (props: {objData:any}) => {
                             <ul>
                                 {ourMissions.contents.map((item:string, index:number)=>(
                                     <li key={index}>
-                                        <input value={item} onChange={e => updateContentMissions(e.target.value, index)}/>       
+                                        <input value={item} onChange={e => updateContentMissions(e.target.value, index)} className='!h-[30px]'/>       
                                         <a className='btn-remove' onClick={_ => deleteMissions(index)}><TrashOutlineIcon /></a>
                                     </li>                           
                                 ))}
-                                <button className='flex items-center justify-center btn-sm' onClick={iterateMissions}><AddOutlineIcon /></button>
+                                <button className='btn btn-primary flex items-center justify-center btn-sm' onClick={iterateMissions}><AddOutlineIcon /></button>
                             </ul>
                         </div>
                     </div>
@@ -126,7 +126,7 @@ const XadminAboutOurMissionSection = (props: {objData:any}) => {
                                         <a className='btn-remove' onClick={_ => deleteVissions(index)}><TrashOutlineIcon /></a>
                                     </li>   
                                 ))}
-                                <button className='flex items-center justify-center btn-sm' onClick={iterateVissions}><AddOutlineIcon /></button>
+                                <button className='btn btn-primary flex items-center justify-center btn-sm' onClick={iterateVissions}><AddOutlineIcon /></button>
 
                             </ul>
                         </div>
@@ -156,7 +156,7 @@ const XadminAboutOurMissionSection = (props: {objData:any}) => {
                     </div>
                 </div>
             </div>
-            <button className='w-full' onClick={saveUpdate}>Simpan Perubahan</button>
+            <button className='btn btn-primary w-full' onClick={saveUpdate}>Simpan Perubahan</button>
         </div>
     )
 }

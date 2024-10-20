@@ -151,7 +151,7 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
                     </div>
                 </div>
             </div>
-            <button className='w-full' onClick={saveUpdate}>Simpan Perubahan</button>
+            <button className='btn btn-primary w-full' onClick={saveUpdate}>Simpan Perubahan</button>
         </div>
     )
 }

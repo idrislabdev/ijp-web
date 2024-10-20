@@ -6,6 +6,7 @@ import moment from 'moment';
 import { getDictionariesAbout, getDictionariesHome } from '@/app/dictionaries';
 import XadminAboutMarketAreaSection from '@/@core/page/xadmin/about-us/market-area-section';
 import '@/styles/admin-about-us.css'
+import Link from 'next/link';
 
 export default async function  XadminAboutMarketAreaPage() {
   const formatDate = (val:string) => {
@@ -22,7 +23,7 @@ export default async function  XadminAboutMarketAreaPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Tentang Kami</li>
+                <li><Link href={`/xadmin/about-us`}><FolderIcon /> About Us</Link></li>
                 <li><FolderOpenIcon /> Market Area Section</li>
               </ul>
             </div>

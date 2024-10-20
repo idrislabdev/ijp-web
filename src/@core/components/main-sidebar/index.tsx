@@ -1,9 +1,14 @@
+"use client"
+
 import { AboutOutlineIcon, ArchieveOutlineIcon, BuildingOutlineIcon, UserListOutlineIcon, HomeIcon, HomeOutlineIcon, LogoutOutlineIcon, NewsOutlineIcon, OfficeOutlineIcon, PhoneOutlineIcon, SettingOutlineIcon, UserOutlineIcon } from '@/@core/my-icons'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname  } from 'next/navigation'
 import React from 'react'
 
 const MainSidebar = () => {
+  const pathname = usePathname ();
+
   return (
     <div className='main-sidebar'>
         <div className='header-area'>
@@ -14,30 +19,29 @@ const MainSidebar = () => {
                     <span>Company</span>
                 </div>
             </div>
-        </div>
+        </div>``
         <div className='menu-area'>
             <span className='label'>Setting Halaman</span>
             <div className='list-menu'>
                 <ul>
-                    <li><Link href='/xadmin/home'><HomeOutlineIcon />Home</Link></li>
-                    <li><Link href='/xadmin/about-us'><AboutOutlineIcon />Tentang Kami</Link></li>
-                    <li><Link href='/xadmin/business-unit'><BuildingOutlineIcon />Unit Bisnis (IJP)</Link></li>
-                    <li><Link href='/xadmin/business-unit'><BuildingOutlineIcon />Produk (IJP)</Link></li>
-                    <li><Link href='/xadmin/business-unit'><BuildingOutlineIcon />Unit Bisnis (IJSA)</Link></li>
-                    <li><Link href='/xadmin/news'><NewsOutlineIcon />News</Link></li>
-                    <li><Link href='/xadmin/career'><ArchieveOutlineIcon />Karir</Link></li>
-                    <li><Link href='/xadmin/contact-us'><PhoneOutlineIcon />Kontak Kami</Link></li>
-                    <li><Link href='/xadmin/contact-us'><AboutOutlineIcon />Footer</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'home' ? 'active' : ''}`}><Link href='/xadmin/home'><HomeOutlineIcon />Home</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'about-us'  ? 'active' : ''}`}><Link href='/xadmin/about-us'><AboutOutlineIcon />Tentang Kami</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'business-units-ijp'  ? 'active' : ''}`}><Link href='/xadmin/business-units-ijp'><BuildingOutlineIcon />Unit Bisnis (IJP)</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'business-units-ijsa'  ? 'active' : ''}`}><Link href='/xadmin/business-units-ijsa'><BuildingOutlineIcon />Unit Bisnis (IJSA)</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'news'  ? 'active' : ''}`}><Link href='/xadmin/news'><NewsOutlineIcon />News</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'career'  ? 'active' : ''}`}><Link href='/xadmin/career'><ArchieveOutlineIcon />Karir</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'contact-us'  ? 'active' : ''}`}><Link href='/xadmin/contact-us'><PhoneOutlineIcon />Kontak Kami</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'footer'  ? 'active' : ''}`}><Link href='/xadmin/footer'><AboutOutlineIcon />Footer</Link></li>
                 </ul>
             </div>
             <hr />
             <span className='label'>data</span>
             <div className='list-menu'>
                 <ul>
-                    <li><Link href='/xadmin/home'><UserListOutlineIcon />User Admin</Link></li>
-                    <li><Link href='/xadmin/home'><UserListOutlineIcon />Jobs</Link></li>
-                    <li><Link href='/xadmin/home'><UserListOutlineIcon />Lowongan Masuk</Link></li>
-                    <li><Link href='/xadmin/home'><OfficeOutlineIcon />Berita</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'users'  ? 'active' : ''}`}><Link href='/xadmin/users'><UserListOutlineIcon />User Admin</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'jobs'  ? 'active' : ''}`}><Link href='/xadmin/jobs'><UserListOutlineIcon />Jobs</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'applicants'  ? 'active' : ''}`}><Link href='/xadmin/applicants'><UserListOutlineIcon />Lowongan Masuk</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'news'  ? 'active' : ''}`}><Link href='/xadmin/news'><OfficeOutlineIcon />Berita</Link></li>
                 </ul>
             </div>
             <hr />

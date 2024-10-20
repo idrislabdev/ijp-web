@@ -6,6 +6,7 @@ import moment from 'moment';
 import XadminIJSAProfileSection from '@/@core/page/xadmin/ijsa/profile-section';
 import { getDictionariesIjsa } from '@/app/dictionaries';
 import '@/styles/admin-ijsa.css'
+import Link from 'next/link';
 
 export default async function  XadminIJSAProfilePage() {
   const formatDate = (val:string) => {
@@ -22,7 +23,7 @@ export default async function  XadminIJSAProfilePage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Business Units (IJSA)</li>
+                <li><Link href={`/xadmin/business-units-ijsa`}><FolderIcon /> Business Units (IJSA)</Link></li>
                 <li><FolderOpenIcon /> Profile Section</li>
               </ul>
             </div>

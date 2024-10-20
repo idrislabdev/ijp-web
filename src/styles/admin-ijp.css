@@ -174,7 +174,7 @@
                     li {
                         @apply px-[10px] text-slate-300 flex items-center gap-[5px];
                         input {
-                            @apply text-center !text-[12px]/[15px] w-full !h-[13px];
+                            @apply text-center !text-[12px]/[15px] w-full !h-[21px] px-[5px] rounded-[2px];
                         }
 
                         a {

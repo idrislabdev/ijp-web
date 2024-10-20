@@ -9,6 +9,9 @@
 
         .desc-subcontainer {
             @apply w-[60%] flex flex-col gap-[20px];
+            input {
+                @apply !px-[5px];
+            }
             .title {
                 @apply text-3xl font-bold;
             }
@@ -17,7 +20,7 @@
                 li {
                     @apply flex gap-[20px] text-base items-center;
                     input {
-                        @apply w-full !text-[14px]/[18px];
+                        @apply w-full !text-[14px]/[18px] !h-[30px] !px-[5px];
                     }
                     span {
                         svg {
@@ -229,7 +232,7 @@
                     li {
                         @apply flex items-center gap-[5px];
                         input {
-                            @apply text-center !text-[12px]/[15px] w-full !h-[13px];
+                            @apply text-center !text-[12px]/[15px] w-full !h-[21px] px-[5px] rounded-[2px];
                         }
 
                         a {
@@ -254,10 +257,10 @@
                             @apply w-1/2 mb-[10px] px-[2px];
                             input {
                                 &.title {
-                                    @apply !text-base !font-medium !text-left !h-[30px];
+                                    @apply !text-base !font-medium !text-left !h-[30px] !px-[5px];
                                 }
                                 &.description {
-                                    @apply text-center !text-[12px]/[15px] w-full !h-[13px];
+                                    @apply text-center !text-[12px]/[15px] w-full !h-[21px] !px-[5px] !rounded-[2px];
                                 }
                             }
                         }

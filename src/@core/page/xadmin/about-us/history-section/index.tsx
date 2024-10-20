@@ -96,7 +96,7 @@ const XadminAboutHistorySection = (props: {objData:any}) => {
                                 <a className='btn-remove' onClick={_ => deleteContents(index)}><TrashOutlineIcon /></a>
                             </li>
                         ))}
-                        <button className='btn-sm btn-outline flex items-center justify-center' onClick={iterateContents}><AddOutlineIcon /></button>
+                        <button className='btn btn-primary flex items-center justify-center' onClick={iterateContents}><AddOutlineIcon /></button>
                     </ul>
                 </div>
             </div>
