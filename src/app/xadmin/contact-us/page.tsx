@@ -39,61 +39,22 @@ export default async function  XadminContactPage() {
                     <th>No</th>
                     <th>Section</th>
                     <th>Keterangan</th>
-                    <th>Last Update</th>
                     <th className='text-center'>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>01</td>
-                    <td>Setting Map</td>
-                    <td>Pengaturan Info Map Lokasi Perusahaan</td>
-                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
+                    <td>Header Section</td>
+                    <td>Pengaturan Header</td>
                     <td className='text-center'>
                       <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>
                   </tr>
                   <tr>
                     <td>02</td>
-                    <td>Setting Text</td>
-                    <td>Pengaturan welcome text pada halaman kontak kami</td>
-                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
-                    <td className='text-center'>
-                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>03</td>
-                    <td>Alamat Email</td>
-                    <td>Pengaturan Alamat Email Utama</td>
-                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
-                    <td className='text-center'>
-                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>04</td>
-                    <td>Nomor Telepon</td>
-                    <td>Pengaturan nomor telepon utama perusahaan</td>
-                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
-                    <td className='text-center'>
-                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>05</td>
-                    <td>Alamat Perusahaan</td>
-                    <td>Pengaturan alamat utama perusahaan</td>
-                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
-                    <td className='text-center'>
-                      <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>06</td>
-                    <td>Jam Kerja</td>
-                    <td>Pengaturan informasi jam kerja kantor / perusahaan</td>
-                    <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
+                    <td>Info Section</td>
+                    <td>Pengaturan Info</td>
                     <td className='text-center'>
                       <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
                     </td>

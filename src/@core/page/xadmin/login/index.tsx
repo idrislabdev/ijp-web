@@ -10,7 +10,6 @@ const LoginContainerPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const searchParams = useSearchParams();
     const router = useRouter();
 
     const logIn = async() => {
@@ -23,8 +22,7 @@ const LoginContainerPage = () => {
         then((response) => {
             const { success, error  } = response.data;
             if (success) {
-                const nextUrl = searchParams.get("next");
-                router.push(nextUrl ?? "/xadmin/home");
+                router.push("/xadmin/home");
                 router.refresh();
             } else {
                 console.log(error)
