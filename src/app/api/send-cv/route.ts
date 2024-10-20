@@ -36,7 +36,7 @@ export async function POST(req: Request) {
       updated_at: new Date().toISOString()
     }
     const { data, error } = await resend.emails.send({
-      from: 'web <web@indojayaputra.com>',
+      from: 'lamaran <lamaran@indojayaputra.com>',
       to: ['ijpeweb@gmail.com'],
       subject: `Lamaran ${applicant.job_name}`,
       react: EmailTemplate({ obj:applicant }),
