@@ -11,6 +11,10 @@ export async function POST(req: Request) {
   try {
     const payload:any = await req.formData();
     const uuid = uuidv4();
+    let file_setting = await fs.readFile(process.cwd() + '/src/app/data/settings.json', 'utf8');
+    let settings = JSON.parse(file_setting)
+    let recipent = settings.find((x:any) => x.name === 'email_hrd').value;
+
     if (payload.get("file")) {
       const file = payload.get("file") as File;
       const arrayBuffer = await file.arrayBuffer();
@@ -39,7 +43,7 @@ export async function POST(req: Request) {
     }
     const { data, error } = await resend.emails.send({
       from: 'lamaran <lamaran@indojayaputra.com>',
-      to: ['ijpeweb@gmail.com'],
+      to: [recipent],
       subject: `Lamaran ${applicant.job_name}`,
       react: EmailTemplate({ obj:applicant }),
       attachments: [

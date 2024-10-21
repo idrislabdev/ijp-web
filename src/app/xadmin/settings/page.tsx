@@ -5,8 +5,9 @@ import moment from 'moment';
 
 import Link from 'next/link';
 import XadminApplicantsTable from '@/@core/page/xadmin/applicants/table';
+import XadminSettingsTable from '@/@core/page/xadmin/settings/table';
 
-export default async function  XadminApplicantsPage() {
+export default async function  XadminSettingsPage() {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
@@ -20,7 +21,7 @@ export default async function  XadminApplicantsPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Data Pelamar</li>
+                <li><FolderIcon /> Pengaturan</li>
               </ul>
             </div>
           </div>
@@ -30,12 +31,12 @@ export default async function  XadminApplicantsPage() {
                 <ArchieveOutlineIcon />
               </div>
               <div className='text-area'>
-                <h5>Halaman Pelamar</h5>
-                <p>Manajemen Data Pelamar Kerja</p>
+                <h5>Halaman Pengaturan</h5>
+                <p>Pengaturan Data General</p>
               </div>
             </div>
             <div className='main-body flex flex-col gap-[10px]'>
-              <XadminApplicantsTable />
+              <XadminSettingsTable />
             </div>
           </div>
         </div>
