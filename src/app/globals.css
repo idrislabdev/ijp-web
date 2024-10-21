@@ -26,6 +26,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.rs-modal-wrapper {
+  display: flex;
+  align-items: center;
+  .rs-modal {
+      margin: 0 auto 0 auto !important;
+  }
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

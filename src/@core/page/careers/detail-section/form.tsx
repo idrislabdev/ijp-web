@@ -37,6 +37,8 @@ const CareersDetailSectionForm = (props: {job:any}) => {
         let payload = new FormData();
         payload.append("job_id", job.id);
         payload.append("job_name", job.name);
+        payload.append("job_position", job.position);
+        payload.append("job_location", job.location);
         payload.append("name", name);
         payload.append("email", email);
         payload.append("address", address);

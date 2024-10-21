@@ -23,17 +23,19 @@ export async function POST(req: Request) {
     const attachment = fs2.readFileSync(filepath).toString('base64');
 
     let applicant = {
-      id        : uuid,
-      job_id    : payload.get("job_id"),
-      job_name  : payload.get("job_name"),
-      name      : payload.get("name"),
-      email     : payload.get("email"),
-      phone     : payload.get("phone"),
-      address   : payload.get("address"),
-      city      : payload.get("city"),
-      province  : payload.get("province"),
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString()
+      id            : uuid,
+      job_id        : payload.get("job_id"),
+      job_name      : payload.get("job_name"),
+      job_location  : payload.get("job_location"),
+      job_position  : payload.get("job_position"),
+      name          : payload.get("name"),
+      email         : payload.get("email"),
+      phone         : payload.get("phone"),
+      address       : payload.get("address"),
+      city          : payload.get("city"),
+      province      : payload.get("province"),
+      created_at    : new Date().toISOString(),
+      updated_at    : new Date().toISOString()
     }
     const { data, error } = await resend.emails.send({
       from: 'lamaran <lamaran@indojayaputra.com>',

@@ -49,6 +49,25 @@ button {
             }
         }
 
+        &.btn-outline-primary {
+            @apply !bg-white !text-primary border !border-primary font-semibold;
+            &:hover {
+                @apply !text-white !bg-primary;
+                svg {
+                    path {
+                        @apply !fill-white;
+                    }
+                }
+            }
+            svg {
+                @apply h-[15px] w-[15px];
+                path {
+                    @apply fill-primary;
+                }
+            }
+        }
+
+
         &.btn-outline-neutral {
             @apply !bg-white !text-neutral-700 border !border-neutral-400 font-semibold;
             &:hover {

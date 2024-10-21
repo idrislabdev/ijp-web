@@ -7,7 +7,7 @@ import React from 'react'
 const HomeOurProductsSection = (props: {objLang:any, lang:string}) => {
     const { objLang, lang } = props
     const downloadCatalog = async () => {
-        const resp = await axiosInstance.get(`/catalogs/sample-catalog.pdf`);
+        const resp = await axiosInstance.get(`/catalogs/sample-catalog-2.pdf`, {responseType: 'blob' });
 
         const url = window.URL.createObjectURL(new Blob([resp.data]));
         const link = document.createElement("a");
