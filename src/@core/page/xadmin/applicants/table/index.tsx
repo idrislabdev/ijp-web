@@ -31,7 +31,7 @@ const XadminApplicantsTable = () => {
         setOpenModalConfirm(true)
     }
     const confirmDelete = async () => {
-        const response = await axiosInstance.delete(`/api/applicants/${id}`);
+        const response = await axiosInstance.delete(`/api/applicants/${selectedId}`);
         const { data } = response.data
         setApplicants(data)
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
