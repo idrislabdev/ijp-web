@@ -25,8 +25,8 @@ const ModalEditSetting = (props: {
             <Modal.Body>
                 <div className='flex flex-col gap-[10px]'>
                     <div className='flex items-center gap-[20px] text-neutral-700'>
-                        <label className='w-[100px] text-sm'>{dataObj.name}</label>
-                        <input value={dataObj.value} className='base' onChange={e => setDataObj({...dataObj, value:e.target.value})} />
+                        <label className='w-[100px] text-sm'>{dataObj.text}</label>
+                        <input value={dataObj.value} className='base flex-1' onChange={e => setDataObj({...dataObj, value:e.target.value})} />
                     </div>
                 </div>
             </Modal.Body>

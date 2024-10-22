@@ -1,34 +1,47 @@
 [
     {
         "name": "company_name",
+        "text": "Nama Perusahaan",
         "value": "CV Indo Jaya Putra"
     },
     {
+        "name": "tagline",
+        "text": "Tagline",
+        "value": "UNICORP | Grow Through Innovation"
+    },
+    {
         "name": "address",
+        "text": "Alamat",
         "value": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia"
     },
     {
         "name": "facebook",
+        "text": "Alamat Facebook",
         "value": "https://www.facebook.com/"
     },
     {
         "name": "twitter",
+        "text": "Alamat Twitter",
         "value": "https://x.com/"
     },
     {
         "name": "instagram",
+        "text": "Alamat Instagram",
         "value": "https://www.instagram.com/"
     },
     {
         "name": "phone",
+        "text": "No. Telepon",
         "value": "+62 31 599 7100"
     },
     {
         "name": "email",
+        "text": "Alamat Email",
         "value": "ijpeweb@gmail.com"
     },
     {
         "name": "email_hrd",
+        "text": "Alamat Email HRD",
         "value": "ijpeweb@gmail.com"
     }
 ]

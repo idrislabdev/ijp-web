@@ -1,17 +1,16 @@
 "use client";
 
 import React, { useState } from 'react'
-import dataTable from "@/app/data/settings.json"
+import dataTable from "@/app/data/offices.json"
 import { EyeOutlineIcon, PencilOutlineIcon, TrashOutlineIcon } from '@/@core/my-icons';
 import axiosInstance from '@/@core/utils/axios';
 import { Message, useToaster } from 'rsuite';
-// import ModalApplicant from '../modal-applicant';
+import ModalEditOffices from '../modal-edit';
 import ModalConfirm from '@/@core/components/modal/modal-confirm';
-import ModalEditSetting from '../modal-edit';
 
-const XadminSettingsTable = () => {
-    const [settings, setSettings] = useState(dataTable);
-    const [setting, setSetting] = useState({})
+const XadminOfficesTable = () => {
+    const [offices, setOffices] = useState(dataTable);
+    const [office, setOffice] = useState({})
     const [openModal, setOpenModal ] = useState(false);
     const [openModalConfirm, setOpenModalConfirm ] = useState(false);
     const [selectedId, setSelectedId] = useState('');
@@ -20,11 +19,11 @@ const XadminSettingsTable = () => {
 
     const message = (
         <Message showIcon type={'info'}>
-          Data Setting Berhasil Diupdate
+          Data office Berhasil Diupdate
         </Message>
     );
-    const showSetting = (item:any) => {
-        setSetting(item)
+    const showOffice = (item:any) => {
+        setOffice(item)
         setOpenModal(true);
     }
     const deleteApplicant = (id:string) => {
@@ -32,9 +31,9 @@ const XadminSettingsTable = () => {
         setOpenModalConfirm(true)
     }
     const confirmDelete = async () => {
-        const response = await axiosInstance.delete(`/api/settings/${selectedId}`);
+        const response = await axiosInstance.delete(`/api/offices/${selectedId}`);
         const { data } = response.data
-        setSettings(data)
+        setOffices(data)
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
     const updateSuccess = () => {
@@ -43,9 +42,9 @@ const XadminSettingsTable = () => {
         getData()
     }
     const getData = async () => {
-        const response = await axiosInstance.get(`/api/settings`);
+        const response = await axiosInstance.get(`/api/offices`);
         const { data } = response.data
-        setSettings(data)
+        setOffices(data)
     }
     return (
         <>
@@ -54,19 +53,25 @@ const XadminSettingsTable = () => {
                     <tr>
                         <th>No</th>
                         <th>Nama</th>
-                        <th>Nilai</th>
+                        <th>Alamat</th>
+                        <th>No. Telepon</th>
+                        <th>Fax</th>
+                        <th>Email</th>
                         <th className='text-center'>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {settings.map((item:any,index:number) => (
+                    {offices.map((item:any,index:number) => (
                     <tr key={index}>
                         <td>{index+1}</td>
-                        <td>{item.text}</td>
-                        <td>{item.value}</td>
+                        <td>{item.name}</td>
+                        <td>{item.address}</td>
+                        <td>{item.phones.length > 0 ? item.phones.join(", ") : ''}</td>
+                        <td>{item.faxs.length > 0 ? item.faxs.join(", ") : ''}</td>
+                        <td>{item.email}</td>
                         <td className='text-center'>
                         <div className='flex justify-center items-center gap-[4px]'>
-                            <a className='btn-action cursor-pointer' onClick={_ => showSetting(item)}><PencilOutlineIcon /></a>
+                            <a className='btn-action cursor-pointer' onClick={_ => showOffice(item)}><PencilOutlineIcon /></a>
                         </div>
                         </td>
                     </tr>
@@ -79,15 +84,15 @@ const XadminSettingsTable = () => {
                 content='Hapus Data Ini'
                 onConfirm={confirmDelete}
             />
-            <ModalEditSetting
+            <ModalEditOffices
                 isModalOpen={openModal} 
                 setIsModalOpen={setOpenModal} 
-                dataObj={setting}
-                setDataObj={setSetting}
+                dataObj={office}
+                setDataObj={setOffice}
                 onSuccess={updateSuccess}
             />
         </>
     )
 }
 
-export default XadminSettingsTable
+export default XadminOfficesTable

@@ -31,7 +31,6 @@ const MainSidebar = () => {
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'news'  ? 'active' : ''}`}><Link href='/xadmin/news'><NewsOutlineIcon />News</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'careers'  ? 'active' : ''}`}><Link href='/xadmin/careers'><ArchieveOutlineIcon />Karir</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'contact-us'  ? 'active' : ''}`}><Link href='/xadmin/contact-us'><PhoneOutlineIcon />Kontak Kami</Link></li>
-                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'footer'  ? 'active' : ''}`}><Link href='/xadmin/footer'><AboutOutlineIcon />Footer</Link></li>
                 </ul>
             </div>
             <hr />
@@ -41,7 +40,8 @@ const MainSidebar = () => {
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'users'  ? 'active' : ''}`}><Link href='/xadmin/users'><UserListOutlineIcon />User Admin</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'jobs'  ? 'active' : ''}`}><Link href='/xadmin/jobs'><UserListOutlineIcon />Jobs</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'applicants'  ? 'active' : ''}`}><Link href='/xadmin/applicants'><UserListOutlineIcon />Lowongan Masuk</Link></li>
-                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'news'  ? 'active' : ''}`}><Link href='/xadmin/news'><OfficeOutlineIcon />Berita</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'offices'  ? 'active' : ''}`}><Link href='/xadmin/offices'><OfficeOutlineIcon />Kantor &amp; Gudang</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'news'  ? 'active' : ''}`}><Link href='/xadmin/news'><UserListOutlineIcon />Berita</Link></li>
                 </ul>
             </div>
             <hr />
