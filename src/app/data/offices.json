@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "name": "CV Indo Jaya Putra",
         "address": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia",
         "phones": [
@@ -11,7 +11,7 @@
         "type": "main"
     },
     {
-        "id": 2,
+        "id": "2",
         "name": "Pabrik & Gudang",
         "address": "Kepatihan Industri I no. 5 Desa Kepatihan Kec. Menganti Gresik 61174 Indonesia",
         "phones": [
@@ -25,7 +25,7 @@
         "type": "branch"
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "Kantor Cabang (Semarang)",
         "address": "Kawasan Pergudangan Industri Candi Jl. Gatot Subroto X No. 1, Semarang 50181, Indonesia",
         "phones": [
@@ -39,7 +39,7 @@
         "type": "branch"
     },
     {
-        "id": 4,
+        "id": "4",
         "name": "Kantor Cabang (Jakarta)",
         "address": "Pergudangan Kosambi Permai Blok JJ No. 25, Jl. Raya Prancis Kosambi - Dadap, Tangerang 15212, Indonesia",
         "phones": [
@@ -51,6 +51,5 @@
         ],
         "email": "ijpweb@gmail.com",
         "type": "branch"
-
     }
 ]

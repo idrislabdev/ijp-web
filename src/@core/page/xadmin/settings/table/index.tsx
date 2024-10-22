@@ -34,13 +34,15 @@ const XadminSettingsTable = () => {
     const confirmDelete = async () => {
         const response = await axiosInstance.delete(`/api/settings/${selectedId}`);
         const { data } = response.data
-        setSettings(data)
-        toaster.push(message, { placement:'bottomEnd', duration: 5000 })
+        await getData();
+        await setOpenModalConfirm(false)
+        await toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
-    const updateSuccess = () => {
+    const updateSuccess = async () => {
         setOpenModal(false);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
-        getData()
+        await getData();
+        await toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
     const getData = async () => {
         const response = await axiosInstance.get(`/api/settings`);

@@ -13,14 +13,19 @@ const ModalEditOffices = (props: {
     const { isModalOpen, setIsModalOpen, dataObj, setDataObj, onSuccess} = props
     const udpateData = async () => {
         const body = dataObj
-        const response = await axiosInstance.patch(`/api/offices`, body);
-        const { data } = response.data
+        if (body.id === '') {
+            const response = await axiosInstance.post(`/api/offices`, body);
+            const { data } = response.data
+        } else {
+            const response = await axiosInstance.patch(`/api/offices`, body);
+            const { data } = response.data
+        }
         onSuccess();
     }
     return (
         <Modal backdropClassName="my-modal-backdrop" backdrop="static" keyboard={false} open={isModalOpen} onClose={_ => setIsModalOpen(false)}>
             <Modal.Header>
-                <Modal.Title>Edit Office</Modal.Title>
+                <Modal.Title>{dataObj.id !== '' ? 'Edit Office' : 'Tambah Office'}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className='flex flex-col gap-[10px]'>
@@ -38,7 +43,7 @@ const ModalEditOffices = (props: {
                     </div>
                     <div className='flex items-center gap-[20px] text-neutral-700'>
                         <label className='w-[100px] text-sm'>Fax</label>
-                        <TagInput placeholder="Medium" style={{ flex: 1 }} defaultValue={dataObj.phones} onChange={(e:any) => setDataObj({...dataObj, faxs:e})} />
+                        <TagInput placeholder="Medium" style={{ flex: 1 }} defaultValue={dataObj.faxs} onChange={(e:any) => setDataObj({...dataObj, faxs:e})} />
                     </div>
                     <div className='flex items-center gap-[20px] text-neutral-700'>
                         <label className='w-[100px] text-sm'>Email</label>

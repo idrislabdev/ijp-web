@@ -23,23 +23,38 @@ const XadminOfficesTable = () => {
         </Message>
     );
     const showOffice = (item:any) => {
-        setOffice(item)
+        if (item.id) {
+            setOffice(item)
+        } else {
+            let obj = {
+                id : '',
+                name: '',
+                address: '',
+                email: '',
+                phones: [],
+                faxs: [],
+                type: 'branch'
+            }
+            setOffice(obj)
+        }
         setOpenModal(true);
     }
-    const deleteApplicant = (id:string) => {
+    const deleteOffice = (id:string) => {
         setSelectedId(id)
         setOpenModalConfirm(true)
     }
     const confirmDelete = async () => {
         const response = await axiosInstance.delete(`/api/offices/${selectedId}`);
         const { data } = response.data
-        setOffices(data)
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
+        await getData();
+        await setOpenModalConfirm(false)
+        await toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
-    const updateSuccess = () => {
+    const updateSuccess = async () => {
         setOpenModal(false);
-        toaster.push(message, { placement:'bottomEnd', duration: 5000 })
-        getData()
+        await getData();
+        await toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
     const getData = async () => {
         const response = await axiosInstance.get(`/api/offices`);
@@ -48,6 +63,9 @@ const XadminOfficesTable = () => {
     }
     return (
         <>
+            <div className='flex justify-end'>
+                <a className='btn btn-primary cursor-pointer' onClick={_ => showOffice({})}>Tambah Data</a>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -72,6 +90,7 @@ const XadminOfficesTable = () => {
                         <td className='text-center'>
                         <div className='flex justify-center items-center gap-[4px]'>
                             <a className='btn-action cursor-pointer' onClick={_ => showOffice(item)}><PencilOutlineIcon /></a>
+                            {item.type === 'branch' && <a className='btn-action cursor-pointer' onClick={_ => deleteOffice(item.id)}><TrashOutlineIcon /></a>}
                         </div>
                         </td>
                     </tr>

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation';
 import React, { useCallback, useEffect, useState } from 'react'
 import MainSidebarMenu from './main-sidebar-menu';
+import settings from "@/app/data/settings.json"
 
 const MainHeader = (props: {lang:string}) => {
     const { lang } = props
@@ -19,6 +20,11 @@ const MainHeader = (props: {lang:string}) => {
         router.push(paths.join("/"))
 
     }
+    const facebookUrl:any = settings.find((x) => x.name === 'facebook')?.value
+    const twitterUrl:any = settings.find((x) => x.name === 'twitter')?.value
+    const instagramUrl:any = settings.find((x) => x.name === 'instagram')?.value
+    const phone:any = settings.find((x) => x.name === 'phone')?.value
+    const tagline:any = settings.find((x) => x.name === 'tagline')?.value
 
     const onScroll = useCallback(() => {
         const { scrollY } = window;
@@ -50,18 +56,18 @@ const MainHeader = (props: {lang:string}) => {
             <header className='main-header sm:mobile-responsive'>
                 <div className='main-header-top'>
                     <div className='header-company-motto'>
-                        <p>UNICORP | Grow Through Innovation</p>
+                        <p>{tagline}</p>
                     </div>
                     <div className='header-company-contact'>
                         <div className='company-social-media'>
                             <ul>
-                                <li><Link href='/'><FacebookIcon /></Link></li>
-                                <li><Link href='/'><InstagramIcon /></Link></li>
-                                <li><Link href='/'><TwitterIcon /></Link></li>
+                                <li><Link href={facebookUrl}><FacebookIcon /></Link></li>
+                                <li><Link href={instagramUrl}><InstagramIcon /></Link></li>
+                                <li><Link href={twitterUrl}><TwitterIcon /></Link></li>
                             </ul>
                         </div>
                         <div className='company-phone-number'>
-                            <p><span><PhoneIcon /></span>+62 31 599 7100</p>
+                            <p><span><PhoneIcon /></span>{phone}</p>
                         </div>
                     </div>
                 </div>

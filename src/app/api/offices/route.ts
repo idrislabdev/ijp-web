@@ -15,6 +15,23 @@ export async function GET() {
   }
 }
 
+export async function POST(req: Request) {
+  try {
+      const office:any = await req.json();
+      let file_data = await fs.readFile(process.cwd() + '/src/app/data/offices.json', 'utf8');
+      let offices = JSON.parse(file_data)
+
+      office.id = uuidv4();
+      offices.push(office)
+
+      await fs.writeFile('src/app/data/offices.json', JSON.stringify(offices, null, 4));
+      return NextResponse.json({ status: "success", data:office});
+  } catch (e) {
+    console.error(e);
+    return NextResponse.json({ status: "fail", error: e });
+  }
+}
+
 export async function PATCH(req: Request) {
     try {
         const office:any = await req.json();
