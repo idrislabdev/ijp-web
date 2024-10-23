@@ -44,8 +44,9 @@ const PostingNewsForm = () => {
       body.append("file", fileData);
 
     const response = await axiosInstance.post(`/api/news`, body);
-    clearForm();
     toaster.push(message, { placement:'bottomEnd', duration: 5000 })
+    clearForm();
+
   }
   return (
     <div className='form-input'>
@@ -63,7 +64,7 @@ const PostingNewsForm = () => {
               <label>Thumbnail Berita</label>
               <input id="file-upload" className='base' type='file' onChange={setFile} accept=".png, .jpg, .jpeg" ref={fileInput}/>
             </div>
-            <TextEditor onChange={(e) => setContent(e.html)} />
+            <TextEditor value={content} onChange={(e) => setContent(e.html)} />
           </div>
         </div>
         <div className='form-button'>

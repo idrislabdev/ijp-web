@@ -8,8 +8,17 @@ import moment from 'moment'
 
 const NewsDetailSection = (props: { lang:string, objLang: any, paramSlug:any}) => {
     const { lang, objLang, paramSlug } = props
-    const objNews = news.find((x) => x.slug === paramSlug)
-    const dateString = moment(objNews?.created_at).format('DD MMMM YYYY');
+    const dataNews:any[] = news;
+    let objNews:any;
+    let dateString:any;
+    if (news.length > 0) {
+        objNews = dataNews.find((x) => x.slug === paramSlug)
+        dateString = moment(objNews?.created_at).format('DD MMMM YYYY');
+    } else {
+        objNews = {}
+        dateString = "";
+    }
+    
     return (
         <section className='news-detail-section'>
             <div className='main-container'>

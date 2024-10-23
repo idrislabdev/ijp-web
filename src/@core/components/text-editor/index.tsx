@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import ReactQuill from "react-quill";
 
 import "react-quill/dist/quill.snow.css";
@@ -57,6 +57,10 @@ export default function TextEditor(props: EditorProps) {
     const response = await axiosInstance.post("/api/news/upload-img", payload);
     return response.data.url
   }
+
+  useEffect(() => {
+    console.log(value)
+  })
 
   return (
     <ReactQuill
