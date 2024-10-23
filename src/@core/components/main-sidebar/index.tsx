@@ -8,7 +8,7 @@ import React from 'react'
 
 const MainSidebar = () => {
   const pathname = usePathname ();
-
+    console.log(pathname)
   return (
     <div className='main-sidebar'>
         <div className='header-area'>
@@ -41,7 +41,7 @@ const MainSidebar = () => {
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'jobs'  ? 'active' : ''}`}><Link href='/xadmin/jobs'><UserListOutlineIcon />Jobs</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'applicants'  ? 'active' : ''}`}><Link href='/xadmin/applicants'><UserListOutlineIcon />Lowongan Masuk</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'offices'  ? 'active' : ''}`}><Link href='/xadmin/offices'><OfficeOutlineIcon />Kantor &amp; Gudang</Link></li>
-                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'news'  ? 'active' : ''}`}><Link href='/xadmin/news'><UserListOutlineIcon />Berita</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'posting-news'  ? 'active' : ''}`}><Link href='/xadmin/posting-news'><UserListOutlineIcon />Posting Berita</Link></li>
                 </ul>
             </div>
             <hr />
