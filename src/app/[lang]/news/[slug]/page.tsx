@@ -13,7 +13,7 @@ export default async function  NewsBlogPage({ params }: any) {
     return (
         <main className='news-page sm:mobile-responsive'>
             <NewsHeroSection objLang={header} lang={params.lang} />
-            <NewsDetailSection objLang={other} lang={params.lang} />
+            <NewsDetailSection objLang={other} lang={params.lang} paramSlug={params.slug} />
         </main>
     )
   }

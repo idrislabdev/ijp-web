@@ -9,6 +9,7 @@ import TextEditor from '@/@core/components/text-editor';
 const PostingNewsForm = () => {
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
+  const [prolog, setProlog] = useState("");
   const [fileData, setFileData] = useState(null);
   const toaster = useToaster();
   const fileInput = useRef<HTMLInputElement>(null);
@@ -22,6 +23,7 @@ const PostingNewsForm = () => {
   const clearForm = () => {
     setContent("");
     setTitle("");
+    setProlog("");
     if (fileInput.current) {
       fileInput.current.value = "";
   }
@@ -36,6 +38,7 @@ const PostingNewsForm = () => {
   const save = async () => {
     let body = new FormData();
     body.append("title", title);
+    body.append("prolog", prolog);
     body.append("content", content);
     if (fileData !== null)
       body.append("file", fileData);
@@ -53,6 +56,10 @@ const PostingNewsForm = () => {
               <input value={title} onChange={e => setTitle(e.target.value)} className='base' />
             </div>
             <div className='input-area'>
+              <label>Kalimat Pembuka</label>
+              <input value={prolog} onChange={e => setProlog(e.target.value)} className='base' />
+            </div>
+            <div className='input-area'>
               <label>Thumbnail Berita</label>
               <input id="file-upload" className='base' type='file' onChange={setFile} accept=".png, .jpg, .jpeg" ref={fileInput}/>
             </div>
@@ -61,7 +68,7 @@ const PostingNewsForm = () => {
         </div>
         <div className='form-button'>
             <button className='btn btn-outline-secondary' >Cancel</button>
-            <button className='btn disabled:!bg-blue-300' disabled={title === '' || content === '' || fileData === null} onClick={_ => save()}>Save</button>
+            <button className='btn disabled:!bg-blue-300' disabled={title === '' || content === '' || fileData === null || prolog === null} onClick={_ => save()}>Save</button>
         </div>
     </div>
   )

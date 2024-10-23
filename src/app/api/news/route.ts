@@ -18,14 +18,14 @@ export async function POST(req: Request) {
           const arrayBuffer = await file.arrayBuffer();
           const buffer = new Uint8Array(arrayBuffer);
           await fs.writeFile(`./public/news/${slug}.${file.type.split("/")[1]}`, buffer);
-
-          url = `/public/news/${slug}.${file.type.split("/")[1]}`
+          url = `${process.env.NEXT_PUBLIC_BASE_URL}/news/${slug}.${file.type.split("/")[1]}`
         }
 
         let obj = {
           id: uuidv4(),
           title: payload.get("title"),
           slug: slug,
+          prolog : payload.get("prolog"),
           content : payload.get("content"),
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
@@ -33,7 +33,6 @@ export async function POST(req: Request) {
         };
 
         news.push(obj)
-
 
         await fs.writeFile('src/app/data/news.json', JSON.stringify(news, null, 4));
 

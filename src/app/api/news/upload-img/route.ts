@@ -15,7 +15,7 @@ export async function POST(req: Request) {
         const buffer = new Uint8Array(arrayBuffer);
         await fs.writeFile(`./public/news/${file.name}`, buffer);
 
-        const url = `${process.env.NEXT_BAST_PATH}/news/${file.name}`
+        const url = `${process.env.NEXT_PUBLIC_BASE_URL}/news/${file.name}`
 
         return NextResponse.json({ status: "success", url:url});
     } catch (e) {
