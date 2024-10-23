@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+/public/news/
+/public/uploads/
+/public/applicants/
+/public/catalogs/
+# /src/app/data/
