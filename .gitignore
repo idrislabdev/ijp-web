@@ -39,5 +39,5 @@ next-env.d.ts
 /public/news/
 /public/uploads/
 /public/applicants/
-/public/catalogs/
+# /public/catalogs/
 # /src/app/data/
