@@ -12,16 +12,17 @@ export async function middleware(request:any) {
   const hasVerifiedToken = token && (await verifyJwtToken(token));
   const isAuthPageRequested = isAuthPages(nextUrl.pathname);
 
-  if (nextUrl.pathname === '/xadmin/logout') {
-    const response = NextResponse.redirect(new URL(`/xadmin/login`, url));
-    response.cookies.set({
-      name: "token",
-      value: '',
-      path: "/xadmin",
-    });
+  // if (nextUrl.pathname === '/xadmin/logout') {
+  //   console.log('nextUrl.pathname.logout')
+  //   const response = NextResponse.redirect(new URL(`/xadmin/login`, url));
+  //   response.cookies.set({
+  //     name: "token",
+  //     value: '',
+  //     path: "/xadmin",
+  //   });
 
-    return response;
-  }
+  //   return response;
+  // }
 
   if (isAuthPageRequested) {
     if (!hasVerifiedToken) {
