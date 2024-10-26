@@ -51,7 +51,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan text dan gambar pada area header</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      <Link href='/xadmin/home/hero-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      {/* <Link href='/xadmin/home/hero-section' className='btn-action'><PencilOutlineIcon /></Link> */}
                     </td>
                   </tr>
                   <tr>
