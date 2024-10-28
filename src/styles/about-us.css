@@ -157,7 +157,7 @@
                         @apply text-[13px]/[17px] text-slate-300;
                     }
                     ul {
-                        @apply text-[13px]/[17px] flex flex-col gap-[5px];
+                        @apply text-[13px]/[17px] flex flex-col gap-[5px] text-left list-disc;
                         li {
                             @apply px-[10px] text-slate-300;
                             span {

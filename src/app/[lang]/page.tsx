@@ -22,7 +22,7 @@ export default async function  MainPage({ params }: any) {
       <HomeAboutSection objLang={about} lang={params.lang}/>
       <HomeBusinessUnitSection objLang={business_units} lang={params.lang}/>
       <HomeOurProductsSection objLang={our_products} lang={params.lang} />
-      <HomeNewsSection objLang={news} lang={params.lang}/>
+      {/* <HomeNewsSection objLang={news} lang={params.lang}/> */}
     </main>
   )
 }

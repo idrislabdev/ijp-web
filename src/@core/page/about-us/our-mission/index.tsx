@@ -33,7 +33,7 @@ const AboutUsOurMission = (props: {objLang:any, lang:string}) => {
                     </div>
                 </div>
             </div>
-            <div className='our-mission-container'>
+            {/* <div className='our-mission-container'>
                 <div className='detail-subcontainer w-[70%]'>
                     <div className='icon-detail fill'>
                         <HandShakeIcon />
@@ -52,7 +52,7 @@ const AboutUsOurMission = (props: {objLang:any, lang:string}) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
