@@ -1,13 +1,14 @@
 "use client"
 import axiosInstance from '@/@core/utils/axios';
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import TagInput from 'rsuite/TagInput';
 import { Message, useToaster } from 'rsuite';
 
 import dataOffices from '@/app/data/offices.json'
 import dataPositions from '@/app/data/positions.json'
 
-const JobsPageForm = () => {
+const JobsPageForm = (props: {uuid:string}) => {
+  const { uuid } = props
   const [name, setName] = useState('');
   const [position, setPosition] = useState('');
   const [location, setLocation] = useState('Kantor Pusat');
@@ -15,7 +16,6 @@ const JobsPageForm = () => {
   const [description, setDescription] = useState('');
   const [jobdescs, setJobdescs] = useState([]);
   const [qualifications, setQualifications] = useState([]);
-
 
   const toaster = useToaster();
 
@@ -46,10 +46,33 @@ const JobsPageForm = () => {
       qualifications: qualifications
     }
 
-    const response = await axiosInstance.post("/api/jobs", body);
+    if (uuid === 'form') {
+      await axiosInstance.post("/api/jobs", body);
+      clearForm();
+    } else {
+      await axiosInstance.patch(`/api/jobs/${uuid}`, body);
+    }
+
     toaster.push(message, { placement:'bottomEnd', duration: 5000 })
-    clearForm();
   }
+
+  const getDetail = useCallback(async () => {
+    const response = await axiosInstance.get(`/api/jobs/${uuid}`);
+    const { data } = response.data
+    setName(data.name);
+    setPosition(data.position);
+    setLocation(data.location);
+    setDescription(data.description);
+    setJobdescs(data.jobdescs);
+    setQualifications(data.qualifications);
+    setStatus(data.status);
+  },[uuid])
+
+  useEffect(() => {
+    if (uuid != 'form') {
+      getDetail();
+    }
+  }, [getDetail, uuid])
 
   return (
     <div className='form-input'>
@@ -83,11 +106,11 @@ const JobsPageForm = () => {
           <div className='form-area w-1/2'>
             <div className='input-area'>
               <label>Jobdesk</label>
-              <TagInput placeholder="Medium" style={{ width: '100%' }} defaultValue={jobdescs} onChange={(e:any) => setJobdescs(e)} />
+              <TagInput placeholder="Medium" style={{ width: '100%' }} value={jobdescs} onChange={(e:any) => setJobdescs(e)} />
             </div>
             <div className='input-area'>
               <label>Syarat / Kualifikasi</label>
-              <TagInput placeholder="Medium" style={{ width: '100%' }} defaultValue={qualifications} onChange={(e:any) => setQualifications(e)}/>
+              <TagInput placeholder="Medium" style={{ width: '100%' }} value={qualifications} onChange={(e:any) => setQualifications(e)}/>
             </div>
             <div className='input-area'>
               <label>Status</label>

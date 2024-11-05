@@ -8,7 +8,6 @@ import React from 'react'
 
 const MainSidebar = () => {
   const pathname = usePathname ();
-    console.log(pathname)
   return (
     <div className='main-sidebar'>
         <div className='header-area'>

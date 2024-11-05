@@ -3,7 +3,7 @@ import { ArchieveOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, UndoOut
 import JobsPageForm from "@/@core/page/xadmin/jobs/form";
 import Link from "next/link";
 
-export default function XadminJobsForm() {
+export default function XadminJobsForm({ params }: any) {
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -32,7 +32,7 @@ export default function XadminJobsForm() {
                     <div className="flex justify-end">
                         <Link href={`/xadmin/jobs`} className="btn btn-outline-neutral"><UndoOutlineIcon />Back To</Link>
                     </div>
-                    <JobsPageForm />
+                    <JobsPageForm uuid={params.uuid} />
                 </div>
             </div>
           </div>
