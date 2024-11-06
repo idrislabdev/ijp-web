@@ -1,11 +1,22 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import dataJobs from "@/app/data/jobs.json"
 import axiosInstance from '@/@core/utils/axios'
 import CareersDetailSectionForm from './form'
 
 const CareersDetailSection = (props: {objLang:any, params:any}) => {
     const { objLang, params } = props
-    const job:any = dataJobs.find((x:any) => x.id === params.id)
+    const [job, setJob] = useState({description:"", jobdescs:[],qualifications:[]})
+    
+    const getData = async () => {
+        const response = await axiosInstance.get(`/api/jobs/${params.id}`);
+        const { data } = response.data
+        setJob(data)
+    }
+    useEffect(() => {
+        getData()
+    }, [])
 
     return (
         <section className='careers-detail-section'>
