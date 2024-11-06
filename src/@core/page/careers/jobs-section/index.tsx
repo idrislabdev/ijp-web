@@ -1,23 +1,35 @@
 "use client"
 
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import initiateJob from "@/app/data/jobs.json"
 import offices from "@/app/data/offices.json"
+import axiosInstance from '@/@core/utils/axios'
 
 const CareersJobsSection = (props: {lang:string, objLang: any}) => {
     const { lang, objLang } = props
-    const jobs = initiateJob.filter((x:any) => x.status === 'Open');
-    const [dataJobs, setDataJobs] = useState(jobs)
+    const [dataJobs, setDataJobs] = useState([])
     const [selectPosition, setSelectPosition] = useState('Semua')
     const handleChange = (e: React.MouseEvent<HTMLDivElement, MouseEvent> | any) => {
         setSelectPosition(e.target.value)
-        if (e.target.value === 'Semua') {
-            setDataJobs(jobs)
+        getData(e.target.value)
+        const temp = dataJobs
+        console.log(temp)
+        setDataJobs(temp.filter((x:any) => x.location === e.target.value))
+    }
+    const getData = async (filter:string) => {
+        const response = await axiosInstance.get(`/api/jobs`);
+        const { data } = response.data
+        if (filter === '') {
+            setDataJobs(data)
         } else {
-            setDataJobs(jobs.filter((x:any) => x.location === e.target.value))
+            setDataJobs(data.filter((x:any) => x.location === filter))
         }
     }
+
+    useEffect(() => {
+      getData('')
+    }, [])
     return (
         <section className='careers-jobs-section'>
             <div className='background-container'>
@@ -27,7 +39,7 @@ const CareersJobsSection = (props: {lang:string, objLang: any}) => {
                 <div className='card-select'>
                     <label>{objLang[lang].label}</label>
                     <select onChange={handleChange} value={selectPosition}>
-                        <option value={'Semua'}>Semua</option>
+                        <option value={''}>Semua</option>
                         {offices.map((item:any, index:number) => (
                             <option value={item.name} key={index}>{item.name}</option>
                         ))}
