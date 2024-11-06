@@ -28,7 +28,7 @@ export async function GET() {
         // let file_data = await fs.readFile(process.cwd() + '/src/app/data/users.json', 'utf8');
         // let users = JSON.parse(file_data)
 
-        return NextResponse.json({ status: "success", user:dataUsers});
+        return NextResponse.json({ status: "success", data:dataUsers});
     } catch (e) {
       console.error(e);
       return NextResponse.json({ status: "fail", error: e });

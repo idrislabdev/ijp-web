@@ -6,7 +6,7 @@ import { ArchieveOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOut
 import moment from 'moment';
 
 import Link from 'next/link';
-import axiosInstance from '@/@core/utils/axios';
+import XadminUsersTable from '@/@core/page/xadmin/users/table';
 
 export default async function  XadminUsersPage() {
   const [users,setUsers] = useState([])
@@ -15,15 +15,6 @@ export default async function  XadminUsersPage() {
     return moment(val).format('DD MMMM YYYY');
   }
 
-  const getData = async () => {
-    const response = await axiosInstance.get(`/api/jobs`);
-    const { data } = response.data
-    setUsers(data)
-  }
-
-  useEffect(() => {
-    getData()
-  }, [])
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -51,30 +42,7 @@ export default async function  XadminUsersPage() {
               <div className='flex justify-end'>
                 <Link href={`/xadmin/users/form`} className='btn btn-primary'>Tambah Data</Link>
               </div>
-              <table>
-                <thead>
-                  <tr>
-                    <th>No</th>
-                    <th>Nama User</th>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th className='text-center'>Aksi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {users.map((item:any,index:number) => (
-                    <tr key={index}>
-                      <td>{index+1}</td>
-                      <td>{item.name}</td>
-                      <td>{item.username}</td>
-                      <td>{item.email}</td>
-                      <td className='text-center'>
-                        <a className='btn-action cursor-pointer'><PencilOutlineIcon /></a>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <XadminUsersTable />
             </div>
           </div>
         </div>

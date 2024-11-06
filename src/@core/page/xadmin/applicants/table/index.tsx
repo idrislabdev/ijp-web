@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from 'react'
-import dataTable from "@/app/data/applicants.json"
 import { EyeOutlineIcon, TrashOutlineIcon } from '@/@core/my-icons';
 import axiosInstance from '@/@core/utils/axios';
 import { Message, useToaster } from 'rsuite';
@@ -31,14 +30,14 @@ const XadminApplicantsTable = () => {
         setOpenModalConfirm(true)
     }
     const confirmDelete = async () => {
-        const response = await axiosInstance.delete(`/api/applicants/${selectedId}`);
+        const response = await axiosInstance.delete(`/api/jobs-applicant/${selectedId}`);
         const { data } = response.data
         await getData();
         await setOpenModalConfirm(false)
         await toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
     const getData = async () => {
-        const response = await axiosInstance.get(`/api/applicants`);
+        const response = await axiosInstance.get(`/api/jobs-applicant`);
         const { data } = response.data
         setApplicants(data)
     }
