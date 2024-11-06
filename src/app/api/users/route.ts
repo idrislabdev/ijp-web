@@ -1,22 +1,25 @@
 const bcrypt = require('bcryptjs');
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import {  usersRepo } from '@/@core/helpers/users-repo';
 import { promises as fs } from 'fs';
+const { v4: uuidv4 } = require('uuid');
 
-import dataUsers from '@/app/data/users.json'
 
 export async function POST(req: Request) {
     try {
-        const user:any = await req.json();
+        const job:any = await req.json();
+        let file_data = await fs.readFile(process.cwd() + '/src/app/data/users.json', 'utf8');
+        let jobs = JSON.parse(file_data)
 
-        if (dataUsers.find((x:any) => x.username === user.username))
-            throw `User with the username "${user.username}" already exists`;
-    
-        user.password = bcrypt.hashSync('12345', 10);    
-        usersRepo.create(user);
+        job.id = uuidv4();
+        job.created_at = new Date().toISOString();
+        job.updated_at = new Date().toISOString();
+        jobs.push(job)
 
-        return NextResponse.json({ status: "success", user:user});
+
+        await fs.writeFile('src/app/data/users.json', JSON.stringify(jobs, null, 4));
+
+        return NextResponse.json({ status: "success", data:job});
     } catch (e) {
       console.error(e);
       return NextResponse.json({ status: "fail", error: e });
@@ -24,13 +27,14 @@ export async function POST(req: Request) {
 }
 
 export async function GET() {
-    try {
-        // let file_data = await fs.readFile(process.cwd() + '/src/app/data/users.json', 'utf8');
-        // let users = JSON.parse(file_data)
-
-        return NextResponse.json({ status: "success", data:dataUsers});
-    } catch (e) {
-      console.error(e);
-      return NextResponse.json({ status: "fail", error: e });
-    }
+  try {
+    let file_data = await fs.readFile(process.cwd() + '/src/app/data/users.json', 'utf8');
+    let data = JSON.parse(file_data)
+    return NextResponse.json({ status: "success", data:data});
+  } catch (e) {
+    console.error(e);
+    return NextResponse.json({ status: "fail", error: e });
+  }
 }
+
+
