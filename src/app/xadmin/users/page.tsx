@@ -1,16 +1,29 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
 import { ArchieveOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, PhoneOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 
-import dataTable from "@/app/data/users.json"
 import Link from 'next/link';
+import axiosInstance from '@/@core/utils/axios';
 
 export default async function  XadminUsersPage() {
+  const [users,setUsers] = useState([])
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
+
+  const getData = async () => {
+    const response = await axiosInstance.get(`/api/jobs`);
+    const { data } = response.data
+    setUsers(data)
+  }
+
+  useEffect(() => {
+    getData()
+  }, [])
   return (
     <main className='xadmin-page'>
       <MainSidebar />
@@ -49,7 +62,7 @@ export default async function  XadminUsersPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {dataTable.map((item:any,index:number) => (
+                  {users.map((item:any,index:number) => (
                     <tr key={index}>
                       <td>{index+1}</td>
                       <td>{item.name}</td>

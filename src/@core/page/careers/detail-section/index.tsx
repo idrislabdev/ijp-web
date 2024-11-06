@@ -5,7 +5,7 @@ import CareersDetailSectionForm from './form'
 
 const CareersDetailSection = (props: {objLang:any, params:any}) => {
     const { objLang, params } = props
-    const job:any = dataJobs.find((x) => x.id === params.id)
+    const job:any = dataJobs.find((x:any) => x.id === params.id)
 
     return (
         <section className='careers-detail-section'>

@@ -60,7 +60,7 @@ const XadminJobsTable = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {dataTable.map((item:any,index:number) => (
+                  {jobs.map((item:any,index:number) => (
                     <tr key={index}>
                       <td>{index+1}</td>
                       <td>{item.name}</td>
