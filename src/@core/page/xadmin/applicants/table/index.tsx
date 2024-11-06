@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import dataTable from "@/app/data/applicants.json"
 import { EyeOutlineIcon, TrashOutlineIcon } from '@/@core/my-icons';
 import axiosInstance from '@/@core/utils/axios';
@@ -9,7 +9,7 @@ import ModalApplicant from '../modal-applicant';
 import ModalConfirm from '@/@core/components/modal/modal-confirm';
 
 const XadminApplicantsTable = () => {
-    const [applicants, setApplicants] = useState(dataTable);
+    const [applicants, setApplicants] = useState([]);
     const [applicant, setApplicant] = useState({})
     const [openModal, setOpenModal ] = useState(false);
     const [openModalConfirm, setOpenModalConfirm ] = useState(false);
@@ -42,6 +42,9 @@ const XadminApplicantsTable = () => {
         const { data } = response.data
         setApplicants(data)
     }
+    useEffect(() => {
+        getData()
+    }, [])
     return (
         <>
             <table>

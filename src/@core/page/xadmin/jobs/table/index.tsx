@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import dataTable from "@/app/data/jobs.json"
 import { EyeOutlineIcon, PencilOutlineIcon, TrashOutlineIcon } from '@/@core/my-icons';
 import axiosInstance from '@/@core/utils/axios';
@@ -10,7 +10,7 @@ import moment from 'moment';
 import Link from 'next/link';
 
 const XadminJobsTable = () => {
-    const [jobs, setJobs] = useState(dataTable);
+    const [jobs, setJobs] = useState([]);
     const [openModal, setOpenModal ] = useState(false);
     const [openModalConfirm, setOpenModalConfirm ] = useState(false);
     const [selectedId, setSelectedId] = useState('');
@@ -41,6 +41,10 @@ const XadminJobsTable = () => {
         const { data } = response.data
         setJobs(data)
     }
+
+    useEffect(() => {
+      getData()
+    }, [])
     return (
         <>
             <table>

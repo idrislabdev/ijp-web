@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import dataTable from "@/app/data/offices.json"
 import { EyeOutlineIcon, PencilOutlineIcon, TrashOutlineIcon } from '@/@core/my-icons';
 import axiosInstance from '@/@core/utils/axios';
@@ -9,7 +9,7 @@ import ModalEditOffices from '../modal-edit';
 import ModalConfirm from '@/@core/components/modal/modal-confirm';
 
 const XadminOfficesTable = () => {
-    const [offices, setOffices] = useState(dataTable);
+    const [offices, setOffices] = useState([]);
     const [office, setOffice] = useState({})
     const [openModal, setOpenModal ] = useState(false);
     const [openModalConfirm, setOpenModalConfirm ] = useState(false);
@@ -61,6 +61,10 @@ const XadminOfficesTable = () => {
         const { data } = response.data
         setOffices(data)
     }
+
+    useEffect(() => {
+        getData()
+    }, [])
     return (
         <>
             <div className='flex justify-end'>
