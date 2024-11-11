@@ -13,12 +13,9 @@ import { promises as fs } from 'fs';
 
 export default async function  HomePageWrapper(props: { lang:string }) {
     const { lang } = props
-    // const response = await axiosInstance.get(`/api/home`);
-    // const { data } = response.data
-    // const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/home`)
-    // const { data } = await res.json()
-    let file_data = await fs.readFile(process.cwd() + '/src/app/dictionaries/home.json', 'utf8');
-    let data = JSON.parse(file_data)
+    const response = await axiosInstance.get(`api/home/data`);
+    const { data } = response.data
+
     const { 
       header, 
       about, 
