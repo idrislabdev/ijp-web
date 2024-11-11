@@ -13,7 +13,7 @@ import { promises as fs } from 'fs';
 
 export default async function  HomePageWrapper(props: { lang:string }) {
     const { lang } = props
-    const response = await axiosInstance.get(`https://indojayaputra.com/api/home/about`);
+    const response = await axiosInstance.get(`/api/home/about`);
     const { data } = response.data
 
     // let file_data = await fs.readFile(process.cwd() + '/src/app/dictionaries/home.json', 'utf8');
