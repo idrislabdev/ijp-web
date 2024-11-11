@@ -50,7 +50,7 @@ const XadminProductSection = (props: {objData:any}) => {
                 <div className='home-products-container'>
                     <div className='products-header'>
                         <div className='products-title'>
-                            <input value={title} onChange={e => setTitle(e.target.value)} className='w-full'/>
+                            <input value={title} onChange={e => setTitle(e.target.value)} className='w-full btn btn-primary'/>
                             <textarea value={subtitle} onChange={e => setSubTitle(e.target.value)} className='w-full min-h-[100px] max-h-[100px]'/>
                         </div>
                         <input value={buttonText} onChange={e => setButtonText(e.target.value)} className='text-primary !bg-white text-center h-[44px]'/>
@@ -58,7 +58,7 @@ const XadminProductSection = (props: {objData:any}) => {
                     </div>
                 </div>
             </div>
-            <button className='w-full' onClick={saveUpdate}>Simpan Perubahan</button>
+            <button className='w-full btn btn-primary' onClick={saveUpdate}>Simpan Perubahan</button>
         </div>
     )
 }
