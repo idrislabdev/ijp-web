@@ -8,8 +8,11 @@ import AboutUsAreaSection from '@/@core/page/about-us/area-section'
 import { getDictionariesAbout } from '@/app/dictionaries'
 
 import '@/styles/about-us.css'
+import axiosInstance from '@/@core/utils/axios'
 
 export default async function  MainPage({ params }: any) {
+  const response = await axiosInstance.get(`/api/about-us`);
+  const { data } = response.data
   const { 
     header, 
     profile,
@@ -17,7 +20,7 @@ export default async function  MainPage({ params }: any) {
     market_area,
     strategies,
     vission_mission
-   } = await getDictionariesAbout();
+   } = data;
   return (
     <main className='about-us-page sm:mobile-responsive'>
       <AboutUsHeroSection objLang={header} lang={params.lang} />

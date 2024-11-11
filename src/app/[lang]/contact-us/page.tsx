@@ -5,12 +5,16 @@ import ContactUsMapSection from '@/@core/page/contact-us/map-section'
 
 import { getDictionariesContactUs } from '@/app/dictionaries';
 import '@/styles/contact-us.css'
+import axiosInstance from '@/@core/utils/axios';
 
 export default async function  ContactUsPage({ params }: any) {
-  const { 
-    header, 
-    info
-  } = await getDictionariesContactUs();
+    const response = await axiosInstance.get(`/api/contact-us`);
+    const { data } = response.data
+    const { 
+      header, 
+      info
+    } = data;
+
     return (
       <main className='contact-us-page sm:mobile-responsive'>
         <ContactUsMapSection objLang={header} lang={params.lang} />

@@ -4,18 +4,20 @@ import BusinessUnitsProductsSection from '@/@core/page/business-units/products-s
 import BusinessUnitsOurMissionSection from '@/@core/page/business-units/our-mission-section';
 import BusinessUnitsProfileSection from '@/@core/page/business-units/profile-section';
 import BusinessUnitsContactUsSection from '@/@core/page/business-units/contact-us-section';
-import { getDictionariesIjp } from '@/app/dictionaries';
 
 import '@/styles/business-units.css'
+import axiosInstance from '@/@core/utils/axios';
 
 export default async function  IjpPage({ params }: any) {
+  const response = await axiosInstance.get(`/api/business-units-ijp`);
+  const { data } = response.data
     const { 
       header, 
       profile,
       vission_mission,
       our_products,
       contact
-    } = await getDictionariesIjp();
+    } = data;
     return (
       <main className='business-units-page sm:mobile-responsive'>
         <BusinessUnitsHeroSection objLang={header} lang={params.lang}/>

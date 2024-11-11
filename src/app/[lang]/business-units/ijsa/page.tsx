@@ -10,8 +10,11 @@ import BusinessUnitsAreaSection from '@/@core/page/business-units/area-section';
 import { getDictionariesIjsa } from '@/app/dictionaries';
 
 import '@/styles/business-units.css'
+import axiosInstance from '@/@core/utils/axios';
 
 export default async function  IjsaPage({ params }: any) {
+    const response = await axiosInstance.get(`/api/business-units-ijsa`);
+    const { data } = response.data
     const { 
       header, 
       profile,
@@ -19,7 +22,7 @@ export default async function  IjsaPage({ params }: any) {
       our_products,
       market_area,
       contact
-    } = await getDictionariesIjsa();
+    } = data;
     return (
       <main className='business-units-page sm:mobile-responsive'>
         <BusinessUnitsHeroIjsaSection objLang={header} lang={params.lang}/>
