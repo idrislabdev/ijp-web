@@ -1,71 +1,23 @@
 [
     {
-        "name": "Manager Keuangan Jakarta",
-        "position": "Manager Keuangan",
+        "name": "Marketing Support Jakarta",
+        "position": "",
         "location": "Kantor Cabang (Jakarta)",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+        "description": "TUGAS & PEKERJAAN :\n\n•\tTerima orderan dari sales marketing.\n•\tCek stok digudang & produksi (data accurate/confirm ke admin gudang & produksi)\n•\tMembuat SO (Sales Order)\n•\tMembuat orderan ke bagian produksi\n•\tMembuat purcahse request (PR)\n•\tMembuat penawaran customer (follow up)\n•\tKoordinasi barang jadi ke admin poduksi\n•\tMembuat DO & SI\n•\tKoordinasi pengiriman kebagian pengiriman, kepala gudang & admin gudang.\n•\tMembuat revisi DO & SI\n•\tSuport sales/ marketing\n•\tSuport cabang (bantu handle jakarta dan semarang.\n•\tStok Opname setiap 6 bulan satu kali\n\nPERSYARATAN :\n\n•\tPendidikan Minimal SMA sederajat atau S1 Semua Jurusan (diutamakan jurusan Bisnis, Akuntansi dan Manajemen.\n•\tMempunyai Pengalaman 1 Tahun di bidang/posisi yang sama.\n•\tMampu mengoperasikan computer, seperti Microsoft Office dan Accurate.\n•\tMemiliki Ketrampilan Komunikasi dan Grooming yang baik.\n•\tDisiplin, teliti, jujur dan bertanggung jawab.\n•\tTerbiasa melayani customer baik online, offline maupun corporate\n",
         "jobdescs": [
-            "Melayani customer walk in di outlet",
-            "Menjual sesuai target yang telah ditentukan",
-            "Menawarkan dan memberikan informasi produk secara detail dan jelas",
-            "Mencari infomasi dan data calon customer, termasuk ke media sosial"
+            "Admin Support",
+            "Sales Support",
+            "Dokumen Support",
+            "Data Support"
         ],
         "status": "Open",
         "qualifications": [
-            "Usia 18-35 tahun",
-            "Pendidikan minimal SMA/SLTA",
-            "Memiliki pengalaman di bidang penjualan minimal 1 tahun",
-            "Freshgrad dipersilahkan melamar",
-            "Memiliki motivasi kerja yang tinggi, orientasi pada target, disiplin, jujur dan bertanggung jawab"
+            "S1",
+            "SMA",
+            "Berpengalaman 3 Tahun"
         ],
-        "id": "f5177075-9890-4af1-a7af-5c6660d7a12c",
-        "created_at": "2024-10-17T18:11:22.952Z",
-        "updated_at": "2024-11-05T22:30:55.241Z"
-    },
-    {
-        "name": "Admin Gudang Pusat",
-        "position": "Admin Gudang",
-        "location": "Kantor Pusat",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "jobdescs": [
-            "Melayani customer walk in di outlet",
-            "Menjual sesuai target yang telah ditentukan",
-            "Menawarkan dan memberikan informasi produk secara detail dan jelas",
-            "Mencari infomasi dan data calon customer, termasuk ke media sosial"
-        ],
-        "status": "Open",
-        "qualifications": [
-            "Usia 18-35 tahun",
-            "Pendidikan minimal SMA/SLTA",
-            "Memiliki pengalaman di bidang penjualan minimal 1 tahun",
-            "Freshgrad dipersilahkan melamar",
-            "Memiliki motivasi kerja yang tinggi, orientasi pada target, disiplin, jujur dan bertanggung jawab"
-        ],
-        "id": "13979755-892c-43f3-b145-3af490253806",
-        "created_at": "2024-10-17T18:13:59.295Z",
-        "updated_at": "2024-10-17T18:13:59.295Z"
-    },
-    {
-        "name": "Admin Sales Semarangs",
-        "position": "Admin Sales",
-        "location": "Kantor Cabang (Semarang)",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "jobdescs": [
-            "Melayani customer walk in di outlet",
-            "Menjual sesuai target yang telah ditentukan",
-            "Menawarkan dan memberikan informasi produk secara detail dan jelas",
-            "Mencari infomasi dan data calon customer, termasuk ke media sosial"
-        ],
-        "status": "Open",
-        "qualifications": [
-            "Usia 18-35 tahun",
-            "Pendidikan minimal SMA/SLTA",
-            "Memiliki pengalaman di bidang penjualan minimal 1 tahun",
-            "Freshgrad dipersilahkan melamar",
-            "Memiliki motivasi kerja yang tinggi, orientasi pada target, disiplin, jujur dan bertanggung jawab"
-        ],
-        "id": "01048002-f518-4a39-a86c-3c5bded0cc3f",
-        "created_at": "2024-10-17T18:14:14.363Z",
-        "updated_at": "2024-11-06T03:44:24.685Z"
+        "id": "57c6f4ac-013b-4a5c-91b1-985dff675314",
+        "created_at": "2024-11-06T07:24:23.124Z",
+        "updated_at": "2024-11-06T08:33:13.960Z"
     }
 ]

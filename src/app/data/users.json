@@ -7,5 +7,21 @@
         "id": 1,
         "dateCreated": "2024-10-20T08:43:52.005Z",
         "dateUpdated": "2024-10-20T08:43:52.005Z"
+    },
+    {
+        "name": "User 1",
+        "username": "user1",
+        "email": "-",
+        "id": "58269c95-a340-49c7-85e8-ecf7601909d9",
+        "created_at": "2024-11-06T06:16:09.248Z",
+        "updated_at": "2024-11-06T06:16:09.248Z"
+    },
+    {
+        "name": "user 2",
+        "username": "user2",
+        "email": "-",
+        "id": "aa8b0839-5066-431b-9a79-bb9dd0ddb799",
+        "created_at": "2024-11-06T06:16:49.178Z",
+        "updated_at": "2024-11-06T06:16:49.178Z"
     }
 ]

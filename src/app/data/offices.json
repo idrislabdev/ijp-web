@@ -26,7 +26,7 @@
     },
     {
         "id": "3",
-        "name": "Kantor Cabang (Semarangs)",
+        "name": "Kantor Cabang (Semarang)",
         "address": "Kawasan Pergudangan Industri Candi Jl. Gatot Subroto X No. 1, Semarang 50181, Indonesia",
         "phones": [
             "+62 24 762 7376",
@@ -56,8 +56,10 @@
         "id": "68324988-5050-44ec-9736-9015bf8ea76b",
         "name": "Kantor Cabang (Bali)",
         "address": "Jl. Raya Sesetan Komp. Ruko Agung No. A11 Sesetan, Kec. Denpasar Selatan - Kota Denpasar, Bali 80225",
-        "email": "",
-        "phones": [],
+        "email": "indojayaputrabali@gmail.com",
+        "phones": [
+            "+62 896 0958 8008"
+        ],
         "faxs": [],
         "type": "branch"
     }

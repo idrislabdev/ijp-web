@@ -39,23 +39,23 @@
                     },
                     "monday": {
                         "text": "Senin",
-                        "value": "08:00 - 16:00"
+                        "value": "08:00 - 16:30"
                     },
                     "tuesday": {
                         "text": "Selasa",
-                        "value": "08:00 - 16:00"
+                        "value": "08:00 - 16:30"
                     },
                     "wednesday": {
                         "text": "Rabu",
-                        "value": "08:00 - 16:00"
+                        "value": "08:00 - 16:30"
                     },
                     "thursday": {
                         "text": "Kamis",
-                        "value": "08:00 - 16:00"
+                        "value": "08:00 - 16:30"
                     },
                     "friday": {
                         "text": "Jum'at",
-                        "value": "08:00 - 16:00"
+                        "value": "08:00 - 16:30"
                     },
                     "saturday": {
                         "text": "Sabtu",

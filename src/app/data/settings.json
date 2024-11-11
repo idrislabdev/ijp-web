@@ -17,7 +17,7 @@
     {
         "name": "facebook",
         "text": "Alamat Facebook",
-        "value": "https://www.facebook.com/"
+        "value": "https://www.facebook.com/profile.php?id=100093213439984https://www.facebook.com/people/Unicorp-Indojayaputra"
     },
     {
         "name": "twitter",
@@ -27,7 +27,7 @@
     {
         "name": "instagram",
         "text": "Alamat Instagram",
-        "value": "https://www.instagram.com/"
+        "value": "https://www.instagram.com/unicorpindojaya"
     },
     {
         "name": "phone",
@@ -42,6 +42,6 @@
     {
         "name": "email_hrd",
         "text": "Alamat Email HRD",
-        "value": "ijpeweb@gmail.com"
+        "value": "hrd.indojayaputra888@gmail.com"
     }
 ]

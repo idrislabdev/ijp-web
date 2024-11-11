@@ -13,7 +13,7 @@
     "profile": {
         "id": {
             "title": "Profil Unit Bisnis (IJP)",
-            "description_1": "IJP dirikan di Surabaya tahun 2001, CV. INDO JAYA PUTRA, yang lebih dikenal sebagai IJP adalah perusahaan perdagangan bahan kimia makanan. Awalnya, IJP menjual pewarna makanan. Kemudian, seiring dengan berkembangnya waktu, Bapak Sugijanto, sebagai pemilik usaha memiliki ide untuk membuat pabrik pencampuran warna yang diberi nama UNICOL. Sebagai spesialis pencampuran warna, kami dapat memenuhi spesifikasi dan kuantiti sesuai kebutuhan pelanggan. IJP adalah perusahaan yang berorientasi pada kepuasan pelanggan. Selain itu, kami juga menjual bahan kimia lainnya, seperti Sodium Bicarbonate, Capsicum, Cuka, dll., dari dalam dan luar negeri seperti China, India, Taiwan, Norwegia dan negara lainnya.",
+            "description_1": "IJP didirikan di Surabaya tahun 2001, CV. INDO JAYA PUTRA, yang lebih dikenal sebagai IJP adalah perusahaan perdagangan bahan kimia makanan. Awalnya, IJP menjual pewarna makanan. Kemudian, seiring dengan berkembangnya waktu, Bapak Sugijanto, sebagai pemilik usaha memiliki ide untuk membuat pabrik pencampuran warna yang diberi nama UNICOL. Sebagai spesialis pencampuran warna, kami dapat memenuhi spesifikasi dan kuantiti sesuai kebutuhan pelanggan. IJP adalah perusahaan yang berorientasi pada kepuasan pelanggan. Selain itu, kami juga menjual bahan kimia lainnya, seperti Sodium Bicarbonate, Capsicum, Cuka, dll., dari dalam dan luar negeri seperti China, India, Taiwan, Norwegia dan negara lainnya.",
             "description_2": "Dengan bekerjasama dengan perusahaan kecil hingga besar, kini kami telah menjual lebih banyak bahan kimia untuk mencakup wilayah yang lebih luas di Indonesia, dengan membuka cabang di Semarang untuk pemasaran area Indonesia bagian Tengah dan cabang di Jakarta untuk pemasaran area Indonesia bagian Barat. Kami menyediakan gudang yang didesain khusus untuk bahan kimia, armada pengiriman dan sistem database online untuk memastikan setiap pelanggan mendapatkan pesanannya tepat waktu.",
             "experience_1": "20+",
             "experience_2": "Tahun Pengalaman"
@@ -65,7 +65,7 @@
     "our_products": {
         "id": {
             "title": "Produk Kami",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
+            "description": "Indo Jaya Putera adalah penyedia bahan tambahan pangan berkualitas untuk industri makanan dan minuman. Kami memiliki produk internal unggulan, yaitu Unicol (Pewarna makanan), Sosweet (Pemanis makanan), Uniwhite (Pemutih makanan), Maxmil ( Tepung Creamer), MSG, Fruktosa dan Unicapso. Selain itu juga, Indo Jaya Putera menyediakan produk Bahan Tambahan Pangan lainnya seperti"
         },
         "en": {
             "title": "Our Products",
