@@ -12,9 +12,10 @@ import '@/styles/home.css'
 
 export default async function  HomePageWrapper(props: { lang:string }) {
     const { lang } = props
-    const response = await axiosInstance.get(`/api/home`);
-    const { data } = response.data
-    
+    // const response = await axiosInstance.get(`/api/home`);
+    // const { data } = response.data
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/home`)
+    const { data } = await res.json()
     const { 
       header, 
       about, 
