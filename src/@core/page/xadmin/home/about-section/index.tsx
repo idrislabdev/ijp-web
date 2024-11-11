@@ -71,7 +71,7 @@ const XadminHomeAboutSection = (props: {objData:any}) => {
                     </div>
                 </div>
             </div>
-            <button className='w-full' onClick={saveUpdate}>Simpan Perubahan</button>
+            <button className='w-full btn btn-primary' onClick={saveUpdate}>Simpan Perubahan</button>
         </div>
     )
 }
