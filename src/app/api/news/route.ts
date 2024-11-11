@@ -18,7 +18,7 @@ export async function POST(req: Request) {
           const arrayBuffer = await file.arrayBuffer();
           const buffer = new Uint8Array(arrayBuffer);
           await fs.writeFile(`./public/news/${slug}.${file.type.split("/")[1]}`, buffer);
-          url = `${process.env.NEXT_PUBLIC_BASE_URL}/news/${slug}.${file.type.split("/")[1]}`
+          url = `${process.env.BASE_API_URL}/news/${slug}.${file.type.split("/")[1]}`
         }
 
         let obj = {

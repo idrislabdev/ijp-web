@@ -6,13 +6,19 @@ import moment from 'moment';
 import { getDictionariesHome } from '@/app/dictionaries';
 import XadminHomeAboutSection from '@/@core/page/xadmin/home/about-section';
 import '@/styles/admin-home.css'
+import axiosInstance from '@/@core/utils/axios';
+import { getDataHome } from '@/@core/services/api';
+import { promises as fs } from 'fs';
 
-export default async function  XadminHomeAboutPage() {
+export default async function  XadminHomeAboutPage({ params }: any) {
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  const { about } = await getDictionariesHome();
+  let file_data = await fs.readFile(process.cwd() + '/src/app/dictionaries/home.json', 'utf8');
+  let data = JSON.parse(file_data)
+  const { about } = data
+
   return (
     <main className='xadmin-page'>
       <MainSidebar />

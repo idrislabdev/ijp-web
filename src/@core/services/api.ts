@@ -1,21 +1,6 @@
 import axiosInstance from "../utils/axios"
 
-export const getLiverateMini = async () => {
-    const resp = await axiosInstance.get(`/v2/liverate/mini`)
-    return resp
-}
-
-export const getLiverateHighlights = async () => {
-    const resp = await axiosInstance.get(`/v2/liverate/highlights`)
-    return resp
-}
-
-export const getLiverates = async () => {
-    const resp = await axiosInstance.get(`/v2/liverate`)
-    return resp
-}
-
-export const getStakings = async () => {
-    const resp = await axiosInstance.get(`/v2/staking`)
+export const getDataHome = async () => {
+    const resp = await fetch(`${process.env.BASE_API_URL}/api/home/about`)
     return resp
 }
