@@ -13,11 +13,11 @@ const XadminHomeAboutSection = (props: {objData:any}) => {
     const [description, setDescription] = useState(objData[lang].description)
     const [url, setUrl] = useState(objData.image_url)
     const [fileData, setFileData] = useState(null)
+    const [placement, setPlacement] = React.useState('topCenter');
     const toaster = useToaster();
-
     const message = (
-        <Message showIcon type={'info'}>
-          Data Section Berhasil Diupdate
+        <Message showIcon type={'info'} closable>
+           The message appears on the {placement}.
         </Message>
       );
 

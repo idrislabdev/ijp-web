@@ -24,9 +24,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/home/home-about.${file.type.split("/")[1]}`),
             buffer
           );
-          // await fs.writeFile(`./public/images/home/home-about.${file.type.split("/")[1]}`, buffer);
-
-          data.about.image_url = `/images/home/home-about.${file.type.split("/")[1]}`
+          data.about.image_url = `/api/media/home/home-about.${file.type.split("/")[1]}`
         }
 
 
