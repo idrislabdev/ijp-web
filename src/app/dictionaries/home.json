@@ -27,7 +27,7 @@
             "description": "Unicorp is started with CV. INDO JAYA PUTRA which is established in 2001 at Surabaya to cover East of Indonesia. To bear the vision to be a regional leader in trading chemical, we have build 2 branches: Branch Semarang to cover Central of Indonesia and Branch Jakarta to cover West of Indonesia. As an importer, manufacture and distributor, our branches were equipped with effective warehouse design and own delivery fleets to ensure that every customer get the best service.",
             "button_text": "Read More"
         },
-        "image_url": "/images/home/home-about.jpeg"
+        "image_url": "/api/media/home/home-about.jpeg"
     },
     "business_units": {
         "id": {
