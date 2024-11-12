@@ -3,17 +3,20 @@ import ContactUsHeaderSection from '@/@core/page/contact-us/header-section';
 import ContactUsInfoSection from '@/@core/page/contact-us/info-section';
 import ContactUsMapSection from '@/@core/page/contact-us/map-section'
 
-import { getDictionariesContactUs } from '@/app/dictionaries';
 import '@/styles/contact-us.css'
-import axiosInstance from '@/@core/utils/axios';
 
+async function getData() {
+  let res = await fetch(`${process.env.BASE_API_URL}/api/contact-us`, {
+    cache: 'no-store',
+  })
+  let data = await res.json()
+  return data.data
+}
 export default async function  ContactUsPage({ params }: any) {
-    const response = await axiosInstance.get(`/api/contact-us`);
-    const { data } = response.data
     const { 
       header, 
       info
-    } = data;
+    } = await getData();
 
     return (
       <main className='contact-us-page sm:mobile-responsive'>

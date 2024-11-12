@@ -24,6 +24,7 @@ export async function POST(req: Request) {
           }
           products.push(obj)
         });
+        
 
         if (payload.get("file_1")) {
           const file = payload.get("file_1") as File;
@@ -33,7 +34,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/our-products/products-ijp-1.${file.type.split("/")[1]}`),
             buffer
           );
-          data.products[0].image_url  = `/api/media/our-products/products-ijp-1.${file.type.split("/")[1]}`
+          products[0].image_url  = `/api/media/our-products/products-ijp-1.${file.type.split("/")[1]}`
         }
 
         if (payload.get("file_2")) {
@@ -44,7 +45,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/our-products/products-ijp-2.${file.type.split("/")[1]}`),
             buffer
           );
-          data.products[1].image_url  = `/api/media/our-products/products-ijp-2.${file.type.split("/")[1]}`
+          products[1].image_url  = `/api/media/our-products/products-ijp-2.${file.type.split("/")[1]}`
         }
 
         if (payload.get("file_3")) {
@@ -55,7 +56,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/our-products/products-ijp-3.${file.type.split("/")[1]}`),
             buffer
           );
-          data.products[2].image_url  = `/api/media/our-products/products-ijp-3.${file.type.split("/")[1]}`
+          products[2].image_url  = `/api/media/our-products/products-ijp-3.${file.type.split("/")[1]}`
         }
 
         if (payload.get("file_4")) {
@@ -66,7 +67,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/our-products/products-ijp-4.${file.type.split("/")[1]}`),
             buffer
           );
-          data.products[3].image_url  = `/api/media/our-products/products-ijp-4.${file.type.split("/")[1]}`
+          products[3].image_url  = `/api/media/our-products/products-ijp-4.${file.type.split("/")[1]}`
         }
 
         data.our_products.products = products

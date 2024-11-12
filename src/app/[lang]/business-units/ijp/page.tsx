@@ -6,7 +6,6 @@ import BusinessUnitsProfileSection from '@/@core/page/business-units/profile-sec
 import BusinessUnitsContactUsSection from '@/@core/page/business-units/contact-us-section';
 
 import '@/styles/business-units.css'
-import axiosInstance from '@/@core/utils/axios';
 async function getData() {
   let res = await fetch(`${process.env.BASE_API_URL}/api/business-units-ijp`, {
     cache: 'no-store',

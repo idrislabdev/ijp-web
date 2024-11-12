@@ -1,19 +1,20 @@
 
 import React, { useState } from 'react'
 import MainSidebar from '@/@core/components/main-sidebar'
-import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, SettingOutlineIcon } from '@/@core/my-icons'
-import moment from 'moment';
+import { ArrowLeftIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon } from '@/@core/my-icons'
 import XadminCareersHeaderSection from '@/@core/page/xadmin/careers/header-section';
 import Link from 'next/link';
-import { getDictionariesCarrers } from '@/app/dictionaries';
 import '@/styles/admin-careers.css'
 
 export default async function  XadminCareersHeaderPage() {
-  const formatDate = (val:string) => {
-    moment.locale('id')
-    return moment(val).format('DD MMMM YYYY');
+  async function getData() {
+    let res = await fetch(`${process.env.BASE_API_URL}/api/careers`, {
+      cache: 'no-store',
+    })
+    let data = await res.json()
+    return data.data
   }
-  const { header } = await getDictionariesCarrers();
+  const { header } = await getData();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
