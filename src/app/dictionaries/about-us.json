@@ -211,6 +211,10 @@
                 {
                     "title": "JAKARTA",
                     "description": "Menghandle pemasaran untuk Indonesia bagian Barat"
+                },
+                {
+                    "title": "BALI",
+                    "description": "Menghandle pemasaran untuk Indonesia bagian"
                 }
             ]
         },
@@ -230,6 +234,10 @@
                 {
                     "title": "JAKARTA",
                     "description": "Menghandle pemasaran untuk Indonesia bagian Barat"
+                },
+                {
+                    "title": "BALI",
+                    "description": "Menghandle pemasaran untuk Indonesia bagian"
                 }
             ]
         }
