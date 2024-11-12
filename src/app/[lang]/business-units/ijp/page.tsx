@@ -7,17 +7,21 @@ import BusinessUnitsContactUsSection from '@/@core/page/business-units/contact-u
 
 import '@/styles/business-units.css'
 import axiosInstance from '@/@core/utils/axios';
-
+async function getData() {
+  let res = await fetch(`${process.env.BASE_API_URL}/api/business-units-ijp`, {
+    cache: 'no-store',
+  })
+  let data = await res.json()
+  return data.data
+}
 export default async function  IjpPage({ params }: any) {
-  const response = await axiosInstance.get(`/api/business-units-ijp`);
-  const { data } = response.data
     const { 
       header, 
       profile,
       vission_mission,
       our_products,
       contact
-    } = data;
+    } = await getData();
     return (
       <main className='business-units-page sm:mobile-responsive'>
         <BusinessUnitsHeroSection objLang={header} lang={params.lang}/>

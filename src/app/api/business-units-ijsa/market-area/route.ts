@@ -13,7 +13,7 @@ export async function POST(req: Request) {
         data.market_area[payload.get("lang")].subtitle_1 = payload.get("subtitle_1")
         data.market_area[payload.get("lang")].subtitle_2 = payload.get("subtitle_2")
 
-        await fs.writeFile('src/app/dictionaries/ijsa.json', JSON.stringify(data, null, 4));
+        await fs.writeFile(process.cwd() + '/src/app/dictionaries/ijsa.json', JSON.stringify(data, null, 4));
 
         return NextResponse.json({ status: "success", data:data});
     } catch (e) {

@@ -12,7 +12,7 @@ export async function POST(req: Request) {
         data.vission_mission[payload.get("lang")].our_vissions = JSON.parse(payload.get("our_vissions"))
         data.vission_mission[payload.get("lang")].our_missions = JSON.parse(payload.get("our_missions"))
 
-        await fs.writeFile('src/app/dictionaries/ijp.json', JSON.stringify(data, null, 4));
+        await fs.writeFile(process.cwd() + '/src/app/dictionaries/ijp.json', JSON.stringify(data, null, 4));
 
         return NextResponse.json({ status: "success", data:data});
     } catch (e) {

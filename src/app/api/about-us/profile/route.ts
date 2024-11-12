@@ -51,7 +51,7 @@ export async function POST(req: Request) {
           data.profile.image_3_url = `/api/media/about-us/profile-3.${file.type.split("/")[1]}`
         }
 
-        await fs.writeFile('src/app/dictionaries/about-us.json', JSON.stringify(data, null, 4));
+        await fs.writeFile(process.cwd() + '/src/app/dictionaries/about-us.json', JSON.stringify(data, null, 4));
 
         return NextResponse.json({ status: "success", data:data});
     } catch (e) {

@@ -14,7 +14,7 @@ export async function POST(req: Request) {
         data.contact[payload.get("lang")].phone = JSON.parse(payload.get("phone"))
         data.contact[payload.get("lang")].email = JSON.parse(payload.get("email"))
 
-        await fs.writeFile('src/app/dictionaries/ijsa.json', JSON.stringify(data, null, 4));
+        await fs.writeFile(process.cwd() + '/src/app/dictionaries/ijsa.json', JSON.stringify(data, null, 4));
 
         return NextResponse.json({ status: "success", data:data});
     } catch (e) {

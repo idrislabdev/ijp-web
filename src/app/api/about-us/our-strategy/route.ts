@@ -20,10 +20,7 @@ export async function POST(req: Request) {
 
           data.strategies.image_url = `/api/media/about-us/our-strategy.${file.type.split("/")[1]}`
         }
-
-
-        await fs.writeFile('src/app/dictionaries/about-us.json', JSON.stringify(data, null, 4));
-
+        await fs.writeFile(process.cwd() + '/src/app/dictionaries/about-us.json', JSON.stringify(data, null, 4));
         return NextResponse.json({ status: "success", data:data});
     } catch (e) {
       console.error(e);

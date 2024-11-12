@@ -13,8 +13,7 @@ export async function POST(req: Request) {
         data.histories[payload.get("lang")].subtitle = payload.get("subtitle")
         data.histories[payload.get("lang")].contents = JSON.parse(payload.get("contents"))
 
-        await fs.writeFile('src/app/dictionaries/about-us.json', JSON.stringify(data, null, 4));
-
+        await fs.writeFile(process.cwd() + '/src/app/dictionaries/about-us.json', JSON.stringify(data, null, 4));
         return NextResponse.json({ status: "success", data:data});
     } catch (e) {
       console.error(e);

@@ -10,11 +10,14 @@ import XadminIJPContactUsSection from '@/@core/page/xadmin/ijp/contact-us-sectio
 import Link from 'next/link';
 
 export default async function  XadminIJPContactUsPage() {
-  const formatDate = (val:string) => {
-    moment.locale('id')
-    return moment(val).format('DD MMMM YYYY');
+  async function getData() {
+    let res = await fetch(`${process.env.BASE_API_URL}/api/business-units-ijp`, {
+      cache: 'no-store',
+    })
+    let data = await res.json()
+    return data.data
   }
-  const { contact } = await getDictionariesIjp();
+  const { contact } = await getData();
   return (
     <main className='xadmin-page'>
       <MainSidebar />

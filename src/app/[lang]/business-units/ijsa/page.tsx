@@ -7,14 +7,15 @@ import BusinessUnitsOurMissionIjsaSection from '@/@core/page/business-units/our-
 import BusinessUnitsProfileIjsaSection from '@/@core/page/business-units/profile-ijsa-section';
 import BusinessUnitsContactUsSection from '@/@core/page/business-units/contact-us-section';
 import BusinessUnitsAreaSection from '@/@core/page/business-units/area-section';
-import { getDictionariesIjsa } from '@/app/dictionaries';
 
-import '@/styles/business-units.css'
-import axiosInstance from '@/@core/utils/axios';
-
+async function getData() {
+  let res = await fetch(`${process.env.BASE_API_URL}/api/business-units-ijsa`, {
+    cache: 'no-store',
+  })
+  let data = await res.json()
+  return data.data
+}
 export default async function  IjsaPage({ params }: any) {
-    const response = await axiosInstance.get(`/api/business-units-ijsa`);
-    const { data } = response.data
     const { 
       header, 
       profile,
@@ -22,7 +23,7 @@ export default async function  IjsaPage({ params }: any) {
       our_products,
       market_area,
       contact
-    } = data;
+    } = await getData();
     return (
       <main className='business-units-page sm:mobile-responsive'>
         <BusinessUnitsHeroIjsaSection objLang={header} lang={params.lang}/>
