@@ -5,12 +5,13 @@ import { promises as fs } from 'fs';
 const { v4: uuidv4 } = require('uuid');
 
 
-export async function DELETE(req: Request, route: { params: { id: string } }) {
+export async function DELETE(req: Request,  { params }: { params: Promise<{ id: string }>}) {
     try {
+        const paramsId = (await params).id
         let file_data = await fs.readFile(process.cwd() + '/src/app/data/offices.json', 'utf8');
         let offices = JSON.parse(file_data)
 
-        let index = offices.findIndex((x:any) => x.id == route.params.id)
+        let index = offices.findIndex((x:any) => x.id == paramsId)
         offices.splice(index, 1)
 
 

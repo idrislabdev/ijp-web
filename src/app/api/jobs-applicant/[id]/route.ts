@@ -5,12 +5,13 @@ import { promises as fs } from 'fs';
 const { v4: uuidv4 } = require('uuid');
 
 
-export async function DELETE(req: Request, route: { params: { id: string } }) {
+export async function DELETE(req: Request, { params }: { params: Promise<{ id: string }>}) {
     try {
+        const paramsId = (await params).id
         let file_data = await fs.readFile(process.cwd() + '/src/app/data/applicants.json', 'utf8');
         let jobs = JSON.parse(file_data)
 
-        let index = jobs.findIndex((x:any) => x.id == route.params.id)
+        let index = jobs.findIndex((x:any) => x.id == paramsId)
         jobs.splice(index, 1)
 
 
@@ -23,11 +24,12 @@ export async function DELETE(req: Request, route: { params: { id: string } }) {
     }
 }
 
-export async function GET(req: Request, route: { params: { id: string } }) {
+export async function GET(req: Request,  { params }: { params: Promise<{ id: string }>}) {
   try {
+    const paramsId = (await params).id
     let file_data = await fs.readFile(process.cwd() + '/src/app/data/applicants.json', 'utf8');
     let data = JSON.parse(file_data)
-    let obj = data.find((x:any) => x.id == route.params.id)
+    let obj = data.find((x:any) => x.id == paramsId)
     return NextResponse.json({ status: "success", data:obj});
   } catch (e) {
     console.error(e);

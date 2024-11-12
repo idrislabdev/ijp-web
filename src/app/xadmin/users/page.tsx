@@ -8,13 +8,7 @@ import moment from 'moment';
 import Link from 'next/link';
 import XadminUsersTable from '@/@core/page/xadmin/users/table';
 
-export default async function  XadminUsersPage() {
-  const [users,setUsers] = useState([])
-  const formatDate = (val:string) => {
-    moment.locale('id')
-    return moment(val).format('DD MMMM YYYY');
-  }
-
+export default function  XadminUsersPage() {
   return (
     <main className='xadmin-page'>
       <MainSidebar />

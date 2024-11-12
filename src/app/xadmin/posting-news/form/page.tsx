@@ -1,3 +1,5 @@
+"use client"
+
 import MainSidebar from "@/@core/components/main-sidebar";
 import { ArchieveOutlineIcon, ArrowLeftIcon, FolderIcon, FolderOpenIcon, UndoOutlineIcon} from "@/@core/my-icons";
 import JobsPageForm from "@/@core/page/xadmin/jobs/form";
