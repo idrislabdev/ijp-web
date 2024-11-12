@@ -60,7 +60,6 @@ const JobsUsersForm = () => {
           </div>
         </div>
         <div className='form-button'>
-            <button className='btn btn-outline-secondary'>Cancel</button>
             <button className='btn' onClick={_ => save()}>Save</button>
         </div>
     </div>

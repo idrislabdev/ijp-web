@@ -10,8 +10,8 @@ import dataPositions from '@/app/data/positions.json'
 const JobsPageForm = (props: {uuid:string}) => {
   const { uuid } = props
   const [name, setName] = useState('');
-  const [position, setPosition] = useState('');
-  const [location, setLocation] = useState('Kantor Pusat');
+  const [position, setPosition] = useState('Staff');
+  const [location, setLocation] = useState('');
   const [status, setStatus] = useState('Open');
   const [description, setDescription] = useState('');
   const [jobdescs, setJobdescs] = useState([]);
@@ -122,7 +122,6 @@ const JobsPageForm = (props: {uuid:string}) => {
           </div>
         </div>
         <div className='form-button'>
-            <button className='btn btn-outline-secondary'>Cancel</button>
             <button className='btn' onClick={_ => save()}>Save</button>
         </div>
     </div>

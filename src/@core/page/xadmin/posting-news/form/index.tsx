@@ -68,7 +68,6 @@ const PostingNewsForm = () => {
           </div>
         </div>
         <div className='form-button'>
-            <button className='btn btn-outline-secondary' >Cancel</button>
             <button className='btn disabled:!bg-blue-300' disabled={title === '' || content === '' || fileData === null || prolog === null} onClick={_ => save()}>Save</button>
         </div>
     </div>
