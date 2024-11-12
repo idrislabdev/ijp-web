@@ -18,7 +18,7 @@ export async function POST(req: Request) {
           const buffer = new Uint8Array(arrayBuffer);
           await fs.writeFile(`./public/images/about-us/our-strategy.${file.type.split("/")[1]}`, buffer);
 
-          data.strategies.image_url = `/images/about-us/our-strategy.${file.type.split("/")[1]}`
+          data.strategies.image_url = `/api/media/about-us/our-strategy.${file.type.split("/")[1]}`
         }
 
 

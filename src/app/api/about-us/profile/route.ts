@@ -23,7 +23,7 @@ export async function POST(req: Request) {
           const buffer = new Uint8Array(arrayBuffer);
           await fs.writeFile(`./public/images/about-us/profile-1.${file.type.split("/")[1]}`, buffer);
 
-          data.profile.image_1_url = `/images/about-us/profile-1.${file.type.split("/")[1]}`
+          data.profile.image_1_url = `/api/media/about-us/profile-1.${file.type.split("/")[1]}`
         }
 
         if (payload.get("file_2")) {
@@ -32,7 +32,7 @@ export async function POST(req: Request) {
           const buffer = new Uint8Array(arrayBuffer);
           await fs.writeFile(`./public/images/about-us/profile-2.${file.type.split("/")[1]}`, buffer);
 
-          data.profile.image_2_url = `/images/about-us/profile-2.${file.type.split("/")[1]}`
+          data.profile.image_2_url = `/api/media/about-us/profile-2.${file.type.split("/")[1]}`
         }
 
         if (payload.get("file_3")) {
@@ -41,7 +41,7 @@ export async function POST(req: Request) {
           const buffer = new Uint8Array(arrayBuffer);
           await fs.writeFile(`./public/images/about-us/profile-3.${file.type.split("/")[1]}`, buffer);
 
-          data.profile.image_3_url = `/images/about-us/profile-3.${file.type.split("/")[1]}`
+          data.profile.image_3_url = `/api/media/about-us/profile-3.${file.type.split("/")[1]}`
         }
 
         await fs.writeFile('src/app/dictionaries/about-us.json', JSON.stringify(data, null, 4));

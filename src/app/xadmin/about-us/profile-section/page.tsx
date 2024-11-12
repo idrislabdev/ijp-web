@@ -10,11 +10,14 @@ import '@/styles/admin-about-us.css'
 import Link from 'next/link';
 
 export default async function  XadminAboutProfilePage() {
-  const formatDate = (val:string) => {
-    moment.locale('id')
-    return moment(val).format('DD MMMM YYYY');
+  async function getData() {
+    let res = await fetch(`${process.env.BASE_API_URL}/api/about-us`, {
+      cache: 'no-store',
+    })
+    let data = await res.json()
+    return data.data
   }
-  const { profile } = await getDictionariesAbout();
+  const { profile } = await getData();
   return (
     <main className='xadmin-page'>
       <MainSidebar />

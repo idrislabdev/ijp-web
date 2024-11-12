@@ -9,10 +9,15 @@ import { getDictionariesAbout } from '@/app/dictionaries'
 
 import '@/styles/about-us.css'
 import axiosInstance from '@/@core/utils/axios'
-
+async function getData() {
+  let res = await fetch(`${process.env.BASE_API_URL}/api/about-us`, {
+    cache: 'no-store',
+  })
+  let data = await res.json()
+  return data.data
+}
+ 
 export default async function  MainPage({ params }: any) {
-  const response = await axiosInstance.get(`/api/about-us`);
-  const { data } = response.data
   const { 
     header, 
     profile,
@@ -20,7 +25,7 @@ export default async function  MainPage({ params }: any) {
     market_area,
     strategies,
     vission_mission
-   } = data;
+   } = await getData();
   return (
     <main className='about-us-page sm:mobile-responsive'>
       <AboutUsHeroSection objLang={header} lang={params.lang} />
