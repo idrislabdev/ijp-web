@@ -42,7 +42,7 @@ export async function POST(req: Request) {
       updated_at    : new Date().toISOString()
     }
     const { data, error } = await resend.emails.send({
-      from: 'lamaran <lamaran@indojayaputra.com>',
+      from: `${payload.get("job_name")} <lamaran@indojayaputra.com>`,
       to: [recipent],
       subject: `Lamaran ${applicant.job_name}`,
       react: EmailTemplate({ obj:applicant }),
