@@ -9,11 +9,14 @@ import '@/styles/admin-home.css'
 import XadminProductSection from '@/@core/page/xadmin/home/product-section';
 
 export default async function  XadminHomeProductPage() {
-  const formatDate = (val:string) => {
-    moment.locale('id')
-    return moment(val).format('DD MMMM YYYY');
+  async function getData() {
+    let res = await fetch(`${process.env.BASE_API_URL}/api/home`, {
+      cache: 'no-store',
+    })
+    let data = await res.json()
+    return data.data
   }
-  const { our_products } = await getDictionariesHome();
+  const { our_products } = await getData();
   return (
     <main className='xadmin-page'>
       <MainSidebar />

@@ -20,12 +20,9 @@ const HomeOurProductsSection = (props: {objLang:any, lang:string}) => {
     <section className='home-our-products-section'>
         <div className='our-products-container'>
             <div className='our-products-title'>
-                <h1>Our products</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, 
-                    sed porta est consectetur. Sed imperdiet libero id nisi euismod
-                </p>
-                <a onClick={downloadCatalog}>Download Product</a>
+                <h1>{objLang[lang].title}</h1>
+                <p>{objLang[lang].subtitle}</p>
+                <a onClick={downloadCatalog}>{objLang[lang].button_text}</a>
             </div>
             <div className='our-products-subcontainer'>
                 <div className='our-product-wrapper'>

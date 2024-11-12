@@ -5,22 +5,16 @@ import HomeAboutSection from '../about-section';
 import HomeBusinessUnitSection from '../business-unit-section';
 import HomeOurProductsSection from '../our-products-section';
 import MainHeader from '@/@core/components/main-header';
-import Footer from '@/@core/components/footer';
-import axiosInstance from '@/@core/utils/axios';
 import '@/styles/components/main-header.css'
 import '@/styles/home.css'
-import { promises as fs } from 'fs';
-import { getDataHome } from '@/@core/services/api';
-import { unstable_cache } from 'next/cache'
-
 
 async function getData() {
-    let res = await fetch(`${process.env.BASE_API_URL}/api/home/about`, {
+    let res = await fetch(`${process.env.BASE_API_URL}/api/home`, {
       cache: 'no-store',
     })
     let data = await res.json()
     return data.data
-  }
+}
    
 export default async function  HomePageWrapper(props: { lang:string }) {
     const { lang } = props

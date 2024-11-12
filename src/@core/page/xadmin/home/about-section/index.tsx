@@ -42,7 +42,6 @@ const XadminHomeAboutSection = (props: {objData:any}) => {
         setFileData(files)
     }
 
-
     useEffect(() => {
         setTitle(objData[lang].title)
         setSubTitle(objData[lang].subtitle)

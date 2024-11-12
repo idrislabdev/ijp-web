@@ -1,10 +1,6 @@
 const bcrypt = require('bcryptjs');
 import { NextRequest, NextResponse } from "next/server";
-import { revalidatePath } from "next/cache";
 import { promises as fs } from 'fs';
-
-import dataUsers from '@/app/data/users.json'
-
 
 export async function POST(req: Request) {
     try {

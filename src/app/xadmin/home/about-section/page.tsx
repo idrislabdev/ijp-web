@@ -15,9 +15,14 @@ export default async function  XadminHomeAboutPage({ params }: any) {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
   }
-  let file_data = await fs.readFile(process.cwd() + '/src/app/dictionaries/home.json', 'utf8');
-  let data = JSON.parse(file_data)
-  const { about } = data
+  async function getData() {
+    let res = await fetch(`${process.env.BASE_API_URL}/api/home`, {
+      cache: 'no-store',
+    })
+    let data = await res.json()
+    return data.data
+  }
+  const { about } = await getData();
 
   return (
     <main className='xadmin-page'>

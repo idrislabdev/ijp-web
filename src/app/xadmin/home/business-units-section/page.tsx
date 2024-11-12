@@ -8,11 +8,14 @@ import XadminBusinessUnitsSection from '@/@core/page/xadmin/home/business-units-
 import '@/styles/admin-home.css'
 
 export default async function  XadminHomeBusinessUnitsPage() {
-  const formatDate = (val:string) => {
-    moment.locale('id')
-    return moment(val).format('DD MMMM YYYY');
+  async function getData() {
+    let res = await fetch(`${process.env.BASE_API_URL}/api/home`, {
+      cache: 'no-store',
+    })
+    let data = await res.json()
+    return data.data
   }
-  const { business_units } = await getDictionariesHome();
+  const { business_units } = await getData();
   return (
     <main className='xadmin-page'>
       <MainSidebar />
