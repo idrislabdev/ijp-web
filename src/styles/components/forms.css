@@ -39,6 +39,9 @@ button {
     @apply bg-primary text-white text-[14px]/[21px] rounded-[4px];
     &.btn {
         @apply bg-primary text-center text-white justify-center flex items-center gap-[3px] px-[15px] py-[5px] !h-[33px] !text-[13px]/[13px];
+        &.btn-big {
+            @apply !h-[40px];
+        }
         &.btn-primary {
             @apply !bg-primary !text-white;
             svg {

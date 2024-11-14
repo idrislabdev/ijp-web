@@ -25,10 +25,11 @@
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "resend": "^4.0.0",
+    "rsuite": "^5.71.0",
     "swiper": "^11.1.9",
     "universal-cookie": "^7.2.1",
     "uuid": "^10.0.0",
-    "rsuite": "^5.71.0"
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",
