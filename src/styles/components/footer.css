@@ -31,6 +31,9 @@
                     .logo-bpom {
                         @apply w-[50px] h-[30px];
                     }
+                    .logo-iso {
+                        @apply w-[150px];
+                    }
                 }
             }
         }
