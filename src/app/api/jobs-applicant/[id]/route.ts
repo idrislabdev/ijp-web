@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { promises as fs } from 'fs';
 const { v4: uuidv4 } = require('uuid');
+import path from "path";
 
 
 export async function DELETE(req: Request, { params }: { params: Promise<{ id: string }>}) {
@@ -12,6 +13,14 @@ export async function DELETE(req: Request, { params }: { params: Promise<{ id: s
         let jobs = JSON.parse(file_data)
 
         let index = jobs.findIndex((x:any) => x.id == paramsId)
+        const pathString = (process.cwd(), `public/applicants/${jobs[index].id}.pdf`)
+        try {
+          await fs.unlink(
+            path.join(pathString),
+          );
+        } catch (error) {
+          
+        }
         jobs.splice(index, 1)
 
 
