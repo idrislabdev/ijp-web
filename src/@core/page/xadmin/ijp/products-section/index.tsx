@@ -116,7 +116,7 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                                 <div className='our-product-card'>
                                     <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
                                     <div className='card-overlay'>
-                                        <input value={item.name} onChange={e => setProductsName(e.target.value, index)} className='name'/>
+                                        <label className='bg-white w-full text-center font-medium'>{item.name}</label>
                                         <input value={item.description} onChange={e => setProductsDescription(e.target.value, index)} className='description'/>
                                         <div className='change-picture'>
                                             <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>

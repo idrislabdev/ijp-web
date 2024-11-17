@@ -284,7 +284,7 @@
                 }
             }
             .area-subcontainer {
-                @apply flex gap-[30px] w-[70%] justify-center text-center items-center;
+                @apply flex gap-[30px] w-[100%] justify-center text-center items-center;
                 .detail-subcontainer {
                     @apply flex flex-col;
                     h5 {
