@@ -7,36 +7,30 @@ import { Message, useToaster } from 'rsuite';
 import dataOffices from '@/app/data/offices.json'
 import dataPositions from '@/app/data/positions.json'
 
-const JobsUsersForm = () => {
-  const [name, setName] = useState('');
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('Open');
-
+const ChangePasswordForm = () => {
+  const [password1, setPassword1] = useState('');
+  const [password2, setPassword2] = useState('');
 
 
   const toaster = useToaster();
 
   const message = (
       <Message showIcon type={'info'}>
-        Data User Berhasil Diupdate
+        Password Berhasil Diupdate
       </Message>
   );
   
   const clearForm = () => {
-    setName("");
-    setUsername("");
-    setEmail("");
+    setPassword1("");
+    setPassword2("");
   }
 
   const save = async () => {
     let body = {
-      name          : name,
-      username      : username,
-      email         : email,
+      password      : password1,
     }
 
-    const response = await axiosInstance.post("/api/users", body);
+    const response = await axiosInstance.post("/api/users/change-password", body);
     toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     clearForm();
   }
@@ -46,16 +40,12 @@ const JobsUsersForm = () => {
         <div className='flex gap-[20px]'>
           <div className='form-area w-full'>
             <div className='input-area'>
-              <label>Nama User</label>
-              <input value={name} onChange={e => setName(e.target.value)} className='base' />
+              <label>Password</label>
+              <input value={password1} onChange={e => setPassword1(e.target.value)} className='base' />
             </div>
             <div className='input-area'>
-              <label>Username</label>
-              <input value={username} onChange={e => setUsername(e.target.value)} className='base' />
-            </div>
-            <div className='input-area'>
-              <label>Email</label>
-              <input value={email} onChange={e => setEmail(e.target.value)} className='base' />
+              <label>Ulangi Password</label>
+              <input value={password2} onChange={e => setPassword2(e.target.value)} className='base' />
             </div>
           </div>
         </div>
@@ -66,4 +56,4 @@ const JobsUsersForm = () => {
   )
 }
 
-export default JobsUsersForm
+export default ChangePasswordForm

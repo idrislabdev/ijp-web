@@ -48,7 +48,7 @@ const MainSidebar = () => {
             <div className='list-menu'>
                 <ul>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'settings'  ? 'active' : ''}`}><Link href='/xadmin/settings'><SettingOutlineIcon />Pengaturan</Link></li>
-                    <li><Link href='/xadmin/home'><UserOutlineIcon />My User</Link></li>
+                    <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'change-password'  ? 'active' : ''}`}><Link href='/xadmin/change-password'><UserOutlineIcon />Ganti Password</Link></li>
                     <li><Link href='/xadmin/logout'><LogoutOutlineIcon />Logout</Link></li>
                 </ul>
             </div>
