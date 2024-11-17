@@ -36,7 +36,7 @@ const ModalManageProduct = (props: {
 
     const saveImage = async () => {
         let payload = new FormData();
-        payload.append("lang", "test product");
+        payload.append("name", name);
         payload.append("category", category);
 
         if (fileData != null)
@@ -48,6 +48,11 @@ const ModalManageProduct = (props: {
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
     }
 
+    const deleteImage = async(id:string) => {
+        const response = await axiosInstance.delete(`/api/products/ijp/${id}`);
+        await getData();
+    }
+
     const getData = useCallback(async () => {
         const response = await axiosInstance.get(`/api/products/ijp?category=${category}`);
         const { data } = response.data
@@ -57,6 +62,8 @@ const ModalManageProduct = (props: {
     useEffect(() => {
         if (isModalOpen) {
             getData()
+        } else {
+            setProducts([]);
         }
     }, [getData, isModalOpen])
 
@@ -69,7 +76,14 @@ const ModalManageProduct = (props: {
                 <div className='flex flex-wrap gap-[8px]'>
                     {products.map((item:any,index:number) => (
                         <div className='flex gap-[4px] w-[200px] h-[200px] border' key={index}>
-                            <Image src={item.url} className='w-full object-cover' alt={`${item.name}`} width={0} height={0} sizes='100%'/>
+                            <div className='admin-product-card-wrapper'>
+                                <div className='our-product-card h-full'>
+                                    <Image src={item.url} className='w-full h-full object-cover' alt={`${item.name}`} width={0} height={0} sizes='100%'/>
+                                    <div className='card-overlay'>
+                                        <button className='btn btn-sm btn-danger' onClick={_ => deleteImage(item.id)}>Hapus</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     ))}
                     <div className='flex gap-[4px] w-[200px] h-[200px] border'>
@@ -83,13 +97,13 @@ const ModalManageProduct = (props: {
                         }
                         {url !== "" &&
                             <div className='admin-card-wrapper'>
-                                <div className='our-product-card'>
-                                    <Image src={url} className='w-full' alt='unicol' width={0} height={0} sizes='100%'/>
+                                <div className='our-product-card h-full'>
+                                    <Image src={url} className='w-full h-full object-cover' alt='unicol' width={0} height={0} sizes='100%'/>
                                     <div className='card-overlay'>
                                         <input value={name} onChange={e => setName(e.target.value)} className='name' placeholder='ketikkan keterangan'/>
                                         <div className='flex gap-[4px]'>
                                             <button className='btn btn-sm btn-danger' onClick={_ => clearImage()}>Batal</button>
-                                            <button className='btn btn-sm btn-primary' onClick={_ => saveImage()}>Simpan</button>
+                                            <button className='btn btn-sm disabled:!bg-slate-300 bg-blue-700' disabled={name === ''} onClick={_ => saveImage()}>Simpan</button>
                                         </div>
                                     </div>
                                 </div>

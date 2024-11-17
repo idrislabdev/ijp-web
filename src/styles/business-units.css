@@ -149,7 +149,7 @@
                                 @apply text-lg font-bold text-white uppercase;
                             }
                             label {
-                                @apply bg-primary px-[10px] py-[5px] text-white text-base font-medium;
+                                @apply bg-primary px-[10px] py-[5px] text-white text-base font-medium text-center;
                             }
                         }
                     }

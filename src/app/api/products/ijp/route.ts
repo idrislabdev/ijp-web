@@ -13,7 +13,7 @@ export async function POST(req: Request) {
       let products = JSON.parse(file_data)
 
       const file = payload.get("file") as File;
-      let id = 1;
+      let id = products.length ? Math.max(...products.map((x:any) => x.id)) + 1 : 1;;
       const arrayBuffer = await file.arrayBuffer();
       const buffer = new Uint8Array(arrayBuffer);
       await fs.writeFile(
@@ -40,10 +40,16 @@ export async function POST(req: Request) {
   }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
+    const searchParams = request.nextUrl.searchParams;
+    const category = searchParams.get("category");
+
     let file_data = await fs.readFile(process.cwd() + '/src/app/data/products.json', 'utf8');
     let data = JSON.parse(file_data)
+    if (category) {
+      data = data.filter((x:any) => x.category == category);
+    }
     return NextResponse.json({ status: "success", data:data});
   } catch (e) {
     console.error(e);
