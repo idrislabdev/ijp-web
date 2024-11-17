@@ -49,17 +49,8 @@ const MainSidebar = () => {
                 <ul>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'settings'  ? 'active' : ''}`}><Link href='/xadmin/settings'><SettingOutlineIcon />Pengaturan</Link></li>
                     <li className={`${pathname.split("/")[1] === 'xadmin' && pathname.split("/")[2] == 'change-password'  ? 'active' : ''}`}><Link href='/xadmin/change-password'><UserOutlineIcon />Ganti Password</Link></li>
-                    <li><Link href='/xadmin/logout'><LogoutOutlineIcon />Logout</Link></li>
+                    {/* <li><Link href='/xadmin/logout'><LogoutOutlineIcon />Logout</Link></li> */}
                 </ul>
-            </div>
-        </div>
-        <div className='info-area'>
-            <div className='user-info'>
-                <Image src='/images/logoes/dummy-logo.png' alt='logo unicorp' width={0} height={0} sizes='100%'/>
-                <div className='info-detail'>
-                    <label>John Wilson</label>
-                    <span>jonwilsdon.ijp@gmail.com</span>
-                </div>
             </div>
         </div>
     </div>

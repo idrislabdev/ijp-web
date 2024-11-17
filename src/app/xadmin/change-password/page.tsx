@@ -3,9 +3,13 @@ import MainSidebar from '@/@core/components/main-sidebar'
 import { ArchieveOutlineIcon, ArrowLeftIcon, EyeIcon, EyeOutlineIcon, FolderIcon, FolderOpenIcon, HomeOutlineIcon, PencilOutlineIcon, PhoneOutlineIcon, SettingOutlineIcon, TrashOutlineIcon } from '@/@core/my-icons'
 import moment from 'moment';
 import ChangePasswordForm from '@/@core/page/xadmin/change-password/form';
+import { cookies } from 'next/headers'
 
 
 export default async function  XadminSettingsPage() {
+  const cookieStore = await cookies()
+  const objToken:any = cookieStore.get('token')
+
   const formatDate = (val:string) => {
     moment.locale('id')
     return moment(val).format('DD MMMM YYYY');
@@ -34,7 +38,7 @@ export default async function  XadminSettingsPage() {
               </div>
             </div>
             <div className='main-body flex flex-col gap-[10px]'>
-              <ChangePasswordForm />
+              <ChangePasswordForm token={objToken}/>
             </div>
           </div>
         </div>
