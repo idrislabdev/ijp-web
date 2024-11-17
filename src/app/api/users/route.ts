@@ -7,17 +7,18 @@ const { v4: uuidv4 } = require('uuid');
 
 export async function POST(req: Request) {
     try {
-        const job:any = await req.json();
+        const user:any = await req.json();
         let file_data = await fs.readFile(process.cwd() + '/src/app/data/users.json', 'utf8');
-        let jobs = JSON.parse(file_data)
+        let users = JSON.parse(file_data)
 
-        job.id = uuidv4();
-        job.created_at = new Date().toISOString();
-        job.updated_at = new Date().toISOString();
-        jobs.push(job)
+        user.id = uuidv4();
+        user.password = bcrypt.hashSync(12345, 10);    
+        user.created_at = new Date().toISOString();
+        user.updated_at = new Date().toISOString();
+        users.push(user)
 
 
-        await fs.writeFile('src/app/data/users.json', JSON.stringify(jobs, null, 4));
+        await fs.writeFile('src/app/data/users.json', JSON.stringify(users, null, 4));
 
         return NextResponse.json({ status: "success", data:job});
     } catch (e) {
