@@ -128,3 +128,31 @@
         }
     }
 }
+
+.our-product-main-wrapper {
+    @apply w-[200px] p-[10px];
+    .our-product-card {
+        @apply rounded cursor-pointer relative;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        img {
+            @apply w-full rounded object-cover;
+        }
+        &:hover {
+            .card-overlay {
+                @apply opacity-100 visible;
+                visibility: visible;
+            }
+        }
+        .card-overlay {
+            @apply  bg-black rounded-lg opacity-0 h-full w-full absolute z-[2] top-0 left-0 invisible flex flex-col justify-center items-center; 
+            transition: .3s linear;
+            background: rgba(0, 0, 0, .5);
+            h6 {
+                @apply text-lg font-bold text-white uppercase;
+            }
+            label {
+                @apply bg-primary px-[10px] py-[5px] text-white text-base font-medium text-center w-full;
+            }
+        }
+    }
+}

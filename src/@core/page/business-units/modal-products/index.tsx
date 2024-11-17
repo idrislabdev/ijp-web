@@ -4,6 +4,7 @@ import moment from 'moment'
 import Image from 'next/image';
 import React, { Dispatch, SetStateAction, useCallback, useEffect, useState } from 'react'
 import { Message, Modal, useToaster } from 'rsuite'
+import '@/styles/components/cards.css'
 
 const ModalProduct = (props: {
         isModalOpen:boolean, 
@@ -30,18 +31,16 @@ const ModalProduct = (props: {
     return (
         <Modal size="lg" className='modal-full' backdropClassName="my-modal-backdrop" backdrop="static" keyboard={false} open={isModalOpen} onClose={_ => setIsModalOpen(false)}>
             <Modal.Header>
-                <Modal.Title>Manage Product {category.toUpperCase()}</Modal.Title>
+                <Modal.Title>Daftar Produk {category.toUpperCase()}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className='flex flex-wrap gap-[8px]'>
                     {products.map((item:any,index:number) => (
-                        <div className='flex gap-[4px] w-[200px] h-[200px] border' key={index}>
-                            <div className='admin-product-card-wrapper'>
-                                <div className='our-product-card h-full'>
-                                    <Image src={item.url} className='w-full h-full object-cover' alt={`${item.name}`} width={0} height={0} sizes='100%'/>
-                                    <div className='card-overlay'>
-                                        <label className='bg-blue-700'>{item.name}</label>
-                                    </div>
+                        <div className='our-product-main-wrapper' key={index}>
+                            <div className='our-product-card'>
+                                <Image src={item.url} className='our-product-img' alt={item.name} width={0} height={0} sizes='100%'/>
+                                <div className='card-overlay'>
+                                    <label>{item.name}</label>
                                 </div>
                             </div>
                         </div>

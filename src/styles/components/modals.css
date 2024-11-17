@@ -35,7 +35,7 @@
         .rs-modal-content {
             @apply h-screen min-h-full;
             .rs-modal-body {
-                @apply overflow-y-auto;
+                @apply overflow-y-auto !max-h-[95%];
             }
         }
       }
