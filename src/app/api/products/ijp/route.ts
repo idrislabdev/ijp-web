@@ -13,7 +13,7 @@ export async function POST(req: Request) {
       let products = JSON.parse(file_data)
 
       const file = payload.get("file") as File;
-      let id = uuidv4;
+      let id = 1;
       const arrayBuffer = await file.arrayBuffer();
       const buffer = new Uint8Array(arrayBuffer);
       await fs.writeFile(
@@ -31,7 +31,7 @@ export async function POST(req: Request) {
       }
       products.push(product)
 
-      await fs.writeFile('src/app/data/products.json', JSON.stringify(product, null, 4));
+      await fs.writeFile('src/app/data/products.json', JSON.stringify(products, null, 4));
 
       return NextResponse.json({ status: "success", data:product});
   } catch (e) {
@@ -39,4 +39,16 @@ export async function POST(req: Request) {
     return NextResponse.json({ status: "fail", error: e });
   }
 }
+
+export async function GET() {
+  try {
+    let file_data = await fs.readFile(process.cwd() + '/src/app/data/products.json', 'utf8');
+    let data = JSON.parse(file_data)
+    return NextResponse.json({ status: "success", data:data});
+  } catch (e) {
+    console.error(e);
+    return NextResponse.json({ status: "fail", error: e });
+  }
+}
+
 

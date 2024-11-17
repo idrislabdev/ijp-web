@@ -59,3 +59,34 @@
         }
    }
 }
+
+.admin-card-wrapper {
+    .our-product-card {
+        @apply rounded cursor-pointer relative;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        img {
+            @apply w-full rounded object-cover;
+        }
+        .card-overlay {
+            @apply visible bg-black rounded-lg opacity-100 h-full w-full absolute z-[2] top-0 left-0 flex flex-col justify-center items-center gap-[4px]; 
+            transition: .3s linear;
+            background: rgba(0, 0, 0, .4);
+            input {
+                @apply w-full text-center !h-[30px] !rounded-none;
+                &.name {
+                    @apply text-[12px]/[14px] !font-bold uppercase;
+                }
+                &.description {
+                    @apply !rounded-none;
+                    @apply text-[12px]/[14px] !font-bold uppercase;
+                }
+            }
+            .change-picture {
+                @apply pt-[20px] flex flex-col justify-center gap-[4px];
+                label {
+                    @apply bg-primary text-white px-[10px] text-sm cursor-pointer text-center;
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
 import ModalManageProduct from './modal-manage-products';
+import '@/styles/components/cards.css'
 
 const XadminIJPProductsSection = (props: {objData:any}) => {
     const {objData} = props;

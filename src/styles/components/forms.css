@@ -1,5 +1,10 @@
 label {
     @apply text-[13px]/[18px];
+    &.with-icon {
+        svg {
+            @apply w-[20px] h-[20px];
+        }
+    }
 }
 input {
     @apply border border-neutral-200 rounded-[4px] !text-neutral-700 text-[13px]/[18px] outline-none;
@@ -42,8 +47,21 @@ button {
         &.btn-big {
             @apply !h-[40px];
         }
+        &.btn-sm {
+            @apply !h-[30px];
+        }
         &.btn-primary {
             @apply !bg-primary !text-white;
+            svg {
+                @apply h-[18px] w-[18px];
+                path {
+                    @apply fill-white;
+                }
+            }
+        }
+
+        &.btn-danger {
+            @apply !bg-red-600 !text-white;
             svg {
                 @apply h-[18px] w-[18px];
                 path {
