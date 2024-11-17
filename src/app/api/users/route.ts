@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 
         await fs.writeFile('src/app/data/users.json', JSON.stringify(users, null, 4));
 
-        return NextResponse.json({ status: "success", data:job});
+        return NextResponse.json({ status: "success", data:user});
     } catch (e) {
       console.error(e);
       return NextResponse.json({ status: "fail", error: e });
