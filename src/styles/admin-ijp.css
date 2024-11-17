@@ -298,9 +298,9 @@
                             }
                         }
                         .change-picture {
-                            @apply pt-[20px];
+                            @apply pt-[20px] flex flex-col justify-center gap-[4px];
                             label {
-                                @apply bg-primary text-white px-[10px] text-sm cursor-pointer;
+                                @apply bg-primary text-white px-[10px] text-sm cursor-pointer text-center;
                             }
                         }
                     }

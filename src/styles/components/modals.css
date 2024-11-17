@@ -27,3 +27,16 @@
         transition: opacity 0.05 ease-in !important;
     }
   }
+
+.modal-full {
+    @apply !w-full;
+    .rs-modal-dialog {
+        @apply w-full;
+        .rs-modal-content {
+            @apply h-screen min-h-full;
+            .rs-modal-body {
+                @apply overflow-y-auto;
+            }
+        }
+      }
+}

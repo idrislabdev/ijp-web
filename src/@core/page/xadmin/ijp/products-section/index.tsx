@@ -5,6 +5,7 @@ import axiosInstance from '@/@core/utils/axios';
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Message, useToaster } from 'rsuite';
+import ModalManageProduct from './modal-manage-products';
 
 const XadminIJPProductsSection = (props: {objData:any}) => {
     const {objData} = props;
@@ -12,7 +13,9 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
     const [title, setTitle] = useState(objData[lang].title)
     const [description, setDescription] = useState(objData[lang].description)
     const [products, setProducts] = useState(objData.products)
-
+    const [category, setCategory] = useState('')
+    const [openModal, setOpenModal ] = useState(false);
+    
     const [fileData1, setFileData1] = useState(null)
     const [fileData2, setFileData2] = useState(null)
     const [fileData3, setFileData3] = useState(null)
@@ -81,7 +84,10 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         setProducts(temp)
     }
 
-
+    const manageProduct = (val:string) => {
+        setCategory(val)
+        setOpenModal(true)
+    }
 
     useEffect(() => {
         setTitle(objData[lang].title)
@@ -114,9 +120,9 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                                         <div className='change-picture'>
                                             <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
                                             <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
+                                            <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProduct(item.name)}>Manage Product</button>
                                         </div>
                                     </div>
-                                   
                                 </div>
                             </div>
                         ))}
@@ -124,6 +130,11 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                 </div>
             </div>
             <button className='btn btn-primary w-full' onClick={saveUpdate}>Simpan Perubahan</button>
+            <ModalManageProduct 
+                isModalOpen={openModal} 
+                setIsModalOpen={setOpenModal} 
+                category={category}
+            />
         </div>
     )
 }

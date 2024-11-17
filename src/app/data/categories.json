@@ -1,0 +1,7 @@
+[
+    { "id" : 1, "name" : "unicol", "description" : "Pewarna Untuk Makanan", "type": "ijp"},
+    { "id" : 2, "name" : "uniwhite", "description" : "Pemanis Untuk Makanan", "type": "ijp"},
+    { "id" : 3, "name" : "sosweet", "description" : "Tepung Pemutih Untuk Makanan", "type": "ijp"},
+    { "id" : 4, "name" : "other", "description" : "Bahan Kimia Lain", "type": "ijp"},
+    { "id" : 5, "name" : "inaglove", "description" : "Pewarna Untuk Makanan", "type": "ijsa"}
+]
