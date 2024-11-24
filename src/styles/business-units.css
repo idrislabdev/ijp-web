@@ -177,7 +177,7 @@
                 }
             }
             .products-subcontainer {
-                @apply flex justify-center w-full;
+                @apply flex justify-center w-full flex-wrap;
                 .our-product-wrapper {
                     @apply w-[275px] p-[10px];
                     .our-product-card {
