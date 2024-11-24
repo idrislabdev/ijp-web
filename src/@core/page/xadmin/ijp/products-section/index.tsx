@@ -16,6 +16,9 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
     const [products, setProducts] = useState(objData.products)
     const [category, setCategory] = useState('')
     const [openModal, setOpenModal ] = useState(false);
+
+    const [fileData, setFileData] = useState([])
+
     
     const [fileData1, setFileData1] = useState(null)
     const [fileData2, setFileData2] = useState(null)
@@ -35,18 +38,24 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         payload.append("title", title);
         payload.append("description", description);
         payload.append("products", JSON.stringify(products));
+
+        if (fileData.length > 0) {
+            fileData.forEach((item:any) => {
+                payload.append(`file_${item.id+1}`, item.files);
+            });
+        }
         
-        if (fileData1 !== null)
-            payload.append("file_1", fileData1);
+        // if (fileData1 !== null)
+        //     payload.append("file_1", fileData1);
 
-        if (fileData2 !== null)
-            payload.append("file_2", fileData2);
+        // if (fileData2 !== null)
+        //     payload.append("file_2", fileData2);
 
-        if (fileData3 !== null)
-            payload.append("file_3", fileData3);
+        // if (fileData3 !== null)
+        //     payload.append("file_3", fileData3);
 
-        if (fileData4 !== null)
-            payload.append("file_4", fileData4);
+        // if (fileData4 !== null)
+        //     payload.append("file_4", fileData4);
 
         const response = await axiosInstance.post("/api/business-units-ijp/our-products", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
@@ -58,18 +67,32 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
 
         const temp = [...products]
         temp[index].image_url = URL.createObjectURL(files)
+
+        let obj = {
+            id: index,
+            files: files
+        }
         
-        if (index === 0)
-            setFileData1(files)
+        const tempFile:any = [...fileData]
+        const check = tempFile.findIndex((x:any) => x.id === index)
+        if (check >= 0) {
+            tempFile[check].files = files
+        } else {
+            tempFile.push(obj)
+        }
+        setFileData(tempFile)
+
+        // if (index === 0)
+        //     setFileData1(files)
     
-        if (index === 1)
-            setFileData2(files)
+        // if (index === 1)
+        //     setFileData2(files)
     
-        if (index === 2)
-            setFileData3(files)
+        // if (index === 2)
+        //     setFileData3(files)
     
-        if (index === 3)
-            setFileData4(files)
+        // if (index === 3)
+        //     setFileData4(files)
     
     }
 
@@ -88,6 +111,15 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
     const manageProduct = (val:string) => {
         setCategory(val)
         setOpenModal(true)
+    }
+
+    const addKategori = () => {
+        const temp = [...products];
+        let newKategori = temp[0]
+        newKategori.name = 'nama'
+        newKategori.description = 'deskripsi'
+        temp.push(newKategori);
+        setProducts(temp)
     }
 
     useEffect(() => {
@@ -127,6 +159,11 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                                 </div>
                             </div>
                         ))}
+                        <div className='our-product-wrapper'>
+                            <div className='our-product-card h-[155px] flex flex-col justify-center items-center cursor-pointer'>
+                                <button className='btn btn-link' onClick={() => addKategori()}><AddOutlineIcon />Kategori Produk</button>  
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

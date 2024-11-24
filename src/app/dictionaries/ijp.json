@@ -75,21 +75,25 @@
             {
                 "name": "unicol",
                 "description": "Pewarna Untuk Makanan",
+                "detail": "",
                 "image_url": "/images/our-products/products-ijp-1.jpeg"
             },
             {
                 "name": "sosweet",
                 "description": "Pemanis Untuk Makanan",
+                "detail": "",
                 "image_url": "/images/our-products/products-ijp-2.jpeg"
             },
             {
                 "name": "uniwhite",
                 "description": "Tepung Pemutih Untuk Makanan",
+                "detail": "",
                 "image_url": "/images/our-products/products-ijp-3.jpeg"
             },
             {
                 "name": "other chemicals",
                 "description": "Bahan Kimia Lain",
+                "detail": "",
                 "image_url": "/images/our-products/products-ijp-4.jpeg"
             }
         ]
