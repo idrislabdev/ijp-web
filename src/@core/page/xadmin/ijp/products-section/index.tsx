@@ -4,7 +4,7 @@ import { AddOutlineIcon, CheckSquareIcon, TrashOutlineIcon } from '@/@core/my-ic
 import axiosInstance from '@/@core/utils/axios';
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { Message, useToaster } from 'rsuite';
+import { Message, Modal, useToaster } from 'rsuite';
 import ModalManageProduct from './modal-manage-products';
 import '@/styles/components/cards.css'
 
@@ -17,14 +17,15 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
     const [productsOthers, setProductsOthers] = useState(objData.products_others)
     const [category, setCategory] = useState('')
     const [openModal, setOpenModal ] = useState(false);
+    const [openModalOther, setOpenModalOther ] = useState(false);
 
     const [fileData, setFileData] = useState([])
+    const [fileDataOther, setFileDataOther] = useState([])
 
-    
-    const [fileData1, setFileData1] = useState(null)
-    const [fileData2, setFileData2] = useState(null)
-    const [fileData3, setFileData3] = useState(null)
-    const [fileData4, setFileData4] = useState(null)
+    const [selectedProduct, setSelectedProduct] = useState(0)
+    const [selectedProductOther, setSelectedProductOther] = useState(0)
+
+
     const toaster = useToaster();
 
     const message = (
@@ -46,18 +47,13 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                 payload.append(`file_${item.id+1}`, item.files);
             });
         }
+
+        if (fileDataOther.length > 0) {
+            fileDataOther.forEach((item:any) => {
+                payload.append(`file_other_${item.id+1}`, item.files);
+            });
+        }
         
-        // if (fileData1 !== null)
-        //     payload.append("file_1", fileData1);
-
-        // if (fileData2 !== null)
-        //     payload.append("file_2", fileData2);
-
-        // if (fileData3 !== null)
-        //     payload.append("file_3", fileData3);
-
-        // if (fileData4 !== null)
-        //     payload.append("file_4", fileData4);
 
         const response = await axiosInstance.post("/api/business-units-ijp/our-products", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
@@ -98,10 +94,39 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
     
     }
 
+    const setFileOther = (index:number) => {
+        let src:any = document.getElementById(`file-upload-other-${index+1}`)
+        let files = src.files[0]
+
+        const temp = [...productsOthers]
+        temp[index].image_url = URL.createObjectURL(files)
+
+        let obj = {
+            id: index,
+            files: files
+        }
+        
+        const tempFile:any = [...fileDataOther]
+        const check = tempFile.findIndex((x:any) => x.id === index)
+        if (check >= 0) {
+            tempFile[check].files = files
+        } else {
+            tempFile.push(obj)
+        }
+        setFileDataOther(tempFile)
+    
+    }
+
     const setProductsName = (val:any, index:number) => {
         const temp = [...products]
         temp[index].name = val
         setProducts(temp)
+    }
+
+    const setProductsOtherName = (val:any, index:number) => {
+        const temp = [...productsOthers]
+        temp[index].name = val
+        setProductsOthers(temp)
     }
 
     const setProductsDescription = (val:any, index:number) => {
@@ -110,9 +135,32 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         setProducts(temp)
     }
 
-    const manageProduct = (val:string) => {
-        setCategory(val)
+    const setProductsOtherDescription = (val:any, index:number) => {
+        const temp = [...productsOthers]
+        temp[index].description = val
+        setProductsOthers(temp)
+    }
+
+    const setProductsFullDescription = (val:any, object:string, index:number) => {
+        const temp = [...products]
+        temp[index][object] = val
+        setProducts(temp)
+    }
+
+    const setProductsOtherFullDescription = (val:any, object:string, index:number) => {
+        const temp = [...productsOthers]
+        temp[index][object] = val
+        setProductsOthers(temp)
+    }
+
+    const manageProduct = (index:number) => {
         setOpenModal(true)
+        setSelectedProduct(index)
+    }
+
+    const manageProductOther = (index:number) => {
+        setOpenModalOther(true)
+        setSelectedProduct(index)
     }
 
     const addKategori = () => {
@@ -130,6 +178,18 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         newKategori.name = 'nama'
         newKategori.description = 'deskripsi'
         temp.push(newKategori);
+        setProductsOthers(temp)
+    }
+
+    const deleteProduct = (index:number) => {
+        const temp = [...products]
+        temp.splice(index, 1)
+        setProducts(temp)
+    }
+
+    const deleteProductOther = (index:number) => {
+        const temp = [...productsOthers]
+        temp.splice(index, 1)
         setProductsOthers(temp)
     }
 
@@ -162,12 +222,13 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                                     <div className='our-product-card'>
                                         <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
                                         <div className='card-overlay'>
-                                            <label className='bg-white w-full text-center font-medium'>{item.name}</label>
+                                            <input value={item.name} onChange={e => setProductsName(e.target.value, index)} className='description'/>
                                             <input value={item.description} onChange={e => setProductsDescription(e.target.value, index)} className='description'/>
                                             <div className='change-picture'>
                                                 <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
                                                 <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
-                                                <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProduct(item.name)}>Deskripsi Full</button>
+                                                <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProduct(index)}>Deskripsi Full</button>
+                                                <button className='btn btn-sm btn-danger' onClick={_ => deleteProduct(index)}>Hapus</button>
                                             </div>
                                         </div>
                                     </div>
@@ -188,12 +249,13 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                                     <div className='our-product-card'>
                                         <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
                                         <div className='card-overlay'>
-                                            <label className='bg-white w-full text-center font-medium'>{item.name}</label>
-                                            <input value={item.description} onChange={e => setProductsDescription(e.target.value, index)} className='description'/>
+                                            <input value={item.name} onChange={e => setProductsOtherName(e.target.value, index)} className='description'/>
+                                            <input value={item.description} onChange={e => setProductsOtherDescription(e.target.value, index)} className='description'/>
                                             <div className='change-picture'>
-                                                <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
-                                                <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
-                                                <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProduct(item.name)}>Deskripsi Full</button>
+                                                <input id={`file-upload-other-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFileOther(index)}/>
+                                                <label htmlFor={`file-upload-other-${index+1}`}>Ganti Foto</label>
+                                                <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProductOther(index)}>Deskripsi Full</button>
+                                                <button className='btn btn-sm btn-danger' onClick={_ => deleteProductOther(index)}>Hapus</button>
                                             </div>
                                         </div>
                                     </div>
@@ -209,11 +271,42 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                 </div>
             </div>
             <button className='btn btn-primary w-full' onClick={saveUpdate}>Simpan Perubahan</button>
-            <ModalManageProduct 
-                isModalOpen={openModal} 
-                setIsModalOpen={setOpenModal} 
-                category={category}
-            />
+            <Modal size="lg" className='modal-product' backdropClassName="my-modal-backdrop" backdrop="static" keyboard={false} open={openModal} onClose={_ => setOpenModal(false)}>
+                <Modal.Header>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className='flex gap-[10px] mb-[10px]'>
+                        <Image src={products[selectedProduct].image_url} className='our-product-img' alt='unicol' width={350} height={350} />
+                        <div className='flex flex-col gap-[10px] w-[50%]'>
+                            <input value={products[selectedProduct].name} onChange={e => setProductsName(e.target.value, selectedProduct)} className='base'/>
+                            <input value={products[selectedProduct].description} onChange={e => setProductsDescription(e.target.value, selectedProduct)} className='base'/>
+                            <textarea value={products[selectedProduct].full_description_1} onChange={e => setProductsFullDescription(e.target.value, "full_description_1", selectedProduct)} className='base !h-[80px]'/>
+                            <textarea value={products[selectedProduct].full_description_2} onChange={e => setProductsFullDescription(e.target.value, "full_description_2", selectedProduct)} className='base !h-[80px]'/>
+                            <textarea value={products[selectedProduct].full_description_3} onChange={e => setProductsFullDescription(e.target.value, "full_description_3", selectedProduct)} className='base !h-[80px]'/>
+                            
+                        </div>
+                    </div>
+                    <button className='btn btn-primary w-full' onClick={() => setOpenModal(false)}>SIMPAN</button>
+                </Modal.Body>
+            </Modal>
+            <Modal size="lg" className='modal-product' backdropClassName="my-modal-backdrop" backdrop="static" keyboard={false} open={openModalOther} onClose={_ => setOpenModalOther(false)}>
+                <Modal.Header>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className='flex gap-[10px] mb-[10px]'>
+                        <Image src={productsOthers[selectedProduct].image_url} className='our-product-img' alt='unicol' width={350} height={350} />
+                        <div className='flex flex-col gap-[10px] w-[50%]'>
+                            <input value={productsOthers[selectedProduct].name} onChange={e => setProductsOtherName(e.target.value, selectedProduct)} className='base'/>
+                            <input value={productsOthers[selectedProduct].description} onChange={e => setProductsOtherDescription(e.target.value, selectedProduct)} className='base'/>
+                            <textarea value={productsOthers[selectedProduct].full_description_1} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_1", selectedProduct)} className='base !h-[80px]'/>
+                            <textarea value={productsOthers[selectedProduct].full_description_2} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_2", selectedProduct)} className='base !h-[80px]'/>
+                            <textarea value={productsOthers[selectedProduct].full_description_3} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_3", selectedProduct)} className='base !h-[80px]'/>
+                            
+                        </div>
+                    </div>
+                    <button className='btn btn-primary w-full' onClick={() => setOpenModalOther(false)}>SIMPAN</button>
+                </Modal.Body>
+            </Modal>
         </div>
     )
 }

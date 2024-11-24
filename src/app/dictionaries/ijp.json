@@ -66,38 +66,46 @@
         "id": {
             "title": "Produk Kami",
             "description": "Indo Jaya Putera adalah penyedia bahan tambahan pangan berkualitas untuk industri makanan dan minuman. Kami memiliki produk internal unggulan, yaitu Unicol (Pewarna makanan), Sosweet (Pemanis makanan), Uniwhite (Pemutih makanan), Maxmil ( Tepung Creamer), MSG, Fruktosa dan Unicapso. Selain itu juga, Indo Jaya Putera menyediakan produk Bahan Tambahan Pangan lainnya seperti",
-            "product_internal" : "Produk Internal",
-            "product_other" : "Produk Lainnya"
+            "product_internal": "Produk Internal",
+            "product_other": "Produk Lainnya"
         },
         "en": {
             "title": "Our Products",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
-            "product_internal" : "Internal Products",
-            "product_other" : "Other Products"
+            "product_internal": "Internal Products",
+            "product_other": "Other Products"
         },
         "products": [
             {
                 "name": "unicol",
                 "description": "Pewarna Untuk Makanan",
-                "full_description": "",
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-1.jpeg"
             },
             {
                 "name": "sosweet",
                 "description": "Pemanis Untuk Makanan",
-                "full_description": "",
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-2.jpeg"
             },
             {
                 "name": "uniwhite",
                 "description": "Tepung Pemutih Untuk Makanan",
-                "full_description": "",
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-3.jpeg"
             },
             {
                 "name": "other chemicals",
                 "description": "Bahan Kimia Lain",
-                "full_description": "",
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-4.jpeg"
             }
         ],
@@ -105,11 +113,12 @@
             {
                 "name": "nama",
                 "description": "deskripsi",
-                "full_description": "",
-                "image_url": "/images/our-products/products-ijp-1.jpeg"
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
+                "image_url": "/api/media/our-products/products-ijp-others-1.png"
             }
         ]
-
     },
     "contact": {
         "id": {

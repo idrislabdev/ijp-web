@@ -307,6 +307,9 @@
                             label {
                                 @apply bg-primary text-white px-[10px] text-sm cursor-pointer text-center;
                             }
+                            button {
+                                @apply !h-[22px] rounded-none;
+                            }
                         }
                     }
                 }

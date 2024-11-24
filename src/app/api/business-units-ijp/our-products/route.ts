@@ -20,7 +20,9 @@ export async function POST(req: Request) {
           let obj = {
             name:item.name,
             description:item.description,
-            full_description: item.full_description,
+            full_description_1: item.full_description_1,
+            full_description_2: item.full_description_2,
+            full_description_3: item.full_description_3,
             image_url:item.image_url
           }
           products.push(obj)
@@ -53,8 +55,8 @@ export async function POST(req: Request) {
         }
 
         for (let index = 0; index < productsOthers.length; index++) {
-          if (payload.get(`file_${index+1}`)) {
-            const file = payload.get(`file_${index+1}`) as File;
+          if (payload.get(`file_other_${index+1}`)) {
+            const file = payload.get(`file_other_${index+1}`) as File;
             const arrayBuffer = await file.arrayBuffer();
             const buffer = new Uint8Array(arrayBuffer);
             await fs.writeFile(

@@ -40,3 +40,7 @@
         }
       }
 }
+
+.modal-product {
+    @apply !w-[765px];
+}
