@@ -17,11 +17,8 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
     const [thickText, setThickText] = useState(objData[lang].thick_text)
     const [colorText, setColorText] = useState(objData[lang].color_text)
     const [products, setProducts] = useState(objData.products)
+    const [fileData, setFileData] = useState([])
 
-    const [fileData1, setFileData1] = useState(null)
-    const [fileData2, setFileData2] = useState(null)
-    const [fileData3, setFileData3] = useState(null)
-    const [fileData4, setFileData4] = useState(null)
     const toaster = useToaster();
 
     const message = (
@@ -38,17 +35,11 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
         payload.append("description_2", description2);
         payload.append("products", JSON.stringify(products));
         
-        if (fileData1 !== null)
-            payload.append("file_1", fileData1);
-
-        if (fileData2 !== null)
-            payload.append("file_2", fileData2);
-
-        if (fileData3 !== null)
-            payload.append("file_3", fileData3);
-
-        if (fileData4 !== null)
-            payload.append("file_4", fileData4);
+        if (fileData.length > 0) {
+            fileData.forEach((item:any) => {
+                payload.append(`file_${item.id+1}`, item.files);
+            });
+        }
 
         const response = await axiosInstance.post("/api/business-units-ijsa/our-products", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
@@ -61,17 +52,19 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
         const temp = [...products]
         temp[index].image_url = URL.createObjectURL(files)
         
-        if (index === 0)
-            setFileData1(files)
-    
-        if (index === 1)
-            setFileData2(files)
-    
-        if (index === 2)
-            setFileData3(files)
-    
-        if (index === 3)
-            setFileData4(files)
+        let obj = {
+            id: index,
+            files: files
+        }
+
+        const tempFile:any = [...fileData]
+        const check = tempFile.findIndex((x:any) => x.id === index)
+        if (check >= 0) {
+            tempFile[check].files = files
+        } else {
+            tempFile.push(obj)
+        }
+        setFileData(tempFile)
     
     }
 
@@ -105,6 +98,24 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
         setProducts(temp)
     }
 
+    const addProducts = () => {
+        const temp = [...products];
+        let newProduct = temp[0]
+        newProduct.name = ''
+        newProduct.long = ''
+        newProduct.thick = ''
+        newProduct.color = ''
+        newProduct.material = ''
+        temp.push(newProduct);
+        setProducts(temp)
+    }
+
+    const deleteProduct = (index:number) => {
+        const temp = [...products]
+        temp.splice(index, 1)
+        setProducts(temp)
+    }
+
     useEffect(() => {
         setTitle(objData[lang].title)
         setDescription1(objData[lang].description_1)
@@ -135,7 +146,10 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
                                         <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
                                         <div className='img-overlay'>
                                             <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
-                                            <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
+                                            <div className='flex flex-col gap-[8px]'>
+                                                <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
+                                                <button className='btn btn-danger rounded-none !h-[40px]' onClick={_ => deleteProduct(index)}>Hapus</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='card-description'>
@@ -148,6 +162,11 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
                                 </div>
                             </div>  
                         ))} 
+                        <div className='our-product-wrapper'>
+                            <div className='add-card h-[395px] flex flex-col justify-center items-center cursor-pointer'>
+                                <button className='btn btn-link' onClick={() => addProducts()}><AddOutlineIcon />Produk</button>  
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
