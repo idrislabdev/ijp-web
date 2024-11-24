@@ -43,9 +43,9 @@ const XadminProductSection = (props: {objData:any}) => {
     const setFile = async() => {
         let src:any = document.getElementById('file-upload')
         let files = src.files[0]
-        if (files.size > 2000000) {
+        if (files.size > 10000000) {
             alert(
-              'File yang anda upload Terlalu Besar (Maksimal 2Mb) ' +
+              'File yang anda upload Terlalu Besar (Maksimal 10Mb) ' +
                 'Ukuran File yang anda kirim ' +
                 formatBytes(files.size)
             )
