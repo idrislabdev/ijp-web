@@ -20,59 +20,55 @@ export async function POST(req: Request) {
           let obj = {
             name:item.name,
             description:item.description,
+            full_description_1: item.full_description_1,
+            full_description_2: item.full_description_2,
+            full_description_3: item.full_description_3,
             image_url:item.image_url
           }
           products.push(obj)
         });
+
+        const productsOtherTemp = JSON.parse(payload.get("products_others"))
+        let  productsOthers:any = []
         
-
-        if (payload.get("file_1")) {
-          const file = payload.get("file_1") as File;
-          const arrayBuffer = await file.arrayBuffer();
-          const buffer = new Uint8Array(arrayBuffer);
-          await fs.writeFile(
-            path.join(process.cwd(), `public/images/our-products/products-ijp-1.${file.type.split("/")[1]}`),
-            buffer
-          );
-          products[0].image_url  = `/api/media/our-products/products-ijp-1.${file.type.split("/")[1]}`
+        productsOtherTemp.forEach((item:any) => {
+          let obj = {
+            name:item.name,
+            description:item.description,
+            full_description: item.full_description,
+            image_url:item.image_url
+          }
+          productsOthers.push(obj)
+        });
+        
+        for (let index = 0; index < products.length; index++) {
+          if (payload.get(`file_${index+1}`)) {
+            const file = payload.get(`file_${index+1}`) as File;
+            const arrayBuffer = await file.arrayBuffer();
+            const buffer = new Uint8Array(arrayBuffer);
+            await fs.writeFile(
+              path.join(process.cwd(), `public/images/our-products/products-ijp-${index+1}.${file.type.split("/")[1]}`),
+              buffer
+            );
+            products[index].image_url  = `/api/media/our-products/products-ijp-${index+1}.${file.type.split("/")[1]}`
+          }
         }
 
-        if (payload.get("file_2")) {
-          const file = payload.get("file_2") as File;
-          const arrayBuffer = await file.arrayBuffer();
-          const buffer = new Uint8Array(arrayBuffer);
-          await fs.writeFile(
-            path.join(process.cwd(), `public/images/our-products/products-ijp-2.${file.type.split("/")[1]}`),
-            buffer
-          );
-          products[1].image_url  = `/api/media/our-products/products-ijp-2.${file.type.split("/")[1]}`
+        for (let index = 0; index < productsOthers.length; index++) {
+          if (payload.get(`file_other_${index+1}`)) {
+            const file = payload.get(`file_other_${index+1}`) as File;
+            const arrayBuffer = await file.arrayBuffer();
+            const buffer = new Uint8Array(arrayBuffer);
+            await fs.writeFile(
+              path.join(process.cwd(), `public/images/our-products/products-ijp-others-${index+1}.${file.type.split("/")[1]}`),
+              buffer
+            );
+            productsOthers[index].image_url  = `/api/media/our-products/products-ijp-others-${index+1}.${file.type.split("/")[1]}`
+          }
         }
-
-        if (payload.get("file_3")) {
-          const file = payload.get("file_3") as File;
-          const arrayBuffer = await file.arrayBuffer();
-          const buffer = new Uint8Array(arrayBuffer);
-          await fs.writeFile(
-            path.join(process.cwd(), `public/images/our-products/products-ijp-3.${file.type.split("/")[1]}`),
-            buffer
-          );
-          products[2].image_url  = `/api/media/our-products/products-ijp-3.${file.type.split("/")[1]}`
-        }
-
-        if (payload.get("file_4")) {
-          const file = payload.get("file_4") as File;
-          const arrayBuffer = await file.arrayBuffer();
-          const buffer = new Uint8Array(arrayBuffer);
-          await fs.writeFile(
-            path.join(process.cwd(), `public/images/our-products/products-ijp-4.${file.type.split("/")[1]}`),
-            buffer
-          );
-          products[3].image_url  = `/api/media/our-products/products-ijp-4.${file.type.split("/")[1]}`
-        }
-
+        
         data.our_products.products = products
-
-
+        data.our_products.products_others = productsOthers
         await fs.writeFile(process.cwd() + '/src/app/dictionaries/ijp.json', JSON.stringify(data, null, 4));
 
         return NextResponse.json({ status: "success", data:data});

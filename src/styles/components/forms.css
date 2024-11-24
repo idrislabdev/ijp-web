@@ -44,6 +44,13 @@ button {
     @apply bg-primary text-white text-[14px]/[21px] rounded-[4px];
     &.btn {
         @apply bg-primary text-center text-white justify-center flex items-center gap-[3px] px-[15px] py-[5px] !h-[33px] !text-[13px]/[13px];
+        &.btn-link {
+            @apply text-neutral-900 gap-[4px];
+            background-color: unset;
+            svg {
+                @apply h-[18px] w-[18px];
+            }
+        }
         &.btn-big {
             @apply !h-[40px];
         }

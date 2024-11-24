@@ -6,7 +6,7 @@ import React, { Dispatch, SetStateAction, useCallback, useEffect, useState } fro
 import { Message, Modal, useToaster } from 'rsuite'
 import '@/styles/components/cards.css'
 
-const ModalProduct = (props: {
+const ModalProducts = (props: {
         isModalOpen:boolean, 
         setIsModalOpen: Dispatch<SetStateAction<boolean>>, 
         category:string
@@ -51,4 +51,4 @@ const ModalProduct = (props: {
   )
 }
 
-export default ModalProduct
+export default ModalProducts

@@ -25,9 +25,9 @@
             "experience_1": "20+",
             "experience_2": "Tahun Pengalaman"
         },
-        "image_1_url": "/images/galleries/gallery-1.jpg",
-        "image_2_url": "/images/galleries/gallery-2.jpeg",
-        "image_3_url": "/images/galleries/gallery-6.jpg"
+        "image_1_url": "/api/media/ijp/profile-1.jpeg",
+        "image_2_url": "/api/media/ijp/profile-2.jpeg",
+        "image_3_url": "/api/media/ijp/profile-3.jpeg"
     },
     "vission_mission": {
         "id": {
@@ -66,31 +66,55 @@
         "id": {
             "title": "Produk Kami",
             "description": "Kami menyediakan berbagai produk unggulan untuk memenuhi kebutuhan industri pangan Anda, seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), Maxmil (Tepung Susu Premix), MSG, Fruktosa, dan Unicapso. Selain itu, kami juga menawarkan beragam produk General Chemical impor dari China, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, dan lainnya.\r\n\r\n\r\nSeluruh produk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Ini memastikan setiap produk yang kami tawarkan aman, berkualitas, dan sesuai standar internasional, sehingga konsumen dapat merasa aman dan percaya menggunakan produk kami."
+            "description": "Indo Jaya Putera adalah penyedia bahan tambahan pangan berkualitas untuk industri makanan dan minuman. Kami memiliki produk internal unggulan, yaitu Unicol (Pewarna makanan), Sosweet (Pemanis makanan), Uniwhite (Pemutih makanan), Maxmil ( Tepung Creamer), MSG, Fruktosa dan Unicapso. Selain itu juga, Indo Jaya Putera menyediakan produk Bahan Tambahan Pangan lainnya seperti",
+            "product_internal": "Produk Internal",
+            "product_other": "Produk Lainnya"
         },
         "en": {
             "title": "Our Products",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod"
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
+            "product_internal": "Internal Products",
+            "product_other": "Other Products"
         },
         "products": [
             {
                 "name": "unicol",
                 "description": "Pewarna Untuk Makanan",
+                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
                 "image_url": "/images/our-products/products-ijp-1.jpeg"
             },
             {
                 "name": "sosweet",
                 "description": "Pemanis Untuk Makanan",
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-2.jpeg"
             },
             {
                 "name": "uniwhite",
                 "description": "Tepung Pemutih Untuk Makanan",
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-3.jpeg"
             },
             {
                 "name": "other chemicals",
                 "description": "Bahan Kimia Lain",
+                "full_description_1": "",
+                "full_description_2": "",
+                "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-4.jpeg"
+            }
+        ],
+        "products_others": [
+            {
+                "name": "nama",
+                "description": "deskripsi",
+                "image_url": "/api/media/our-products/products-ijp-others-1.jpeg"
             }
         ]
     },

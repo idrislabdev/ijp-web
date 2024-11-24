@@ -30,8 +30,8 @@
             "experience_2": "Years Of Experience"
         },
         "image_1_url": "/api/media/about-us/profile-1.jpeg",
-        "image_2_url": "/images/about-us/profile-2.jpeg",
-        "image_3_url": "/images/about-us/profile-3.jpeg"
+        "image_2_url": "/api/media/about-us/profile-2.jpeg",
+        "image_3_url": "/api/media/about-us/profile-3.jpeg"
     },
     "vission_mission": {
         "id": {

@@ -35,7 +35,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/ijp/profile-2.${file.type.split("/")[1]}`),
             buffer
           );
-          data.profile.image_1_url = `/api/media/ijp/profile-2.${file.type.split("/")[1]}`
+          data.profile.image_2_url = `/api/media/ijp/profile-2.${file.type.split("/")[1]}`
         }
 
         if (payload.get("file_3")) {
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/ijp/profile-3.${file.type.split("/")[1]}`),
             buffer
           );
-          data.profile.image_1_url = `/api/media/ijp/profile-3.${file.type.split("/")[1]}`
+          data.profile.image_3_url = `/api/media/ijp/profile-3.${file.type.split("/")[1]}`
         }
 
         await fs.writeFile(process.cwd() + '/src/app/dictionaries/ijp.json', JSON.stringify(data, null, 4));
