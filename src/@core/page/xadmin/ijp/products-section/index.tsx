@@ -14,6 +14,7 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
     const [title, setTitle] = useState(objData[lang].title)
     const [description, setDescription] = useState(objData[lang].description)
     const [products, setProducts] = useState(objData.products)
+    const [productsOthers, setProductsOthers] = useState(objData.products_others)
     const [category, setCategory] = useState('')
     const [openModal, setOpenModal ] = useState(false);
 
@@ -38,6 +39,7 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         payload.append("title", title);
         payload.append("description", description);
         payload.append("products", JSON.stringify(products));
+        payload.append("products_others", JSON.stringify(productsOthers));
 
         if (fileData.length > 0) {
             fileData.forEach((item:any) => {
@@ -122,10 +124,20 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
         setProducts(temp)
     }
 
+    const addKategoriOthers = () => {
+        const temp = [...productsOthers];
+        let newKategori = temp[0]
+        newKategori.name = 'nama'
+        newKategori.description = 'deskripsi'
+        temp.push(newKategori);
+        setProductsOthers(temp)
+    }
+
     useEffect(() => {
         setTitle(objData[lang].title)
         setDescription(objData[lang].description)
         setProducts(objData.products)
+        setProductsOthers(objData.products_others)
     }, [objData, lang])
 
     return (
@@ -142,26 +154,55 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                         <input value={title} onChange={e => setTitle(e.target.value)} className='title'/>
                         <textarea value={description} onChange={e => setDescription(e.target.value)} className='description'/>
                     </div>
-                    <div className='products-subcontainer'>
-                        {products.map((item:any, index:number) => (
-                            <div className='our-product-wrapper' key={index}>
-                                <div className='our-product-card'>
-                                    <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
-                                    <div className='card-overlay'>
-                                        <label className='bg-white w-full text-center font-medium'>{item.name}</label>
-                                        <input value={item.description} onChange={e => setProductsDescription(e.target.value, index)} className='description'/>
-                                        <div className='change-picture'>
-                                            <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
-                                            <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
-                                            <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProduct(item.name)}>Manage Product</button>
+                    <div className='products-detail-container'>
+                        <h5 className='text-center text-[22px]/[34px] font-semibold'>Produk internal</h5>
+                        <div className='products-subcontainer'>
+                            {products.map((item:any, index:number) => (
+                                <div className='our-product-wrapper' key={index}>
+                                    <div className='our-product-card'>
+                                        <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
+                                        <div className='card-overlay'>
+                                            <label className='bg-white w-full text-center font-medium'>{item.name}</label>
+                                            <input value={item.description} onChange={e => setProductsDescription(e.target.value, index)} className='description'/>
+                                            <div className='change-picture'>
+                                                <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
+                                                <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
+                                                <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProduct(item.name)}>Deskripsi Full</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            ))}
+                            <div className='our-product-wrapper'>
+                                <div className='our-product-card h-[155px] flex flex-col justify-center items-center cursor-pointer'>
+                                    <button className='btn btn-link' onClick={() => addKategori()}><AddOutlineIcon />Kategori Produk</button>  
+                                </div>
                             </div>
-                        ))}
-                        <div className='our-product-wrapper'>
-                            <div className='our-product-card h-[155px] flex flex-col justify-center items-center cursor-pointer'>
-                                <button className='btn btn-link' onClick={() => addKategori()}><AddOutlineIcon />Kategori Produk</button>  
+                        </div>
+                    </div>
+                    <div className='products-detail-container'>
+                        <h5 className='text-center text-[22px]/[34px] font-semibold'>Produk Lainnya</h5>
+                        <div className='products-subcontainer'>
+                            {productsOthers.map((item:any, index:number) => (
+                                <div className='our-product-wrapper' key={index}>
+                                    <div className='our-product-card'>
+                                        <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
+                                        <div className='card-overlay'>
+                                            <label className='bg-white w-full text-center font-medium'>{item.name}</label>
+                                            <input value={item.description} onChange={e => setProductsDescription(e.target.value, index)} className='description'/>
+                                            <div className='change-picture'>
+                                                <input id={`file-upload-${index+1}`} accept=".jpg, .jpeg,.png" type="file" name="file" className='hidden' onChange={_ => setFile(index)}/>
+                                                <label htmlFor={`file-upload-${index+1}`}>Ganti Foto</label>
+                                                <button className='btn btn-sm btn-outline-primary' onClick={_ => manageProduct(item.name)}>Deskripsi Full</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                            <div className='our-product-wrapper'>
+                                <div className='our-product-card h-[155px] flex flex-col justify-center items-center cursor-pointer'>
+                                    <button className='btn btn-link' onClick={() => addKategoriOthers()}><AddOutlineIcon />Kategori Produk</button>  
+                                </div>
                             </div>
                         </div>
                     </div>

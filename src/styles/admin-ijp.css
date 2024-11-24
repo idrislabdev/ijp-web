@@ -258,6 +258,11 @@
     .products-container {
         @apply flex flex-col items-center justify-center text-neutral-950 gap-[20px] bg-white p-[20px] w-full;
         box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
+        .products-detail-container {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            @apply flex flex-col p-[12px] w-full;
+
+        }
         .products-title {
             @apply flex flex-col justify-center items-center text-center gap-[10px] w-full;
             input {

@@ -21,18 +21,37 @@ const BusinessUnitsProductsSection = (props: {objLang:any, lang:string}) => {
                         <h1>{objLang[lang].title}</h1>
                         <p>{objLang[lang].description}</p>
                     </div>
-                    <div className='products-subcontainer'>
-                        {objLang.products.map((item:any, index:number) => (
-                            <div className='our-product-wrapper' key={index}>
-                                <div className='our-product-card' onClick={_ => showProduct(item.name)}>
-                                    <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
-                                    <div className='card-overlay'>
-                                        <h6>{item.name}</h6>
-                                        <label>{item.description}</label>
+                    <div className='product-detail-container'>
+                        <h5 className='text-2xl font-semibold'>Produk Internal</h5>
+                        <div className='products-subcontainer'>
+                            {objLang.products.map((item:any, index:number) => (
+                                <div className='our-product-wrapper' key={index}>
+                                    <div className='our-product-card' onClick={_ => showProduct(item.name)}>
+                                        <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
+                                        <div className='card-overlay'>
+                                            <h6>{item.name}</h6>
+                                            <label>{item.description}</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
+                    </div>
+                    <div className='product-detail-container'>
+                        <h5 className='text-2xl font-semibold'>Produk Lainnya</h5>
+                        <div className='products-subcontainer'>
+                            {objLang.products_others.map((item:any, index:number) => (
+                                <div className='our-product-wrapper' key={index}>
+                                    <div className='our-product-card' onClick={_ => showProduct(item.name)}>
+                                        <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
+                                        <div className='card-overlay'>
+                                            <h6>{item.name}</h6>
+                                            <label>{item.description}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
