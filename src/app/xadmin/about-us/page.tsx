@@ -48,7 +48,7 @@ export default async function  XadminPage() {
                     <td>Header / Hero</td>
                     <td>Pengaturan text dan gambar pada area header</td>
                     <td className='text-center'>
-                      <Link href='/xadmin/about-us/hero-section' className='btn-action'><PencilOutlineIcon /></Link>
+                      <Link href='/xadmin/about-us/header-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
