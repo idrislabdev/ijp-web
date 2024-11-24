@@ -9,6 +9,7 @@ import '@/styles/admin-home.css'
 import axiosInstance from '@/@core/utils/axios';
 import { getDataHome } from '@/@core/services/api';
 import { promises as fs } from 'fs';
+import Link from 'next/link';
 
 export default async function  XadminHomeAboutPage({ params }: any) {
   const formatDate = (val:string) => {
@@ -33,7 +34,7 @@ export default async function  XadminHomeAboutPage({ params }: any) {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Home</li>
+                <li><Link href={`/xadmin/home`}><FolderIcon /> Home</Link></li>
                 <li><FolderOpenIcon /> About Section</li>
               </ul>
             </div>

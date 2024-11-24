@@ -19,7 +19,6 @@ export default async function  XadminPage() {
               <ul>
                 <li><ArrowLeftIcon /></li>
                 <li><FolderIcon /> Home</li>
-                <li><FolderOpenIcon /> Setting Header</li>
               </ul>
             </div>
           </div>
@@ -51,7 +50,7 @@ export default async function  XadminPage() {
                     <td>Pengaturan text dan gambar pada area header</td>
                     <td>{moment('2024-10-10').format('DD MMMM YYYY')}</td>
                     <td className='text-center'>
-                      {/* <Link href='/xadmin/home/hero-section' className='btn-action'><PencilOutlineIcon /></Link> */}
+                      <Link href='/xadmin/home/hero-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
                   <tr>
@@ -81,7 +80,7 @@ export default async function  XadminPage() {
                       <Link href='/xadmin/home/products-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <td>05</td>
                     <td>Berita Terkini</td>
                     <td>Pengaturan judul dan text pada section berita</td>
@@ -89,7 +88,7 @@ export default async function  XadminPage() {
                     <td className='text-center'>
                       <Link href='/xadmin/home/news-section' className='btn-action'><PencilOutlineIcon /></Link>
                     </td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
             </div>

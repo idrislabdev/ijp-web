@@ -6,6 +6,7 @@ import moment from 'moment';
 import { getDictionariesHome } from '@/app/dictionaries';
 import XadminBusinessUnitsSection from '@/@core/page/xadmin/home/business-units-section';
 import '@/styles/admin-home.css'
+import Link from 'next/link';
 
 export default async function  XadminHomeBusinessUnitsPage() {
   async function getData() {
@@ -25,7 +26,7 @@ export default async function  XadminHomeBusinessUnitsPage() {
             <div className='breadcrumb-info'>
               <ul>
                 <li><ArrowLeftIcon /></li>
-                <li><FolderIcon /> Home</li>
+                <li><Link href={`/xadmin/home`}><FolderIcon /> Home</Link></li>
                 <li><FolderOpenIcon /> Unit Bisnis Section</li>
               </ul>
             </div>

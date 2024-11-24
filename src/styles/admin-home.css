@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+.admin-home-banner-section {
+    @apply py-[80px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+    background: radial-gradient(#f8fafc, #f1f5f9);
+
+    .home-banner-container {
+        @apply flex relative w-full gap-[20px];
+        .banner-desc-subcontainer {
+            @apply w-1/2 flex flex-col justify-center gap-[20px];
+            textarea {
+                @apply text-3xl font-bold text-neutral-800;
+            }
+            input {
+                &.button-text {
+                    @apply bg-blue-700 !text-white w-[200px] !h-[44px] text-center;
+                }
+            }
+        }
+        .banner-img-subcontainer {
+            @apply relative w-1/2 flex flex-col justify-center;
+            img {
+                @apply w-[500px] h-[500px];
+            }
+            &:hover {
+                .img-overlay {
+                    @apply opacity-100 visible;
+                    visibility: visible;
+                }
+            }
+            .img-overlay {
+                @apply  bg-black rounded-lg opacity-0 h-full w-full absolute z-[2] top-0 left-0 invisible flex flex-col justify-center items-center; 
+                transition: .3s linear;
+                background: rgba(0, 0, 0, .7);
+                label {
+                    @apply w-[150px] h-[40px] bg-primary text-white flex flex-col justify-center cursor-pointer items-center rounded-sm;
+                }
+            }
+        }
+    }
+}
 .admin-home-about-section {
     @apply flex py-[40px] gap-[80px] justify-center items-center;
     .about-description-container {

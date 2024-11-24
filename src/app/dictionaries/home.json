@@ -1,18 +1,18 @@
 {
     "header": {
         "id": {
-            "title": "",
-            "subtitle_1": "",
-            "subtitle_2": "",
-            "button_text": ""
+            "title": "UNICORP (UNI CORPORATION)",
+            "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
+            "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
+            "button_text": "Baca Selengkapnya"
         },
         "en": {
-            "title": "",
-            "subtitle_1": "",
-            "subtitle_2": "",
-            "button_text": ""
+            "title": "UNICORP (UNI CORPORATION)",
+            "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
+            "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
+            "button_text": "Baca Selengkapnya"
         },
-        "image_url": null
+        "image_url": "/images/others/product.png"
     },
     "about": {
         "id": {
