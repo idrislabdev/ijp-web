@@ -100,7 +100,7 @@ const XadminIJSAProductsSection = (props: {objData:any}) => {
 
     const addProducts = () => {
         const temp = [...products];
-        let newProduct = temp[0]
+        let newProduct = JSON.parse(JSON.stringify(temp[0]))
         newProduct.name = ''
         newProduct.long = ''
         newProduct.thick = ''

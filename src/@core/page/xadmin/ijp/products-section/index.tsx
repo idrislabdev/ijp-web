@@ -165,7 +165,7 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
 
     const addKategori = () => {
         const temp = [...products];
-        let newKategori = temp[0]
+        let newKategori = JSON.parse(JSON.stringify(temp[0]))
         newKategori.name = 'nama'
         newKategori.description = 'deskripsi'
         temp.push(newKategori);
@@ -174,7 +174,7 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
 
     const addKategoriOthers = () => {
         const temp = [...productsOthers];
-        let newKategori = temp[0]
+        let newKategori = JSON.parse(JSON.stringify(temp[0]))
         newKategori.name = 'nama'
         newKategori.description = 'deskripsi'
         temp.push(newKategori);
