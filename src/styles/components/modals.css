@@ -43,4 +43,28 @@
 
 .modal-product {
     @apply !w-[765px];
+    &.view {
+        .rs-modal-content {
+            .rs-modal-header {
+                button {
+                    z-index: 3;
+                }
+            }
+            .rs-modal-body {
+                @apply p-0 m-0;
+            }
+        }
+
+    }
+    .rs-modal-body {
+        h2 {
+            @apply text-neutral-900 uppercase font-bold;
+        }
+        h5 {
+            @apply text-neutral-900 uppercase font-medium;
+        }
+        p {
+            @apply text-neutral-900 text-[12px]/[16px];
+        }
+    }
 }

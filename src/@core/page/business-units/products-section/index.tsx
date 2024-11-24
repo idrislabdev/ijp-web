@@ -2,15 +2,15 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import ModalProduct from '../modal-products'
+import ModalProduct from '../modal-product'
 
 const BusinessUnitsProductsSection = (props: {objLang:any, lang:string}) => {
     const { objLang, lang } = props
-    const [category, setCategory] = useState('')
+    const [product, setProduct] = useState(null)
     const [openModal, setOpenModal ] = useState(false);
 
-    const showProduct = (val:string) => {
-        setCategory(val)
+    const showProduct = (obj:any) => {
+        setProduct(obj)
         setOpenModal(true)
     }
     return (
@@ -26,7 +26,7 @@ const BusinessUnitsProductsSection = (props: {objLang:any, lang:string}) => {
                         <div className='products-subcontainer'>
                             {objLang.products.map((item:any, index:number) => (
                                 <div className='our-product-wrapper' key={index}>
-                                    <div className='our-product-card' onClick={_ => showProduct(item.name)}>
+                                    <div className='our-product-card' onClick={_ => showProduct(item)}>
                                         <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
                                         <div className='card-overlay'>
                                             <h6>{item.name}</h6>
@@ -42,7 +42,7 @@ const BusinessUnitsProductsSection = (props: {objLang:any, lang:string}) => {
                         <div className='products-subcontainer'>
                             {objLang.products_others.map((item:any, index:number) => (
                                 <div className='our-product-wrapper' key={index}>
-                                    <div className='our-product-card' onClick={_ => showProduct(item.name)}>
+                                    <div className='our-product-card' onClick={_ => showProduct(item)}>
                                         <Image src={item.image_url} className='our-product-img' alt='unicol' width={0} height={0} sizes='100%'/>
                                         <div className='card-overlay'>
                                             <h6>{item.name}</h6>
@@ -58,7 +58,7 @@ const BusinessUnitsProductsSection = (props: {objLang:any, lang:string}) => {
             <ModalProduct
                 isModalOpen={openModal} 
                 setIsModalOpen={setOpenModal} 
-                category={category}
+                product={product}
             />
         </>
     )
