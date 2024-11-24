@@ -12,10 +12,10 @@ export async function POST(req: Request) {
         const payload:any = await req.formData();
         let file_data = await fs.readFile(process.cwd() + '/src/app/dictionaries/home.json', 'utf8');
         let data = JSON.parse(file_data)
-        data.about[payload.get("lang")].title = payload.get("title")
-        data.about[payload.get("lang")].subtitle_1 = payload.get("subtitle_1")
-        data.about[payload.get("lang")].subtitle_2 = payload.get("subtitle_2")
-        data.about[payload.get("lang")].button_text = payload.get("button_text")
+        data.hero[payload.get("lang")].title = payload.get("title")
+        data.hero[payload.get("lang")].subtitle_1 = payload.get("subtitle_1")
+        data.hero[payload.get("lang")].subtitle_2 = payload.get("subtitle_2")
+        data.hero[payload.get("lang")].button_text = payload.get("button_text")
 
         if (payload.get("file")) {
           const file = payload.get("file") as File;
@@ -25,7 +25,7 @@ export async function POST(req: Request) {
             path.join(process.cwd(), `public/images/home/header.${file.type.split("/")[1]}`),
             buffer
           );
-          data.about.image_url = `/api/media/home/header.${file.type.split("/")[1]}`
+          data.hero.image_url = `/api/media/home/header.${file.type.split("/")[1]}`
         }
 
 

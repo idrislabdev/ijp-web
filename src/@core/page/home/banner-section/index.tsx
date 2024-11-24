@@ -8,16 +8,13 @@ const HomeBannerSection = (props:{objLang:any, lang:string}) => {
     <section className='home-banner-section'>
       <div className='home-banner-container'>
         <div className='banner-desc-subcontainer'>
-          <h1>UNICORP (UNI CORPORATION)</h1>
-          <h2>
-            Merupakan Grup perusahaan yang bergerak di berbagai bidang industri
-          </h2>
-          <h5>diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya</h5>
-          <Link href={`/${lang}/about-us`}>Baca Selengkapnya</Link>
+          <h1>{objLang[lang].title}</h1>
+          <h2>{objLang[lang].subtitle_1}</h2>
+          <h5>{objLang[lang].subtitle_2}</h5>
+          <Link href={`/${lang}/about-us`}>{objLang[lang].button_text}</Link>
         </div>
         <div className='banner-img-subcontainer'>
-          <Image src='/images/others/product.png' className='product-img' alt='product ijp' width={0} height={0} sizes='100%'/>
-          {/* <Image src='/images/others/inaglove.png' className='inaglove-img' alt='inaglove' width={250} height={250}/> */}
+          <Image src={objLang.image_url} className='product-img' alt='product ijp' width={0} height={0} sizes='100%'/>
         </div>
       </div>
     </section>
