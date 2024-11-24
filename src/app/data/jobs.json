@@ -3,21 +3,32 @@
         "name": "Marketing Support Jakarta",
         "position": "",
         "location": "Kantor Cabang (Jakarta)",
-        "description": "TUGAS & PEKERJAAN :\n\n•\tTerima orderan dari sales marketing.\n•\tCek stok digudang & produksi (data accurate/confirm ke admin gudang & produksi)\n•\tMembuat SO (Sales Order)\n•\tMembuat orderan ke bagian produksi\n•\tMembuat purcahse request (PR)\n•\tMembuat penawaran customer (follow up)\n•\tKoordinasi barang jadi ke admin poduksi\n•\tMembuat DO & SI\n•\tKoordinasi pengiriman kebagian pengiriman, kepala gudang & admin gudang.\n•\tMembuat revisi DO & SI\n•\tSuport sales/ marketing\n•\tSuport cabang (bantu handle jakarta dan semarang.\n•\tStok Opname setiap 6 bulan satu kali\n\nPERSYARATAN :\n\n•\tPendidikan Minimal SMA sederajat atau S1 Semua Jurusan (diutamakan jurusan Bisnis, Akuntansi dan Manajemen.\n•\tMempunyai Pengalaman 1 Tahun di bidang/posisi yang sama.\n•\tMampu mengoperasikan computer, seperti Microsoft Office dan Accurate.\n•\tMemiliki Ketrampilan Komunikasi dan Grooming yang baik.\n•\tDisiplin, teliti, jujur dan bertanggung jawab.\n•\tTerbiasa melayani customer baik online, offline maupun corporate\n",
+        "description": "Marketing support adalah tim atau individu yang membantu aktivitas pemasaran dalam sebuah organisasi. Mereka bekerja di belakang layar untuk memastikan kampanye pemasaran berjalan lancar dan mencapai tujuan yang diinginkan.",
         "jobdescs": [
-            "Admin Support",
-            "Sales Support",
-            "Dokumen Support",
-            "Data Support"
+            "Terima orderan dari sales marketing",
+            "Cek stok digudang & produksi (data accurate/confirm ke admin gudang & produksi)",
+            "Membuat SO (Sales Order)",
+            "Membuat orderan ke bagian produksi",
+            "Membuat purcahse request (PR)",
+            "Membuat penawaran customer (follow up)",
+            "Koordinasi barang jadi ke admin poduksi",
+            "Membuat DO & SI",
+            "Koordinasi pengiriman kebagian pengiriman, kepala gudang & admin gudang",
+            "Membuat revisi DO & SI",
+            "Suport sales/ marketing",
+            "Suport cabang (bantu handle jakarta dan semarang",
+            "Stok Opname setiap 6 bulan satu kali"
         ],
         "status": "Open",
         "qualifications": [
-            "S1",
-            "SMA",
-            "Berpengalaman 3 Tahun"
+            "Pendidikan Minimal SMA sederajat atau S1 Semua Jurusan (diutamakan jurusan Bisnis, Akuntansi dan Manajemen)",
+            "Mempunyai Pengalaman 1 Tahun di bidang/posisi yang sama",
+            "Mampu mengoperasikan computer, seperti Microsoft Office dan Accurate",
+            "Memiliki Ketrampilan Komunikasi dan Grooming yang baik",
+            "Disiplin, teliti, jujur dan bertanggung jawab"
         ],
         "id": "57c6f4ac-013b-4a5c-91b1-985dff675314",
         "created_at": "2024-11-06T07:24:23.124Z",
-        "updated_at": "2024-11-06T08:33:13.960Z"
+        "updated_at": "2024-11-18T07:17:46.672Z"
     }
 ]

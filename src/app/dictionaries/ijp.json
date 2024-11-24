@@ -65,7 +65,7 @@
     "our_products": {
         "id": {
             "title": "Produk Kami",
-            "description": "Indo Jaya Putera adalah penyedia bahan tambahan pangan berkualitas untuk industri makanan dan minuman. Kami memiliki produk internal unggulan, yaitu Unicol (Pewarna makanan), Sosweet (Pemanis makanan), Uniwhite (Pemutih makanan), Maxmil ( Tepung Creamer), MSG, Fruktosa dan Unicapso. Selain itu juga, Indo Jaya Putera menyediakan produk Bahan Tambahan Pangan lainnya seperti"
+            "description": "Kami menyediakan berbagai produk unggulan untuk memenuhi kebutuhan industri pangan Anda, seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), Maxmil (Tepung Susu Premix), MSG, Fruktosa, dan Unicapso. Selain itu, kami juga menawarkan beragam produk General Chemical impor dari China, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, dan lainnya.\r\n\r\n\r\nSeluruh produk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Ini memastikan setiap produk yang kami tawarkan aman, berkualitas, dan sesuai standar internasional, sehingga konsumen dapat merasa aman dan percaya menggunakan produk kami."
         },
         "en": {
             "title": "Our Products",
@@ -98,19 +98,19 @@
         "id": {
             "title": "Kontak Kami",
             "address": {
-                "title": "Visit Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
-                "value": "Lorem Ipsum is simply"
+                "title": "Kantor",
+                "description": "Customer bisa langsung ke alamat kami",
+                "value": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur"
             },
             "phone": {
-                "title": "Call Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
+                "title": "Telefon",
+                "description": "Hubungi kami melalui TAX / WhatsApp",
                 "value": "+62 31 9934 2408"
             },
             "email": {
-                "title": "Contact Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
-                "value": "ijsa.marketing@gmail.com"
+                "title": "Email",
+                "description": "Official Email Tim Marketing kami",
+                "value": "ijPmarketing@gmail.com"
             }
         },
         "en": {

@@ -28,5 +28,20 @@
         "province": "Jawa Timur",
         "created_at": "2024-11-06T06:46:50.143Z",
         "updated_at": "2024-11-06T06:46:50.143Z"
+    },
+    {
+        "id": "ea74f003-8a1c-44cf-b3d7-86c8a5ca51f0",
+        "job_id": "57c6f4ac-013b-4a5c-91b1-985dff675314",
+        "job_name": "Marketing Support Jakarta",
+        "job_location": "Kantor Cabang (Jakarta)",
+        "job_position": "",
+        "name": "DOREMI",
+        "email": "rewininfomedia@gmail.com",
+        "phone": "5555555",
+        "address": "Jalan Jalam",
+        "city": "KOTA SURABAYA",
+        "province": "JAWA TIMUR",
+        "created_at": "2024-11-18T08:07:39.451Z",
+        "updated_at": "2024-11-18T08:07:39.451Z"
     }
 ]
