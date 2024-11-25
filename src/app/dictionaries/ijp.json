@@ -79,9 +79,9 @@
             {
                 "name": "unicol",
                 "description": "Pewarna Untuk Makanan",
-                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+                "full_description_1": "ORIGINAL COLOUR (WATER SOLUBLE)",
+                "full_description_2": "BLENDING COLOUR (WATER SOLUBLE)",
+                "full_description_3": "LAKE COLOUR (OIL SOLUBLE)",
                 "image_url": "/images/our-products/products-ijp-1.jpeg"
             },
             {
@@ -101,18 +101,42 @@
                 "image_url": "/images/our-products/products-ijp-3.jpeg"
             },
             {
-                "name": "other chemicals",
-                "description": "Bahan Kimia Lain",
+                "name": "MAXMIL",
+                "description": "TEPUNG SUSU PREMIX",
                 "full_description_1": "",
                 "full_description_2": "",
                 "full_description_3": "",
                 "image_url": "/images/our-products/products-ijp-4.jpeg"
+            },
+            {
+                "name": "MSG",
+                "description": "MONOSIDIUM GLUTAMATE",
+                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+                "image_url": "/images/our-products/products-ijp-1.jpeg"
+            },
+            {
+                "name": "FRUCTOSE",
+                "description": "SIRUP FRUKTOSA",
+                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+                "image_url": "/images/our-products/products-ijp-1.jpeg"
+            },
+            {
+                "name": "UNICAPSO",
+                "description": "CAPSICUM OLEORESIN",
+                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+                "image_url": "/images/our-products/products-ijp-1.jpeg"
             }
         ],
         "products_others": [
             {
-                "name": "nama",
-                "description": "deskripsi",
+                "name": "other chemicals",
+                "description": "Bahan Kimia Lain",
                 "image_url": "/api/media/our-products/products-ijp-others-1.jpeg"
             }
         ]
