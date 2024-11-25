@@ -160,7 +160,7 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
 
     const manageProductOther = (index:number) => {
         setOpenModalOther(true)
-        setSelectedProduct(index)
+        setSelectedProductOther(index)
     }
 
     const addKategori = () => {
@@ -294,13 +294,13 @@ const XadminIJPProductsSection = (props: {objData:any}) => {
                 </Modal.Header>
                 <Modal.Body>
                     <div className='flex gap-[10px] mb-[10px]'>
-                        <Image src={productsOthers[selectedProduct].image_url} className='our-product-img' alt='unicol' width={350} height={350} />
+                        <Image src={productsOthers[selectedProductOther].image_url} className='our-product-img' alt='unicol' width={350} height={350} />
                         <div className='flex flex-col gap-[10px] w-[50%]'>
-                            <input value={productsOthers[selectedProduct].name} onChange={e => setProductsOtherName(e.target.value, selectedProduct)} className='base'/>
-                            <input value={productsOthers[selectedProduct].description} onChange={e => setProductsOtherDescription(e.target.value, selectedProduct)} className='base'/>
-                            <textarea value={productsOthers[selectedProduct].full_description_1} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_1", selectedProduct)} className='base !h-[80px]'/>
-                            <textarea value={productsOthers[selectedProduct].full_description_2} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_2", selectedProduct)} className='base !h-[80px]'/>
-                            <textarea value={productsOthers[selectedProduct].full_description_3} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_3", selectedProduct)} className='base !h-[80px]'/>
+                            <input value={productsOthers[selectedProductOther].name} onChange={e => setProductsOtherName(e.target.value, selectedProductOther)} className='base'/>
+                            <input value={productsOthers[selectedProductOther].description} onChange={e => setProductsOtherDescription(e.target.value, selectedProductOther)} className='base'/>
+                            <textarea value={productsOthers[selectedProductOther].full_description_1} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_1", selectedProductOther)} className='base !h-[80px]'/>
+                            <textarea value={productsOthers[selectedProductOther].full_description_2} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_2", selectedProductOther)} className='base !h-[80px]'/>
+                            <textarea value={productsOthers[selectedProductOther].full_description_3} onChange={e => setProductsOtherFullDescription(e.target.value, "full_description_3", selectedProductOther)} className='base !h-[80px]'/>
                             
                         </div>
                     </div>
