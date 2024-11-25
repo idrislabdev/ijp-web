@@ -23,7 +23,7 @@ const Footer = () => {
                         <Image src='/images/institutions/bpom.png' className='logo-bpom' alt='mui' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='certifieds-subcontainer'>
-                        <Image src='/images/institutions/logo-iso.JPG' className='logo-iso' alt='iso bspji' width={320} height={320}/>
+                        <Image src='/images/institutions/logo-iso.png' className='logo-iso' alt='iso bspji' width={320} height={320}/>
                     </div>
                 </div>
             </div>
