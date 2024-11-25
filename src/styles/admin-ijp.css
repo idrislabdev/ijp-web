@@ -281,7 +281,7 @@
         .products-subcontainer {
             @apply flex flex-wrap justify-center;
             .our-product-wrapper {
-                @apply w-[175px] p-[10px];
+                @apply w-[175px] h-[175px] p-[10px];
                 .our-product-card {
                     @apply rounded cursor-pointer relative;
                     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
