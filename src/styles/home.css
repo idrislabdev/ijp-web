@@ -9,7 +9,7 @@
         background: radial-gradient(#f8fafc, #f1f5f9);
 
         .home-banner-container {
-            @apply flex relative;
+            @apply flex relative gap-[20px];
             .banner-desc-subcontainer {
                 @apply w-1/2 flex flex-col justify-center gap-[20px];
                 h1 {
@@ -28,7 +28,8 @@
             .banner-img-subcontainer {
                 @apply relative w-1/2 flex flex-col justify-center;
                 img {
-                    @apply w-[500px] h-[500px];
+                    /* @apply w-[500px] h-[500px]; */
+                    @apply w-full;
                 }
                 /* img {
                     &.inaglove-img {
@@ -196,8 +197,10 @@
                         }
                     }
                     .banner-img-subcontainer {
+                        @apply w-full;
                         img {
-                            @apply w-[200px] h-[200px];
+                            @apply w-[400px] h-[200px];
+                            /* @apply w-full; */
                         }
                     }
                 }
