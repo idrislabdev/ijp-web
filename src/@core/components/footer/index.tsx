@@ -43,12 +43,14 @@ const Footer = () => {
 
                                 ))}
                             </div>
-                            <div className='detail-adress'>
-                                <h6>Fax:</h6>
-                                {item.faxs.map((fax:any, index3:number) => (
-                                    <p key={index3}>{fax}</p>
-                                ))}
-                            </div>
+                            {item.faxs.length > 0 && 
+                                <div className='detail-adress'>
+                                    <h6>Fax:</h6>
+                                    {item.faxs.map((fax:any, index3:number) => (
+                                        <p key={index3}>{fax}</p>
+                                    ))}
+                                </div>
+                            }
                         </div>
                     </div>
                 ))}

@@ -35,7 +35,9 @@ export async function POST(req: Request) {
           let obj = {
             name:item.name,
             description:item.description,
-            full_description: item.full_description,
+            full_description_1: item.full_description_1,
+            full_description_2: item.full_description_2,
+            full_description_3: item.full_description_3,
             image_url:item.image_url
           }
           productsOthers.push(obj)
