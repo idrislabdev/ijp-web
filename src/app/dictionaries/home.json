@@ -12,7 +12,7 @@
             "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
             "button_text": "Baca Selengkapnya"
         },
-        "image_url": "/images/others/product.png"
+        "image_url": "/api/media/home/header.png"
     },
     "about": {
         "id": {
@@ -68,7 +68,7 @@
         "id": {
             "title": "Produk Kami",
             "subtitle": "Kami menyediakan produk internal unggulan seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), Maxmil (Tepung Susu Premix), MSG, Fruktosa, dan Unicapso. Selain itu, kami juga memasarkan berbagai produk General Chemical, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, dan lainnya. \r\n\r\nProduk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Hal ini memastikan bahwa setiap produk yang kami tawarkan aman, berkualitas, dan memenuhi standar internasional, sehingga konsumen dapat mempercayai keamanan dan keandalan produk kami dalam setiap penggunaan.",
-            "button_text": "Unduh Produk"
+            "button_text": "Unduh Katalog"
         },
         "en": {
             "title": "Our Products",

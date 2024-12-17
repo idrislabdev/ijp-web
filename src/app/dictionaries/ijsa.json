@@ -75,7 +75,7 @@
     "our_products": {
         "id": {
             "title": "Our product (INA GLOVE)",
-            "description_1": "merupakan sarung tangan berbahan dasar plastik HDPE (High-density Polyethylene), maupun Biodegradable. Kami memiliki dua jenis sarung tangan yaitu sarung tangan dengan permukaan polos dan emboss (tampak ada bintik – bintik).",
+            "description_1": "Sarung tangan plastik \"INAGLOVE\" adalah sarung tangan yang terbuat dari bahan plastik HDPE yang halal dan aman untuk makanan.\r\nSarung tangan ini juga multifungsi dan bisa digunakan untuk berbagai macam kegiatan, seperti memasak, membuat kue, berkebun dan mengecat.",
             "description_2": "Produk kami terdiri dari beberapa pilihan warna seperti natural (bening), biru, dan warna lainnya sesuai permintaan. Kami melayani berbagai kebutuhan ukuran, tebal, dan warna sesuai permintaan pelanggan.",
             "material_text": "Bahan",
             "long_text": "Panjang",
@@ -95,34 +95,34 @@
             {
                 "name": "Jenis Polos",
                 "material": "HDPE atau Biodegradable",
-                "long": "47(cm)",
-                "thick": "8, 10, 25 (mikron)",
-                "color": "Natural, Biru, Custom",
+                "long": "27 cm",
+                "thick": "8 Micron ",
+                "color": "Natural",
                 "image_url": "/images/our-products/products-ijsa-1.jpeg"
             },
             {
                 "name": "Jenis Emboss",
                 "material": "HDPE atau Biodegradable",
-                "long": "47(cm)",
-                "thick": "8, 10, 25 (mikron)",
-                "color": "Natural, Biru, Custom",
-                "image_url": "/images/our-products/products-ijsa-2.jpeg"
+                "long": "27 cm",
+                "thick": "10 Micron ",
+                "color": "Natural",
+                "image_url": "/api/media/our-products/products-ijsa-2.jpeg"
             },
             {
                 "name": "Jenis Polos",
                 "material": "HDPE atau Biodegradable",
-                "long": "47(cm)",
-                "thick": "8, 10, 25 (mikron)",
-                "color": "Natural, Biru, Custom",
-                "image_url": "/images/our-products/products-ijsa-3.jpeg"
+                "long": "27 - 47 cm",
+                "thick": "25 Micron",
+                "color": "Natural dan Biru",
+                "image_url": "/api/media/our-products/products-ijsa-3.jpeg"
             },
             {
                 "name": "Jenis Emboss",
                 "material": "HDPE atau Biodegradable",
-                "long": "47(cm)",
-                "thick": "8, 10, 25 (mikron)",
-                "color": "Natural, Biru, Custom",
-                "image_url": "/images/our-products/products-ijsa-4.jpeg"
+                "long": "27 cm",
+                "thick": "20 Micron",
+                "color": "Natural",
+                "image_url": "/api/media/our-products/products-ijsa-4.jpeg"
             }
         ]
     },
@@ -142,18 +142,18 @@
         "id": {
             "title": "Kontak Kami",
             "address": {
-                "title": "Visit Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
-                "value": "Lorem Ipsum is simply"
+                "title": "Alamat ",
+                "description": "Alamat: Pergudangan Mutiara, Tambak Langon, B14, Surabaya, Jawa Timur 60148",
+                "value": "Hubungi Kami"
             },
             "phone": {
-                "title": "Call Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
+                "title": "Phone",
+                "description": "+62 31 9934 2408",
                 "value": "+62 31 9934 2408"
             },
             "email": {
-                "title": "Contact Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
+                "title": "Email",
+                "description": "Silakan hubungi kami melalui telepon atau email untuk informasi lebih lanjut. Tim kami siap melayani Anda selama jam kerja.",
                 "value": "ijsa.marketing@gmail.com"
             }
         },

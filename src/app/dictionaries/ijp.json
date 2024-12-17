@@ -79,65 +79,65 @@
             {
                 "name": "unicol",
                 "description": "Pewarna Untuk Makanan",
-                "full_description_1": "ORIGINAL COLOUR (WATER SOLUBLE)",
-                "full_description_2": "BLENDING COLOUR (WATER SOLUBLE)",
-                "full_description_3": "LAKE COLOUR (OIL SOLUBLE)",
+                "full_description_1": "UNICOL adalah pewarna makanan sintesis yang memiliki sertifikat MD dari BPOM dan Sertifikat Halal dari MUI\n",
+                "full_description_2": "Original Colour (Water Soluble) yang biasanya digunakan untuk roti/kue, minuman, jelly, permen, dll. \n",
+                "full_description_3": "Lake Colour (Lake Soluble) yang biasanya digunakan untuk krim, butter, margarin, dll.",
                 "image_url": "/images/our-products/products-ijp-1.jpeg"
             },
             {
                 "name": "sosweet",
                 "description": "Pemanis Untuk Makanan",
-                "full_description_1": "",
-                "full_description_2": "",
-                "full_description_3": "",
-                "image_url": "/images/our-products/products-ijp-2.jpeg"
+                "full_description_1": "Sosweet adalah pemanis buatan (sintesis) untuk makanan yang memiliki sertifikat MD dari BPOM",
+                "full_description_2": "Sosweet digunakan untuk menggantikan gula dan memberikan rasa manis dalam industri makanan. ",
+                "full_description_3": "Sosweet biasanya dipakai untuk saos tomat dan sambal, permen, jelly dan produk lain yang menggunakan standar BPOM",
+                "image_url": "/api/media/our-products/products-ijp-2.png"
             },
             {
                 "name": "uniwhite",
                 "description": "Tepung Pemutih Untuk Makanan",
-                "full_description_1": "",
-                "full_description_2": "",
-                "full_description_3": "",
+                "full_description_1": "Uniwhite adalah produk pemutih untuk makanan yang memiliki sertifikat MD dari BPOM. Uniwhite berbahan dasar alami yang memiliki warna putih dan bertekstur seperti tepung dengan mesh 200. ",
+                "full_description_2": "Uniwhite biasanya digunakan untuk produk - produk yang berwarna putih seperti frozen food, bakpao, kerupuk atau ditambahkan pada produk yang ingin diputihkan",
+                "full_description_3": "Uniwhite telah dipasarkan di seluruh Indonesia selama bertahun-tahun dan memiliki sertifikat Halal dari MUI.",
                 "image_url": "/images/our-products/products-ijp-3.jpeg"
             },
             {
                 "name": "MAXMIL",
                 "description": "TEPUNG SUSU PREMIX",
-                "full_description_1": "",
-                "full_description_2": "",
-                "full_description_3": "",
-                "image_url": "/images/our-products/products-ijp-4.jpeg"
+                "full_description_1": "Max Mil merupakan premiks susu untuk produk bakery istimewa yang digunakan untuk pembuatan biskuit, kue, wafer, snack, saus dan soup, permen dan coklat, es krim dan minuman.",
+                "full_description_2": "Maxmil terdiri dari 2 jenis (merah dan hijau) masing-masing memiliki 3 kualitas (Ori, S, SS) khusus Maxmil manis tersedia grade SP",
+                "full_description_3": "Packaging: 10 kg & 25 kg",
+                "image_url": "/api/media/our-products/products-ijp-4.png"
             },
             {
                 "name": "MSG",
                 "description": "MONOSIDIUM GLUTAMATE",
-                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
-                "image_url": "/images/our-products/products-ijp-1.jpeg"
+                "full_description_1": "Monosodium Glutamate (MSG) adalah bahan penyedap rasa untuk makanan yang memiliki sertifikat MD dari BPOM",
+                "full_description_2": "Kegunaan: \nMemperkuat rasa pada makanan\nMemperkuat karakteristik rasa pada makanan",
+                "full_description_3": "Packaging MSG adalah 25 Kg/Zak Tersedia 3 tipe, Ori, SS dan SP.\n\nUkuran partikel MSG adalah 40 mesh (kecuali MSG Ori tersedia 99 mesh)",
+                "image_url": "/api/media/our-products/products-ijp-5.png"
             },
             {
                 "name": "FRUCTOSE",
                 "description": "SIRUP FRUKTOSA",
-                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
-                "image_url": "/images/our-products/products-ijp-1.jpeg"
+                "full_description_1": "Fructose adalah jenis gula alami yang ditemukan dalam buah-buahan, jagung dan madu, memberikan rasa manis dan merupakan salah satu monosakarida. ",
+                "full_description_2": "Fructose memiliki rasa manis yang tinggi, sehingga sering digunakan sebagai pemanis dalam berbagai produk makanan dan minuman seperti pembuatan roti, sirup, selai dan masih banyak lagi",
+                "full_description_3": "Fructose yang dijual oleh IJP telah bersertifikat Halal dan BPOM. \nBrand : Sosweet\nSpec : High Fructose Corn Syrup 55\n Brix 75,6 DE 40-44",
+                "image_url": "/api/media/our-products/products-ijp-6.png"
             },
             {
                 "name": "UNICAPSO",
                 "description": "CAPSICUM OLEORESIN",
-                "full_description_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-                "full_description_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "full_description_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
-                "image_url": "/images/our-products/products-ijp-1.jpeg"
+                "full_description_1": "Capsicum oleoresin adalah bahan tambahan pangan bewarna merah kecoklatan yang diperoleh dari ekstraksi Capsicum annum atau Capsicum fruitescens. Capsicum oleoresin IJP diberi nama Unicapso dan sudah memiliki sertifikat Halal.",
+                "full_description_2": "Kegunaan: \nMemberikan sensasi pedas pada produk",
+                "full_description_3": "Packaging Unicapso adalah 20 Kg/Jc. Tersedia 1 jenis Unicapso\n\"Unicapso 1M SHU WS\" (larut air)",
+                "image_url": "/api/media/our-products/products-ijp-7.png"
             }
         ],
         "products_others": [
             {
                 "name": "other chemicals",
                 "description": "Bahan Kimia Lain",
-                "image_url": "/api/media/our-products/products-ijp-others-1.jpeg"
+                "image_url": "/api/media/our-products/products-ijp-others-1.png"
             }
         ]
     },
@@ -152,12 +152,12 @@
             "phone": {
                 "title": "Telefon",
                 "description": "Hubungi kami melalui TAX / WhatsApp",
-                "value": "+62 31 9934 2408"
+                "value": "+62-31 5997300"
             },
             "email": {
                 "title": "Email",
                 "description": "Official Email Tim Marketing kami",
-                "value": "ijPmarketing@gmail.com"
+                "value": "ijpmarketing@gmail.com"
             }
         },
         "en": {
