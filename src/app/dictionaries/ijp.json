@@ -65,7 +65,7 @@
     "our_products": {
         "id": {
             "title": "Produk Kami",
-            "description": "Kami menyediakan berbagai produk unggulan untuk memenuhi kebutuhan industri pangan Anda, seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), Maxmil (Tepung Susu Premix), MSG, Fruktosa, dan Unicapso. Selain itu, kami juga menawarkan beragam produk General Chemical impor dari China, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, dan lainnya.\r\n\r\n\r\nSeluruh produk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Ini memastikan setiap produk yang kami tawarkan aman, berkualitas, dan sesuai standar internasional, sehingga konsumen dapat merasa aman dan percaya menggunakan produk kami.",
+            "description": "Kami menyediakan berbagai produk unggulan untuk memenuhi kebutuhan industri pangan Anda, seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), Maxmil (Tepung Susu Premix), MSG, Fruktosa dan Unicapso. Selain itu, kami juga menawarkan beragam produk General Chemical impor dari China, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya.\r\n\r\n\r\nSeluruh produk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM dan ISO 9001:2015. Ini memastikan setiap produk yang kami tawarkan aman, berkualitas dan sesuai standar internasional, sehingga konsumen dapat merasa aman dan percaya menggunakan produk kami.",
             "product_internal": "Produk Internal",
             "product_other": "Produk Lainnya"
         },
@@ -137,22 +137,25 @@
             {
                 "name": "other chemicals",
                 "description": "Bahan Kimia Lain",
+                "full_description_1": "General chimical kami yaitu Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Strach Miwon, Corn Strach Thereos, Dextrose Fufeng, Dextrose Lihua. ",
+                "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Malthodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoat Prill, Sodium Benzoat Purox, Sodium Benzoat Wuhan, Sodium Benzoat Wuhan Zak Coklat, Sodium Benzoat Asahi. ",
+                "full_description_3": "Sodium Benzoat Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 mesh, Sodium Sulphate Anyhrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natirum Sakarin.",
                 "image_url": "/api/media/our-products/products-ijp-others-1.png"
             }
         ]
     },
     "contact": {
         "id": {
-            "title": "Kontak Kami",
+            "title": "   Kontak Kami",
             "address": {
                 "title": "Kantor",
-                "description": "Customer bisa langsung ke alamat kami",
+                "description": "Alamat Resmi Kantor Pusat Kami di Surabaya",
                 "value": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur"
             },
             "phone": {
-                "title": "Telefon",
-                "description": "Hubungi kami melalui TAX / WhatsApp",
-                "value": "+62-31 5997300"
+                "title": "Telephone",
+                "description": "Customer dapat menghubungi kami melalui TAX / Whats App",
+                "value": "+62-3159-97300 / +628-87793-8837"
             },
             "email": {
                 "title": "Email",
