@@ -143,12 +143,12 @@
             "title": "Kontak Kami",
             "address": {
                 "title": "Alamat ",
-                "description": "Alamat: Pergudangan Mutiara, Tambak Langon, B14, Surabaya, Jawa Timur 60148",
-                "value": "Hubungi Kami"
+                "description": "Lokasi fisik perusahaan yang digunakan untuk menerima kunjungan, surat menyurat dan sebagai identitas resmi tempat operasional perusahaan.",
+                "value": "ergudangan Mutiara, Tambak Langon, B14, Surabaya, Jawa Timur 60148"
             },
             "phone": {
                 "title": "Phone",
-                "description": "+62 31 9934 2408",
+                "description": "Nomor kontak yang digunakan untuk komunikasi langsung antara pelanggan atau mitra bisnis dengan perusahaan.",
                 "value": "+62 31 9934 2408"
             },
             "email": {
