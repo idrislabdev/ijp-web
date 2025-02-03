@@ -53,7 +53,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                         <ul>
                             <li><a onClick={_ => goToLink('about-us')}>Tentang Kami</a></li>
                             <li><a onClick={_ => goToLink('business-units/ijp')}>Unit Bisnis (IJP)</a></li>
-                            <li><a onClick={_ => goToLink('ebusiness-units/ijsa')}>Unit Bisnis (IJSA)</a></li>
+                            <li><a onClick={_ => goToLink('business-units/ijsa')}>Unit Bisnis (IJSA)</a></li>
                             {/* <li><a onClick={_ => goToLink('news')}>News</a></li> */}
                             <li><a onClick={_ => goToLink('careers')}>Karir</a></li>
                             <li><a onClick={_ => goToLink('contact-us')}>Kontak Kami</a></li>
