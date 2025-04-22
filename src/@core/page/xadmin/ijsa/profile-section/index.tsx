@@ -42,6 +42,7 @@ const XadminIJSAProfileSection = (props: {objData:any}) => {
         setSubtitle(objData[lang].subtitle)
         setDescription1(objData[lang].description_1)
         setDescription2(objData[lang].description_2)
+        setDescription3(objData[lang].description_3)
 
     }, [objData, lang])
 
