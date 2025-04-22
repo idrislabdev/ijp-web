@@ -219,7 +219,7 @@
                 .jobs-container {
                     @apply p-[20px];
                     a {
-                        @apply w-1/2 justify-center items-center text-center;
+                        @apply w-full justify-center items-center text-center;
                         .card-body {
                             @apply rounded-[4px] text-center;
                             h5 {
