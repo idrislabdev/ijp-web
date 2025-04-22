@@ -45,7 +45,7 @@ const HomeOurProductsSection = (props: {objLang:any, lang:string}) => {
                 </div>
                 <div className='our-product-wrapper'>
                     <div className='our-product-card'>
-                        <Image src='/images/our-products/uniwhite-1.jpg' className='our-product-img' alt='unicol' width={330} height={330}/>
+                        <Image src='/images/our-products/uniwhite.png' className='our-product-img' alt='unicol' width={330} height={330}/>
                         <div className='card-overlay'>
                             <h6>uniwhite</h6>
                             <label>Tepung Pemutih Untuk Makanan</label>
