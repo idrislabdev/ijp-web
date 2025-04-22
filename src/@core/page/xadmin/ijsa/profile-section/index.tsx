@@ -29,7 +29,7 @@ const XadminIJSAProfileSection = (props: {objData:any}) => {
         payload.append("title", title);
         payload.append("description_1", description1);
         payload.append("description_2", description2);
-        payload.append("description_3", description2);
+        payload.append("description_3", description3);
 
         const response = await axiosInstance.post("/api/business-units-ijsa/profile", payload);
         toaster.push(message, { placement:'bottomEnd', duration: 5000 })
