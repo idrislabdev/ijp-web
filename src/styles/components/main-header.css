@@ -39,7 +39,7 @@
     .main-header-bottom {
         @apply py-[10px] px-[100px] flex justify-between items-center border-b border-b-neutral-200 z-[10] w-full bg-white;
         img {
-            @apply w-[128px] h-[36px];
+            @apply w-[256px] h-[72px];
         }
         .burger-menu {
             @apply hidden;
@@ -162,6 +162,9 @@
             }
             .main-header-bottom {
                 @apply px-[20px] h-[70px] bg-white; 
+                img {
+                    @apply w-[128px] h-[36px];
+                }
                 .burger-menu {
                     @apply block;
                 }

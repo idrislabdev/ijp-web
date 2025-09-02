@@ -72,7 +72,7 @@ const MainHeader = (props: {lang:string}) => {
                     </div>
                 </div>
                 <div className='main-header-bottom'>
-                    <Image src='/images/logoes/logo-unicorp-big.png' alt='logo unicorp' width={128} height={36}/>
+                    <Image src='/images/logoes/logo-unicorp-new.png' alt='logo unicorp' width={0} height={0} sizes='100%'/>
                     <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={'#000'} /></a>
                     <div className='main-header-menu'>
                         <ul>
