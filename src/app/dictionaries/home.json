@@ -1,91 +1,91 @@
 {
-    "header": {
-        "id": {
-            "title": "UNICORP (UNI CORPORATION)",
-            "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
-            "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
-            "button_text": "Baca Selengkapnya"
-        },
-        "en": {
-            "title": "UNICORP (UNI CORPORATION)",
-            "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
-            "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
-            "button_text": "Baca Selengkapnya"
-        },
-        "image_url": "/api/media/home/header.png"
+  "header": {
+    "id": {
+      "title": "UNICORP (UNI CORPORATION)",
+      "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
+      "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
+      "button_text": "Baca Selengkapnya"
     },
-    "about": {
-        "id": {
-            "title": "Tentang UNICORP",
-            "subtitle": "Unicorp adalah Grup perusahaan yang bergerak di berbagai bidang industri, diantaranya: Makanan, Pertanian, Retail serta Industri lainnya. \r\n\r\nUnicorp memulai usahanya pada tahun 2001 dengan berdirinya CV. Indo Jaya Putra di Surabaya. Seiring dengan pertumbuhan bisnis dan kebutuhan pasar, kami memperluas jaringan dengan membuka cabang di Jakarta, Semarang, dan Bali. Kehadiran cabang-cabang ini menjadi wujud komitmen kami dalam memberikan layanan yang lebih dekat, cepat dan merata kepada pelanggan di berbagai wilayah Indonesia.",
-            "description": "Selain itu, Unicorp juga mengembangkan unit usaha lain yaitu CV. Indo Jaya Sukses Abadi, yang berfokus pada produksi sarung tangan plastik. Hal ini memperkuat diversifikasi bisnis Unicorp di sektor industri sekaligus mendukung kebutuhan pasar yang terus berkembang.\r\n\r\nSebagai importir, produsen, sekaligus distributor, kami didukung oleh gudang yang dirancang khusus untuk menjaga mutu produk serta armada pengiriman yang andal guna memastikan ketepatan waktu dalam setiap pengiriman. Dengan pengalaman dan kepercayaan yang telah terbangun, Unicorp senantiasa berupaya menghadirkan kualitas terbaik dan membangun hubungan yang berkelanjutan dengan para pelanggan.",
-            "button_text": "Baca Selengkapnya"
-        },
-        "en": {
-            "title": "About UNICORP",
-            "subtitle": "Unicorp is a group of companies worked in various industries, including: food, agricultural, retail and other industries.",
-            "description": "Unicorp is started with CV. INDO JAYA PUTRA which is established in 2001 at Surabaya to cover East of Indonesia. To bear the vision to be a regional leader in trading chemical, we have build 2 branches: Branch Semarang to cover Central of Indonesia and Branch Jakarta to cover West of Indonesia. As an importer, manufacture and distributor, our branches were equipped with effective warehouse design and own delivery fleets to ensure that every customer get the best service.",
-            "button_text": "Read More"
-        },
-        "image_url": "/api/media/home/home-about.jpeg"
+    "en": {
+      "title": "UNICORP (UNI CORPORATION)",
+      "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
+      "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
+      "button_text": "Baca Selengkapnya"
     },
-    "business_units": {
-        "id": {
-            "title": "Unit Bisnis UNICORP",
-            "subtitle": "Unicorp memiliki unit bisnis yaitu bidang Bahan Tambahan Pangan (Indo Jaya Putra) dan Indo Jaya Sukses Abadi memproduksi sarung tangan plastik berbahan HDPE.",
-            "units": [
-                {
-                    "name": "IJP",
-                    "title": "INDO JAYA PUTRA",
-                    "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
-                },
-                {
-                    "name": "IJSA",
-                    "title": "INDO JAYA SUKSES ABADI",
-                    "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
-                }
-            ]
-        },
-        "en": {
-            "title": "Business Units UNICORP",
-            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
-            "units": [
-                {
-                    "name": "IJP",
-                    "title": "INDO JAYA PUTRA",
-                    "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
-                },
-                {
-                    "name": "IJSAP",
-                    "title": "INDO JAYA SUKSES ABADI",
-                    "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
-                }
-            ]
-        },
-        "image_url": null
+    "image_url": "/api/media/home/header.png"
+  },
+  "about": {
+    "id": {
+      "title": "Tentang UNICORP",
+      "subtitle": "Unicorp adalah Grup perusahaan yang bergerak di berbagai bidang industri, diantaranya: Makanan, Pertanian, Retail serta Industri lainnya. \r\n\r\nUnicorp memulai usahanya pada tahun 2001 dengan berdirinya CV. Indo Jaya Putra di Surabaya. Seiring dengan pertumbuhan bisnis dan kebutuhan pasar, kami memperluas jaringan dengan membuka cabang di Jakarta, Semarang, dan Bali. Kehadiran cabang-cabang ini menjadi wujud komitmen kami dalam memberikan layanan yang lebih dekat, cepat dan merata kepada pelanggan di berbagai wilayah Indonesia.",
+      "description": "Selain itu, Unicorp juga mengembangkan unit usaha lain yaitu CV. Indo Jaya Sukses Abadi, yang berfokus pada produksi sarung tangan plastik. Hal ini memperkuat diversifikasi bisnis Unicorp di sektor industri sekaligus mendukung kebutuhan pasar yang terus berkembang.\r\n\r\nSebagai importir, produsen, sekaligus distributor, kami didukung oleh gudang yang dirancang khusus untuk menjaga mutu produk serta armada pengiriman yang andal guna memastikan ketepatan waktu dalam setiap pengiriman. Dengan pengalaman dan kepercayaan yang telah terbangun, Unicorp senantiasa berupaya menghadirkan kualitas terbaik dan membangun hubungan yang berkelanjutan dengan para pelanggan.",
+      "button_text": "Baca Selengkapnya"
     },
-    "our_products": {
-        "id": {
-            "title": "Produk Kami",
-            "subtitle": "Kami menyediakan produk internal unggulan seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), MashMil (Tepung Susu Premix), MSG, Fruktose, Baking Powder dan Unicapso. Selain itu, kami juga memasarkan berbagai produk General Chemical, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya. \r\n\r\nProduk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Hal ini memastikan bahwa setiap produk yang kami tawarkan aman, berkualitas, dan memenuhi standar internasional, sehingga konsumen dapat mempercayai keamanan dan keandalan produk kami dalam setiap penggunaan.",
-            "button_text": "Unduh Katalog"
+    "en": {
+      "title": "About UNICORP",
+      "subtitle": "Unicorp is a group of companies worked in various industries, including: food, agricultural, retail and other industries.",
+      "description": "Unicorp is started with CV. INDO JAYA PUTRA which is established in 2001 at Surabaya to cover East of Indonesia. To bear the vision to be a regional leader in trading chemical, we have build 2 branches: Branch Semarang to cover Central of Indonesia and Branch Jakarta to cover West of Indonesia. As an importer, manufacture and distributor, our branches were equipped with effective warehouse design and own delivery fleets to ensure that every customer get the best service.",
+      "button_text": "Read More"
+    },
+    "image_url": "/api/media/home/home-about.jpeg"
+  },
+  "business_units": {
+    "id": {
+      "title": "Unit Bisnis UNICORP",
+      "subtitle": "Unicorp memiliki unit bisnis yaitu bidang Bahan Tambahan Pangan (Indo Jaya Putra) dan Indo Jaya Sukses Abadi memproduksi sarung tangan plastik berbahan HDPE.",
+      "units": [
+        {
+          "name": "IJP",
+          "title": "CV. INDO JAYA PUTRA",
+          "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
         },
-        "en": {
-            "title": "Our Products",
-            "subtitle": "We provide a range of superior products tailored to meet the needs of the food industry, including Unicol (Food Coloring), Sosweet (Sweetener), Uniwhite (Food Whitener), Maxmil (Creamer Powder), MSG, Fructose, and Unicapso. In addition, we offer various General Chemical products imported from China, such as Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, and others.\r\n\r\nAll our products meet the highest quality standards with Halal, BPOM, and ISO 9001:2015 certifications. This ensures that every product we offer is safe, high-quality, and compliant with international standards, giving consumers confidence in the safety and reliability of our products.",
-            "button_text": "Download Product"
+        {
+          "name": "IJSA",
+          "title": "CV. INDO JAYA SUKSES ABADI",
+          "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
         }
+      ]
     },
-    "news": {
-        "id": {
-            "title": "Berita Terkini",
-            "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
-            "button_text": "Berita Lainnya"
+    "en": {
+      "title": "Business Units UNICORP",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
+      "units": [
+        {
+          "name": "IJP",
+          "title": "INDO JAYA PUTRA",
+          "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
         },
-        "en": {
-            "title": "Latest News",
-            "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
-            "button_text": "Other News"
+        {
+          "name": "IJSAP",
+          "title": "INDO JAYA SUKSES ABADI",
+          "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
         }
+      ]
+    },
+    "image_url": null
+  },
+  "our_products": {
+    "id": {
+      "title": "Produk Kami",
+      "subtitle": "Kami menyediakan produk internal unggulan seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), MashMil (Tepung Susu Premix), MSG, Fruktose, Baking Powder dan Unicapso. Selain itu, kami juga memasarkan berbagai produk General Chemical, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya. \r\n\r\nProduk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Hal ini memastikan bahwa setiap produk yang kami tawarkan aman, berkualitas, dan memenuhi standar internasional, sehingga konsumen dapat mempercayai keamanan dan keandalan produk kami dalam setiap penggunaan.",
+      "button_text": "Unduh Katalog"
+    },
+    "en": {
+      "title": "Our Products",
+      "subtitle": "We provide a range of superior products tailored to meet the needs of the food industry, including Unicol (Food Coloring), Sosweet (Sweetener), Uniwhite (Food Whitener), Maxmil (Creamer Powder), MSG, Fructose, and Unicapso. In addition, we offer various General Chemical products imported from China, such as Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, and others.\r\n\r\nAll our products meet the highest quality standards with Halal, BPOM, and ISO 9001:2015 certifications. This ensures that every product we offer is safe, high-quality, and compliant with international standards, giving consumers confidence in the safety and reliability of our products.",
+      "button_text": "Download Product"
     }
+  },
+  "news": {
+    "id": {
+      "title": "Berita Terkini",
+      "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
+      "button_text": "Berita Lainnya"
+    },
+    "en": {
+      "title": "Latest News",
+      "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
+      "button_text": "Other News"
+    }
+  }
 }
