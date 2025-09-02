@@ -17,8 +17,8 @@
     "about": {
         "id": {
             "title": "Tentang UNICORP",
-            "subtitle": "Unicorp adalah Grup perusahaan yang bergerak di berbagai bidang industri, diantaranya: Makanan, Pertanian, Retail serta Industri lainnya.",
-            "description": "Unicorp bermula dengan didirikannya CV. INDO JAYA PUTRA pada tahun 2001 di Surabaya untuk pemasaran area Indonesia bagian timur. Untuk memenuhi visi sebagai pemimpin perusahaan perdagangan bahan kimia di Indonesia, kami telah mendirikan 2 cabang: Cabang Semarang untuk pemasaran area Indonesia bagian tengah dan Cabang Jakarta untuk pemasaran area Indonesia bagian barat. Sebagai importir, pabrik dan distributor, cabang kami dilengkapi dengan gudang yang didesain khusus dan armada pengiriman yang terlatih untuk memastikan bahwa setiap pelanggan akan menerima pelayanan terbaik.",
+            "subtitle": "Unicorp adalah Grup perusahaan yang bergerak di berbagai bidang industri, diantaranya: Makanan, Pertanian, Retail serta Industri lainnya. \r\n\r\nUnicorp memulai usahanya pada tahun 2001 dengan berdirinya CV. Indo Jaya Putra di Surabaya. Seiring dengan pertumbuhan bisnis dan kebutuhan pasar, kami memperluas jaringan dengan membuka cabang di Jakarta, Semarang, dan Bali. Kehadiran cabang-cabang ini menjadi wujud komitmen kami dalam memberikan layanan yang lebih dekat, cepat dan merata kepada pelanggan di berbagai wilayah Indonesia.",
+            "description": "Selain itu, Unicorp juga mengembangkan unit usaha lain yaitu CV. Indo Jaya Sukses Abadi, yang berfokus pada produksi sarung tangan plastik. Hal ini memperkuat diversifikasi bisnis Unicorp di sektor industri sekaligus mendukung kebutuhan pasar yang terus berkembang.\r\n\r\nSebagai importir, produsen, sekaligus distributor, kami didukung oleh gudang yang dirancang khusus untuk menjaga mutu produk serta armada pengiriman yang andal guna memastikan ketepatan waktu dalam setiap pengiriman. Dengan pengalaman dan kepercayaan yang telah terbangun, Unicorp senantiasa berupaya menghadirkan kualitas terbaik dan membangun hubungan yang berkelanjutan dengan para pelanggan.",
             "button_text": "Baca Selengkapnya"
         },
         "en": {
@@ -32,7 +32,7 @@
     "business_units": {
         "id": {
             "title": "Unit Bisnis UNICORP",
-            "subtitle": "Indo Jaya Putera memiliki unit bisnis yaitu bidang Bahan Tambahan Pangan dan Indo Jaya Sukses Abadi memproduksi sarung tangan plastik berbahan HDPE",
+            "subtitle": "Unicorp memiliki unit bisnis yaitu bidang Bahan Tambahan Pangan (Indo Jaya Putra) dan Indo Jaya Sukses Abadi memproduksi sarung tangan plastik berbahan HDPE.",
             "units": [
                 {
                     "name": "IJP",
@@ -67,7 +67,7 @@
     "our_products": {
         "id": {
             "title": "Produk Kami",
-            "subtitle": "Kami menyediakan produk internal unggulan seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), Maxmil (Tepung Susu Premix), MSG, Fruktosa, dan Unicapso. Selain itu, kami juga memasarkan berbagai produk General Chemical, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, dan lainnya. \r\n\r\nProduk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Hal ini memastikan bahwa setiap produk yang kami tawarkan aman, berkualitas, dan memenuhi standar internasional, sehingga konsumen dapat mempercayai keamanan dan keandalan produk kami dalam setiap penggunaan.",
+            "subtitle": "Kami menyediakan produk internal unggulan seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), MashMil (Tepung Susu Premix), MSG, Fruktose, Baking Powder dan Unicapso. Selain itu, kami juga memasarkan berbagai produk General Chemical, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya. \r\n\r\nProduk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Hal ini memastikan bahwa setiap produk yang kami tawarkan aman, berkualitas, dan memenuhi standar internasional, sehingga konsumen dapat mempercayai keamanan dan keandalan produk kami dalam setiap penggunaan.",
             "button_text": "Unduh Katalog"
         },
         "en": {

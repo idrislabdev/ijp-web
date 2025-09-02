@@ -36,15 +36,16 @@
     "vission_mission": {
         "id": {
             "our_vissions": {
-                "title": "Visi Kami",
+                "title": "MISI Kami",
                 "contents": [
-                    "Terus berinovasi menciptakan produk-produk baru yang berkualitas & bersaing yang didukung pengembangan sumber daya manusia serta pengembangan perusahaan berkesinambungan.",
-                    "Fokus pada kepuasan pelanggan dengan memberikan produk terbaik dengan kualitas dan layanan terbaik.",
-                    "Memberikan kesempatan sumber daya manusia era milenial untuk berkarya, berkontribusi dengan didukung proses pengembangan kemampuannya sehingga UNICORP akan berkembang lebih cepat untuk rencana jangka panjang."
+                    "MEMPRODUKSI BAHAN PANGAN DAN BAHAN TAMBAHAN PANGAN YANG BERMUTU,AMAN DAN HALAL SESUAI DENGAN PERSYARATAN YANG BERLAKU",
+                    "MELAKUKAN INOVASI SERTA MENCIPTAKAN PRODUK-PRODUK BARU YANG BERKUALITAS DAN BERSAING,DIDUKUNG DENGAN PENGEMBANGAN SUMBER DAYA MANUSIA SERTA PENGEMBANGAN PERUSAHAAN YANG BERKESINAMBUNGAN",
+                    "MENINGKATKAN FOKUS PADA KEPUASAN PELANGGAN DENGAN MEMBERIKAN PRODUK TERBAIK DENGAN KUALITAS DAN LAYANAN TERBAIK",
+                    "MEMBERIKAN KESEMPATAN KEPADA SUMBER DAYA MANUSIA ERA MILENIAL UNTUK BERKARYA DAN BERKONTRIBUSI DENGAN DIDUKUNG OLEH PENGEMBANGAN KEMAMOUANNYA SEHINGGA CV. INDO JAYA PUTRA AKAN BERKEMBANG LEBIH CEPAT UNTUK RENCANA JANGKA PANJANG"
                 ]
             },
             "our_missions": {
-                "title": "Misi Kami",
+                "title": "VISI Kami",
                 "contents": [
                     "Menjadi leader di industri makanan, retail, pertanian & industri lainnya di Indonesia."
                 ]
@@ -134,12 +135,12 @@
             "contents": [
                 {
                     "title": "Tahun 2001",
-                    "subtitle": "IJP (INDO JAYA PUTRA) Didirikan",
+                    "subtitle": " CV. INDO JAYA PUTRA (IJP) Didirikan",
                     "description": "Awal mula perusahaan pertama adalah CV. INDO JAYA PUTRA (importir, distributor, produsen bahan kimia khususnya di industri makanan) yang berdiri pada tahun 2001."
                 },
                 {
                     "title": "Tahun 2018",
-                    "subtitle": "IJSA (INDO JAYA SUKSES ABADI) Didirikan",
+                    "subtitle": "CV. INDO JAYA SUKSES ABADI (IJSA) Didirikan",
                     "description": "Kemudian disusul CV. Indo Jaya Sukes Abadi (produsen sarung tangan plastik) yang berdiri pada tahun 2018."
                 },
                 {
@@ -202,15 +203,15 @@
             "contents": [
                 {
                     "title": "SURABAYA",
-                    "description": "Menghandle pemasaran untuk Indonesia bagian Timur"
+                    "description": "Menghandle pemasaran untuk Indonesia bagian Provinsi Jawa Timur"
                 },
                 {
                     "title": "SEMARANG",
-                    "description": "Menghandle pemasaran untuk Indonesia bagian Tengah"
+                    "description": "Menghandle pemasaran untuk Indonesia bagian Provinsi Jawa Tengah"
                 },
                 {
                     "title": "JAKARTA",
-                    "description": "Menghandle pemasaran untuk Indonesia bagian Barat"
+                    "description": "Menghandle pemasaran untuk Indonesia bagian Provinsi Jawa Barat "
                 },
                 {
                     "title": "BALI",
