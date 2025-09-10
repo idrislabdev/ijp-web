@@ -25,37 +25,37 @@
             },
             "office": {
                 "title": "Alamat Kantor Pusat",
-                "description": "Alamat: Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia, Kode Pos 60111. No. Telpon: +62 31 599 7100",
+                "description": "Alamat: Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia, 60111. ",
                 "value": "",
                 "link_text": "Hubungi Kontak"
             },
             "office_hour": {
                 "title": "Jam Kerja UNICORP",
-                "description": "Berikut ini merupakan jam kantor yang ada di unicorp",
+                "description": "Berikut ini merupakan jam kantor yang ada di Unicorp",
                 "hours": {
                     "sunday_holiday": {
                         "text": "Minggu / Hari Besar",
                         "value": "Libur"
                     },
                     "monday": {
-                        "text": "Senin",
-                        "value": "08:00 - 16:30"
+                        "text": "",
+                        "value": ""
                     },
                     "tuesday": {
-                        "text": "Selasa",
-                        "value": "08:00 - 16:30"
+                        "text": "",
+                        "value": ""
                     },
                     "wednesday": {
-                        "text": "Rabu",
-                        "value": "08:00 - 16:30"
+                        "text": "",
+                        "value": ""
                     },
                     "thursday": {
-                        "text": "Kamis",
+                        "text": "Senin - Jumat ",
                         "value": "08:00 - 16:30"
                     },
                     "friday": {
-                        "text": "Jum'at",
-                        "value": "08:00 - 16:30"
+                        "text": "",
+                        "value": ""
                     },
                     "saturday": {
                         "text": "Sabtu",

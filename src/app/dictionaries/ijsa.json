@@ -12,35 +12,35 @@
     },
     "profile": {
         "id": {
-            "title": "Profil Unit Bisnis (IJSA)",
-            "description_1": "CV. INDO JAYA SUKSES ABADI adalah perusahaan yang bergerak di bidang sarung tangan plastik (HDPE), yang beralamat di Pergudangan Mutiara Tambak Langon B14 Surabaya – Jawa Timur, didirikan pada bulan September 2018. Perusahaan ini untuk melengkapi dan mensupport CV. INDO JAYA PUTRA yang merupakan perusahaan pertama dari induk UNICORP yang merupakan importir, produsen, distribusi untuk bahan kimia, khususnya di industri makanan retail dan pertanian.s",
-            "description_2": "Pada awalnya, CV. INDO JAYA SUKSES ABADI hanya memproduksi sarung tangan plastik sesuai dengan kebutuhan pelanggan dengan merk INAGLOVE. Dengan semakin bervariasinya permintaan pelanggan, maka kami berexpansi untuk membuat beberapa merk baru dengan spesifikasi yang berbeda. Produk sarung tangan plastik ini bersertifikasi (Sertifikat Halal, Food Grade dan MSDS), ramah lingkungan dan bisa dipakai untuk berbagai bidang pekerjaan (Salon, Melukis, Memasak,dll.).",
+            "title": "Profil Unit Bisnis Indo Jaya Sukses Abadi (IJSA)",
+            "description_1": "CV. INDO JAYA SUKSES ABADI adalah perusahaan yang bergerak di bidang sarung tangan plastik (HDPE), yang beralamat di Pergudangan Mutiara Tambak Langon B14 Surabaya – Jawa Timur, didirikan pada bulan September 2018. Perusahaan ini untuk melengkapi dan mensupport CV. INDO JAYA PUTRA yang merupakan perusahaan pertama dari induk UNICORP yang merupakan importir, produsen, distribusi untuk bahan kimia, khususnya di industri makanan retail dan pertanian.",
+            "description_2": "Pada awalnya, CV. INDO JAYA SUKSES ABADI hanya memproduksi sarung tangan plastik sesuai dengan kebutuhan pelanggan dengan merk INAGLOVE. Dengan semakin bervariasinya permintaan pelanggan, maka kami berexpansi untuk membuat beberapa merk baru dengan spesifikasi yang berbeda. Produk sarung tangan plastik ini bersertifikasi (Sertifikat Halal, Food Grade dan MSDS), ramah lingkungan dan bisa dipakai untuk berbagai bidang pekerjaan (Salon, Melukis, Memasak,dll).",
             "description_3": ""
         },
         "en": {
-            "title": "Profil Unit Bisnis (IJSA)",
-            "description_1": "CV. INDO JAYA SUKSES ABADI adalah perusahaan yang bergerak di bidang sarung tangan plastik (HDPE), yang beralamat di Pergudangan Mutiara Tambak Langon B14 Surabaya – Jawa Timur, didirikan pada bulan September 2018. Perusahaan ini untuk melengkapi dan mensupport CV. INDO JAYA PUTRA yang merupakan perusahaan pertama dari induk UNICORP yang merupakan importir, produsen, distribusi untuk bahan kimia, khususnya di industri makanan retail dan pertanian.",
-            "description_2": "Pada awalnya, CV. INDO JAYA SUKSES ABADI hanya memproduksi sarung tangan plastik sesuai dengan kebutuhan pelanggan dengan merk INAGLOVE. Dengan semakin bervariasinya permintaan pelanggan, maka kami berexpansi untuk membuat beberapa merk baru dengan spesifikasi yang berbeda. Produk sarung tangan plastik ini bersertifikasi (Sertifikat Halal, Food Grade dan MSDS), ramah lingkungan dan bisa dipakai untuk berbagai bidang pekerjaan (Salon, Melukis, Memasak,dll.).",
-            "description_3": "Bahan baku produk sarung tangan kami adalah HDPE (High-density Polyethylene). Dengan menggunakan mesin canggih dan mutakhir yang memiliki kecepatan dan kualitas seal yang bagus, kami memproduksi 2 tipe sarung tangan plastik, yaitu sarung tangan pendek (27-29 cm) dan sarung tangan panjang (47 cm), dengan macam ketebalan: 8 micron, 10 micron, dan 25 micron, ataupun permukaan bisa polos dan emboss (tampak ada bintik-bintik), juga untuk warna bisa natural (bening), biru dan warna lainnya. Jadi kami bisa memenuhi spesifikasi untuk ukuran, tebal dan warna sesuai kebutuhan pelanggan."
+            "title": "Business Unit Profile of Indo Jaya Sukses Abadi (IJSA)",
+            "description_1": "CV. Indo Jaya Sukses Abadi is a company engaged in the production of plastic gloves (HDPE), located at Pergudangan Mutiara Tambak Langon B14, Surabaya – East Java. Established in September 2018, the company was founded to complement and support CV. Indo Jaya Putra, the first company under the UNICORP group, which is an importer, manufacturer, and distributor of chemicals, particularly for the food, retail, and agricultural industries",
+            "description_2": "In the beginning, CV. Indo Jaya Sukses Abadi produced plastic gloves under the INAGLOVE brand, tailored to customer needs. As customer demand diversified, we expanded by developing several new brands with different specifications.\r\n\r\nOur plastic glove products are certified (Halal, Food Grade, and MSDS), environmentally friendly, and suitable for various uses such as salons, painting, cooking, and more.",
+            "description_3": ""
         }
     },
     "vission_mission": {
         "id": {
             "our_missions": {
-                "title": "Our Mission",
+                "title": "misi kami",
                 "contents": [
                     "Mengembangkan sumber daya manusia untuk berinovasi dan bekerja secara efektif dan efisien.",
                     "Memprioritaskan kepuasan pelanggan dengan memberikan produk yang berkualitas."
                 ]
             },
             "our_vissions": {
-                "title": "Our Vission",
+                "title": "visi kami",
                 "contents": [
                     "Menjadi pemimpin pasar untuk sarung tangan plastik."
                 ]
             },
             "our_strategies": {
-                "title": "Our Starategys",
+                "title": "strategi kami",
                 "contents": [
                     "Meningkatkan kualitas dan kapasitas produksi untuk memenuhi kebutuhan pelanggan.",
                     "Menciptakan lebih banyak produk dan menumbuhkan pasar dengan menggandeng lebih banyak distributor.",
@@ -52,18 +52,18 @@
             "our_missions": {
                 "title": "Our Mission",
                 "contents": [
-                    "Mengembangkan sumber daya manusia untuk berinovasi dan bekerja secara efektif dan efisien.",
-                    "Memprioritaskan kepuasan pelanggan dengan memberikan produk yang berkualitas."
+                    "To develop human resources that can innovate and work effectively and efficiently.",
+                    "To prioritize customer satisfaction by delivering high-quality products."
                 ]
             },
             "our_vissions": {
                 "title": "Our Vission",
                 "contents": [
-                    "Menjadi pemimpin pasar untuk sarung tangan plastik."
+                    "To become the market leader in plastic gloves."
                 ]
             },
             "our_strategies": {
-                "title": "Our Starategy",
+                "title": "strategi kami",
                 "contents": [
                     "Meningkatkan kualitas dan kapasitas produksi untuk memenuhi kebutuhan pelanggan.",
                     "Menciptakan lebih banyak produk dan menumbuhkan pasar dengan menggandeng lebih banyak distributor.",
@@ -76,7 +76,7 @@
         "id": {
             "title": "Our product (INAGLOVE)",
             "description_1": "Sarung tangan plastik \"INAGLOVE\" adalah sarung tangan yang terbuat dari bahan plastik HDPE yang halal dan aman untuk makanan.\r\nSarung tangan ini juga multifungsi dan bisa digunakan untuk berbagai macam kegiatan, seperti memasak, membuat kue, berkebun dan mengecat.",
-            "description_2": "Produk kami terdiri dari beberapa pilihan warna seperti natural (bening), biru, dan warna lainnya sesuai permintaan. Kami melayani berbagai kebutuhan ukuran, tebal, dan warna sesuai permintaan pelanggan.",
+            "description_2": "Produk kami terdiri dari beberapa pilihan warna seperti natural (bening), biru, dan warna lainnya sesuai permintaan. Kami melayani berbagai kebutuhan ukuran, tebal dan warna sesuai permintaan pelanggan.",
             "material_text": "Bahan",
             "long_text": "Panjang",
             "thick_text": "Tebal",
@@ -144,7 +144,7 @@
             "address": {
                 "title": "Alamat ",
                 "description": "Lokasi fisik perusahaan yang digunakan untuk menerima kunjungan, surat menyurat dan sebagai identitas resmi tempat operasional perusahaan.",
-                "value": "ergudangan Mutiara, Tambak Langon, B14, Surabaya, Jawa Timur 60148"
+                "value": "Pergudangan Mutiara, Tambak Langon, B14, Surabaya, Jawa Timur 60148"
             },
             "phone": {
                 "title": "Phone",
