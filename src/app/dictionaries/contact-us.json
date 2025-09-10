@@ -1,122 +1,122 @@
 {
-    "header": {
-        "id": {
-            "title": "Kontak Kami",
-            "description": "Untuk informasi lebih lanjut tentang perusahaan dan produk kami silahkan datang ke kantor kami atau hubungi nomor kontak kami yang ada di bawah ini."
-        },
-        "en": {
-            "title": "Kontak Kami",
-            "description": "Untuk informasi lebih lanjut tentang perusahaan dan produk kami silahkan datang ke kantor kami atau hubungi nomor kontak kami yang ada di bawah ini."
-        }
+  "header": {
+    "id": {
+      "title": "Kontak Kami",
+      "description": "Untuk informasi lebih lanjut tentang perusahaan dan produk kami silahkan datang ke kantor kami atau hubungi nomor kontak kami yang ada di bawah ini."
     },
-    "info": {
-        "id": {
-            "email": {
-                "title": "Alamat Email",
-                "description": "Tim kostumer servis kami akan menjawab pertanyaan anda dengan segera, dengan mengirim email ke",
-                "value": "info_unicorp@yahoo.com",
-                "link_text": "Kirim email"
-            },
-            "phone": {
-                "title": "Nomor Telepon",
-                "description": "Untuk mendapatkan jawaban dengan nomor telepon, anda dapat menghubungi nomor telepon kami di nomor",
-                "value": "+62 31 599 7100",
-                "link_text": "Hubungi Kami"
-            },
-            "office": {
-                "title": "Alamat Kantor Pusat",
-                "description": "Alamat: Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia, Kode Pos 60111. No. Telpon: +62 31 599 7100",
-                "value": "",
-                "link_text": "Hubungi Kontak"
-            },
-            "office_hour": {
-                "title": "Jam Kerja UNICORP",
-                "description": "Berikut ini merupakan jam kantor yang ada di unicorp",
-                "hours": {
-                    "sunday_holiday": {
-                        "text": "Minggu / Hari Besar",
-                        "value": "Libur"
-                    },
-                    "monday": {
-                        "text": "Senin",
-                        "value": "08:00 - 16:30"
-                    },
-                    "tuesday": {
-                        "text": "Selasa",
-                        "value": "08:00 - 16:30"
-                    },
-                    "wednesday": {
-                        "text": "Rabu",
-                        "value": "08:00 - 16:30"
-                    },
-                    "thursday": {
-                        "text": "Kamis",
-                        "value": "08:00 - 16:30"
-                    },
-                    "friday": {
-                        "text": "Jum'at",
-                        "value": "08:00 - 16:30"
-                    },
-                    "saturday": {
-                        "text": "Sabtu",
-                        "value": "08:00 - 14:00"
-                    }
-                }
-            }
-        },
-        "en": {
-            "email": {
-                "title": "Alamat Email",
-                "description": "Tim kostumer servis kami akan menjawab pertanyaan anda dengan segera, dengan mengirim email ke",
-                "value": "info_unicorp@yahoo.com",
-                "link_text": "Kirim email"
-            },
-            "phone": {
-                "title": "Nomor Telepon",
-                "description": "Untuk mendapatkan jawaban dengan nomor telepon, anda dapat menghubungi nomor telepon kami di nomor",
-                "value": "+62 31 599 7100",
-                "link_text": "Hubungi Kami"
-            },
-            "office": {
-                "title": "Alamat Kantor Pusat",
-                "description": "Alamat: Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia, Kode Pos 60111. No. Telpon: +62 31 599 7100",
-                "value": "",
-                "link_text": "Hubungi Kontak"
-            },
-            "office_hour": {
-                "title": "Jam Kerja UNICORP",
-                "description": "Berikut ini merupakan jam kantor yang ada di unicorp",
-                "hours": {
-                    "sunday_holiday": {
-                        "text": "Sunday / Holiday",
-                        "value": "-"
-                    },
-                    "monday": {
-                        "text": "Monday",
-                        "value": "08:00 - 16:00"
-                    },
-                    "tuesday": {
-                        "text": "Tuesday",
-                        "value": "08:00 - 16:00"
-                    },
-                    "wednesday": {
-                        "text": "Wednesday",
-                        "value": "08:00 - 16:00"
-                    },
-                    "thursday": {
-                        "text": "Thursday",
-                        "value": "08:00 - 16:00"
-                    },
-                    "friday": {
-                        "text": "Friday",
-                        "value": "08:00 - 16:00"
-                    },
-                    "saturday": {
-                        "text": "Saturday",
-                        "value": "08:00 - 14:00"
-                    }
-                }
-            }
-        }
+    "en": {
+      "title": "Kontak Kami",
+      "description": "Untuk informasi lebih lanjut tentang perusahaan dan produk kami silahkan datang ke kantor kami atau hubungi nomor kontak kami yang ada di bawah ini."
     }
+  },
+  "info": {
+    "id": {
+      "email": {
+        "title": "Alamat Email",
+        "description": "Tim kostumer servis kami akan menjawab pertanyaan anda dengan segera, dengan mengirim email ke",
+        "value": "info_unicorp@yahoo.com",
+        "link_text": "Kirim email"
+      },
+      "phone": {
+        "title": "Nomor Telepon",
+        "description": "Untuk mendapatkan jawaban dengan nomor telepon, anda dapat menghubungi nomor telepon kami di nomor",
+        "value": "+62 31 599 7100",
+        "link_text": "Hubungi Kami"
+      },
+      "office": {
+        "title": "Alamat Kantor Pusat",
+        "description": "Alamat: Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia, 60111. ",
+        "value": "",
+        "link_text": "Hubungi Kontak"
+      },
+      "office_hour": {
+        "title": "Jam Kerja UNICORP",
+        "description": "Berikut ini merupakan jam kantor yang ada di Unicorp",
+        "hours": {
+          "sunday_holiday": {
+            "text": "Minggu / Hari Besar",
+            "value": "Libur"
+          },
+          "monday": {
+            "text": "Senin",
+            "value": "08:00 - 16:30"
+          },
+          "tuesday": {
+            "text": "Selasa",
+            "value": "08:00 - 16:30"
+          },
+          "wednesday": {
+            "text": "Rabu",
+            "value": "08:00 - 16:30"
+          },
+          "thursday": {
+            "text": "Kamis",
+            "value": "08:00 - 16:30"
+          },
+          "friday": {
+            "text": "Jumat",
+            "value": "08:00 - 16:30"
+          },
+          "saturday": {
+            "text": "Sabtu",
+            "value": "08:00 - 14:00"
+          }
+        }
+      }
+    },
+    "en": {
+      "email": {
+        "title": "Alamat Email",
+        "description": "Tim kostumer servis kami akan menjawab pertanyaan anda dengan segera, dengan mengirim email ke",
+        "value": "info_unicorp@yahoo.com",
+        "link_text": "Kirim email"
+      },
+      "phone": {
+        "title": "Nomor Telepon",
+        "description": "Untuk mendapatkan jawaban dengan nomor telepon, anda dapat menghubungi nomor telepon kami di nomor",
+        "value": "+62 31 599 7100",
+        "link_text": "Hubungi Kami"
+      },
+      "office": {
+        "title": "Alamat Kantor Pusat",
+        "description": "Alamat: Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur, Indonesia, Kode Pos 60111. No. Telpon: +62 31 599 7100",
+        "value": "",
+        "link_text": "Hubungi Kontak"
+      },
+      "office_hour": {
+        "title": "Jam Kerja UNICORP",
+        "description": "Berikut ini merupakan jam kantor yang ada di unicorp",
+        "hours": {
+          "sunday_holiday": {
+            "text": "Sunday / Holiday",
+            "value": "-"
+          },
+          "monday": {
+            "text": "Monday",
+            "value": "08:00 - 16:00"
+          },
+          "tuesday": {
+            "text": "Tuesday",
+            "value": "08:00 - 16:00"
+          },
+          "wednesday": {
+            "text": "Wednesday",
+            "value": "08:00 - 16:00"
+          },
+          "thursday": {
+            "text": "Thursday",
+            "value": "08:00 - 16:00"
+          },
+          "friday": {
+            "text": "Friday",
+            "value": "08:00 - 16:00"
+          },
+          "saturday": {
+            "text": "Saturday",
+            "value": "08:00 - 14:00"
+          }
+        }
+      }
+    }
+  }
 }

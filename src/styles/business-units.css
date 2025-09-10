@@ -3,819 +3,809 @@
 @tailwind utilities;
 
 .business-units-page {
-    @apply pt-[97px] bg-slate-50;
-    .business-units-hero-section {
-        @apply py-[100px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
-        background: url("/images/backgrounds/parallax-office-3.jpg") no-repeat;
-        background-position: center;
-        &::before {
-            content: '';
-            @apply absolute bg-neutral-900 opacity-60 w-full h-full z-[2];
-        }
-        .hero-container {
-            @apply z-10 text-center flex flex-col gap-[10px];
-            .text-welcome {
-                h2 {
-                    @apply text-4xl text-white font-bold
-                }
-            }
-            .text-title {
-                @apply bg-primary py-[20px] px-[50px];
-                h1 {
-                    @apply text-5xl text-white font-medium;
-                }
-            }
-        }
+  @apply pt-[97px] bg-slate-50;
+  .business-units-hero-section {
+    @apply py-[100px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-office-3.jpg") no-repeat;
+    background-position: center;
+    &::before {
+      content: "";
+      @apply absolute bg-neutral-900 opacity-60 w-full h-full z-[2];
     }
-    .business-units-our-mission-section {
-        @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
-        background: url("/images/backgrounds/parallax-2.png") no-repeat;
-        background-position: center;
-        &::before {
-            content: '';
-            @apply absolute bg-blue-900 opacity-85 w-full h-full z-[2];
+    .hero-container {
+      @apply z-10 text-center flex flex-col gap-[10px];
+      .text-welcome {
+        h2 {
+          @apply text-4xl text-white font-bold;
         }
-        .our-mission-container {
-            @apply flex flex-col items-start w-full justify-center gap-[40px];
-            .detail-subcontainer {
-                @apply flex flex-col justify-center items-center text-center z-10 px-[20px] w-full;
-                .icon-detail {
-                    svg {
-                        @apply w-[100px] h-[100px];
-                       
-                    }
-                    &.smaller {
-                        svg {
-                            @apply w-[50px] h-[50px];
-                        }
-                    }
-                    &.fill {
-                        svg {
-                          path {
-                            @apply fill-white;
-                          }
-                        }
-                    }
-                    &.fill-stroke {
-                        svg {
-                            path {
-                                @apply stroke-white;
-                            }
-                        }
-                    }
-                    &.stroke {
-                        svg {
-                            @apply stroke-white;
-                        }
-                    }
-                }
-                .desc-detail {
-                    @apply flex flex-col gap-[10px];
-                    h5 {
-                        @apply text-3xl font-bold text-white uppercase;
-                        span {
-                            @apply text-slate-300;
-                        }
-                    }
-                    p {
-                        @apply text-[13px]/[17px] text-slate-300;
-                    }
-                    ul {
-                        @apply text-[13px]/[17px] flex flex-col gap-[5px];
-                        li {
-                            @apply px-[10px] text-slate-300;
-                            span {
-                                @apply font-bold text-slate-300;
-                            }
-                        }
-
-                    }
-                    .desc-growup {
-                        @apply flex gap-[30px];
-                        .details-growup {
-                            @apply flex flex-col gap-[10px] text-left;
-                            .detail-growup {
-                                h5 {
-                                    @apply text-base font-medium;
-                                    span {
-                                        @apply font-bold text-white;
-                                    }
-                                }
-                                p {
-                                    @apply text-[13px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+      }
+      .text-title {
+        @apply bg-primary py-[20px] px-[50px];
+        h1 {
+          @apply text-5xl text-white font-medium;
         }
+      }
     }
-    .business-units-products-section {
-        @apply flex flex-col justify-center items-center py-[40px] px-[100px];
-        .products-container {
-            @apply flex flex-col justify-center text-neutral-950 gap-[10px] bg-white p-[20px] w-full;
-            box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
-
-            .product-detail-container {
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-                @apply flex flex-col p-[12px];
+  }
+  .business-units-our-mission-section {
+    @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-2.png") no-repeat;
+    background-position: center;
+    &::before {
+      content: "";
+      @apply absolute bg-blue-900 opacity-85 w-full h-full z-[2];
+    }
+    .our-mission-container {
+      @apply flex flex-col items-start w-full justify-center gap-[40px];
+      .detail-subcontainer {
+        @apply flex flex-col justify-center items-center text-center z-10 px-[20px] w-full;
+        .icon-detail {
+          svg {
+            @apply w-[100px] h-[100px];
+          }
+          &.smaller {
+            svg {
+              @apply w-[50px] h-[50px];
+            }
+          }
+          &.fill {
+            svg {
+              path {
+                @apply fill-white;
+              }
+            }
+          }
+          &.fill-stroke {
+            svg {
+              path {
+                @apply stroke-white;
+              }
+            }
+          }
+          &.stroke {
+            svg {
+              @apply stroke-white;
+            }
+          }
+        }
+        .desc-detail {
+          @apply flex flex-col gap-[10px];
+          h5 {
+            @apply text-3xl font-bold text-white uppercase;
+            span {
+              @apply text-slate-300;
+            }
+          }
+          p {
+            @apply text-[13px]/[17px] text-slate-300;
+          }
+          ul {
+            @apply text-[13px]/[17px] flex flex-col gap-[5px];
+            li {
+              @apply px-[10px] text-slate-300;
+              span {
+                @apply font-bold text-slate-300;
+              }
+            }
+          }
+          .desc-growup {
+            @apply flex gap-[30px];
+            .details-growup {
+              @apply flex flex-col gap-[10px] text-left;
+              .detail-growup {
                 h5 {
-                    @apply text-[20px]/[34px] font-semibold text-center underline;
-                }
-            }
-            .products-title {
-                @apply flex flex-col justify-center items-center text-center gap-[10px] w-full border-b border-gray-200 pb-[10px];
-                h1 {
-                    @apply text-3xl font-bold text-neutral-800;
+                  @apply text-base font-medium;
+                  span {
+                    @apply font-bold text-white;
+                  }
                 }
                 p {
-                    @apply text-sm;
+                  @apply text-[13px]/[17px];
                 }
+              }
             }
-            .products-subcontainer {
-                @apply flex flex-wrap justify-center w-full;
-                .our-product-wrapper {
-                    @apply w-[275px] p-[10px];
-                    .our-product-card {
-                        @apply rounded cursor-pointer relative;
-                        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-                        img {
-                            @apply w-full rounded object-cover;
-                        }
-                        &:hover {
-                            .card-overlay {
-                                @apply opacity-100 visible;
-                                visibility: visible;
-                            }
-                        }
-                        .card-overlay {
-                            @apply  bg-black rounded-lg opacity-0 h-full w-full absolute z-[2] top-0 left-0 invisible flex flex-col justify-center items-center; 
-                            transition: .3s linear;
-                            background: rgba(0, 0, 0, .7);
-                            h6 {
-                                @apply text-lg font-bold text-white uppercase;
-                            }
-                            label {
-                                @apply bg-primary px-[10px] py-[5px] text-white text-base font-medium text-center;
-                            }
-                        }
-                    }
-                }
-            }
+          }
         }
-        .products-ijsa-container {
-            @apply flex flex-col items-center justify-center text-neutral-950 gap-[20px] bg-white p-[20px];
-            box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
-            .products-title {
-                @apply flex flex-col justify-center items-center text-center gap-[10px] w-full;
-                h1 {
-                    @apply text-3xl font-bold text-neutral-800;
+      }
+    }
+  }
+  .business-units-products-section {
+    @apply flex flex-col justify-center items-center py-[40px] px-[100px];
+    .products-container {
+      @apply flex flex-col justify-center text-neutral-950 gap-[10px] bg-white p-[20px] w-full;
+      box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
+
+      .product-detail-container {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        @apply flex flex-col p-[12px];
+        h5 {
+          @apply text-[20px]/[34px] font-semibold text-center underline;
+        }
+      }
+      .products-title {
+        @apply flex flex-col justify-center items-center text-center gap-[10px] w-full border-b border-gray-200 pb-[10px];
+        h1 {
+          @apply text-3xl font-bold text-neutral-800;
+        }
+        p {
+          @apply text-sm;
+        }
+      }
+      .products-subcontainer {
+        @apply flex flex-wrap justify-center w-full;
+        .our-product-wrapper {
+          @apply w-[275px] p-[10px];
+          .our-product-card {
+            @apply rounded cursor-pointer relative;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+              rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            img {
+              @apply w-full rounded object-cover;
+            }
+            &:hover {
+              .card-overlay {
+                @apply opacity-100 visible;
+                visibility: visible;
+              }
+            }
+            .card-overlay {
+              @apply bg-black rounded-lg opacity-0 h-full w-full absolute z-[2] top-0 left-0 invisible flex flex-col justify-center items-center;
+              transition: 0.3s linear;
+              background: rgba(0, 0, 0, 0.7);
+              h6 {
+                @apply text-lg font-bold text-white uppercase;
+              }
+              label {
+                @apply bg-primary px-[10px] py-[5px] text-white text-base font-medium text-center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .products-ijsa-container {
+      @apply flex flex-col items-center justify-center text-neutral-950 gap-[20px] bg-white p-[20px];
+      box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
+      .products-title {
+        @apply flex flex-col justify-center items-center text-center gap-[10px] w-full;
+        h1 {
+          @apply text-3xl font-bold text-neutral-800;
+        }
+        p {
+          @apply text-sm;
+        }
+      }
+      .products-subcontainer {
+        @apply flex justify-center w-full flex-wrap;
+        .our-product-wrapper {
+          @apply w-[275px] p-[10px];
+          .our-product-card {
+            @apply rounded cursor-pointer relative gap-[10px] flex flex-col;
+            img {
+              @apply w-full rounded object-cover;
+            }
+            .card-description {
+              h5 {
+                @apply text-base font-bold text-neutral-900;
+              }
+              p {
+                @apply text-sm text-neutral-600;
+                span {
+                  @apply text-neutral-800 font-medium;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .business-units-profile-section {
+    @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    .profile-container {
+      @apply flex gap-[30px] items-center;
+
+      .image-subcontainer {
+        @apply w-1/2 flex flex-col gap-[10px] relative;
+        .top-subcontainer {
+          @apply w-full;
+          img {
+            @apply w-full h-[300px] object-cover;
+          }
+        }
+        .middle-subcontainer {
+          @apply absolute top-[43%] left-[38%];
+          .experience-subcontainer {
+            @apply bg-white border-2 border-primary text-primary flex flex-col items-center text-center justify-center w-[150px] h-[150px];
+            label {
+              @apply text-6xl font-bold;
+            }
+            span {
+              @apply text-sm;
+            }
+          }
+        }
+        .bottom-subcontainer {
+          @apply w-full flex gap-[10px];
+          .bottom-sub-image {
+            @apply w-1/2;
+            img {
+              @apply w-full h-[230px] object-cover;
+            }
+          }
+        }
+      }
+      .desc-subcontainer {
+        @apply w-1/2 flex flex-col gap-[20px];
+        .desc-title {
+          @apply flex flex-col gap-[10px];
+          h1 {
+            @apply text-3xl font-medium;
+          }
+        }
+        .desc-content {
+          @apply flex flex-col gap-[10px];
+          h2,
+          p {
+            @apply text-sm text-neutral-600 text-justify;
+          }
+        }
+        .desc-quote {
+          @apply flex flex-col gap-[10px];
+          h2 {
+            @apply underline italic border-l-2 border-l-primary pl-[10px];
+          }
+          .desc-founder {
+            @apply flex gap-[10px] items-center;
+            img {
+              @apply h-[50px] w-[50px] object-contain;
+            }
+            .text-founder {
+              h2 p {
+                @apply text-base font-bold;
+              }
+              label {
+                @apply text-primary font-medium;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .business-units-contact-us-section {
+    @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 bg-neutral-100;
+    .contact-us-container {
+      @apply flex flex-col gap-[20px];
+      .title-subcontainer {
+        @apply flex flex-col justify-center items-center;
+        h1 {
+          @apply text-3xl font-bold text-neutral-800;
+        }
+      }
+      .detail-subcontainer {
+        @apply flex gap-[40px];
+        .sub-detail {
+          @apply flex flex-col justify-center items-center text-center gap-[10px];
+          svg {
+            @apply w-[50px] h-[50px];
+            path {
+              @apply fill-slate-950;
+            }
+          }
+          h5 {
+            @apply font-bold text-xl text-neutral-800;
+          }
+          p {
+            @apply text-base text-slate-700;
+          }
+          span {
+            @apply font-semibold text-slate-800;
+          }
+        }
+      }
+    }
+  }
+  .business-units-profile-ijsa-section {
+    @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    .profile-container {
+      @apply flex flex-col gap-[30px] justify-center items-center;
+      .desc-subcontainer {
+        @apply w-full flex flex-col justify-center items-center text-center gap-[20px];
+        .desc-title {
+          @apply flex flex-col gap-[10px];
+          h1 {
+            @apply text-3xl font-medium;
+          }
+        }
+        .desc-content {
+          @apply flex flex-col gap-[10px];
+          h2 p {
+            @apply text-sm text-neutral-600;
+          }
+        }
+        .desc-quote {
+          @apply flex flex-col gap-[10px];
+          h2 {
+            @apply underline italic border-l-2 border-l-primary pl-[10px];
+          }
+          .desc-founder {
+            @apply flex gap-[10px] items-center;
+            img {
+              @apply h-[50px] w-[50px] object-contain;
+            }
+            .text-founder {
+              h2 p {
+                @apply text-base font-bold;
+              }
+              label {
+                @apply text-primary font-medium;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .business-units-our-mission-ijsa-section {
+    @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-2.png") no-repeat;
+    background-position: center;
+    &::before {
+      content: "";
+      @apply absolute bg-blue-900 opacity-85 w-full h-full z-[2];
+    }
+    .our-mission-container {
+      @apply flex flex-col items-start w-full justify-center gap-[40px];
+      .detail-subcontainer {
+        @apply flex flex-col justify-center items-center text-center z-10 px-[20px] w-full gap-[10px];
+        .icon-detail {
+          svg {
+            @apply w-[100px] h-[100px];
+          }
+          &.smaller {
+            svg {
+              @apply w-[50px] h-[50px];
+            }
+          }
+          &.fill {
+            svg {
+              path {
+                @apply fill-white;
+              }
+            }
+          }
+          &.fill-stroke {
+            svg {
+              path {
+                @apply stroke-white;
+              }
+            }
+          }
+          &.stroke {
+            svg {
+              @apply stroke-white;
+            }
+          }
+        }
+        .desc-detail {
+          @apply flex flex-col gap-[10px];
+          h5 {
+            @apply text-3xl font-bold text-white uppercase;
+            span {
+              @apply text-slate-300;
+            }
+          }
+          p {
+            @apply text-[13px]/[17px] text-slate-300;
+          }
+          ul {
+            @apply text-[13px]/[17px] flex flex-col gap-[5px];
+            li {
+              @apply px-[10px] text-slate-300;
+              span {
+                @apply font-bold text-slate-300;
+              }
+            }
+          }
+          .desc-growup {
+            @apply flex gap-[30px];
+            .details-growup {
+              @apply flex flex-col gap-[10px] text-left;
+              .detail-growup {
+                h5 {
+                  @apply text-base font-medium;
+                  span {
+                    @apply font-bold text-white;
+                  }
                 }
                 p {
-                    @apply text-sm;
+                  @apply text-[13px]/[17px];
                 }
+              }
             }
-            .products-subcontainer {
-                @apply flex justify-center w-full flex-wrap;
-                .our-product-wrapper {
-                    @apply w-[275px] p-[10px];
-                    .our-product-card {
-                        @apply rounded cursor-pointer relative gap-[10px] flex flex-col;
-                        img {
-                            @apply w-full rounded object-cover;
-                        }
-                        .card-description {
-                            h5 {
-                                @apply text-base font-bold text-neutral-900;
-                            }
-                            p {
-                                @apply text-sm text-neutral-600;
-                                span {
-                                    @apply text-neutral-800 font-medium;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
+      .detail-subcontainer-2 {
+        @apply flex justify-center items-start text-center z-10 px-[20px] w-full;
+        .icon-detail {
+          svg {
+            @apply w-[100px] h-[100px];
+          }
+          &.smaller {
+            svg {
+              @apply w-[50px] h-[50px];
+            }
+          }
+          &.fill {
+            svg {
+              path {
+                @apply fill-white;
+              }
+            }
+          }
+          &.fill-stroke {
+            svg {
+              path {
+                @apply stroke-white;
+              }
+            }
+          }
+          &.stroke {
+            svg {
+              @apply stroke-white;
+            }
+          }
+        }
+        .desc-detail {
+          @apply flex flex-col gap-[10px];
+          h5 {
+            @apply text-3xl font-bold text-white uppercase;
+            span {
+              @apply text-slate-300;
+            }
+          }
+          p {
+            @apply text-[13px]/[17px] text-slate-300;
+          }
+          ul {
+            @apply text-[13px]/[17px] flex flex-col gap-[5px];
+            li {
+              @apply px-[10px] text-slate-300;
+              span {
+                @apply font-bold text-slate-300;
+              }
+            }
+          }
+          .desc-growup {
+            @apply flex gap-[30px];
+            .details-growup {
+              @apply flex flex-col gap-[10px] text-left;
+              .detail-growup {
+                h5 {
+                  @apply text-base font-medium;
+                  span {
+                    @apply font-bold text-white;
+                  }
+                }
+                p {
+                  @apply text-[13px]/[17px];
+                }
+              }
+            }
+          }
+        }
+      }
     }
-    .business-units-profile-section {
-        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+  }
+  .business-units-area-section {
+    @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-indonesian-map.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::before {
+      content: "";
+      @apply absolute bg-neutral-50 opacity-75 w-full h-full z-[2];
+    }
+    .area-container {
+      @apply flex flex-col gap-[80px] items-center justify-center text-center z-[3];
+      .title-subcontainer {
+        @apply flex flex-col gap-[10px] items-center justify-center text-center;
+        h1 {
+          @apply text-3xl font-medium;
+        }
+        h2 {
+          @apply text-7xl text-primary font-bold;
+        }
+        p {
+          @apply text-base text-neutral-600;
+        }
+      }
+      .area-subcontainer {
+        @apply flex gap-[30px] w-[100%] justify-center text-center items-center;
+        .detail-subcontainer {
+          @apply flex flex-col;
+          h5 {
+            @apply text-4xl font-bold text-primary;
+          }
+          p {
+            @apply text-sm font-medium text-neutral-600;
+          }
+        }
+      }
+    }
+  }
+  @layer components {
+    &.mobile-responsive {
+      @apply pt-[50px];
+      .business-units-hero-section {
+        @apply h-[200px] p-[20px];
+        background-size: 100% 200px;
+        .hero-container {
+          .text-welcome {
+            h2 {
+              @apply text-xl;
+            }
+          }
+          .text-title {
+            @apply p-0;
+            h1 {
+              @apply text-2xl;
+            }
+          }
+        }
+      }
+      .business-units-profile-section {
+        @apply p-[20px];
         .profile-container {
-            @apply flex gap-[30px] items-center ;
-           
-            .image-subcontainer {
-                @apply w-1/2 flex flex-col gap-[10px] relative;
-                .top-subcontainer {
-                    @apply w-full;
-                    img {
-                        @apply w-full h-[300px] object-cover;
-                    }
-                }
-                .middle-subcontainer {
-                    @apply absolute top-[43%] left-[38%];
-                    .experience-subcontainer {
-                        @apply bg-white border-2 border-primary text-primary flex flex-col items-center text-center justify-center w-[150px] h-[150px];
-                        label {
-                            @apply text-6xl font-bold;
-                        }
-                        span {
-                            @apply text-sm;
-                        }
-                    }
-                }
-                .bottom-subcontainer {
-                    @apply w-full flex gap-[10px];
-                    .bottom-sub-image {
-                        @apply w-1/2;
-                        img {
-                            @apply w-full h-[230px] object-cover;
-                        }
-                    }
-                }
+          @apply flex-col;
+          .image-subcontainer {
+            @apply w-full;
+            .top-subcontainer {
+              img {
+                @apply h-[200px];
+              }
             }
-            .desc-subcontainer {
-                @apply w-1/2 flex flex-col gap-[20px];
-                .desc-title {
-                    @apply flex flex-col gap-[10px];   
-                    h1 {
-                        @apply text-3xl font-medium;
-                    }
+            .middle-subcontainer {
+              @apply left-[38%] top-[40%];
+              .experience-subcontainer {
+                @apply w-[100px] h-[100px];
+                label {
+                  @apply text-4xl;
                 }
-                .desc-content {
-                    @apply flex flex-col gap-[10px];
-                    h2
-                    p {
-                        @apply text-sm text-neutral-600;
-                    }
+                span {
+                  @apply text-xs;
                 }
-                .desc-quote {
-                    @apply flex flex-col gap-[10px];
-                    h2 {
-                        @apply underline italic border-l-2 border-l-primary pl-[10px]
-                    }
-                    .desc-founder {
-                        @apply flex gap-[10px] items-center;
-                        img {
-                            @apply h-[50px] w-[50px] object-contain;
-                        }
-                        .text-founder {
-                            h2 
-                            p {
-                                @apply text-base font-bold;
-                            }
-                            label {
-                                @apply text-primary font-medium
-                            }
-                        }
-                    }
-                }
+              }
             }
+            .bottom-subcontainer {
+              img {
+                @apply h-[180px];
+              }
+            }
+          }
+          .desc-subcontainer {
+            @apply w-full;
+            .desc-title {
+              h1 {
+                @apply text-xl;
+              }
+              h2 {
+                @apply text-2xl;
+              }
+            }
+            .desc-content {
+              p {
+                @apply text-sm;
+              }
+            }
+            .desc-quote {
+              h2 {
+                @apply text-sm;
+              }
+            }
+            .desc-founder {
+              .text-founder {
+                p,
+                label {
+                  @apply text-sm;
+                }
+              }
+            }
+          }
         }
-       
-    }
-    .business-units-contact-us-section {
-        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 bg-neutral-100;
-        .contact-us-container {
-            @apply flex flex-col gap-[20px];
-            .title-subcontainer {
-                @apply flex flex-col justify-center items-center;
-                h1 {
-                    @apply text-3xl font-bold text-neutral-800;
-                }
-            }
-            .detail-subcontainer {
-                @apply flex gap-[40px];
-                .sub-detail {
-                    @apply flex flex-col justify-center items-center text-center gap-[10px];
-                    svg {
-                        @apply w-[50px] h-[50px];
-                        path {
-                            @apply fill-slate-950;
-                        }
-                    }
-                    h5 {
-                        @apply font-bold text-xl text-neutral-800;
-                    }
-                    p {
-                        @apply text-base text-slate-700;
-                    }
-                    span {
-                        @apply font-semibold text-slate-800;
-                    }
-                }
-            }
-        }
-    }
-    .business-units-profile-ijsa-section {
-        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+      }
+      .business-units-profile-ijsa-section {
+        @apply p-[20px];
         .profile-container {
-            @apply flex flex-col gap-[30px] justify-center items-center ;
-            .desc-subcontainer {
-                @apply w-full flex flex-col justify-center items-center text-center gap-[20px];
-                .desc-title {
-                    @apply flex flex-col gap-[10px];   
-                    h1 {
-                        @apply text-3xl font-medium;
-                    }
-                }
-                .desc-content {
-                    @apply flex flex-col gap-[10px];
-                    h2
-                    p {
-                        @apply text-sm text-neutral-600;
-                    }
-                }
-                .desc-quote {
-                    @apply flex flex-col gap-[10px];
-                    h2 {
-                        @apply underline italic border-l-2 border-l-primary pl-[10px]
-                    }
-                    .desc-founder {
-                        @apply flex gap-[10px] items-center;
-                        img {
-                            @apply h-[50px] w-[50px] object-contain;
-                        }
-                        .text-founder {
-                            h2 
-                            p {
-                                @apply text-base font-bold;
-                            }
-                            label {
-                                @apply text-primary font-medium
-                            }
-                        }
-                    }
-                }
+          @apply flex-col;
+          .image-subcontainer {
+            @apply w-full;
+            .top-subcontainer {
+              img {
+                @apply h-[200px];
+              }
             }
+            .middle-subcontainer {
+              @apply left-[38%] top-[40%];
+              .experience-subcontainer {
+                @apply w-[100px] h-[100px];
+                label {
+                  @apply text-4xl;
+                }
+                span {
+                  @apply text-xs;
+                }
+              }
+            }
+            .bottom-subcontainer {
+              img {
+                @apply h-[180px];
+              }
+            }
+          }
+          .desc-subcontainer {
+            @apply w-full;
+            .desc-title {
+              h1 {
+                @apply text-xl;
+              }
+              h2 {
+                @apply text-2xl;
+              }
+            }
+            .desc-content {
+              p {
+                @apply text-sm;
+              }
+            }
+          }
         }
-       
-    }
-    .business-units-our-mission-ijsa-section {
-        @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
-        background: url("/images/backgrounds/parallax-2.png") no-repeat;
-        background-position: center;
-        &::before {
-            content: '';
-            @apply absolute bg-blue-900 opacity-85 w-full h-full z-[2];
-        }
+      }
+      .business-units-our-mission-ijsa-section {
+        @apply p-[20px];
         .our-mission-container {
-            @apply flex flex-col items-start w-full justify-center gap-[40px];
-            .detail-subcontainer {
-                @apply flex flex-col justify-center items-center text-center z-10 px-[20px] w-full gap-[10px];
-                .icon-detail {
-                    svg {
-                        @apply w-[100px] h-[100px];
-                       
-                    }
-                    &.smaller {
-                        svg {
-                            @apply w-[50px] h-[50px];
-                        }
-                    }
-                    &.fill {
-                        svg {
-                          path {
-                            @apply fill-white;
-                          }
-                        }
-                    }
-                    &.fill-stroke {
-                        svg {
-                            path {
-                                @apply stroke-white;
-                            }
-                        }
-                    }
-                    &.stroke {
-                        svg {
-                            @apply stroke-white;
-                        }
-                    }
-                }
-                .desc-detail {
-                    @apply flex flex-col gap-[10px];
-                    h5 {
-                        @apply text-3xl font-bold text-white uppercase;
-                        span {
-                            @apply text-slate-300;
-                        }
-                    }
-                    p {
-                        @apply text-[13px]/[17px] text-slate-300;
-                    }
-                    ul {
-                        @apply text-[13px]/[17px] flex flex-col gap-[5px];
-                        li {
-                            @apply px-[10px] text-slate-300;
-                            span {
-                                @apply font-bold text-slate-300;
-                            }
-                        }
-
-                    }
-                    .desc-growup {
-                        @apply flex gap-[30px];
-                        .details-growup {
-                            @apply flex flex-col gap-[10px] text-left;
-                            .detail-growup {
-                                h5 {
-                                    @apply text-base font-medium;
-                                    span {
-                                        @apply font-bold text-white;
-                                    }
-                                }
-                                p {
-                                    @apply text-[13px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                }
+          @apply flex-col gap-[20px];
+          .detail-subcontainer {
+            @apply w-full;
+            .icon-detail {
+              svg {
+                @apply w-[50px] h-[50px];
+              }
             }
-            .detail-subcontainer-2 {
-                @apply flex justify-center items-start text-center z-10 px-[20px] w-full;
-                .icon-detail {
-                    svg {
-                        @apply w-[100px] h-[100px];
-                       
-                    }
-                    &.smaller {
-                        svg {
-                            @apply w-[50px] h-[50px];
-                        }
-                    }
-                    &.fill {
-                        svg {
-                          path {
-                            @apply fill-white;
-                          }
-                        }
-                    }
-                    &.fill-stroke {
-                        svg {
-                            path {
-                                @apply stroke-white;
-                            }
-                        }
-                    }
-                    &.stroke {
-                        svg {
-                            @apply stroke-white;
-                        }
-                    }
+            .desc-detail {
+              h5 {
+                @apply text-xl;
+              }
+              p {
+                @apply text-sm;
+              }
+              .desc-growup {
+                @apply flex-col;
+                .detail-growup {
+                  @apply text-center justify-center items-center;
                 }
-                .desc-detail {
-                    @apply flex flex-col gap-[10px];
-                    h5 {
-                        @apply text-3xl font-bold text-white uppercase;
-                        span {
-                            @apply text-slate-300;
-                        }
-                    }
-                    p {
-                        @apply text-[13px]/[17px] text-slate-300;
-                    }
-                    ul {
-                        @apply text-[13px]/[17px] flex flex-col gap-[5px];
-                        li {
-                            @apply px-[10px] text-slate-300;
-                            span {
-                                @apply font-bold text-slate-300;
-                            }
-                        }
-
-                    }
-                    .desc-growup {
-                        @apply flex gap-[30px];
-                        .details-growup {
-                            @apply flex flex-col gap-[10px] text-left;
-                            .detail-growup {
-                                h5 {
-                                    @apply text-base font-medium;
-                                    span {
-                                        @apply font-bold text-white;
-                                    }
-                                }
-                                p {
-                                    @apply text-[13px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                }
+              }
             }
+          }
+          .detail-subcontainer-2 {
+            @apply flex-col gap-[20px];
+          }
         }
-    }
-    .business-units-area-section {
-        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
-        background: url("/images/backgrounds/parallax-indonesian-map.jpg") no-repeat;
-        background-position: center;
-        background-size: cover;
-        &::before {
-            content: '';
-            @apply absolute bg-neutral-50 opacity-75 w-full h-full z-[2];
+      }
+      .business-units-our-mission-section {
+        @apply p-[20px];
+        .our-mission-container {
+          @apply flex-col gap-[20px];
+          .detail-subcontainer {
+            @apply w-full;
+            .icon-detail {
+              svg {
+                @apply w-[50px] h-[50px];
+              }
+            }
+            .desc-detail {
+              h5 {
+                @apply text-xl;
+              }
+              p {
+                @apply text-sm;
+              }
+              .desc-growup {
+                @apply flex-col;
+                .detail-growup {
+                  @apply text-center justify-center items-center;
+                }
+              }
+            }
+          }
         }
+      }
+      .business-units-products-section {
+        @apply p-[20px];
+        .products-container {
+          @apply flex-col w-full;
+          .products-title {
+            @apply w-full;
+            h1 {
+              @apply text-xl;
+            }
+            p {
+              @apply text-xs;
+            }
+          }
+          .products-subcontainer {
+            @apply w-full;
+            .our-product-wrapper {
+              @apply w-[170px];
+            }
+          }
+        }
+      }
+      .business-units-products-section {
+        @apply p-[20px];
+        .products-ijsa-container {
+          .products-title {
+            h1 {
+              @apply text-xl;
+            }
+            p {
+              @apply text-xs;
+            }
+          }
+          .products-subcontainer {
+            @apply flex-col justify-center items-center;
+            .our-product-wrapper {
+              @apply w-full;
+            }
+          }
+        }
+      }
+      .business-units-contact-us-section {
+        @apply p-[20px];
+        .contact-us-container {
+          .title-subcontainer {
+            h1 {
+              @apply text-xl;
+            }
+          }
+          .detail-subcontainer {
+            @apply flex-col gap-[10px];
+            .sub-detail {
+              @apply gap-[5px];
+              svg {
+                @apply w-[30px] h-[30px];
+              }
+              h5 {
+                @apply text-base;
+              }
+              p {
+                @apply text-sm;
+              }
+              span {
+                @apply text-xs;
+              }
+            }
+          }
+        }
+      }
+      .business-units-area-section {
+        @apply p-[20px];
         .area-container {
-            @apply flex flex-col gap-[80px] items-center justify-center text-center z-[3];
-            .title-subcontainer {
-                @apply flex flex-col gap-[10px] items-center justify-center text-center;
-                h1 {
-                    @apply text-3xl font-medium;
-                  
-                }
-                h2 {
-                    @apply text-7xl text-primary font-bold;
-                }
-                p {
-                    @apply text-base text-neutral-600;
-                }
+          .title-subcontainer {
+            h1 {
+              @apply text-xl;
             }
-            .area-subcontainer {
-                @apply flex gap-[30px] w-[100%] justify-center text-center items-center;
-                .detail-subcontainer {
-                    @apply flex flex-col;
-                    h5 {
-                        @apply text-4xl font-bold text-primary;
-                    }
-                    p {
-                        @apply text-sm font-medium text-neutral-600;
-                    }
-                }
+            h2 {
+              @apply text-5xl;
             }
+            p {
+              @apply text-sm;
+            }
+          }
         }
+      }
     }
-    @layer components {
-        &.mobile-responsive {
-            @apply pt-[50px];
-            .business-units-hero-section {
-                @apply h-[200px] p-[20px];
-                background-size: 100% 200px ;
-                .hero-container {
-                    .text-welcome {
-                        h2 {
-                            @apply text-xl;
-                        }
-                    }
-                    .text-title {
-                        @apply p-0;
-                        h1 {
-                            @apply text-2xl;
-                        }
-                    }
-                }
-            }
-            .business-units-profile-section{
-                @apply p-[20px];
-                .profile-container {
-                    @apply flex-col;
-                    .image-subcontainer {
-                        @apply w-full;
-                        .top-subcontainer {
-                            img {
-                                @apply h-[200px];
-                            }
-                        }
-                        .middle-subcontainer {
-                            @apply left-[38%] top-[40%];
-                            .experience-subcontainer {
-                                @apply  w-[100px] h-[100px];
-                                label {
-                                    @apply text-4xl;
-                                }
-                                span {
-                                    @apply text-xs;
-                                }
-                            }
-                        }
-                        .bottom-subcontainer {
-                            img {
-                                @apply h-[180px];
-                            }
-                        }
-                    }
-                    .desc-subcontainer {
-                        @apply w-full;
-                        .desc-title {
-                            h1 {
-                                @apply text-xl;
-                            }
-                            h2 {
-                                @apply text-2xl;
-                            }
-                        }
-                        .desc-content {
-                            p {
-                                @apply text-sm;
-                            }
-                        }
-                        .desc-quote {
-                            h2 {
-                                @apply text-sm;
-                            }
-                        }
-                        .desc-founder {
-                            .text-founder {
-                                p,label {
-                                    @apply text-sm;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .business-units-profile-ijsa-section {
-                @apply p-[20px];
-                .profile-container {
-                    @apply flex-col;
-                    .image-subcontainer {
-                        @apply w-full;
-                        .top-subcontainer {
-                            img {
-                                @apply h-[200px];
-                            }
-                        }
-                        .middle-subcontainer {
-                            @apply left-[38%] top-[40%];
-                            .experience-subcontainer {
-                                @apply  w-[100px] h-[100px];
-                                label {
-                                    @apply text-4xl;
-                                }
-                                span {
-                                    @apply text-xs;
-                                }
-                            }
-                        }
-                        .bottom-subcontainer {
-                            img {
-                                @apply h-[180px];
-                            }
-                        }
-                    }
-                    .desc-subcontainer {
-                        @apply w-full;
-                        .desc-title {
-                            h1 {
-                                @apply text-xl;
-                            }
-                            h2 {
-                                @apply text-2xl;
-                            }
-                        }
-                        .desc-content {
-                            p {
-                                @apply text-sm;
-                            }
-                        }
-                    }
-                }
-            }
-            .business-units-our-mission-ijsa-section {
-                @apply p-[20px];
-                .our-mission-container {
-                    @apply flex-col gap-[20px];
-                    .detail-subcontainer{
-                        @apply w-full;
-                        .icon-detail {
-                            svg {
-                                @apply w-[50px] h-[50px];
-                            }
-                        }
-                        .desc-detail {
-                            h5 {
-                                @apply text-xl;
-                            }
-                            p {
-                                @apply text-sm;
-                            }
-                            .desc-growup {
-                                @apply flex-col;
-                                .detail-growup {
-                                    @apply text-center justify-center items-center;
-                                }
-                            }
-                        }
-                    }
-                    .detail-subcontainer-2 {
-                        @apply flex-col gap-[20px];
-                    }
-                }
-            }
-            .business-units-our-mission-section {
-                @apply p-[20px];
-                .our-mission-container {
-                    @apply flex-col gap-[20px];
-                    .detail-subcontainer {
-                        @apply w-full;
-                        .icon-detail {
-                            svg {
-                                @apply w-[50px] h-[50px];
-                            }
-                        }
-                        .desc-detail {
-                            h5 {
-                                @apply text-xl;
-                            }
-                            p {
-                                @apply text-sm;
-                            }
-                            .desc-growup {
-                                @apply flex-col;
-                                .detail-growup {
-                                    @apply text-center justify-center items-center;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .business-units-products-section {
-                @apply p-[20px];  
-                .products-container {
-                    @apply flex-col w-full;
-                    .products-title{
-                        @apply w-full;
-                        h1 {
-                            @apply text-xl;
-                        }
-                        p {
-                            @apply text-xs;
-                        }
-                    }
-                    .products-subcontainer{
-                        @apply w-full;
-                        .our-product-wrapper{
-                            @apply w-[170px];
-                        }
-                    }
-                }
-            }
-            .business-units-products-section {
-                @apply p-[20px];
-                .products-ijsa-container{
-                    .products-title {
-                        h1 {
-                            @apply text-xl;
-                        }
-                        p {
-                            @apply text-xs;
-                        }
-                    }
-                    .products-subcontainer{
-                        @apply flex-col justify-center items-center;
-                        .our-product-wrapper {
-                            @apply w-full;
-                        }
-                    }
-                }
-            }
-            .business-units-contact-us-section {
-                @apply p-[20px];
-                .contact-us-container {
-                    .title-subcontainer{
-                        h1 {
-                            @apply text-xl;
-                        }
-                    }
-                    .detail-subcontainer{
-                        @apply flex-col gap-[10px];
-                        .sub-detail {
-                            @apply gap-[5px];
-                            svg {
-                                @apply w-[30px] h-[30px];
-                            }
-                            h5 {
-                                @apply text-base;
-                            }
-                            p {
-                                @apply text-sm;
-                            }
-                            span {
-                                @apply text-xs;
-                            }
-                        }
-                    }
-                }
-            }
-            .business-units-area-section {
-                @apply p-[20px];
-                .area-container {
-                    .title-subcontainer {
-                        h1{
-                            @apply text-xl;
-                        }
-                        h2 {
-                            @apply text-5xl;
-                        }
-                        p {
-                            @apply text-sm;
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
 }

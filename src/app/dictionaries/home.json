@@ -1,91 +1,138 @@
 {
-  "header": {
-    "id": {
-      "title": "UNICORP (UNI CORPORATION)",
-      "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
-      "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
-      "button_text": "Baca Selengkapnya"
-    },
-    "en": {
-      "title": "UNICORP (UNI CORPORATION)",
-      "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
-      "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
-      "button_text": "Baca Selengkapnya"
-    },
-    "image_url": "/api/media/home/header.png"
-  },
-  "about": {
-    "id": {
-      "title": "Tentang UNICORP",
-      "subtitle": "Unicorp adalah Grup perusahaan yang bergerak di berbagai bidang industri, diantaranya: Makanan, Pertanian, Retail serta Industri lainnya. \r\n\r\nUnicorp memulai usahanya pada tahun 2001 dengan berdirinya CV. Indo Jaya Putra di Surabaya. Seiring dengan pertumbuhan bisnis dan kebutuhan pasar, kami memperluas jaringan dengan membuka cabang di Jakarta, Semarang, dan Bali. Kehadiran cabang-cabang ini menjadi wujud komitmen kami dalam memberikan layanan yang lebih dekat, cepat dan merata kepada pelanggan di berbagai wilayah Indonesia.",
-      "description": "Selain itu, Unicorp juga mengembangkan unit usaha lain yaitu CV. Indo Jaya Sukses Abadi, yang berfokus pada produksi sarung tangan plastik. Hal ini memperkuat diversifikasi bisnis Unicorp di sektor industri sekaligus mendukung kebutuhan pasar yang terus berkembang.\r\n\r\nSebagai importir, produsen, sekaligus distributor, kami didukung oleh gudang yang dirancang khusus untuk menjaga mutu produk serta armada pengiriman yang andal guna memastikan ketepatan waktu dalam setiap pengiriman. Dengan pengalaman dan kepercayaan yang telah terbangun, Unicorp senantiasa berupaya menghadirkan kualitas terbaik dan membangun hubungan yang berkelanjutan dengan para pelanggan.",
-      "button_text": "Baca Selengkapnya"
-    },
-    "en": {
-      "title": "About UNICORP",
-      "subtitle": "Unicorp is a group of companies worked in various industries, including: food, agricultural, retail and other industries.",
-      "description": "Unicorp is started with CV. INDO JAYA PUTRA which is established in 2001 at Surabaya to cover East of Indonesia. To bear the vision to be a regional leader in trading chemical, we have build 2 branches: Branch Semarang to cover Central of Indonesia and Branch Jakarta to cover West of Indonesia. As an importer, manufacture and distributor, our branches were equipped with effective warehouse design and own delivery fleets to ensure that every customer get the best service.",
-      "button_text": "Read More"
-    },
-    "image_url": "/api/media/home/home-about.jpeg"
-  },
-  "business_units": {
-    "id": {
-      "title": "Unit Bisnis UNICORP",
-      "subtitle": "Unicorp memiliki unit bisnis yaitu bidang Bahan Tambahan Pangan (Indo Jaya Putra) dan Indo Jaya Sukses Abadi memproduksi sarung tangan plastik berbahan HDPE.",
-      "units": [
-        {
-          "name": "IJP",
-          "title": "CV. INDO JAYA PUTRA",
-          "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
+    "header": {
+        "id": {
+            "title": "UNICORP (UNI CORPORATION)",
+            "subtitle_1": "Merupakan Grup perusahaan yang bergerak di berbagai bidang industri",
+            "subtitle_2": "diantaranya adalah Makanan, Pertanian, Retail serta Industri lainnya",
+            "button_text": "Baca Selengkapnya"
         },
-        {
-          "name": "IJSA",
-          "title": "CV. INDO JAYA SUKSES ABADI",
-          "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
-        }
-      ]
-    },
-    "en": {
-      "title": "Business Units UNICORP",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet libero id nisi euismod",
-      "units": [
-        {
-          "name": "IJP",
-          "title": "INDO JAYA PUTRA",
-          "description": "IJP (INDO JAYA PUTRA) adalah sebuah perusahaan yang bergerak di bidang perdagangan bahan kimia, berdiri pada tahun 2001."
+        "en": {
+            "title": "UNICORP (UNI CORPORATION)",
+            "subtitle_1": "A group of companies engaged in various industries",
+            "subtitle_2": "Including Food, Agriculture, Retail and other Industries.",
+            "button_text": "Baca Selengkapnya"
         },
-        {
-          "name": "IJSAP",
-          "title": "INDO JAYA SUKSES ABADI",
-          "description": "IJSA (INDO JAYA SUKSES ABADI) adalah pabrik sarung tangan plastik (HDPE) yang berdiri pada tahun 2018."
+        "image_url": "/api/media/home/header.png"
+    },
+    "about": {
+        "id": {
+            "title": "Tentang UNICORP",
+            "subtitle": "UNICORP adalah Grup perusahaan yang bergerak di berbagai bidang industri, diantaranya: Makanan, Pertanian, Retail serta Industri lainnya. \r\n\r\nUNICORP memulai usahanya pada tahun 2001 dengan berdirinya CV. Indo Jaya Putra di Surabaya. Seiring dengan pertumbuhan bisnis dan kebutuhan pasar, kami memperluas jaringan dengan membuka cabang di Jakarta, Semarang dan Bali. Kehadiran cabang-cabang ini menjadi wujud komitmen kami dalam memberikan layanan yang lebih dekat, cepat dan merata kepada pelanggan di berbagai wilayah Indonesia.\r\n\r\nSelain itu, UNICORP juga mengembangkan unit usaha lain yaitu CV. Indo Jaya Sukses Abadi, yang berfokus pada produksi sarung tangan plastik. Hal ini memperkuat diversifikasi bisnis UNICORP di sektor industri sekaligus mendukung kebutuhan pasar yang terus berkembang.\r\n\r\nSebagai importir, produsen, sekaligus distributor, kami didukung oleh gudang yang dirancang khusus untuk menjaga mutu produk serta armada pengiriman yang andal guna memastikan ketepatan waktu dalam setiap pengiriman. Dengan pengalaman dan kepercayaan yang telah terbangun, UNICORP senantiasa berupaya menghadirkan kualitas terbaik dan membangun hubungan yang berkelanjutan dengan para pelanggan.",
+            "description": "",
+            "button_text": "Baca Selengkapnya"
+        },
+        "en": {
+            "title": "About UNICORP",
+            "subtitle": "UNICORP is a group of companies worked in various industries, including: food, agricultural, retail and other industries. \r\nUNICORP began its operations in 2001 with the establishment of CV. Indo Jaya Putra in Surabaya. Along with business growth and market demands, we expanded our network by opening branches in Jakarta, Semarang, and Bali. The presence of these branches reflects our commitment to providing closer, faster, and more consistent service to customers across various regions in Indonesia",
+            "description": "In addition, UNICORP has developed another business unit, CV. Indo Jaya Sukses Abadi, which focuses on the production of plastic gloves. This strengthens UNICORP’s business diversification in the industrial sector while supporting the continuously growing market demand.\r\n\r\nAs an importer, manufacturer, and distributor, we are supported by specially designed warehouses to maintain product quality and a reliable delivery fleet to ensure timely shipments. With the experience and trust we have built, UNICORP consistently strives to deliver the highest quality and foster sustainable relationships with our customers.",
+            "button_text": "Read More"
+        },
+        "image_url": "/api/media/home/home-about.jpeg"
+    },
+    "business_units": {
+        "id": {
+            "title": "Unit Bisnis UNICORP",
+            "subtitle": "UNICORP memiliki unit usaha di sektor Bahan Tambahan Pangan (Indo Jaya Putra) dan Indo Jaya Sukses Abadi, yang memproduksi sarung tangan plastik berbahan HDPE.",
+            "units": [
+                {
+                    "name": "IJP",
+                    "title": "CV. INDO JAYA PUTRA",
+                    "description": "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pangan  didirikan pada tahun 2001."
+                },
+                {
+                    "name": "IJSA",
+                    "title": "CV. INDO JAYA SUKSES ABADI",
+                    "description": "IJSA (Indo Jaya Sukses Abadi) adalah produsen sarung tangan plastik (HDPE) yang didirikan pada tahun 2018."
+                },
+                "IJP (Indo Jaya Putra) is a company engaged in the trading of chemicals, established in 2001.",
+                "IJSA (Indo Jaya Sukses Abadi) is a plastic glove (HDPE) manufacturer established in 2018.",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bidang perdagangan bahan kimia, didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di b didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di ba didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bah didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di baha didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan t didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan ta didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tam didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tamp didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tampa didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tamp didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tam didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tamb didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tamba didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambah didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambaha didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan p didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pa didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pan didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pang didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan panga didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pangan didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pangany didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan panganya didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan panganyan didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan panganyang didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan panganyang  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan  bergerak di bahan tambahan panganyang  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan y bergerak di bahan tambahan panganyang  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan ya bergerak di bahan tambahan panganyang  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yan bergerak di bahan tambahan panganyang  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan panganyang  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pangan  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan panga  didirikan pada tahun 2001",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pangan  didirikan pada tahun 2001",
+                "IJSA (Indo Jaya Sukses Abadi) adalah produsen sarung tangan plastik (HDPE) yang didirikan pada tahun 2018",
+                "IJP (Indo Jaya Putra) adalah perusahaan yang bergerak di bahan tambahan pangan  didirikan pada tahun 2001.",
+                "IJSA (Indo Jaya Sukses Abadi) adalah produsen sarung tangan plastik (HDPE) yang didirikan pada tahun 2018."
+            ]
+        },
+        "en": {
+            "title": "Business Units UNICORP",
+            "subtitle": "UNICORP has business units in the Food Additives sector (Indo Jaya Putra) and Indo Jaya Sukses Abadi, which manufactures plastic gloves made from HDPE.",
+            "units": [
+                {
+                    "name": "IJP",
+                    "title": "INDO JAYA PUTRA",
+                    "description": "IJP (Indo Jaya Putra) is a company engaged in the trading of chemicals, established in 2001."
+                },
+                {
+                    "name": "IJSAP",
+                    "title": "INDO JAYA SUKSES ABADI",
+                    "description": "IJSA (Indo Jaya Sukses Abadi) is a plastic glove (HDPE) manufacturer established in 2018."
+                },
+                "IJP (Indo Jaya Putra) is a company engaged in the trading of chemicals, established in 2001.",
+                "\nIJSA (Indo Jaya Sukses Abadi) is a plastic glove (HDPE) manufacturer established in 2018.",
+                "IJSA (Indo Jaya Sukses Abadi) is a plastic glove (HDPE) manufacturer established in 2018."
+            ]
+        },
+        "image_url": null
+    },
+    "our_products": {
+        "id": {
+            "title": "Produk Kami",
+            "subtitle": "Kami menyediakan berbagai produk unggulan untuk memenuhi kebutuhan industri pangan Anda, seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), MashMil (Tepung Susu Premiks), Sosweet (MSG), Sosweet (Fruktose), MashMil (Baking Powder) dan Unicapso (Chili Oil). Selain itu, kami juga menawarkan beragam produk General Chemical impor dari China, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya.\r\n\r\n\r\nSeluruh produk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM dan ISO 9001:2015. Hal Ini memastikan setiap produk yang kami tawarkan aman, berkualitas dan sesuai standar internasional, sehingga konsumen dapat merasa aman dan percaya menggunakan produk kami.",
+            "button_text": "Unduh Katalog"
+        },
+        "en": {
+            "title": "Our Products",
+            "subtitle": "We provide a wide range of premium products to meet the needs of the food industry, such as Unicol (Food Colorant), Sosweet (Sweetener), Uniwhite (Food Whitener), MashMil (Milk Premix Flour), Sosweet (MSG), Sosweet (Fructose), MashMil (Baking Powder), and Unicapso (Chili Oil).\r\n\r\nIn addition, we also offer various General Chemicals imported from China, including Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, and more.\r\n\r\nAll of our products comply with the highest quality standards and are certified Halal, BPOM, and ISO 9001:2015. This ensures that every product we offer is safe, reliable, and meets international standards—giving our customers confidence and peace of mind when using our products.",
+            "button_text": "Download Product"
         }
-      ]
     },
-    "image_url": null
-  },
-  "our_products": {
-    "id": {
-      "title": "Produk Kami",
-      "subtitle": "Kami menyediakan produk internal unggulan seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), MashMil (Tepung Susu Premix), MSG, Fruktose, Baking Powder dan Unicapso. Selain itu, kami juga memasarkan berbagai produk General Chemical, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya. \r\n\r\nProduk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM, dan ISO 9001:2015. Hal ini memastikan bahwa setiap produk yang kami tawarkan aman, berkualitas, dan memenuhi standar internasional, sehingga konsumen dapat mempercayai keamanan dan keandalan produk kami dalam setiap penggunaan.",
-      "button_text": "Unduh Katalog"
-    },
-    "en": {
-      "title": "Our Products",
-      "subtitle": "We provide a range of superior products tailored to meet the needs of the food industry, including Unicol (Food Coloring), Sosweet (Sweetener), Uniwhite (Food Whitener), Maxmil (Creamer Powder), MSG, Fructose, and Unicapso. In addition, we offer various General Chemical products imported from China, such as Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, and others.\r\n\r\nAll our products meet the highest quality standards with Halal, BPOM, and ISO 9001:2015 certifications. This ensures that every product we offer is safe, high-quality, and compliant with international standards, giving consumers confidence in the safety and reliability of our products.",
-      "button_text": "Download Product"
+    "news": {
+        "id": {
+            "title": "Berita Terkini",
+            "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
+            "button_text": "Berita Lainnya"
+        },
+        "en": {
+            "title": "Latest News",
+            "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
+            "button_text": "Other News"
+        }
     }
-  },
-  "news": {
-    "id": {
-      "title": "Berita Terkini",
-      "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
-      "button_text": "Berita Lainnya"
-    },
-    "en": {
-      "title": "Latest News",
-      "subtitle": "Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin. Integer aliquet ullamcorper dolor, quis sollicitudin",
-      "button_text": "Other News"
-    }
-  }
 }

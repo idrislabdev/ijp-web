@@ -3,493 +3,489 @@
 @tailwind utilities;
 
 .about-us-page {
-    @apply pt-[97px];
-    .about-us-hero-section {
-        @apply py-[175px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
-        background: url("/images/backgrounds/background-1.png") no-repeat;
-        &::before {
-            content: '';
-            @apply absolute bg-neutral-900 opacity-50 w-full h-full z-[2];
+  @apply pt-[97px];
+  .about-us-hero-section {
+    @apply py-[175px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/background-1.png") no-repeat;
+    &::before {
+      content: "";
+      @apply absolute bg-neutral-900 opacity-50 w-full h-full z-[2];
+    }
+    .hero-container {
+      @apply z-10 text-center flex flex-col gap-[10px];
+      .text-welcome {
+        h2 {
+          @apply text-4xl text-white font-bold;
         }
+      }
+      .text-title {
+        @apply bg-primary py-[20px] px-[50px];
+        h1 {
+          @apply text-5xl text-white font-medium;
+        }
+      }
+    }
+  }
+  .about-us-profile-section {
+    @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    .profile-container {
+      @apply flex gap-[30px] items-center;
+      .image-subcontainer {
+        @apply w-1/2 flex flex-col gap-[10px] relative;
+        .top-subcontainer {
+          @apply w-full;
+          img {
+            @apply w-full h-[300px] object-cover;
+          }
+        }
+        .middle-subcontainer {
+          @apply absolute top-[43%] left-[38%];
+          .experience-subcontainer {
+            @apply bg-white border-2 border-primary text-primary flex flex-col items-center text-center justify-center w-[150px] h-[150px];
+            label {
+              @apply text-6xl font-bold;
+            }
+            span {
+              @apply text-sm;
+            }
+          }
+        }
+        .bottom-subcontainer {
+          @apply w-full flex gap-[10px];
+          .bottom-sub-image {
+            @apply w-1/2;
+            img {
+              @apply w-full h-[230px] object-cover;
+            }
+          }
+        }
+      }
+      .desc-subcontainer {
+        @apply w-1/2 flex flex-col gap-[20px];
+        .desc-title {
+          @apply flex flex-col gap-[10px];
+          h1 {
+            @apply text-lg;
+          }
+          h2 {
+            @apply text-3xl font-medium;
+          }
+        }
+        .desc-content {
+          @apply flex flex-col gap-[10px];
+          p {
+            @apply text-sm text-neutral-600 text-justify;
+          }
+        }
+        .desc-quote {
+          @apply flex flex-col gap-[10px];
+          h2 {
+            @apply underline italic border-l-2 border-l-primary pl-[10px];
+          }
+          .desc-founder {
+            @apply flex gap-[10px] items-center;
+            img {
+              @apply h-[50px] w-[50px] object-contain;
+            }
+            .text-founder {
+              p {
+                @apply text-base font-bold;
+              }
+              label {
+                @apply text-primary font-medium;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-us-our-mission-section {
+    @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-2.png") no-repeat;
+    background-position: center;
+    &::before {
+      content: "";
+      @apply absolute bg-slate-900 opacity-85 w-full h-full z-[2];
+    }
+    .our-mission-container {
+      @apply flex items-start w-full justify-center;
+      .detail-subcontainer {
+        @apply flex flex-col justify-center items-center text-center z-10 px-[20px];
+        .icon-detail {
+          svg {
+            @apply w-[100px] h-[100px];
+          }
+          &.fill {
+            svg {
+              path {
+                @apply fill-white;
+              }
+            }
+          }
+          &.fill-bulp {
+            svg {
+              path {
+                @apply fill-white;
+              }
+            }
+          }
+          &.fill-stroke {
+            svg {
+              path {
+                @apply stroke-white;
+              }
+            }
+          }
+          &.stroke {
+            svg {
+              @apply stroke-white;
+            }
+          }
+        }
+        .desc-detail {
+          @apply flex flex-col gap-[10px];
+          h5 {
+            @apply text-3xl font-bold text-white uppercase;
+            span {
+              @apply text-slate-300;
+            }
+          }
+          p {
+            @apply text-[13px]/[17px] text-slate-300;
+          }
+          ul {
+            @apply text-[13px]/[17px] flex flex-col gap-[5px] text-left list-disc;
+            li {
+              @apply px-[10px] text-slate-300;
+              span {
+                @apply font-bold text-slate-300;
+              }
+            }
+          }
+          .desc-growup {
+            @apply flex gap-[30px];
+            .details-growup {
+              @apply flex text-left flex-wrap;
+              .detail-growup {
+                @apply w-1/2 mb-[10px];
+                h5 {
+                  @apply text-base font-medium;
+                  span {
+                    @apply font-bold text-white;
+                  }
+                }
+                p {
+                  @apply text-[13px]/[17px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-us-strategy-section {
+    @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
+    .strategy-container {
+      @apply bg-white rounded-lg p-[20px] flex gap-[30px] w-full items-center;
+      box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
+
+      .desc-subcontainer {
+        @apply w-[60%] flex flex-col gap-[20px];
+        h1 {
+          @apply text-3xl font-bold;
+        }
+        ul {
+          @apply text-base flex flex-col gap-[10px];
+          li {
+            @apply flex gap-[20px] items-start text-base;
+            span {
+              svg {
+                @apply w-[30px] h-[30px];
+              }
+            }
+          }
+        }
+      }
+      .image-subcontainer {
+        @apply flex-1;
+        img {
+          @apply w-[410px] h-[400px] object-contain;
+        }
+      }
+    }
+  }
+  .about-us-history-section {
+    @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    .history-container {
+      @apply flex flex-col gap-[30px] items-center text-center;
+
+      .title-container {
+        @apply flex flex-col gap-[10px];
+        h1 {
+          @apply text-3xl font-bold;
+        }
+        p {
+          @apply text-base text-neutral-600;
+        }
+      }
+      ul {
+        @apply list-none flex flex-col gap-[20px] w-[70%];
+        li {
+          @apply flex flex-col justify-center items-center;
+          .icon-step {
+            @apply flex flex-col items-center;
+            svg {
+              @apply w-[50px] h-[50px] stroke-primary;
+            }
+            span {
+              @apply text-base font-semibold text-primary;
+            }
+          }
+          .desc-step {
+            @apply flex flex-col gap-[10px];
+            h5 {
+              @apply text-base font-semibold text-primary;
+            }
+            p {
+              @apply text-sm;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-us-area-section {
+    @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+    background: url("/images/backgrounds/parallax-indonesian-map.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::before {
+      content: "";
+      @apply absolute bg-neutral-50 opacity-75 w-full h-full z-[2];
+    }
+    .area-container {
+      @apply flex flex-col gap-[80px] items-center justify-center text-center z-[3];
+      .title-subcontainer {
+        @apply flex flex-col gap-[10px] items-center justify-center text-center;
+        h1 {
+          @apply text-3xl font-medium;
+        }
+        h2 {
+          @apply text-7xl text-primary font-bold;
+        }
+        p {
+          @apply text-base text-neutral-600;
+        }
+      }
+      .area-subcontainer {
+        @apply flex gap-[30px] w-[100%] justify-center text-center items-center;
+        .detail-subcontainer {
+          @apply flex flex-col;
+          h5 {
+            @apply text-4xl font-bold text-primary;
+          }
+          p {
+            @apply text-sm font-medium text-neutral-600;
+          }
+        }
+      }
+    }
+  }
+  @layer components {
+    &.mobile-responsive {
+      @apply pt-[50px];
+      .about-us-hero-section {
+        @apply h-[200px] p-[20px];
+        background-size: 100% 200px;
         .hero-container {
-            @apply z-10 text-center flex flex-col gap-[10px];
-            .text-welcome {
-                h2 {
-                    @apply text-4xl text-white font-bold
-                }
+          .text-welcome {
+            h2 {
+              @apply text-xl;
             }
-            .text-title {
-                @apply bg-primary py-[20px] px-[50px];
-                h1 {
-                    @apply text-5xl text-white font-medium;
-                }
+          }
+          .text-title {
+            @apply p-0;
+            h1 {
+              @apply text-2xl;
             }
+          }
         }
-    }
-    .about-us-profile-section {
-        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800 ;
+      }
+      .about-us-profile-section {
+        @apply p-[20px];
         .profile-container {
-            @apply flex gap-[30px] items-center;
-            .image-subcontainer {
-                @apply w-1/2 flex flex-col gap-[10px] relative;
-                .top-subcontainer {
-                    @apply w-full;
-                    img {
-                        @apply w-full h-[300px] object-cover;
-                    }
-                }
-                .middle-subcontainer {
-                    @apply absolute top-[43%] left-[38%];
-                    .experience-subcontainer {
-                        @apply bg-white border-2 border-primary text-primary flex flex-col items-center text-center justify-center w-[150px] h-[150px];
-                        label {
-                            @apply text-6xl font-bold;
-                        }
-                        span {
-                            @apply text-sm;
-                        }
-                    }
-                }
-                .bottom-subcontainer {
-                    @apply w-full flex gap-[10px];
-                    .bottom-sub-image {
-                        @apply w-1/2;
-                        img {
-                            @apply w-full h-[230px] object-cover;
-                        }
-                    }
-                }
+          @apply flex-col;
+          .image-subcontainer {
+            @apply w-full;
+            .top-subcontainer {
+              img {
+                @apply h-[200px];
+              }
             }
-            .desc-subcontainer {
-                @apply w-1/2 flex flex-col gap-[20px];
-                .desc-title {
-                    @apply flex flex-col gap-[10px];   
-                    h1 {
-                        @apply text-lg ;
-                    }
-                    h2 {
-                        @apply text-3xl font-medium;
-                    }
+            .middle-subcontainer {
+              @apply left-[38%] top-[40%];
+              .experience-subcontainer {
+                @apply w-[100px] h-[100px];
+                label {
+                  @apply text-4xl;
                 }
-                .desc-content {
-                    @apply flex flex-col gap-[10px];
-                    p {
-                        @apply text-sm text-neutral-600;
-                    }
+                span {
+                  @apply text-xs;
                 }
-                .desc-quote {
-                    @apply flex flex-col gap-[10px];
-                    h2 {
-                        @apply underline italic border-l-2 border-l-primary pl-[10px]
-                    }
-                    .desc-founder {
-                        @apply flex gap-[10px] items-center;
-                        img {
-                            @apply h-[50px] w-[50px] object-contain;
-                        }
-                        .text-founder {
-                            p {
-                                @apply text-base font-bold;
-                            }
-                            label {
-                                @apply text-primary font-medium
-                            }
-                        }
-                    }
-                }
+              }
             }
+            .bottom-subcontainer {
+              img {
+                @apply h-[180px];
+              }
+            }
+          }
+          .desc-subcontainer {
+            @apply w-full;
+            .desc-title {
+              h1 {
+                @apply text-xl;
+              }
+              h2 {
+                @apply text-2xl;
+              }
+            }
+            .desc-content {
+              p {
+                @apply text-sm;
+              }
+            }
+            .desc-quote {
+              h2 {
+                @apply text-sm;
+              }
+            }
+            .desc-founder {
+              .text-founder {
+                p,
+                label {
+                  @apply text-sm;
+                }
+              }
+            }
+          }
         }
-       
-    }
-    .about-us-our-mission-section {
-        @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
-        background: url("/images/backgrounds/parallax-2.png") no-repeat;
-        background-position: center;
-        &::before {
-            content: '';
-            @apply absolute bg-slate-900 opacity-85 w-full h-full z-[2];
-        }
+      }
+      .about-us-our-mission-section {
+        @apply p-[20px];
         .our-mission-container {
-            @apply flex items-start w-full justify-center;
-            .detail-subcontainer {
-                @apply flex flex-col justify-center items-center text-center z-10 px-[20px];
-                .icon-detail {
-                    svg {
-                        @apply w-[100px] h-[100px];
-                       
-                    }
-                    &.fill {
-                        svg {
-                          path {
-                            @apply fill-white;
-                          }
-                        }
-                    }
-                    &.fill-bulp {
-                        svg {
-                          path {
-                            @apply fill-white;
-                          }
-                        }
-                    }
-                    &.fill-stroke {
-                        svg {
-                            path {
-                                @apply stroke-white;
-                            }
-                        }
-                    }
-                    &.stroke {
-                        svg {
-                            @apply stroke-white;
-                        }
-                    }
-                }
-                .desc-detail {
-                    @apply flex flex-col gap-[10px];
-                    h5 {
-                        @apply text-3xl font-bold text-white uppercase;
-                        span {
-                            @apply text-slate-300;
-                        }
-                    }
-                    p {
-                        @apply text-[13px]/[17px] text-slate-300;
-                    }
-                    ul {
-                        @apply text-[13px]/[17px] flex flex-col gap-[5px] text-left list-disc;
-                        li {
-                            @apply px-[10px] text-slate-300;
-                            span {
-                                @apply font-bold text-slate-300;
-                            }
-                        }
-
-                    }
-                    .desc-growup {
-                        @apply flex gap-[30px];
-                        .details-growup {
-                            @apply flex text-left flex-wrap;
-                            .detail-growup {
-                                @apply w-1/2 mb-[10px];
-                                h5 {
-                                    @apply text-base font-medium;
-                                    span {
-                                        @apply font-bold text-white;
-                                    }
-                                }
-                                p {
-                                    @apply text-[13px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                }
+          @apply flex-col gap-[20px];
+          .detail-subcontainer {
+            @apply w-full;
+            .icon-detail {
+              svg {
+                @apply w-[50px] h-[50px];
+              }
             }
+            .desc-detail {
+              h5 {
+                @apply text-xl;
+              }
+              p {
+                @apply text-sm;
+              }
+              .desc-growup {
+                @apply flex-col;
+                .detail-growup {
+                  @apply text-center justify-center items-center;
+                }
+              }
+            }
+          }
         }
-    }
-    .about-us-strategy-section {
-        @apply py-[70px] px-[100px] gap-[20px] flex flex-col justify-center items-center relative text-neutral-800;
-        .strategy-container {
-            @apply bg-white rounded-lg p-[20px] flex gap-[30px] w-full items-center;
-            box-shadow: 0px 0px 32px -7px rgba(0, 0, 0, 0.1);
-
-            .desc-subcontainer {
-                @apply w-[60%] flex flex-col gap-[20px];
-                h1 {
-                    @apply text-3xl font-bold;
-                }
-                ul {
-                    @apply text-base flex flex-col gap-[10px];
-                    li {
-                        @apply flex gap-[20px] items-start text-base;
-                        span {
-                            svg {
-                                @apply w-[30px] h-[30px];
-                            }
-                        }
-                    }
-                }
-            }
-            .image-subcontainer {
-                @apply flex-1;
-                img {
-                    @apply w-[410px] h-[400px] object-contain;
-                }
-            }
-        }
-    }
-    .about-us-history-section {
-        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
+      }
+      .about-us-history-section {
+        @apply p-[20px];
         .history-container {
-            @apply flex flex-col gap-[30px] items-center text-center;
-
-           .title-container {
-                @apply flex flex-col gap-[10px];
-                h1 {
-                    @apply text-3xl font-bold;
+          .title-container {
+            h1 {
+              @apply text-2xl;
+            }
+            p {
+              @apply text-sm;
+            }
+          }
+          ul {
+            @apply w-full;
+            li {
+              .icon-step {
+                svg {
+                  @apply w-[35px] h-[35px];
+                }
+              }
+              .desc-step {
+                h5 {
+                  @apply text-sm;
                 }
                 p {
-                    @apply text-base text-neutral-600;
+                  @apply text-xs;
                 }
-           }
+              }
+            }
+          }
+        }
+      }
+      .about-us-strategy-section {
+        @apply p-[20px];
+        .strategy-container {
+          @apply flex-col-reverse gap-0;
+          .image-subcontainer {
+            img {
+              @apply h-[300px];
+            }
+          }
+          .desc-subcontainer {
+            @apply w-full;
+            h1 {
+              @apply text-2xl;
+            }
             ul {
-                @apply list-none flex flex-col gap-[20px] w-[70%];
-                li {
-                    @apply flex flex-col justify-center items-center;
-                    .icon-step {
-                        @apply flex flex-col items-center;
-                        svg {
-                            @apply w-[50px] h-[50px] stroke-primary;
-                        }
-                        span {
-                            @apply text-base font-semibold text-primary;
-                        }
-                    }
-                    .desc-step {
-                        @apply flex flex-col gap-[10px];
-                        h5 {
-                            @apply text-base font-semibold text-primary;
-                        }
-                        p {
-                            @apply text-sm ;
-                        }
-                    }
+              li {
+                @apply text-sm gap-[10px];
+                span {
+                  svg {
+                    @apply w-[20px] h-[20px];
+                  }
                 }
+              }
             }
+          }
         }
-    }
-    .about-us-area-section {
-        @apply py-[70px] px-[100px] flex flex-col justify-center items-center relative text-neutral-800;
-        background: url("/images/backgrounds/parallax-indonesian-map.jpg") no-repeat;
-        background-position: center;
-        background-size: cover;
-        &::before {
-            content: '';
-            @apply absolute bg-neutral-50 opacity-75 w-full h-full z-[2];
-        }
+      }
+      .about-us-area-section {
+        @apply p-[20px];
         .area-container {
-            @apply flex flex-col gap-[80px] items-center justify-center text-center z-[3];
-            .title-subcontainer {
-                @apply flex flex-col gap-[10px] items-center justify-center text-center;
-                h1 {
-                    @apply text-3xl font-medium;
-                  
-                }
-                h2 {
-                    @apply text-7xl text-primary font-bold;
-                }
-                p {
-                    @apply text-base text-neutral-600;
-                }
-            }
-            .area-subcontainer {
-                @apply flex gap-[30px] w-[100%] justify-center text-center items-center;
-                .detail-subcontainer {
-                    @apply flex flex-col;
-                    h5 {
-                        @apply text-4xl font-bold text-primary;
-                    }
-                    p {
-                        @apply text-sm font-medium text-neutral-600;
-                    }
-                }
-            }
+          @apply gap-[20px];
+          h1 {
+            @apply text-2xl;
+          }
+          h2 {
+            @apply text-5xl;
+          }
+          p {
+            @apply text-sm;
+          }
         }
-    }
-    @layer components {
-        &.mobile-responsive {
-            @apply pt-[50px];
-            .about-us-hero-section {
-                @apply h-[200px] p-[20px];
-                background-size: 100% 200px ;
-                .hero-container {
-                    .text-welcome {
-                        h2 {
-                            @apply text-xl;
-                        }
-                    }
-                    .text-title {
-                        @apply p-0;
-                        h1 {
-                            @apply text-2xl;
-                        }
-                    }
-                }
+        .area-subcontainer {
+          @apply flex-col;
+          .detail-subcontainer {
+            @apply w-full;
+            h5 {
+              @apply text-2xl;
             }
-            .about-us-profile-section {
-                @apply p-[20px];
-                .profile-container {
-                    @apply flex-col;
-                    .image-subcontainer {
-                        @apply w-full;
-                        .top-subcontainer {
-                            img {
-                                @apply h-[200px];
-                            }
-                        }
-                        .middle-subcontainer {
-                            @apply left-[38%] top-[40%];
-                            .experience-subcontainer {
-                                @apply  w-[100px] h-[100px];
-                                label {
-                                    @apply text-4xl;
-                                }
-                                span {
-                                    @apply text-xs;
-                                }
-                            }
-                        }
-                        .bottom-subcontainer {
-                            img {
-                                @apply h-[180px];
-                            }
-                        }
-                    }
-                    .desc-subcontainer {
-                        @apply w-full;
-                        .desc-title {
-                            h1 {
-                                @apply text-xl;
-                            }
-                            h2 {
-                                @apply text-2xl;
-                            }
-                        }
-                        .desc-content {
-                            p {
-                                @apply text-sm;
-                            }
-                        }
-                        .desc-quote {
-                            h2 {
-                                @apply text-sm;
-                            }
-                        }
-                        .desc-founder {
-                            .text-founder {
-                                p,label {
-                                    @apply text-sm;
-                                }
-                            }
-                        }
-                    }
-                }
+            p {
+              @apply text-xs;
             }
-            .about-us-our-mission-section {
-                @apply p-[20px];
-                .our-mission-container {
-                    @apply flex-col gap-[20px];
-                    .detail-subcontainer {
-                        @apply w-full;
-                        .icon-detail {
-                            svg {
-                                @apply w-[50px] h-[50px];
-                            }
-                        }
-                        .desc-detail {
-                            h5 {
-                                @apply text-xl;
-                            }
-                            p {
-                                @apply text-sm;
-                            }
-                            .desc-growup {
-                                @apply flex-col;
-                                .detail-growup {
-                                    @apply text-center justify-center items-center;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .about-us-history-section {
-                @apply p-[20px];
-                .history-container {
-                    .title-container {
-                        h1 {
-                            @apply text-2xl;
-                        }
-                        p {
-                            @apply text-sm;
-                        }
-                    }
-                    ul {
-                        @apply w-full;
-                        li {
-                            .icon-step{
-                                svg {
-                                    @apply w-[35px] h-[35px];
-                                }
-                            }
-                            .desc-step {
-                                h5 {
-                                    @apply text-sm;
-                                }
-                                p {
-                                    @apply text-xs;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .about-us-strategy-section {
-                @apply p-[20px];
-                .strategy-container {
-                    @apply flex-col-reverse gap-0;
-                    .image-subcontainer {
-                        img {
-                            @apply h-[300px];
-                        }
-                    }
-                    .desc-subcontainer {
-                        @apply w-full;
-                        h1 {
-                            @apply text-2xl;
-                           
-                        }
-                        ul {
-                            li {
-                                @apply text-sm gap-[10px];
-                                span {
-                                    svg {
-                                        @apply w-[20px] h-[20px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .about-us-area-section {
-                @apply p-[20px];
-                .area-container {
-                    @apply gap-[20px];
-                    h1 {
-                        @apply text-2xl;
-                    }
-                    h2 {
-                        @apply text-5xl;
-                    }
-                    p {
-                        @apply text-sm;
-                    }
-                }
-                .area-subcontainer {
-                    @apply flex-col;    
-                    .detail-subcontainer {
-                        @apply w-full;
-                        h5 {
-                            @apply text-2xl; 
-                        }
-                        p {
-                            @apply text-xs;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 }
