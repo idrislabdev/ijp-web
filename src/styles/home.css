@@ -137,7 +137,7 @@
         @apply text-base text-neutral-800 font-medium;
       }
       p {
-        @apply text-sm text-neutral-800;
+        @apply text-sm text-neutral-800 text-justify;
       }
     }
     .about-image-container {
