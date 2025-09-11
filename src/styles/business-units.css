@@ -773,7 +773,7 @@
           .detail-subcontainer {
             @apply flex-col gap-[10px];
             .sub-detail {
-              @apply gap-[5px];
+              @apply gap-[5px] w-full;
               svg {
                 @apply w-[30px] h-[30px];
               }
