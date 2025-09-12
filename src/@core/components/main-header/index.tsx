@@ -32,6 +32,30 @@ const MainHeader = (props: { lang: string }) => {
   const phone: any = settings.find((x) => x.name === "phone")?.value;
   const tagline: any = settings.find((x) => x.name === "tagline")?.value;
 
+  type MenuItem = {
+    home: string;
+    about: string;
+    business_units: string;
+    careers: string;
+    contact_us: string;
+  };
+  const menu: Record<string, MenuItem> = {
+    id: {
+      home: "Beranda",
+      about: "Tentang Kami",
+      business_units: "Unit Bisnis",
+      careers: "Karir",
+      contact_us: "Kontak",
+    },
+    en: {
+      home: "Home",
+      about: "About Us",
+      business_units: "Business Units",
+      careers: "Careers",
+      contact_us: "Contact Us",
+    },
+  };
+
   const onScroll = useCallback(() => {
     const { scrollY } = window;
     if (scrollY >= 60) {
@@ -115,11 +139,11 @@ const MainHeader = (props: { lang: string }) => {
                 <Link href={`/${lang}`}>Home</Link>
               </li>
               <li>
-                <Link href={`/${lang}/about-us`}>Tentang Kami</Link>
+                <Link href={`/${lang}/about-us`}>{menu[lang].about}</Link>
               </li>
               <li className="has-sub">
                 <a>
-                  Unit Bisnis <ChevronDownIcon />
+                  {menu[lang].business_units} <ChevronDownIcon />
                 </a>
                 <ul className="submenu">
                   <li>
@@ -132,10 +156,12 @@ const MainHeader = (props: { lang: string }) => {
               </li>
               {/* <li><Link href={`/${lang}/news`}>News</Link></li> */}
               <li>
-                <Link href={`/${lang}/careers`}>Karir</Link>
+                <Link href={`/${lang}/careers`}>{menu[lang].careers}</Link>
               </li>
               <li>
-                <Link href={`/${lang}/contact-us`}>Kontak Kami</Link>
+                <Link href={`/${lang}/contact-us`}>
+                  {menu[lang].contact_us}
+                </Link>
               </li>
             </ul>
             <div className="flags-menu">
