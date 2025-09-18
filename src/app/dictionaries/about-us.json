@@ -22,7 +22,7 @@
         },
         "en": {
             "title": "Company Profile",
-            "subtitle": "UNICORP is a group of companies engaged in various industries, including Food, Agriculture, Retail, and others",
+            "subtitle": "UNICORP is a group of companies engaged in various industries, including Food, Agriculture, Retail and others",
             "description_1": "Founded in Surabaya in 2001, CV. Indo Jaya Putra is a food chemicals trading company that continues to grow and remains focused on customer satisfaction. Initially, CV. Indo Jaya Putra began its business by selling food coloring products. Over time, Mr. Sugijanto, as the founder and owner, expanded his vision by establishing a color blending factory named UNICOL.",
             "description_2": "As a specialist in color blending, UNICOL is capable of producing colors according to customer specifications and volume requirements, providing high flexibility and customized services.\r\n\r\nIn addition to food coloring products, CV. Indo Jaya Putra has also expanded its portfolio by trading various other chemicals such as Sodium Bicarbonate, Capsicum, Acetic Acid (Vinegar), and more. These products are sourced both domestically and internationally, including from China, India and several other countries.\r\n\r\nTo expand distribution coverage and accelerate service, CV. Indo Jaya Putra has established partnerships with various companies, ranging from small to large scale. The company has also opened a branch in Semarang to serve Central Indonesia, as well as a branch in Jakarta to serve Western Indonesia.\r\n\r\nTo support reliable operations, we provide dedicated chemical warehouse facilities, a delivery fleet, and an online database system that allows us to ensure every order is delivered on time, safely, and according to customer specifications.",
             "quote": "",
@@ -225,19 +225,19 @@
             "contents": [
                 {
                     "title": "SURABAYA",
-                    "description": "Managing marketing for Eastern Indonesia"
+                    "description": ""
                 },
                 {
                     "title": "SEMARANG",
-                    "description": "Managing marketing for Central Indonesia"
+                    "description": ""
                 },
                 {
                     "title": "JAKARTA",
-                    "description": "Managing marketing for Western Indonesia"
+                    "description": ""
                 },
                 {
                     "title": "BALI",
-                    "description": "Managing marketing for Southeastern Indonesia"
+                    "description": ""
                 }
             ]
         }

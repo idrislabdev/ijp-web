@@ -20,7 +20,7 @@
         "en": {
             "title": "Business Unit Profile of Indo Jaya Sukses Abadi (IJSA)",
             "description_1": "CV. Indo Jaya Sukses Abadi is a company engaged in the production of plastic gloves (HDPE), located at Pergudangan Mutiara Tambak Langon B14, Surabaya – East Java. Established in September 2018, the company was founded to complement and support CV. Indo Jaya Putra, the first company under the UNICORP group, which is an importer, manufacturer, and distributor of chemicals, particularly for the food, retail, and agricultural industries",
-            "description_2": "In the beginning, CV. Indo Jaya Sukses Abadi produced plastic gloves under the INAGLOVE brand, tailored to customer needs. As customer demand diversified, we expanded by developing several new brands with different specifications.\r\n\r\nOur plastic glove products are certified (Halal, Food Grade, and MSDS), environmentally friendly, and suitable for various uses such as salons, painting, cooking, and more.",
+            "description_2": "At the beginning, CV. INDO JAYA SUKSES ABADI only produced plastic gloves according to customer needs under the brand INAGLOVE. As customer demand became more diverse, we expanded by creating several new brands with different specifications.\r\n\r\nThese plastic glove products are certified (Halal Certificate, Food Grade, and MSDS), environmentally friendly, and can be used across various fields of work (salons, painting, cooking, etc.).",
             "description_3": ""
         }
     },
@@ -63,11 +63,11 @@
                 ]
             },
             "our_strategies": {
-                "title": "strategi kami",
+                "title": "OUR STRATEGY",
                 "contents": [
-                    "Meningkatkan kualitas dan kapasitas produksi untuk memenuhi kebutuhan pelanggan.",
-                    "Menciptakan lebih banyak produk dan menumbuhkan pasar dengan menggandeng lebih banyak distributor.",
-                    "Mendapatkan bahan baku yang kompetitif yang dapat membuat produksi lebih efisien."
+                    "Improve the quality and production capacity to meet customer needs.",
+                    "Create more products and grow the market by partnering with more distributors.",
+                    "Secure competitive raw materials to make production more efficient."
                 ]
             }
         }
@@ -83,9 +83,9 @@
             "color_text": "Warna"
         },
         "en": {
-            "title": "Our product (INA GLOVE)",
-            "description_1": "merupakan sarung tangan berbahan dasar plastik HDPE (High-density Polyethylene), maupun Biodegradable. Kami memiliki dua jenis sarung tangan yaitu sarung tangan dengan permukaan polos dan emboss (tampak ada bintik – bintik).",
-            "description_2": "Produk kami terdiri dari beberapa pilihan warna seperti natural (bening), biru, dan warna lainnya sesuai permintaan. Kami melayani berbagai kebutuhan ukuran, tebal, dan warna sesuai permintaan pelanggan.",
+            "title": "Our product (INAGLOVE)",
+            "description_1": "Plastic gloves “INAGLOVE” are made from HDPE plastic material that is Halal certified and safe for food contact. These gloves are multifunctional and can be used for various activities, such as cooking, baking, gardening, and painting.",
+            "description_2": "Our products come in several color options such as natural (clear), blue, and other colors upon request. We also cater to various customer requirements in terms of size, thickness, and color.",
             "material_text": "Bahan",
             "long_text": "Panjang",
             "thick_text": "Tebal",
@@ -93,32 +93,32 @@
         },
         "products": [
             {
-                "name": "Jenis Polos",
-                "material": "HDPE atau Biodegradable",
+                "name": "Plain Type",
+                "material": "HDPE or Biodegradable",
                 "long": "27 cm",
                 "thick": "8 Micron ",
                 "color": "Natural",
                 "image_url": "/images/our-products/products-ijsa-1.jpeg"
             },
             {
-                "name": "Jenis Emboss",
-                "material": "HDPE atau Biodegradable",
+                "name": "Embossed Type",
+                "material": "HDPE or Biodegradable",
                 "long": "27 cm",
                 "thick": "10 Micron ",
                 "color": "Natural",
                 "image_url": "/api/media/our-products/products-ijsa-2.jpeg"
             },
             {
-                "name": "Jenis Polos",
-                "material": "HDPE atau Biodegradable",
+                "name": "Plain Type",
+                "material": "HDPE or Biodegradable",
                 "long": "27 - 47 cm",
                 "thick": "25 Micron",
                 "color": "Natural dan Biru",
                 "image_url": "/api/media/our-products/products-ijsa-3.jpeg"
             },
             {
-                "name": "Jenis Emboss",
-                "material": "HDPE atau Biodegradable",
+                "name": "Embossed Type",
+                "material": "HDPE or Biodegradable",
                 "long": "27 cm",
                 "thick": "20 Micron",
                 "color": "Natural",
@@ -133,9 +133,9 @@
             "subtitle_2": "Area pemasaran ijsa / product inaglove meliputi seluruh Indonesia"
         },
         "en": {
-            "title": "Area Pemasaran IJSA / INAGLOVE",
-            "subtitle_1": "SELURUH INDONESIA",
-            "subtitle_2": "Area pemasaran ijsa / product inaglove meliputi seluruh Indonesia"
+            "title": "Marketing Area of IJSA / INAGLOVE",
+            "subtitle_1": "ALL ACROSS INDONESIA",
+            "subtitle_2": "The marketing area of IJSA / INAGLOVE products covers the entire region of Indonesia."
         }
     },
     "contact": {
@@ -143,35 +143,35 @@
             "title": "Kontak Kami",
             "address": {
                 "title": "Alamat ",
-                "description": "Lokasi fisik perusahaan yang digunakan untuk menerima kunjungan, surat menyurat dan sebagai identitas resmi tempat operasional perusahaan.",
+                "description": "Alamat Resmi Kantor IJSA",
                 "value": "Pergudangan Mutiara, Tambak Langon, B14, Surabaya, Jawa Timur 60148"
             },
             "phone": {
                 "title": "Phone",
-                "description": "Nomor kontak yang digunakan untuk komunikasi langsung antara pelanggan atau mitra bisnis dengan perusahaan.",
+                "description": "Customer dapat menghubungi kami melalui FAX",
                 "value": "+62 31 9934 2408"
             },
             "email": {
                 "title": "Email",
-                "description": "Silakan hubungi kami melalui telepon atau email untuk informasi lebih lanjut. Tim kami siap melayani Anda selama jam kerja.",
+                "description": " Email Resmi Tim Marketing kami",
                 "value": "ijsa.marketing@gmail.com"
             }
         },
         "en": {
-            "title": "Kontak Kami",
+            "title": "Contact Us",
             "address": {
                 "title": "Visit Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
-                "value": "Lorem Ipsum is simply"
+                "description": "The Official Address IJSA ",
+                "value": "Pergudangan Mutiara, Tambak Langon, B14, Surabaya, Jawa Timur 60148"
             },
             "phone": {
                 "title": "Call Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
+                "description": "Customers can contact us via FAX",
                 "value": "+62 31 9934 2408"
             },
             "email": {
-                "title": "Contact Us",
-                "description": "Lorem Ipsum is simply dummy text of the printing",
+                "title": "Email Us",
+                "description": "Official Email of Our Marketing Team",
                 "value": "ijsa.marketing@gmail.com"
             }
         }

@@ -5,13 +5,13 @@
             "description": "UNICORP (UNI CORPORATION)"
         },
         "en": {
-            "title": "Bergabung Dengan Tim Kami",
+            "title": "Be Part of Our Team",
             "description": "UNICORP (UNI CORPORATION)"
         }
     },
     "office_location": {
         "id": {
-            "title": "Area Pemasaran",
+            "title": "Lokasi Kantor",
             "subtitle": "UNICORP",
             "description": "UNICORP mempunyai beberapa lokasi kantor di seluruh Indonesia",
             "offices": [
@@ -34,25 +34,25 @@
             ]
         },
         "en": {
-            "title": "Lokasi Kantor",
+            "title": "Office Locations",
             "subtitle": "UNICORP",
-            "description": "UNICORP mempunyai beberapa lokasi kantor di seluruh Indonesia",
+            "description": "UNICORP operates multiple office locations across Indonesia",
             "offices": [
                 {
                     "title": "SURABAYA",
-                    "description": "Menghandle pemasaran untuk Indonesia bagian Timur"
+                    "description": ""
                 },
                 {
                     "title": "SEMARANG",
-                    "description": "Menghandle pemasaran untuk Indonesia bagian Tengah"
+                    "description": ""
                 },
                 {
                     "title": "JAKARTA",
-                    "description": "Menghandle pemasaran untuk Indonesia bagian Barat"
+                    "description": ""
                 },
                 {
                     "title": "BALI",
-                    "description": "Menghandle pemasaran untuk Indonesia bagian"
+                    "description": ""
                 }
             ]
         }
