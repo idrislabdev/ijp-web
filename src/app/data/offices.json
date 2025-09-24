@@ -11,6 +11,16 @@
   },
   {
     "id": "2",
+    "name": "Kantor IJSA",
+    "name_en": "IJSA Office",
+    "address": "Pergudangan Mutiara Tambak Langon Blok B14, Asemrowo, Surabaya, Jawa Timur 60184",
+    "phones": ["+62 31 9934 2408"],
+    "faxs": [],
+    "email": "-",
+    "type": "branch"
+  },
+  {
+    "id": "3",
     "name": "Pabrik & Gudang",
     "name_en": "Factory & Warehouse",
     "address": "Kepatihan Industri I No.5 Desa Kepatihan, Menganti, Gresik, Jawa Timur 61174",
@@ -20,7 +30,7 @@
     "type": "branch"
   },
   {
-    "id": "3",
+    "id": "4",
     "name": "Kantor Cabang (Semarang)",
     "name_en": "Branch Office (Semarang)",
     "address": "Kawasan Pergudangan Industri Candi Jl. Gatot Subroto X No. 1, Semarang, Jawa Tengah 50181",
@@ -30,7 +40,7 @@
     "type": "branch"
   },
   {
-    "id": "4",
+    "id": "5",
     "name": "Kantor Cabang (Jakarta)",
     "name_en": "Branch Office (Jakarta)",
     "address": "Pergudangan Kosambi Permai Blok JJ No. 25 Jl. Raya Perancis, Kosambi - Dadap, Tangerang, Jawa Barat 15212",
@@ -40,7 +50,7 @@
     "type": "branch"
   },
   {
-    "id": "5",
+    "id": "6",
     "name": "Kantor Cabang (Bali)",
     "name_en": "Branch Office (Bali)",
     "address": "Jl. Dewata Cargo No. 99, Ubung, Denpasar Utara, Denpasar, Bali 80111",
