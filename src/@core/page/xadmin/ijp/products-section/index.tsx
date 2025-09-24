@@ -140,7 +140,7 @@ const XadminIJPProductsSection = (props: { objData: any }) => {
 
   const setProductsOtherDescription = (val: any, index: number) => {
     const temp = [...productsOthers];
-    temp[index].description = val;
+    temp[index][lang].description = val;
     setProductsOthers(temp);
   };
 
@@ -160,7 +160,7 @@ const XadminIJPProductsSection = (props: { objData: any }) => {
     index: number
   ) => {
     const temp = [...productsOthers];
-    temp[index][object] = val;
+    temp[index][lang][object] = val;
     setProductsOthers(temp);
   };
 
@@ -491,7 +491,7 @@ const XadminIJPProductsSection = (props: { objData: any }) => {
                 className="base"
               />
               <input
-                value={productsOthers[selectedProductOther].description}
+                value={productsOthers[selectedProductOther][lang].description}
                 onChange={(e) =>
                   setProductsOtherDescription(
                     e.target.value,
@@ -501,7 +501,9 @@ const XadminIJPProductsSection = (props: { objData: any }) => {
                 className="base"
               />
               <textarea
-                value={productsOthers[selectedProductOther].full_description_1}
+                value={
+                  productsOthers[selectedProductOther][lang].full_description_1
+                }
                 onChange={(e) =>
                   setProductsOtherFullDescription(
                     e.target.value,
@@ -512,7 +514,9 @@ const XadminIJPProductsSection = (props: { objData: any }) => {
                 className="base !h-[80px]"
               />
               <textarea
-                value={productsOthers[selectedProductOther].full_description_2}
+                value={
+                  productsOthers[selectedProductOther][lang].full_description_2
+                }
                 onChange={(e) =>
                   setProductsOtherFullDescription(
                     e.target.value,
@@ -523,7 +527,9 @@ const XadminIJPProductsSection = (props: { objData: any }) => {
                 className="base !h-[80px]"
               />
               <textarea
-                value={productsOthers[selectedProductOther].full_description_3}
+                value={
+                  productsOthers[selectedProductOther][lang].full_description_3
+                }
                 onChange={(e) =>
                   setProductsOtherFullDescription(
                     e.target.value,
