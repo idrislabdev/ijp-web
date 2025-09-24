@@ -123,7 +123,7 @@ const MainHeader = (props: { lang: string }) => {
         <div className="main-header-bottom">
           <Link href={`/${lang}`}>
             <Image
-              src="/images/logoes/logo-unicorp-new.png"
+              src="/images/logoes/logo-new-ijp.png"
               alt="logo unicorp"
               width={0}
               height={0}

@@ -71,7 +71,7 @@ const MainSidebarMenu = (props: {
             <div className="sidebar-header-logo">
               <a onClick={(_) => goToLink("")}>
                 <Image
-                  src="/images/logoes/logo-unicorp-big.png"
+                  src="/images/logoes/logo-new-ijp.png"
                   alt="logo unicorp"
                   width={128}
                   height={36}

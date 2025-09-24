@@ -11,7 +11,7 @@ const Footer = (props: { lang: string }) => {
         <div className="footer-main-info">
           <div className="image-logo-container">
             <Image
-              src="/images/logoes/logo-unicorp-big.png"
+              src="/images/logoes/logo-new-ijp.png"
               alt="logo unicorp"
               width={128}
               height={36}
