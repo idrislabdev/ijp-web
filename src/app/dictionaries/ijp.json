@@ -1,269 +1,268 @@
 {
-  "header": {
-    "id": {
-      "title": "Unit Bisnis",
-      "subtitle": "IJP (Indo Jaya Putra)"
+    "header": {
+        "id": {
+            "title": "Unit Bisnis",
+            "subtitle": "IJP (Indo Jaya Putra)"
+        },
+        "en": {
+            "title": "Business Units",
+            "subtitle": "IJP (Indo Jaya Putra)"
+        },
+        "image_url": null
     },
-    "en": {
-      "title": "Business Units",
-      "subtitle": "IJP (Indo Jaya Putra)"
+    "profile": {
+        "id": {
+            "title": "Profil Unit Bisnis Indo Jaya Putra (IJP)",
+            "description_1": "CV. Indo Jaya Putra (IJP) didirikan di Surabaya pada tahun 2001 sebagai perusahaan perdagangan bahan kimia makanan. Awalnya, Bapak Sugi memulai usaha dengan trading bahan kimia makanan. Dari langkah kecil tersebut, CV. Indo Jaya Putra terus bertumbuh dan kini menghadirkan delapan produk utama yaitu Pewarna (UNICOL), Pemanis (SOSWEET), Tepung Pemutih (UNIWHITE), Tepung Premiks (MASHMIL), MSG (SOSWEET), Fruktose (SOSWEET), Baking Powder (MASHMIL), serta UNICAPSO (Chili Oil). Seluruh produk dikembangkan dengan standar mutu tinggi untuk mendukung industri makanan.\r\n\r\nSebagai importir, produsen, sekaligus distributor CV. Indo Jaya Putra juga menyediakan berbagai bahan kimia umum (General Chemical) seperti Sodium Bicarbonate, Capsicum, Sodium Benzoate dan yang lainnya berasal dari dalam maupun luar negeri (China, India, Taiwan dan negara lainnya). \r\n\r\nPada tahun 2024, CV. Indo Jaya Putra resmi memperoleh sertifikasi ISO 9001:2015 sebagai bentuk komitmen perusahaan dalam menerapkan sistem manajemen mutu yang konsisten dan berstandar internasional.",
+            "description_2": "CV. Indo Jaya Putra menjalin kerja sama dengan berbagai perusahaan, baik skala kecil maupun besar, kini kami mampu menjangkau wilayah yang lebih luas di Indonesia melalui pembukaan cabang di Semarang, Jakarta dan Bali. Untuk mendukung operasional tersebut, kami menyediakan gudang yang didesain khusus untuk penyimpanan bahan kimia, didukung armada pengiriman serta sistem database online, sehingga setiap pelanggan dapat menerima pesanannya dengan tepat waktu dan terjamin kualitasnya.",
+            "experience_1": "20+",
+            "experience_2": "Tahun Pengalaman"
+        },
+        "en": {
+            "title": "Business Unit Profile of Indo Jaya Putra (IJP)",
+            "description_1": "CV. Indo Jaya Putra (IJP) was established in Surabaya in 2001 as a trading company specializing in food chemicals. Initially, Mr. Sugi started the business through food chemical trading. From that small step, CV. Indo Jaya Putra has continued to grow and now offers eight main products: Food Color (UNICOL), Sweetener (SOSWEET), Food Whitener (UNIWHITE), Premix Flour (MASHMIL), MSG (SOSWEET), Fructose (SOSWEET), Baking Powder (MASHMIL), and UNICAPSO (Chili Oil). All products are developed under high-quality standards to support the food industry.\r\n\r\nAs an importer, manufacturer, and distributor, CV. Indo Jaya Putra also provides various general chemicals such as Sodium Bicarbonate, Capsicum, Sodium Benzoate, and others sourced both domestically and internationally (China, India, Taiwan, and other countries).\r\n\r\nIn 2024, CV. Indo Jaya Putra officially obtained ISO 9001:2015 certification as a commitment to implementing a consistent and internationally recognized quality management system.",
+            "description_2": "By establishing partnerships with various companies, both small and large, we are now able to reach wider regions in Indonesia through the opening of branches in Semarang, Jakarta, and Bali. To support these operations, we provide warehouses specifically designed for chemical storage, supported by a dedicated delivery fleet and an online database system, ensuring that every customer receives their orders on time with guaranteed quality.",
+            "experience_1": "20+",
+            "experience_2": "Tahun Pengalaman"
+        },
+        "image_1_url": "/api/media/ijp/profile-1.jpeg",
+        "image_2_url": "/api/media/ijp/profile-2.jpeg",
+        "image_3_url": "/api/media/ijp/profile-3.jpeg"
     },
-    "image_url": null
-  },
-  "profile": {
-    "id": {
-      "title": "Profil Unit Bisnis Indo Jaya Putra (IJP)",
-      "description_1": "CV. Indo Jaya Putra (IJP) didirikan di Surabaya pada tahun 2001 sebagai perusahaan perdagangan bahan kimia makanan. Bermula dari penjualan pewarna makanan dengan merek UNICOL. CV. Indo Jaya Putra kemudian berkembang dengan menghadirkan delapan produk utama: Pewarna (UNICOL), Pemanis (SOSWEET), Tepung Pemutih (UNIWHITE), Tepung Premiks (MASHMIL), MSG (SOSWEET), Fruktose (SOSWEET), Baking Powder (MASHMIL), serta UNICAPSO (Chili Oil). Seluruh produk dikembangkan dengan standar mutu tinggi untuk mendukung industri makanan.\r\n\r\nSebagai importir, produsen, sekaligus distributor CV. Indo Jaya Putra juga menyediakan berbagai bahan kimia umum (General Chemical) seperti Sodium Bicarbonate, Capsicum, Sodium Benzoate dan yang lainnya berasal dari dalam maupun luar negeri (China, India, Taiwan dan negara lainnya). ",
-      "description_2": "CV. Indo Jaya Putra menjalin kerja sama dengan berbagai perusahaan, baik skala kecil maupun besar, kini kami mampu menjangkau wilayah yang lebih luas di Indonesia melalui pembukaan cabang di Semarang, Jakarta dan Bali. Untuk mendukung operasional tersebut, kami menyediakan gudang yang didesain khusus untuk penyimpanan bahan kimia, didukung armada pengiriman serta sistem database online, sehingga setiap pelanggan dapat menerima pesanannya dengan tepat waktu dan terjamin kualitasnya.",
-      "experience_1": "20+",
-      "experience_2": "Tahun Pengalaman"
+    "vission_mission": {
+        "id": {
+            "our_missions": {
+                "title": "MISI KAMI",
+                "contents": [
+                    "Memproduksi bahan pangan dan bahan tambahan pangan yang bermutu, aman dan halal sesuai dengan persyaratan yang belaku",
+                    "Melakukan inovasi serta menciptakan produk-produk baru yang berkualitas dan bersaing, yang mendukung keberlanjutan lingkungan dan efisiensi produksi",
+                    "Meningkatkan fokus pada kepuasan pelanggan dengan memberikan produk terbaik dengan kualitas dan layanan terbaik",
+                    "Meningkatkan keterampilan dan kapasitas karyawan melalui program pelatihan dan pengembangan untuk memastikan tim yang kompeten dan inovatif"
+                ]
+            },
+            "our_vissions": {
+                "title": "VISI KAMI",
+                "contents": [
+                    "Menjadi pemimpin dalam perdagangan bahan pangan dan produksi bahan pangan dan tambahan pangan yang inovatif, berkualitas tinggi dan berkelanjutan di indonesia"
+                ]
+            }
+        },
+        "en": {
+            "our_missions": {
+                "title": "Our Mission",
+                "contents": [
+                    "Producing high-quality, safe, and halal food and food additives in accordance with applicable requirements.",
+                    "Driving innovation and creating new, competitive, and high-quality products, supported by continuous human resource development and sustainable company growth.",
+                    "Enhancing focus on customer satisfaction by delivering the best products with superior quality and services.",
+                    "Providing opportunities for millennial human resources to create and contribute, supported by continuous skill development, enabling CV. Indo Jaya Putra to grow faster and achieve its long-term goals."
+                ]
+            },
+            "our_vissions": {
+                "title": "Our Vission",
+                "contents": [
+                    "To become the leading chemical trading company in Indonesia."
+                ]
+            }
+        }
     },
-    "en": {
-      "title": "Business Unit Profile of Indo Jaya Putra (IJP)",
-      "description_1": "CV. Indo Jaya Putra (IJP) was established in Surabaya in 2001 as a trading company for food chemicals. The business began with the sales of food colorings under the UNICOL brand. Over time, CV. Indo Jaya Putra expanded by introducing eight main products: Food Colorings (UNICOL), Sweeteners (SOSWEET), Food Whitening Powder (UNIWHITE), Premix Flour (MASHMIL), MSG (SOSWEET), Fructose (SOSWEET), Baking Powder (MASHMIL), and UNICAPSO (Chili Oil). All products are developed with high-quality standards to support the food industry.\r\n\r\nAs an importer, manufacturer, and distributor, CV. Indo Jaya Putra also supplies a wide range of general chemicals such as Sodium Bicarbonate, Capsicum, Sodium Benzoate, and others sourced both domestically and internationally (China, India, Taiwan, and other countries).",
-      "description_2": "By establishing partnerships with various companies, both small and large, we are now able to reach wider regions in Indonesia through the opening of branches in Semarang, Jakarta, and Bali. To support these operations, we provide warehouses specifically designed for chemical storage, supported by a dedicated delivery fleet and an online database system, ensuring that every customer receives their orders on time with guaranteed quality.",
-      "experience_1": "20+",
-      "experience_2": "Tahun Pengalaman"
-    },
-    "image_1_url": "/api/media/ijp/profile-1.jpeg",
-    "image_2_url": "/api/media/ijp/profile-2.jpeg",
-    "image_3_url": "/api/media/ijp/profile-3.jpeg"
-  },
-  "vission_mission": {
-    "id": {
-      "our_missions": {
-        "title": "MISI KAMI",
-        "contents": [
-          "Memproduksi bahan pangan dan bahan tambahan pangan yang bermutu, aman dan halal sesuai dengan persyaratan yang belaku",
-          "Melakukan inovasi serta menciptakan produk-produk baru yang berkualitas dan bersaing, didukung dengan pengembangan sumber daya manusia serta pengembangan perusahaan yang berkesinambungan",
-          "Meningkatkan fokus pada kepuasan pelanggan dengan memberikan produk terbaik dengan kualitas dan layanan terbaik",
-          "Memberikan kesempatan kepada sumber saya manusia era milenial untuk berkarya dan dan berkontribusi dengan didukung oleh pengembangan kemampuannya sehingga CV. Indo Jaya Putra akan berkembang lebih cepat untuk rencana jangka panjang"
+    "our_products": {
+        "id": {
+            "title": "Produk Kami",
+            "description": "Kami menyediakan berbagai produk unggulan untuk memenuhi kebutuhan industri pangan Anda, seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), MashMil (Tepung Susu Premiks), Sosweet (MSG), Sosweet (Fruktose), MashMil (Baking Powder) dan Unicapso (Chili Oil). Selain itu, kami juga menawarkan beragam produk General Chemical impor dari China, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya.\r\n\r\n\r\nSeluruh produk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM dan ISO 9001:2015. Hal Ini memastikan setiap produk yang kami tawarkan aman, berkualitas dan sesuai standar internasional, sehingga konsumen dapat merasa aman dan percaya menggunakan produk kami.",
+            "product_internal": "Produk Internal",
+            "product_other": "Produk Lainnya"
+        },
+        "en": {
+            "title": "Our Products",
+            "description": "We provide a wide range of superior products to meet your food industry needs, such as Unicol (Food Coloring), Sosweet (Food Sweetener), Uniwhite (Food Whitener), MashMil (Premix Milk Powder), Sosweet (MSG), Sosweet (Fructose), MashMil (Baking Powder), and Unicapso (Chili Oil). In addition, we also offer a variety of imported general chemicals from China, including Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, and more.\r\n\r\nAll of our products comply with the highest quality standards and are certified Halal, BPOM, and ISO 9001:2015. This ensures that every product we offer is safe, high-quality, and meets international standards, allowing consumers to feel secure and confident in using our products.",
+            "product_internal": "Internal Products",
+            "product_other": "Other Products"
+        },
+        "products": [
+            {
+                "name": "UNICOL",
+                "image_url": "/images/our-products/products-ijp-1.jpeg",
+                "en": {
+                    "description": "Food Coloring",
+                    "full_description_1": "UNICOL is a synthetic food coloring that holds an MD certificate from BPOM and a Halal Certificate from MUI.",
+                    "full_description_2": "Original Colour (Water Soluble): commonly used for bread/cakes, beverages, jelly, candies, etc.",
+                    "full_description_3": "Lake Colour (Oil Soluble): commonly used for cream, butter, margarine, etc.\n\nUnicol is available in 1 Kg, 5 Kg, 10 Kg and 25 Kg packaging."
+                },
+                "id": {
+                    "description": "Pewarna Makanan",
+                    "full_description_1": "UNICOL adalah pewarna makanan sintetis yang memiliki sertifikat MD dari BPOM dan Sertifikat Halal dari MUI.",
+                    "full_description_2": "Original Colour (Larut dalam Air): biasanya digunakan untuk roti/kue, minuman, jelly, permen, dll.",
+                    "full_description_3": "Lake Colour (Larut dalam Minyak): biasanya digunakan untuk krim, mentega, margarin, dll.\n\nUnicol tersedia dalam kemasan 1 Kg, 5 Kg, 10 Kg, dan 25 Kg."
+                }
+            },
+            {
+                "name": "SOSWEET",
+                "image_url": "/api/media/our-products/products-ijp-2.png",
+                "en": {
+                    "description": "Sweetener for Food",
+                    "full_description_1": "Sosweet is an artificial (synthetic) sweetener for food that holds an MD certificate from BPOM.",
+                    "full_description_2": "Sosweet is used to replace sugar and provide sweetness in the food industry.",
+                    "full_description_3": "Sosweet is commonly used in tomato sauce and chili sauce, candies, jelly, and other products that comply with BPOM standards. \n\nSosweet Sweetener is available in 25 Kg/bag packaging."
+                },
+                "id": {
+                    "description": "Pemanis Untuk Makanan",
+                    "full_description_1": "Sosweet adalah pemanis buatan (sintetik) untuk makanan yang memiliki sertifikat MD dari BPOM",
+                    "full_description_2": "Sosweet digunakan untuk menggantikan gula dan memberikan rasa manis dalam industri makanan.",
+                    "full_description_3": "Sosweet biasanya dipakai untuk saos tomat dan sambal, permen, jelly dan produk lain yang menggunakan standar BPOM. \n\nSosweet Pemanis tersedia dalam Ukuran 25 Kg/Zak."
+                }
+            },
+            {
+                "name": "UNIWHITE",
+                "image_url": "/api/media/our-products/products-ijp-3.png",
+                "en": {
+                    "description": "Food Whitening Powder",
+                    "full_description_1": "Uniwhite is a food whitening product that holds an MD certificate from BPOM. Uniwhite is made from natural ingredients, featuring a white color and a flour-like texture with 200 mesh size.",
+                    "full_description_2": "Uniwhite is commonly used for white-colored products such as frozen food, steamed buns, crackers, or added to products that require whitening.",
+                    "full_description_3": "Uniwhite has been marketed throughout Indonesia for many years and holds a Halal Certificate from MUI."
+                },
+                "id": {
+                    "description": "Tepung Pemutih Untuk Makanan",
+                    "full_description_1": "Uniwhite adalah produk pemutih untuk makanan yang memiliki sertifikat MD dari BPOM. Uniwhite berbahan dasar alami yang memiliki warna putih dan bertekstur seperti tepung dengan mesh 200.",
+                    "full_description_2": "Uniwhite biasanya digunakan untuk produk - produk yang berwarna putih seperti frozen food, bakpao, kerupuk atau ditambahkan pada produk yang ingin diputihkan.",
+                    "full_description_3": "Uniwhite telah dipasarkan di seluruh Indonesia selama bertahun-tahun dan memiliki sertifikat Halal dari MUI. \n\nUniwhite tersedia dalam packing 25 Kg/Zak."
+                }
+            },
+            {
+                "name": "MASHMIL",
+                "image_url": "/api/media/our-products/products-ijp-4.png",
+                "en": {
+                    "description": "PREMIX MILK POWDER",
+                    "full_description_1": "MashMil is a milk premix for premium bakery products, used in the production of biscuits, cakes, wafers, snacks, sauces, candies, chocolate, ice cream and beverages. ss",
+                    "full_description_2": "MashMil comes in 2 types (red and green), each with 3 quality grades (Ori, S, SS). Specifically for sweet Maxmil, grade SP is available.",
+                    "full_description_3": "MashMil is available in 10 Kg/bag & 25 Kg/bag packaging."
+                },
+                "id": {
+                    "description": "TEPUNG SUSU PREMIKS",
+                    "full_description_1": "MashMil merupakan premiks susu untuk produk bakery istimewa yang digunakan untuk pembuatan biskuit, kue, wafer, snack, saus, permen, coklat, es krim dan minuman.",
+                    "full_description_2": "MashMil terdiri dari 2 jenis (merah dan hijau) masing-masing memiliki 3 kualitas (Ori, S, SS) khusus Maxmil manis tersedia grade SP.",
+                    "full_description_3": "MasMil tersedia dalam Packaging 10 Kg/Zak & 25 kg/Zak."
+                }
+            },
+            {
+                "name": "MSG",
+                "image_url": "/api/media/our-products/products-ijp-5.png",
+                "en": {
+                    "description": "MONOSODIUM GLUTAMATE & MONOSODIUM GLUTAMATE PLUS",
+                    "full_description_1": "Monosodium Glutamate (MSG) is a flavor enhancer for food that holds an MD certificate from BPOM.\n\nMSG+ is a flavor enhancer with an additional composition of I + G, which provides an umami taste to products.",
+                    "full_description_2": "Uses for Enhances the taste of food, Strengthens the flavor characteristics of food. ",
+                    "full_description_3": "Packaging: MSG is available in 25 Kg/bag. It comes in 3 types: Ori, SS, and SP. \n\nThe particle size of MSG is 40 mesh (except for MSG Ori, which is available in 99 mesh)."
+                },
+                "id": {
+                    "description": "MONOSODIUM GLUTAMATE & MONOSODIUM GLUTAMATE PLUS",
+                    "full_description_1": "Monosodium Glutamate (MSG) adalah bahan penguat rasa untuk makanan yang memiliki sertifikat MD dari BPOM.\n\nMSG + merupakan penguat rasa dengan tambahan komposisi I + G yang memberikan rasa umami pada produk.",
+                    "full_description_2": "Kegunaan: Memperkuat rasa pada makanan Memperkuat karakteristik rasa pada makanan. ",
+                    "full_description_3": "Packaging MSG adalah 25 Kg/Zak Tersedia 3 tipe, Ori, SS dan SP. \n\nUkuran partikel MSG adalah 40 mesh (kecuali MSG Ori tersedia 99 mesh)."
+                }
+            },
+            {
+                "name": "FRUCTOSE",
+                "image_url": "/api/media/our-products/products-ijp-6.png",
+                "en": {
+                    "description": "FRUCTOSE SYRUP",
+                    "full_description_1": "Fructose is a natural type of sugar found in fruits, corn, and honey. It provides sweetness and is one of the monosaccharides.",
+                    "full_description_2": "Fructose has a high level of sweetness, making it widely used as a sweetener in various food and beverage products such as bread, syrup, jam, and many more.",
+                    "full_description_3": "Fructose sold by CV. Indo Jaya Putra is certified Halal and registered with BPOM. Brand : \nSosweet Spec : \nHigh Fructose Corn Syrup 55 \nBrix 75,6 DE 40-44\n\nSosweet Fructose is available in 1 Kg, 5 Kg, 30 Kg, and 275 Kg packaging."
+                },
+                "id": {
+                    "description": "SIRUP FRUKTOSA",
+                    "full_description_1": "Fructose adalah jenis gula alami yang ditemukan dalam buah-buahan, jagung dan madu, memberikan rasa manis dan merupakan salah satu monosakarida.",
+                    "full_description_2": "Fructose memiliki rasa manis yang tinggi, sehingga sering digunakan sebagai pemanis dalam berbagai produk makanan dan minuman seperti pembuatan roti, sirup, selai dan masih banyak lagi.",
+                    "full_description_3": "Fructose yang dijual oleh CV. Indo Jaya Putra telah bersertifikat Halal dan BPOM. Brand : \nSosweet Spec : \nHigh Fructose Corn Syrup 55 \nBrix 75,6 DE 40-44\n\nFruktose Sosweet tersedia dalam ukuran 1 Kg, 5 Kg dan 30 Kg serta 275 Kg."
+                }
+            },
+            {
+                "name": "UNICAPSO",
+                "image_url": "/api/media/our-products/products-ijp-7.png",
+                "en": {
+                    "description": "CAPSICUM OLEORESIN",
+                    "full_description_1": "Capsicum Oleoresin is a reddish-brown food additive obtained from the extraction of Capsicum annum or Capsicum frutescens. Capsicum Oleoresin from IJP is branded as Unicapso and is Halal certified.",
+                    "full_description_2": "Uses: Provides a spicy sensation to products.",
+                    "full_description_3": "Packaging:\nUnicapso Unicapso is available in 1 Kg, 5 Kg, and 20 Kg/jar. \n\nThere are 2 types of Unicapso available: \nUnicapso 1 M SHU WS (Water-Soluble)\nUnicapso 1 M SHU OS (Oil-Soluble)"
+                },
+                "id": {
+                    "description": "CAPSICUM OLEORESIN",
+                    "full_description_1": "Capsicum oleoresin adalah bahan tambahan pangan bewarna merah kecoklatan yang diperoleh dari ekstraksi Capsicum annum atau Capsicum fruitescens. Capsicum oleoresin IJP diberi nama Unicapso dan sudah memiliki sertifikat Halal",
+                    "full_description_2": "Kegunaan: Memberikan sensasi pedas pada produk",
+                    "full_description_3": "Packaging:\nUnicapso tersedia dalam ukuran  1 Kg, 5 Kg, 20 Kg/jc. \n\nTersedia 2 jenis Unicapso yaitu : \nUnicapso 1 M SHU WS (Water-Soluble)\nUnicapso 1 M SHU OS (Oil-Soluble)"
+                }
+            },
+            {
+                "name": "MASHMIL",
+                "image_url": "/api/media/our-products/products-ijp-8.png",
+                "en": {
+                    "description": "BAKING POWDER",
+                    "full_description_1": "Baking Powder is a chemical leavening agent commonly used in making cakes, bread, and various bakery products. It usually consists of sodium bicarbonate (baking soda), an acid component, and cornstarch as a filler.",
+                    "full_description_2": "Functions of Baking Powder: Leavens dough by releasing CO₂ gas. Creates a softer texture with fine pores in cakes.",
+                    "full_description_3": "CV. Indo Jaya Putra provides Baking Powder in both Double Acting and Single Acting types, available in 25 Kg/bag and 10 Kg/bag packaging."
+                },
+                "id": {
+                    "description": "BAKING POWDER",
+                    "full_description_1": "Baking powder adalah bahan pengembang kimia yang sering digunakan dalam pembuatan kue, roti, dan berbagai produk bakery. Bahan ini biasanya terdiri dari natrium bikarbonat (soda kue), bahan asam, serta pati jagung sebagai pengisi.",
+                    "full_description_2": "Baking Powder berfungsi sebagai : Mengembangkan adonan dengan menghasilkan gas CO₂. Membuat tekstur kue lebih lembut dan berpori halus.",
+                    "full_description_3": "CV. Indo Jaya Putra memiliki Baking Powder type Double Acting & Single Acting tersedia packing 25 Kg/Zak dan 10 Kg/Zak."
+                }
+            }
+        ],
+        "products_others": [
+            {
+                "name": "chemical lainnya",
+                "image_url": "/api/media/our-products/products-ijp-others-1.png",
+                "en": {
+                    "description": "general chemical",
+                    "full_description_1": "The general chemicals we offer are: Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Strach Miwon, Corn Strach Thereos, Dextrose Fufeng, Dextrose Lihua. ",
+                    "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Malthodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoat Prill, Sodium Benzoat Purox, Sodium Benzoat Wuhan, Sodium Benzoat Wuhan Zak Coklat, Sodium Benzoat Asahi. ",
+                    "full_description_3": "Sodium Benzoat Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 mesh, Sodium Sulphate Anyhrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natirum Sakarin."
+                },
+                "id": {
+                    "description": "general chemical",
+                    "full_description_1": "General chemical yang kami punya yaitu Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Strach Miwon, Corn Strach Thereos, Dextrose Fufeng, Dextrose Lihua. ",
+                    "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Malthodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoat Prill, Sodium Benzoat Purox, Sodium Benzoat Wuhan, Sodium Benzoat Wuhan Zak Coklat, Sodium Benzoat Asahi. ",
+                    "full_description_3": "Sodium Benzoat Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 mesh, Sodium Sulphate Anyhrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natirum Sakarin."
+                }
+            }
         ]
-      },
-      "our_vissions": {
-        "title": "VISI KAMI",
-        "contents": [
-          "Menjadi leader di industri makanan, retail, pertanian & industri lainnya di indonesia"
-        ]
-      }
     },
-    "en": {
-      "our_missions": {
-        "title": "Our Mission",
-        "contents": [
-          "Producing high-quality, safe, and halal food and food additives in accordance with applicable requirements.",
-          "Driving innovation and creating new, competitive, and high-quality products, supported by continuous human resource development and sustainable company growth.",
-          "Enhancing focus on customer satisfaction by delivering the best products with superior quality and services.",
-          "Providing opportunities for millennial human resources to create and contribute, supported by continuous skill development, enabling CV. Indo Jaya Putra to grow faster and achieve its long-term goals."
-        ]
-      },
-      "our_vissions": {
-        "title": "Our Vission",
-        "contents": [
-          "To become the leading chemical trading company in Indonesia."
-        ]
-      }
+    "contact": {
+        "id": {
+            "title": "Kontak Kami",
+            "address": {
+                "title": "Kantor",
+                "description": "Alamat Resmi Kantor Pusat Kami ",
+                "value": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur"
+            },
+            "phone": {
+                "title": "Telephone",
+                "description": "Customer dapat menghubungi kami melalui FAX/Whats App",
+                "value": "+62 3159 97300 / +62 887 7938 837"
+            },
+            "email": {
+                "title": "Email",
+                "description": "Official Email Tim Marketing kami",
+                "value": "ijp_marketing@yahoo.com"
+            }
+        },
+        "en": {
+            "title": "Contact Us",
+            "address": {
+                "title": "Office",
+                "description": "The Official Address Our Head Office",
+                "value": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur"
+            },
+            "phone": {
+                "title": "Phone",
+                "description": "Our customers may reach us via \n FAX or WhatsApp",
+                "value": "+62 3159 97300 / +62 887 7938 837"
+            },
+            "email": {
+                "title": "Email",
+                "description": "Official Email of Our Marketing Team",
+                "value": "ijp_marketing@yahoo.com"
+            }
+        }
     }
-  },
-  "our_products": {
-    "id": {
-      "title": "Produk Kami",
-      "description": "Kami menyediakan berbagai produk unggulan untuk memenuhi kebutuhan industri pangan Anda, seperti Unicol (Pewarna Makanan), Sosweet (Pemanis Makanan), Uniwhite (Pemutih Makanan), MashMil (Tepung Susu Premiks), Sosweet (MSG), Sosweet (Fruktose), MashMil (Baking Powder) dan Unicapso (Chili Oil). Selain itu, kami juga menawarkan beragam produk General Chemical impor dari China, termasuk Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame dan lainnya.\r\n\r\n\r\nSeluruh produk kami telah memenuhi standar kualitas tertinggi dengan sertifikasi Halal, BPOM dan ISO 9001:2015. Hal Ini memastikan setiap produk yang kami tawarkan aman, berkualitas dan sesuai standar internasional, sehingga konsumen dapat merasa aman dan percaya menggunakan produk kami.",
-      "product_internal": "Produk Internal",
-      "product_other": "Produk Lainnya"
-    },
-    "en": {
-      "title": "Our Products",
-      "description": "We provide a wide range of superior products to meet your food industry needs, such as Unicol (Food Coloring), Sosweet (Food Sweetener), Uniwhite (Food Whitener), MashMil (Premix Milk Powder), Sosweet (MSG), Sosweet (Fructose), MashMil (Baking Powder), and Unicapso (Chili Oil). In addition, we also offer a variety of imported general chemicals from China, including Ammonium Bicarbonate, Acetic Acid, Citric Acid, Dextrose Monohydrate, Maltodextrin, Acesulfame, and more.\r\n\r\nAll of our products comply with the highest quality standards and are certified Halal, BPOM, and ISO 9001:2015. This ensures that every product we offer is safe, high-quality, and meets international standards, allowing consumers to feel secure and confident in using our products.",
-      "product_internal": "Internal Products",
-      "product_other": "Other Products"
-    },
-    "products": [
-      {
-        "name": "UNICOL",
-        "image_url": "/images/our-products/products-ijp-1.jpeg",
-        "id": {
-          "description": "Pewarna Makanan",
-          "full_description_1": "UNICOL adalah pewarna makanan sintetis yang memiliki sertifikat MD dari BPOM dan Sertifikat Halal dari MUI.",
-          "full_description_2": "Original Colour (Larut dalam Air): biasanya digunakan untuk roti/kue, minuman, jelly, permen, dll.",
-          "full_description_3": "Lake Colour (Larut dalam Minyak): biasanya digunakan untuk krim, mentega, margarin, dll.\n\nUnicol tersedia dalam kemasan 1 Kg, 5 Kg, 10 Kg, dan 25 Kg."
-        },
-        "en": {
-          "description": "Food Coloring",
-          "full_description_1": "UNICOL is a synthetic food coloring that holds an MD certificate from BPOM and a Halal Certificate from MUI.",
-          "full_description_2": "Original Colour (Water Soluble): commonly used for bread/cakes, beverages, jelly, candies, etc.",
-          "full_description_3": "Lake Colour (Oil Soluble): commonly used for cream, butter, margarine, etc.\n\nUnicol is available in 1 Kg, 5 Kg, 10 Kg and 25 Kg packaging."
-        }
-      },
-      {
-        "name": "SOSWEET",
-        "image_url": "/api/media/our-products/products-ijp-2.png",
-        "id": {
-          "description": "Pemanis Untuk Makanan",
-          "full_description_1": "Sosweet adalah pemanis buatan (sintetik) untuk makanan yang memiliki sertifikat MD dari BPOM",
-          "full_description_2": "Sosweet digunakan untuk menggantikan gula dan memberikan rasa manis dalam industri makanan.",
-          "full_description_3": "Sosweet biasanya dipakai untuk saos tomat dan sambal, permen, jelly dan produk lain yang menggunakan standar BPOM. \n\nSosweet Pemanis tersedia dalam Ukuran 25 Kg/Zak."
-        },
-        "en": {
-          "description": "Sweetener for Food",
-          "full_description_1": "Sosweet is an artificial (synthetic) sweetener for food that holds an MD certificate from BPOM.",
-          "full_description_2": "Sosweet is used to replace sugar and provide sweetness in the food industry.",
-          "full_description_3": "Sosweet is commonly used in tomato sauce and chili sauce, candies, jelly, and other products that comply with BPOM standards. \n\nSosweet Sweetener is available in 25 Kg/bag packaging."
-        }
-      },
-      {
-        "name": "UNIWHITE",
-        "description": "Tepung Pemutih Untuk Makanan",
-        "image_url": "/api/media/our-products/products-ijp-3.png",
-        "id": {
-          "description": "Tepung Pemutih Untuk Makanan",
-          "full_description_1": "Uniwhite adalah produk pemutih untuk makanan yang memiliki sertifikat MD dari BPOM. Uniwhite berbahan dasar alami yang memiliki warna putih dan bertekstur seperti tepung dengan mesh 200.",
-          "full_description_2": "Uniwhite biasanya digunakan untuk produk - produk yang berwarna putih seperti frozen food, bakpao, kerupuk atau ditambahkan pada produk yang ingin diputihkan.",
-          "full_description_3": "Uniwhite telah dipasarkan di seluruh Indonesia selama bertahun-tahun dan memiliki sertifikat Halal dari MUI. \n\nUniwhite tersedia dalam packing 25 Kg/Zak."
-        },
-        "en": {
-          "description": "Food Whitening Powder",
-          "full_description_1": "Uniwhite is a food whitening product that holds an MD certificate from BPOM. Uniwhite is made from natural ingredients, featuring a white color and a flour-like texture with 200 mesh size.",
-          "full_description_2": "Uniwhite is commonly used for white-colored products such as frozen food, steamed buns, crackers, or added to products that require whitening.",
-          "full_description_3": "Uniwhite has been marketed throughout Indonesia for many years and holds a Halal Certificate from MUI."
-        }
-      },
-      {
-        "name": "MASHMIL",
-        "image_url": "/api/media/our-products/products-ijp-4.png",
-        "id": {
-          "description": "TEPUNG SUSU PREMIKS",
-          "full_description_1": "MashMil merupakan premiks susu untuk produk bakery istimewa yang digunakan untuk pembuatan biskuit, kue, wafer, snack, saus, permen, coklat, es krim dan minuman.",
-          "full_description_2": "MashMil terdiri dari 2 jenis (merah dan hijau) masing-masing memiliki 3 kualitas (Ori, S, SS) khusus Maxmil manis tersedia grade SP.",
-          "full_description_3": "MasMil tersedia dalam Packaging 10 Kg/Zak & 25 kg/Zak."
-        },
-        "en": {
-          "description": "PREMIX MILK POWDER",
-          "full_description_1": "MashMil is a milk premix for premium bakery products, used in the production of biscuits, cakes, wafers, snacks, sauces, candies, chocolate, ice cream and beverages.",
-          "full_description_2": "MashMil comes in 2 types (red and green), each with 3 quality grades (Ori, S, SS). Specifically for sweet Maxmil, grade SP is available.",
-          "full_description_3": "MashMil is available in 10 Kg/bag & 25 Kg/bag packaging."
-        }
-      },
-      {
-        "name": "MSG",
-        "image_url": "/api/media/our-products/products-ijp-5.png",
-        "id": {
-          "description": "MONOSODIUM GLUTAMATE & MONOSODIUM GLUTAMATE PLUS",
-          "full_description_1": "Monosodium Glutamate (MSG) adalah bahan penguat rasa untuk makanan yang memiliki sertifikat MD dari BPOM.\n\nMSG + merupakan penguat rasa dengan tambahan komposisi I + G yang memberikan rasa umami pada produk.",
-          "full_description_2": "Kegunaan: Memperkuat rasa pada makanan Memperkuat karakteristik rasa pada makanan. ",
-          "full_description_3": "Packaging MSG adalah 25 Kg/Zak Tersedia 3 tipe, Ori, SS dan SP. \n\nUkuran partikel MSG adalah 40 mesh (kecuali MSG Ori tersedia 99 mesh)."
-        },
-        "en": {
-          "description": "MONOSODIUM GLUTAMATE & MONOSODIUM GLUTAMATE PLUS",
-          "full_description_1": "Monosodium Glutamate (MSG) is a flavor enhancer for food that holds an MD certificate from BPOM.\n\nMSG+ is a flavor enhancer with an additional composition of I + G, which provides an umami taste to products.",
-          "full_description_2": "Uses for Enhances the taste of food, Strengthens the flavor characteristics of food. ",
-          "full_description_3": "Packaging: MSG is available in 25 Kg/bag. It comes in 3 types: Ori, SS, and SP. \n\nThe particle size of MSG is 40 mesh (except for MSG Ori, which is available in 99 mesh)."
-        }
-      },
-      {
-        "name": "FRUCTOSE",
-        "image_url": "/api/media/our-products/products-ijp-6.png",
-        "id": {
-          "description": "SIRUP FRUKTOSA",
-          "full_description_1": "Fructose adalah jenis gula alami yang ditemukan dalam buah-buahan, jagung dan madu, memberikan rasa manis dan merupakan salah satu monosakarida.",
-          "full_description_2": "Fructose memiliki rasa manis yang tinggi, sehingga sering digunakan sebagai pemanis dalam berbagai produk makanan dan minuman seperti pembuatan roti, sirup, selai dan masih banyak lagi.",
-          "full_description_3": "Fructose yang dijual oleh CV. Indo Jaya Putra telah bersertifikat Halal dan BPOM. Brand : \nSosweet Spec : \nHigh Fructose Corn Syrup 55 \nBrix 75,6 DE 40-44\n\nFruktose Sosweet tersedia dalam ukuran 1 Kg, 5 Kg dan 30 Kg serta 275 Kg."
-        },
-        "en": {
-          "description": "FRUCTOSE SYRUP",
-          "full_description_1": "Fructose is a natural type of sugar found in fruits, corn, and honey. It provides sweetness and is one of the monosaccharides.",
-          "full_description_2": "Fructose has a high level of sweetness, making it widely used as a sweetener in various food and beverage products such as bread, syrup, jam, and many more.",
-          "full_description_3": "Fructose sold by CV. Indo Jaya Putra is certified Halal and registered with BPOM. Brand : \nSosweet Spec : \nHigh Fructose Corn Syrup 55 \nBrix 75,6 DE 40-44\n\nSosweet Fructose is available in 1 Kg, 5 Kg, 30 Kg, and 275 Kg packaging."
-        }
-      },
-      {
-        "name": "UNICAPSO",
-        "image_url": "/api/media/our-products/products-ijp-7.png",
-        "id": {
-          "description": "CAPSICUM OLEORESIN",
-          "full_description_1": "Capsicum oleoresin adalah bahan tambahan pangan bewarna merah kecoklatan yang diperoleh dari ekstraksi Capsicum annum atau Capsicum fruitescens. Capsicum oleoresin IJP diberi nama Unicapso dan sudah memiliki sertifikat Halal",
-          "full_description_2": "Kegunaan: Memberikan sensasi pedas pada produk",
-          "full_description_3": "Packaging:\nUnicapso tersedia dalam ukuran  1 Kg, 5 Kg, 20 Kg/jc. \n\nTersedia 2 jenis Unicapso yaitu : \nUnicapso 1 M SHU WS (Water-Soluble)\nUnicapso 1 M SHU OS (Oil-Soluble)"
-        },
-        "en": {
-          "description": "CAPSICUM OLEORESIN",
-          "full_description_1": "Capsicum Oleoresin is a reddish-brown food additive obtained from the extraction of Capsicum annum or Capsicum frutescens. Capsicum Oleoresin from IJP is branded as Unicapso and is Halal certified.",
-          "full_description_2": "Uses: Provides a spicy sensation to products.",
-          "full_description_3": "Packaging:\nUnicapso Unicapso is available in 1 Kg, 5 Kg, and 20 Kg/jar. \n\nThere are 2 types of Unicapso available: \nUnicapso 1 M SHU WS (Water-Soluble)\nUnicapso 1 M SHU OS (Oil-Soluble)"
-        }
-      },
-      {
-        "name": "MASHMIL",
-        "image_url": "/api/media/our-products/products-ijp-8.png",
-        "id": {
-          "description": "BAKING POWDER",
-          "full_description_1": "Baking powder adalah bahan pengembang kimia yang sering digunakan dalam pembuatan kue, roti, dan berbagai produk bakery. Bahan ini biasanya terdiri dari natrium bikarbonat (soda kue), bahan asam, serta pati jagung sebagai pengisi.",
-          "full_description_2": "Baking Powder berfungsi sebagai : Mengembangkan adonan dengan menghasilkan gas CO₂. Membuat tekstur kue lebih lembut dan berpori halus.",
-          "full_description_3": "CV. Indo Jaya Putra memiliki Baking Powder type Double Acting & Single Acting tersedia packing 25 Kg/Zak dan 10 Kg/Zak."
-        },
-        "en": {
-          "description": "BAKING POWDER",
-          "full_description_1": "Baking Powder is a chemical leavening agent commonly used in making cakes, bread, and various bakery products. It usually consists of sodium bicarbonate (baking soda), an acid component, and cornstarch as a filler.",
-          "full_description_2": "Functions of Baking Powder: Leavens dough by releasing CO₂ gas. Creates a softer texture with fine pores in cakes.",
-          "full_description_3": "CV. Indo Jaya Putra provides Baking Powder in both Double Acting and Single Acting types, available in 25 Kg/bag and 10 Kg/bag packaging."
-        }
-      }
-    ],
-    "products_others": [
-      {
-        "name": "chemical lainnya",
-        "image_url": "/api/media/our-products/products-ijp-others-1.png",
-        "id": {
-          "description": "general chemical",
-          "full_description_1": "General chemical yang kami punya yaitu Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Strach Miwon, Corn Strach Thereos, Dextrose Fufeng, Dextrose Lihua. ",
-          "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Malthodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoat Prill, Sodium Benzoat Purox, Sodium Benzoat Wuhan, Sodium Benzoat Wuhan Zak Coklat, Sodium Benzoat Asahi. ",
-          "full_description_3": "Sodium Benzoat Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 mesh, Sodium Sulphate Anyhrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natirum Sakarin."
-        },
-        "en": {
-          "description": "general chemical",
-          "full_description_1": "The general chemicals we offer are: Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Strach Miwon, Corn Strach Thereos, Dextrose Fufeng, Dextrose Lihua. ",
-          "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Malthodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoat Prill, Sodium Benzoat Purox, Sodium Benzoat Wuhan, Sodium Benzoat Wuhan Zak Coklat, Sodium Benzoat Asahi. ",
-          "full_description_3": "Sodium Benzoat Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 mesh, Sodium Sulphate Anyhrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natirum Sakarin."
-        }
-      }
-    ]
-  },
-  "contact": {
-    "id": {
-      "title": "Kontak Kami",
-      "address": {
-        "title": "Kantor",
-        "description": "Alamat Resmi Kantor Pusat Kami ",
-        "value": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur"
-      },
-      "phone": {
-        "title": "Telephone",
-        "description": "Customer dapat menghubungi kami melalui FAX/Whats App",
-        "value": "+62 3159 97300 / +62 887 7938 837"
-      },
-      "email": {
-        "title": "Email",
-        "description": "Official Email Tim Marketing kami",
-        "value": "ijp_marketing@yahoo.com"
-      }
-    },
-    "en": {
-      "title": "Contact Us",
-      "address": {
-        "title": "Office",
-        "description": "The Official Address Our Head Office",
-        "value": "Jl. Raya Sukolilo Mulia 76, Surabaya, Jawa Timur"
-      },
-      "phone": {
-        "title": "Phone",
-        "description": "Our customers may reach us via \n FAX or WhatsApp",
-        "value": "+62 3159 97300 / +62 887 7938 837"
-      },
-      "email": {
-        "title": "Email",
-        "description": "Official Email of Our Marketing Team",
-        "value": "ijp_marketing@yahoo.com"
-      }
-    }
-  }
 }
