@@ -30,7 +30,6 @@ export default async function HomePageWrapper(props: { lang: string }) {
         <HomeOurProductsSection objLang={our_products} lang={lang} />
         {/* <HomeNewsSection objLang={news} lang={lang}/> */}
       </main>
-      \{" "}
     </>
   );
 }
