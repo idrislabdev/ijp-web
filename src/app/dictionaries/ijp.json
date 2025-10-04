@@ -51,16 +51,16 @@
             "our_missions": {
                 "title": "Our Mission",
                 "contents": [
-                    "Producing high-quality, safe, and halal food and food additives in accordance with applicable requirements.",
-                    "Driving innovation and creating new, competitive, and high-quality products, supported by continuous human resource development and sustainable company growth.",
-                    "Enhancing focus on customer satisfaction by delivering the best products with superior quality and services.",
-                    "Providing opportunities for millennial human resources to create and contribute, supported by continuous skill development, enabling CV. Indo Jaya Putra to grow faster and achieve its long-term goals."
+                    "To produce food and food additives that are high-quality, safe, and halal in compliance with applicable requirements",
+                    "To carry out innovation and create new high-quality, competitive products that support environmental sustainability and production efficiency",
+                    "To enhance focus on customer satisfaction by delivering the best products with superior quality and service",
+                    "To improve employee skills and capacity through training and development programs to ensure a competent and innovative team"
                 ]
             },
             "our_vissions": {
                 "title": "Our Vission",
                 "contents": [
-                    "To become the leading chemical trading company in Indonesia."
+                    "To become a leader in food trade as well as in the production of innovative, high-quality, and sustainable food and food additives in Indonesia"
                 ]
             }
         }
@@ -132,7 +132,7 @@
                 "image_url": "/api/media/our-products/products-ijp-4.png",
                 "en": {
                     "description": "PREMIX MILK POWDER",
-                    "full_description_1": "MashMil is a milk premix for premium bakery products, used in the production of biscuits, cakes, wafers, snacks, sauces, candies, chocolate, ice cream and beverages. ss",
+                    "full_description_1": "MashMil is a milk premix for premium bakery products, used in the production of biscuits, cakes, wafers, snacks, sauces, candies, chocolate, ice cream and beverages.",
                     "full_description_2": "MashMil comes in 2 types (red and green), each with 3 quality grades (Ori, S, SS). Specifically for sweet Maxmil, grade SP is available.",
                     "full_description_3": "MashMil is available in 10 Kg/bag & 25 Kg/bag packaging."
                 },
@@ -214,15 +214,15 @@
                 "image_url": "/api/media/our-products/products-ijp-others-1.png",
                 "en": {
                     "description": "general chemical",
-                    "full_description_1": "The general chemicals we offer are: Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Strach Miwon, Corn Strach Thereos, Dextrose Fufeng, Dextrose Lihua. ",
-                    "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Malthodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoat Prill, Sodium Benzoat Purox, Sodium Benzoat Wuhan, Sodium Benzoat Wuhan Zak Coklat, Sodium Benzoat Asahi. ",
-                    "full_description_3": "Sodium Benzoat Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 mesh, Sodium Sulphate Anyhrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natirum Sakarin."
+                    "full_description_1": "The general chemicals we offer are: Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Starch Miwon, Corn Starch Tereos, Dextrose Fufeng, Dextrose Lihua. ",
+                    "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Maltodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoate Prill, Sodium Benzoate Purox, Sodium Benzoate Wuhan, Sodium Benzoate Wuhan Zak Coklat, Sodium Benzoate Asahi. \n",
+                    "full_description_3": "Sodium Bicarbonate Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 Mesh, Sodium Sulphate Anhyrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natrium Sakarin."
                 },
                 "id": {
                     "description": "general chemical",
-                    "full_description_1": "General chemical yang kami punya yaitu Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Strach Miwon, Corn Strach Thereos, Dextrose Fufeng, Dextrose Lihua. ",
-                    "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Malthodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoat Prill, Sodium Benzoat Purox, Sodium Benzoat Wuhan, Sodium Benzoat Wuhan Zak Coklat, Sodium Benzoat Asahi. ",
-                    "full_description_3": "Sodium Benzoat Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 mesh, Sodium Sulphate Anyhrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natirum Sakarin."
+                    "full_description_1": "General chemical yang kami punya yaitu Acetic Acid Abu- abu,  Acetic Acid Lokal, Ammonium Bicarbonate, Citric Acid Weifang, Corn Starch Miwon, Corn Starch Tereos, Dextrose Fufeng, Dextrose Lihua. ",
+                    "full_description_2": "Glacical Acetic Acid Taiwan, Kaporit Powder 60%, Kaporit RRC 65%, Maltodextrin Xingmao & Lihua, Soda Ash, Soda Q, Sodium Benzoate Prill, Sodium Benzoate Purox, Sodium Benzoate Wuhan, Sodium Benzoate Wuhan Zak Coklat, Sodium Benzoate Asahi. ",
+                    "full_description_3": "Sodium Bicarbonate Malan, Sodium Metabisulphite, Sodium Sacharine 20-40 Mesh, Sodium Sacharine 8-12 Mesh, Sodium Sulphate Anhyrous, Sodium Tripoly Posphate Thailand, Tomato Pasta, Natrium Sakarin."
                 }
             }
         ]

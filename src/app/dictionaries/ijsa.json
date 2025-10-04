@@ -123,6 +123,14 @@
                 "thick": "20 Micron",
                 "color": "Natural",
                 "image_url": "/api/media/our-products/products-ijsa-4.jpeg"
+            },
+            {
+                "name": "Embossed Type",
+                "material": "HDPE or Biodegradable",
+                "long": "27 cm",
+                "thick": "15 Micron",
+                "color": "Natural",
+                "image_url": "/api/media/our-products/products-ijsa-5.png"
             }
         ]
     },
